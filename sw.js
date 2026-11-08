@@ -1,7 +1,7 @@
 // Čeština obrazem: offline support. The app files come from the cache at once and are refreshed in the background;
 // photos and fonts are kept after the first view so they also work offline.
 // Version 23 (8. 11. 2026) — must match APP_VER in index.html.
-const APP = 'cz-app-v23.3';
+const APP = 'cz-app-v24';
 const CORE = ['./', './index.html', './speak-audio.js', './extra-audio.js', './manifest.webmanifest', './icon-v2-192.png', './icon-v2-512.png'];
 self.addEventListener('install', e => {
   // fetch each file fresh (not from the browser's short-term cache); a missing file must not block the update
