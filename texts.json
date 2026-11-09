@@ -1,1 +1,2393 @@
-{"XP1-0":["Dobrý den, mám termín na deset hodin.","m"],"XP1-1":["Bolí mě v krku a mám horečku.","f"],"XP1-2":["Kašlu už tři dny.","m"],"XP1-3":["Máte kartičku pojišťovny?","f"],"XP1-4":["Berte to třikrát denně.","m"],"XP1-5":["Potřebuju neschopenku.","f"],"XP1d-0":["Dobrý den, co pro vás můžu udělat?","f"],"XP1d-1":["Dobrý den, mám termín na deset hodin.","m"],"XP1d-2":["Máte kartičku pojišťovny?","f"],"XP1d-3":["Ano, tady je.","m"],"XP1d-4":["Co vás trápí?","f"],"XP1d-5":["Bolí mě v krku a mám horečku. Kašlu už tři dny.","m"],"XP1d-6":["Napíšu vám lék. Berte to třikrát denně.","f"],"XP1d-7":["Děkuju. Potřebuju taky neschopenku.","m"],"XP2-0":["Dobrý den, mám recept.","m"],"XP2-1":["Máte něco na bolest hlavy?","f"],"XP2-2":["Je to bez receptu?","m"],"XP2-3":["Kolik to stojí?","f"],"XP2-4":["Můžu platit kartou?","m"],"XP2-5":["Užívejte to po jídle.","f"],"XP2d-0":["Dobrý den, prosím?","f"],"XP2d-1":["Dobrý den, mám recept. A máte něco na bolest hlavy?","m"],"XP2d-2":["Tyhle tablety jsou bez receptu. Užívejte je po jídle.","f"],"XP2d-3":["Kolik to stojí?","m"],"XP2d-4":["Dohromady dvě stě osmdesát korun.","f"],"XP2d-5":["Můžu platit kartou?","m"],"XP2d-6":["Ano, samozřejmě.","f"],"XP3-0":["Mám schůzku v devět hodin.","m"],"XP3-1":["Chci si prodloužit povolení k pobytu.","f"],"XP3-2":["Tady je můj pas a fotografie.","m"],"XP3-3":["Potřebuju potvrzení o zaměstnání.","f"],"XP3-4":["Mám vyplnit tenhle formulář?","m"],"XP3-5":["Nerozumím, můžete mluvit pomaleji?","f"],"XP3d-0":["Dobrý den, máte schůzku?","f"],"XP3d-1":["Ano, mám schůzku v devět hodin. Chci si prodloužit povolení k pobytu.","m"],"XP3d-2":["Máte pas, fotografii a potvrzení o zaměstnání?","f"],"XP3d-3":["Tady je můj pas a fotografie. Potvrzení mám tady.","m"],"XP3d-4":["Ještě vyplňte tenhle formulář.","f"],"XP3d-5":["Nerozumím, můžete mluvit pomaleji?","m"],"XP3d-6":["Vyplňte, prosím, tenhle formulář.","f"],"XP4-0":["Kde je zastávka tramvaje číslo čtyři?","m"],"XP4-1":["Jedu na náměstí Republiky.","f"],"XP4-2":["Kde si můžu koupit jízdenku?","m"],"XP4-3":["Můžete zaplatit kartou přímo v tramvaji.","f"],"XP4-4":["Kde mám vystoupit?","m"],"XP4-5":["Na příští zastávce musíte přestoupit.","f"],"XP4d-0":["Promiňte, jede tahle tramvaj na náměstí Republiky?","m"],"XP4d-1":["Ano, jede. Je to třetí zastávka.","m"],"XP4d-2":["A kde si můžu koupit jízdenku?","m"],"XP4d-3":["Můžete zaplatit kartou přímo v tramvaji.","m"],"XP4d-4":["Děkuju. A kde mám vystoupit na hlavní nádraží?","m"],"XP4d-5":["Na náměstí musíte přestoupit.","m"],"XP5-0":["Kdy je porada?","m"],"XP5-1":["Porada je ve čtvrtek v deset.","f"],"XP5-2":["Můžeš mi pomoct s pokusem?","m"],"XP5-3":["Vzorky jsou v lednici.","f"],"XP5-4":["Zítra pracuju z domova.","m"],"XP5-5":["Potřebujeme nové rukavice.","f"],"XP5d-0":["Ahoj, jak se máš?","f"],"XP5d-1":["Dobře, díky. Kdy je porada?","m"],"XP5d-2":["Porada je ve čtvrtek v deset. Můžeš mi dneska pomoct s pokusem?","f"],"XP5d-3":["Jasně. Kde jsou vzorky?","m"],"XP5d-4":["Vzorky jsou v lednici. A potřebujeme nové rukavice.","f"],"XP5d-5":["Napíšu e-mail. Zítra pracuju z domova.","m"],"XP6-0":["Dobrý den, paní doktorko,","m"],"XP6-1":["posílám vám výsledky z laboratoře.","f"],"XP6-2":["V příloze je tabulka.","m"],"XP6-3":["Můžeme se sejít v pondělí?","f"],"XP6-4":["Předem děkuji.","m"],"XP6-5":["S pozdravem","f"],"XP6d-0":["Dobrý den, paní doktorko,","f"],"XP6d-1":["posílám vám výsledky z laboratoře. V příloze je tabulka.","f"],"XP6d-2":["Můžeme se sejít v pondělí? Předem děkuji.","f"],"XP6d-3":["S pozdravem, Sam","f"],"XR-rano-0":["Jmenuju se Sam a bydlím v Plzni.","f"],"XR-rano-1":["Každé ráno vstávám v sedm hodin.","f"],"XR-rano-2":["Snídám chleba se sýrem a piju kávu.","f"],"XR-rano-3":["Potom jedu tramvají do práce.","f"],"XR-rano-4":["V práci mám hodně kolegů.","f"],"XR-rano-5":["Jsou moc milí a pomáhají mi s češtinou.","f"],"XR-trh-0":["V sobotu jdu s kamarádkou na trh.","f"],"XR-trh-1":["Na trhu je čerstvá zelenina a ovoce.","f"],"XR-trh-2":["Kupuju kilo jablek a dvě okurky.","f"],"XR-trh-3":["Paní se ptá: „Ještě něco?“","f"],"XR-trh-4":["Odpovídám: „Ne, děkuju, to je všechno.“","f"],"XR-trh-5":["Platím sto dvacet korun.","f"],"XR-nemoc-0":["Včera Tomáše bolela hlava a měl horečku.","f"],"XR-nemoc-1":["Nešel do práce a zavolal doktorce.","f"],"XR-nemoc-2":["Doktorka řekla: „Přijďte zítra v osm.“","f"],"XR-nemoc-3":["Ráno čekal v čekárně dvacet minut.","f"],"XR-nemoc-4":["Doktorka mu napsala lék a neschopenku.","f"],"XR-nemoc-5":["Teď je Tomáš doma a odpočívá.","f"],"XR-sumava-0":["O víkendu jsme jeli na Šumavu.","f"],"XR-sumava-1":["Bydleli jsme v malém hotelu u lesa.","f"],"XR-sumava-2":["V sobotu jsme šli na dlouhý výlet.","f"],"XR-sumava-3":["Počasí bylo krásné a svítilo slunce.","f"],"XR-sumava-4":["Večer jsme jedli guláš a pili pivo.","f"],"XR-sumava-5":["V neděli jsme jeli vlakem domů.","f"],"XR-prace-0":["Jana začala pracovat v laboratoři v Plzni.","f"],"XR-prace-1":["První den byl trochu těžký.","f"],"XR-prace-2":["Musela se naučit hodně nových slov.","f"],"XR-prace-3":["Kolegové jí všechno vysvětlili.","f"],"XR-prace-4":["Teď už ví, kde jsou vzorky a přístroje.","f"],"XR-prace-5":["Práce ji moc baví.","f"],"XR-plzen-0":["Plzeň je čtvrté největší město v Česku.","f"],"XR-plzen-1":["Je slavná pivem, které se tu vaří od roku 1842.","f"],"XR-plzen-2":["Na náměstí Republiky stojí katedrála svatého Bartoloměje.","f"],"XR-plzen-3":["Její věž je nejvyšší kostelní věž v Česku.","f"],"XR-plzen-4":["V Plzni je také velká zoologická a botanická zahrada.","f"],"XR-plzen-5":["V roce 2015 byla Plzeň Evropským hlavním městem kultury.","f"],"XE0":["Vlak do Prahy přijede na druhou kolej s desetiminutovým zpožděním.","f"],"XE1":["Dobrý den, tady ordinace doktorky Novákové. Váš termín je přesunutý na čtvrtek v devět hodin.","m"],"XE2":["Dneska máme v akci banány za dvacet devět korun za kilo.","f"],"XE3":["Ahoj, tady Petr. Sejdeme se v šest před kinem, ne v sedm.","m"],"XE4":["Zítra bude v Plzni zataženo a odpoledne bude pršet. Teplota kolem osmi stupňů.","f"],"NUP7":["To stojí 7 korun.","f"],"NUP12":["To stojí 12 korun.","f"],"NUP15":["To stojí 15 korun.","f"],"NUP19":["To stojí 19 korun.","f"],"NUP25":["To stojí 25 korun.","f"],"NUP36":["To stojí 36 korun.","f"],"NUP40":["To stojí 40 korun.","f"],"NUP49":["To stojí 49 korun.","f"],"NUP58":["To stojí 58 korun.","f"],"NUP65":["To stojí 65 korun.","f"],"NUP79":["To stojí 79 korun.","f"],"NUP86":["To stojí 86 korun.","f"],"NUP99":["To stojí 99 korun.","f"],"NUP115":["To stojí 115 korun.","f"],"NUP129":["To stojí 129 korun.","f"],"NUP150":["To stojí 150 korun.","f"],"NUP186":["To stojí 186 korun.","f"],"NUP240":["To stojí 240 korun.","f"],"NUP299":["To stojí 299 korun.","f"],"NUP350":["To stojí 350 korun.","f"],"NUP465":["To stojí 465 korun.","f"],"NUP590":["To stojí 590 korun.","f"],"NUP780":["To stojí 780 korun.","f"],"NUP999":["To stojí 999 korun.","f"],"NUP1250":["To stojí 1250 korun.","f"],"NUP2480":["To stojí 2480 korun.","f"],"NUP3600":["To stojí 3600 korun.","f"],"NUT1-0":["Je jedna hodina.","m"],"NUT3-0":["Jsou tři hodiny.","m"],"NUT8-0":["Je osm hodin.","m"],"NUT11-0":["Je jedenáct hodin.","m"],"NUT7-15":["Je čtvrt na osm.","m"],"NUT2-15":["Je čtvrt na tři.","m"],"NUT10-15":["Je čtvrt na jedenáct.","m"],"NUT7-30":["Je půl osmé.","m"],"NUT8-30":["Je půl deváté.","m"],"NUT12-30":["Je půl první.","m"],"NUT4-30":["Je půl páté.","m"],"NUT9-45":["Je tři čtvrtě na deset.","m"],"NUT5-45":["Je tři čtvrtě na šest.","m"],"NUT11-45":["Je tři čtvrtě na dvanáct.","m"],"NUD1-1":["Mám termín prvního ledna.","f"],"NUD3-3":["Mám termín třetího března.","f"],"NUD5-11":["Mám termín pátého listopadu.","f"],"NUD15-11":["Mám termín patnáctého listopadu.","f"],"NUD12-6":["Mám termín dvanáctého června.","f"],"NUD24-12":["Mám termín dvacátého čtvrtého prosince.","f"],"NUD8-4":["Mám termín osmého dubna.","f"],"NUD17-9":["Mám termín sedmnáctého září.","f"],"NUD21-2":["Mám termín dvacátého prvního února.","f"],"NUD30-7":["Mám termín třicátého července.","f"],"NUD2-10":["Mám termín druhého října.","f"],"NUD28-5":["Mám termín dvacátého osmého května.","f"],"NUF603214785":["Moje číslo je 603 214 785.","m"],"NUF777405312":["Moje číslo je 777 405 312.","m"],"NUF720118946":["Moje číslo je 720 118 946.","m"],"NUF608333251":["Moje číslo je 608 333 251.","m"],"NUF731902460":["Moje číslo je 731 902 460.","m"],"NUF775260818":["Moje číslo je 775 260 818.","m"],"NUW0":["nula","m"],"NUW1":["jedna","m"],"NUW2":["dva","m"],"NUW3":["tři","m"],"NUW4":["čtyři","m"],"NUW5":["pět","m"],"NUW6":["šest","m"],"NUW7":["sedm","m"],"NUW8":["osm","m"],"NUW9":["devět","m"],"NUW10":["deset","m"],"NUW11":["jedenáct","m"],"NUW12":["dvanáct","m"],"NUW13":["třináct","m"],"NUW14":["čtrnáct","m"],"NUW15":["patnáct","m"],"NUW16":["šestnáct","m"],"NUW17":["sedmnáct","m"],"NUW18":["osmnáct","m"],"NUW19":["devatenáct","m"],"NUW20":["dvacet","m"],"NUW21":["dvacet jedna","m"],"NUW22":["dvacet dva","m"],"NUW23":["dvacet tři","m"],"NUW24":["dvacet čtyři","m"],"NUW25":["dvacet pět","m"],"NUW26":["dvacet šest","m"],"NUW27":["dvacet sedm","m"],"NUW28":["dvacet osm","m"],"NUW29":["dvacet devět","m"],"NUW30":["třicet","m"],"NUW31":["třicet jedna","m"],"NUW32":["třicet dva","m"],"NUW33":["třicet tři","m"],"NUW34":["třicet čtyři","m"],"NUW35":["třicet pět","m"],"NUW36":["třicet šest","m"],"NUW37":["třicet sedm","m"],"NUW38":["třicet osm","m"],"NUW39":["třicet devět","m"],"NUW40":["čtyřicet","m"],"NUW41":["čtyřicet jedna","m"],"NUW42":["čtyřicet dva","m"],"NUW43":["čtyřicet tři","m"],"NUW44":["čtyřicet čtyři","m"],"NUW45":["čtyřicet pět","m"],"NUW46":["čtyřicet šest","m"],"NUW47":["čtyřicet sedm","m"],"NUW48":["čtyřicet osm","m"],"NUW49":["čtyřicet devět","m"],"NUW50":["padesát","m"],"NUW51":["padesát jedna","m"],"NUW52":["padesát dva","m"],"NUW53":["padesát tři","m"],"NUW54":["padesát čtyři","m"],"NUW55":["padesát pět","m"],"NUW56":["padesát šest","m"],"NUW57":["padesát sedm","m"],"NUW58":["padesát osm","m"],"NUW59":["padesát devět","m"],"NUW60":["šedesát","m"],"NUW61":["šedesát jedna","m"],"NUW62":["šedesát dva","m"],"NUW63":["šedesát tři","m"],"NUW64":["šedesát čtyři","m"],"NUW65":["šedesát pět","m"],"NUW66":["šedesát šest","m"],"NUW67":["šedesát sedm","m"],"NUW68":["šedesát osm","m"],"NUW69":["šedesát devět","m"],"NUW70":["sedmdesát","m"],"NUW71":["sedmdesát jedna","m"],"NUW72":["sedmdesát dva","m"],"NUW73":["sedmdesát tři","m"],"NUW74":["sedmdesát čtyři","m"],"NUW75":["sedmdesát pět","m"],"NUW76":["sedmdesát šest","m"],"NUW77":["sedmdesát sedm","m"],"NUW78":["sedmdesát osm","m"],"NUW79":["sedmdesát devět","m"],"NUW80":["osmdesát","m"],"NUW81":["osmdesát jedna","m"],"NUW82":["osmdesát dva","m"],"NUW83":["osmdesát tři","m"],"NUW84":["osmdesát čtyři","m"],"NUW85":["osmdesát pět","m"],"NUW86":["osmdesát šest","m"],"NUW87":["osmdesát sedm","m"],"NUW88":["osmdesát osm","m"],"NUW89":["osmdesát devět","m"],"NUW90":["devadesát","m"],"NUW91":["devadesát jedna","m"],"NUW92":["devadesát dva","m"],"NUW93":["devadesát tři","m"],"NUW94":["devadesát čtyři","m"],"NUW95":["devadesát pět","m"],"NUW96":["devadesát šest","m"],"NUW97":["devadesát sedm","m"],"NUW98":["devadesát osm","m"],"NUW99":["devadesát devět","m"],"NUW100":["sto","m"],"NUW200":["dvě stě","m"],"NUW300":["tři sta","m"],"NUW400":["čtyři sta","m"],"NUW500":["pět set","m"],"NUW600":["šest set","m"],"NUW700":["sedm set","m"],"NUW800":["osm set","m"],"NUW900":["devět set","m"],"NUW1000":["tisíc","m"],"NUW2000":["dva tisíce","m"],"NUW3000":["tři tisíce","m"],"NUW4000":["čtyři tisíce","m"],"NUW5000":["pět tisíc","m"],"NUW10000":["deset tisíc","m"],"NUW115":["sto patnáct","m"],"NUW128":["sto dvacet osm","f"],"NUW136":["sto třicet šest","m"],"NUW147":["sto čtyřicet sedm","f"],"NUW159":["sto padesát devět","m"],"NUW163":["sto šedesát tři","f"],"NUW174":["sto sedmdesát čtyři","m"],"NUW182":["sto osmdesát dva","f"],"NUW199":["sto devadesát devět","m"],"NUW214":["dvě stě čtrnáct","f"],"NUW238":["dvě stě třicet osm","m"],"NUW245":["dvě stě čtyřicet pět","f"],"NUW267":["dvě stě šedesát sedm","m"],"NUW289":["dvě stě osmdesát devět","f"],"NUW312":["tři sta dvanáct","m"],"NUW334":["tři sta třicet čtyři","f"],"NUW356":["tři sta padesát šest","m"],"NUW378":["tři sta sedmdesát osm","f"],"NUW399":["tři sta devadesát devět","m"],"NUW421":["čtyři sta dvacet jedna","f"],"NUW445":["čtyři sta čtyřicet pět","m"],"NUW467":["čtyři sta šedesát sedm","f"],"NUW482":["čtyři sta osmdesát dva","m"],"NUW513":["pět set třináct","f"],"NUW536":["pět set třicet šest","m"],"NUW558":["pět set padesát osm","f"],"NUW579":["pět set sedmdesát devět","m"],"NUW624":["šest set dvacet čtyři","f"],"NUW647":["šest set čtyřicet sedm","m"],"NUW681":["šest set osmdesát jedna","f"],"NUW702":["sedm set dva","m"],"NUW735":["sedm set třicet pět","f"],"NUW759":["sedm set padesát devět","m"],"NUW786":["sedm set osmdesát šest","f"],"NUW813":["osm set třináct","m"],"NUW848":["osm set čtyřicet osm","f"],"NUW869":["osm set šedesát devět","m"],"NUW891":["osm set devadesát jedna","f"],"NUW925":["devět set dvacet pět","m"],"NUW954":["devět set padesát čtyři","f"],"NUW978":["devět set sedmdesát osm","m"],"NUW999":["devět set devadesát devět","f"],"NUW1250":["tisíc dvě stě padesát","m"],"NUW1499":["tisíc čtyři sta devadesát devět","f"],"NUW1820":["tisíc osm set dvacet","m"],"NUW2350":["dva tisíce tři sta padesát","f"],"NUW2675":["dva tisíce šest set sedmdesát pět","m"],"NUW3140":["tři tisíce sto čtyřicet","f"],"NUW3999":["tři tisíce devět set devadesát devět","m"],"NUW4500":["čtyři tisíce pět set","f"],"NUW4725":["čtyři tisíce sedm set dvacet pět","m"],"NUW5380":["pět tisíc tři sta osmdesát","f"],"NUW6200":["šest tisíc dvě stě","m"],"NUW6573":["šest tisíc pět set sedmdesát tři","f"],"NUW7450":["sedm tisíc čtyři sta padesát","m"],"NUW7890":["sedm tisíc osm set devadesát","f"],"NUW8125":["osm tisíc sto dvacet pět","m"],"NUW9342":["devět tisíc tři sta čtyřicet dva","f"],"NUW9990":["devět tisíc devět set devadesát","m"],"XV0-0":["Já jsem doma.","m"],"XV0-1":["Ty jsi doma.","m"],"XV0-2":["On je doma.","m"],"XV0-3":["Ona je doma.","f"],"XV0-4":["My jsme doma.","m"],"XV0-5":["Vy jste doma.","m"],"XV0-6":["Oni jsou doma.","m"],"XV1-0":["Já mám čas.","m"],"XV1-1":["Ty máš čas.","m"],"XV1-2":["On má čas.","m"],"XV1-3":["Ona má čas.","f"],"XV1-4":["My máme čas.","m"],"XV1-5":["Vy máte čas.","m"],"XV1-6":["Oni mají čas.","m"],"XV2-0":["Já dělám večeři.","m"],"XV2-1":["Ty děláš večeři.","m"],"XV2-2":["On dělá večeři.","m"],"XV2-3":["Ona dělá večeři.","f"],"XV2-4":["My děláme večeři.","m"],"XV2-5":["Vy děláte večeři.","m"],"XV2-6":["Oni dělají večeři.","m"],"XV3-0":["Já znám Petra.","m"],"XV3-1":["Ty znáš Petra.","m"],"XV3-2":["On zná Petra.","m"],"XV3-3":["Ona zná Petra.","f"],"XV3-4":["My známe Petra.","m"],"XV3-5":["Vy znáte Petra.","m"],"XV3-6":["Oni znají Petra.","m"],"XV4-0":["Já hledám klíče.","m"],"XV4-1":["Ty hledáš klíče.","m"],"XV4-2":["On hledá klíče.","m"],"XV4-3":["Ona hledá klíče.","f"],"XV4-4":["My hledáme klíče.","m"],"XV4-5":["Vy hledáte klíče.","m"],"XV4-6":["Oni hledají klíče.","m"],"XV5-0":["Já čekám na tramvaj.","m"],"XV5-1":["Ty čekáš na tramvaj.","m"],"XV5-2":["On čeká na tramvaj.","m"],"XV5-3":["Ona čeká na tramvaj.","f"],"XV5-4":["My čekáme na tramvaj.","m"],"XV5-5":["Vy čekáte na tramvaj.","m"],"XV5-6":["Oni čekají na tramvaj.","m"],"XV6-0":["Já mluvím česky.","m"],"XV6-1":["Ty mluvíš česky.","m"],"XV6-2":["On mluví česky.","m"],"XV6-3":["Ona mluví česky.","f"],"XV6-4":["My mluvíme česky.","m"],"XV6-5":["Vy mluvíte česky.","m"],"XV6-6":["Oni mluví česky.","m"],"XV7-0":["Já rozumím česky.","m"],"XV7-1":["Ty rozumíš česky.","m"],"XV7-2":["On rozumí česky.","m"],"XV7-3":["Ona rozumí česky.","f"],"XV7-4":["My rozumíme česky.","m"],"XV7-5":["Vy rozumíte česky.","m"],"XV7-6":["Oni rozumějí česky.","m"],"XV8-0":["Já bydlím v Plzni.","m"],"XV8-1":["Ty bydlíš v Plzni.","m"],"XV8-2":["On bydlí v Plzni.","m"],"XV8-3":["Ona bydlí v Plzni.","f"],"XV8-4":["My bydlíme v Plzni.","m"],"XV8-5":["Vy bydlíte v Plzni.","m"],"XV8-6":["Oni bydlí v Plzni.","m"],"XV9-0":["Já vařím oběd.","m"],"XV9-1":["Ty vaříš oběd.","m"],"XV9-2":["On vaří oběd.","m"],"XV9-3":["Ona vaří oběd.","f"],"XV9-4":["My vaříme oběd.","m"],"XV9-5":["Vy vaříte oběd.","m"],"XV9-6":["Oni vaří oběd.","m"],"XV10-0":["Já vidím tramvaj.","m"],"XV10-1":["Ty vidíš tramvaj.","m"],"XV10-2":["On vidí tramvaj.","m"],"XV10-3":["Ona vidí tramvaj.","f"],"XV10-4":["My vidíme tramvaj.","m"],"XV10-5":["Vy vidíte tramvaj.","m"],"XV10-6":["Oni vidí tramvaj.","m"],"XV11-0":["Já se učím česky.","m"],"XV11-1":["Ty se učíš česky.","m"],"XV11-2":["On se učí česky.","m"],"XV11-3":["Ona se učí česky.","f"],"XV11-4":["My se učíme česky.","m"],"XV11-5":["Vy se učíte česky.","m"],"XV11-6":["Oni se učí česky.","m"],"XV12-0":["Já pracuju v laboratoři.","m"],"XV12-1":["Ty pracuješ v laboratoři.","m"],"XV12-2":["On pracuje v laboratoři.","m"],"XV12-3":["Ona pracuje v laboratoři.","f"],"XV12-4":["My pracujeme v laboratoři.","m"],"XV12-5":["Vy pracujete v laboratoři.","m"],"XV12-6":["Oni pracují v laboratoři.","m"],"XV13-0":["Já studuju medicínu.","m"],"XV13-1":["Ty studuješ medicínu.","m"],"XV13-2":["On studuje medicínu.","m"],"XV13-3":["Ona studuje medicínu.","f"],"XV13-4":["My studujeme medicínu.","m"],"XV13-5":["Vy studujete medicínu.","m"],"XV13-6":["Oni studují medicínu.","m"],"XV14-0":["Já kupuju chleba.","m"],"XV14-1":["Ty kupuješ chleba.","m"],"XV14-2":["On kupuje chleba.","m"],"XV14-3":["Ona kupuje chleba.","f"],"XV14-4":["My kupujeme chleba.","m"],"XV14-5":["Vy kupujete chleba.","m"],"XV14-6":["Oni kupují chleba.","m"],"XV15-0":["Já čtu knihu.","m"],"XV15-1":["Ty čteš knihu.","m"],"XV15-2":["On čte knihu.","m"],"XV15-3":["Ona čte knihu.","f"],"XV15-4":["My čteme knihu.","m"],"XV15-5":["Vy čtete knihu.","m"],"XV15-6":["Oni čtou knihu.","m"],"XV16-0":["Já píšu e-mail.","m"],"XV16-1":["Ty píšeš e-mail.","m"],"XV16-2":["On píše e-mail.","m"],"XV16-3":["Ona píše e-mail.","f"],"XV16-4":["My píšeme e-mail.","m"],"XV16-5":["Vy píšete e-mail.","m"],"XV16-6":["Oni píšou e-mail.","m"],"XV17-0":["Já piju kávu.","m"],"XV17-1":["Ty piješ kávu.","m"],"XV17-2":["On pije kávu.","m"],"XV17-3":["Ona pije kávu.","f"],"XV17-4":["My pijeme kávu.","m"],"XV17-5":["Vy pijete kávu.","m"],"XV17-6":["Oni pijou kávu.","m"],"XV18-0":["Já jdu do práce.","m"],"XV18-1":["Ty jdeš do práce.","m"],"XV18-2":["On jde do práce.","m"],"XV18-3":["Ona jde do práce.","f"],"XV18-4":["My jdeme do práce.","m"],"XV18-5":["Vy jdete do práce.","m"],"XV18-6":["Oni jdou do práce.","m"],"XV19-0":["Já jedu do Prahy.","m"],"XV19-1":["Ty jedeš do Prahy.","m"],"XV19-2":["On jede do Prahy.","m"],"XV19-3":["Ona jede do Prahy.","f"],"XV19-4":["My jedeme do Prahy.","m"],"XV19-5":["Vy jedete do Prahy.","m"],"XV19-6":["Oni jedou do Prahy.","m"],"XV20-0":["Já chci čaj.","m"],"XV20-1":["Ty chceš čaj.","m"],"XV20-2":["On chce čaj.","m"],"XV20-3":["Ona chce čaj.","f"],"XV20-4":["My chceme čaj.","m"],"XV20-5":["Vy chcete čaj.","m"],"XV20-6":["Oni chtějí čaj.","m"],"XV21-0":["Já můžu přijít zítra.","m"],"XV21-1":["Ty můžeš přijít zítra.","m"],"XV21-2":["On může přijít zítra.","m"],"XV21-3":["Ona může přijít zítra.","f"],"XV21-4":["My můžeme přijít zítra.","m"],"XV21-5":["Vy můžete přijít zítra.","m"],"XV21-6":["Oni můžou přijít zítra.","m"],"XV22-0":["Já jím polévku.","m"],"XV22-1":["Ty jíš polévku.","m"],"XV22-2":["On jí polévku.","m"],"XV22-3":["Ona jí polévku.","f"],"XV22-4":["My jíme polévku.","m"],"XV22-5":["Vy jíte polévku.","m"],"XV22-6":["Oni jedí polévku.","m"],"XV23-0":["Já spím dlouho.","m"],"XV23-1":["Ty spíš dlouho.","m"],"XV23-2":["On spí dlouho.","m"],"XV23-3":["Ona spí dlouho.","f"],"XV23-4":["My spíme dlouho.","m"],"XV23-5":["Vy spíte dlouho.","m"],"XV23-6":["Oni spí dlouho.","m"],"XVPbýt-m":["Včera jsem byl doma.","m"],"XVPbýt-f":["Včera jsem byla doma.","f"],"XVPbýt-pl":["Včera jsme byli doma.","m"],"XVPmít-m":["Včera jsem měl čas.","m"],"XVPmít-f":["Včera jsem měla čas.","f"],"XVPmít-pl":["Včera jsme měli čas.","m"],"XVPdělat-m":["Včera jsem dělal večeři.","m"],"XVPdělat-f":["Včera jsem dělala večeři.","f"],"XVPdělat-pl":["Včera jsme dělali večeři.","m"],"XVPhledat-m":["Včera jsem hledal klíče.","m"],"XVPhledat-f":["Včera jsem hledala klíče.","f"],"XVPhledat-pl":["Včera jsme hledali klíče.","m"],"XVPčekat-m":["Včera jsem čekal na tramvaj.","m"],"XVPčekat-f":["Včera jsem čekala na tramvaj.","f"],"XVPčekat-pl":["Včera jsme čekali na tramvaj.","m"],"XVPmluvit-m":["Včera jsem mluvil česky.","m"],"XVPmluvit-f":["Včera jsem mluvila česky.","f"],"XVPmluvit-pl":["Včera jsme mluvili česky.","m"],"XVPvařit-m":["Včera jsem vařil oběd.","m"],"XVPvařit-f":["Včera jsem vařila oběd.","f"],"XVPvařit-pl":["Včera jsme vařili oběd.","m"],"XVPvidět-m":["Včera jsem viděl tramvaj.","m"],"XVPvidět-f":["Včera jsem viděla tramvaj.","f"],"XVPvidět-pl":["Včera jsme viděli tramvaj.","m"],"XVPučit se-m":["Včera jsem se učil česky.","m"],"XVPučit se-f":["Včera jsem se učila česky.","f"],"XVPučit se-pl":["Včera jsme se učili česky.","m"],"XVPpracovat-m":["Včera jsem pracoval v laboratoři.","m"],"XVPpracovat-f":["Včera jsem pracovala v laboratoři.","f"],"XVPpracovat-pl":["Včera jsme pracovali v laboratoři.","m"],"XVPkupovat-m":["Včera jsem kupoval chleba.","m"],"XVPkupovat-f":["Včera jsem kupovala chleba.","f"],"XVPkupovat-pl":["Včera jsme kupovali chleba.","m"],"XVPčíst-m":["Včera jsem četl knihu.","m"],"XVPčíst-f":["Včera jsem četla knihu.","f"],"XVPčíst-pl":["Včera jsme četli knihu.","m"],"XVPpsát-m":["Včera jsem psal e-mail.","m"],"XVPpsát-f":["Včera jsem psala e-mail.","f"],"XVPpsát-pl":["Včera jsme psali e-mail.","m"],"XVPpít-m":["Včera jsem pil kávu.","m"],"XVPpít-f":["Včera jsem pila kávu.","f"],"XVPpít-pl":["Včera jsme pili kávu.","m"],"XVPjít-m":["Včera jsem šel do práce.","m"],"XVPjít-f":["Včera jsem šla do práce.","f"],"XVPjít-pl":["Včera jsme šli do práce.","m"],"XVPjet-m":["Včera jsem jel do Prahy.","m"],"XVPjet-f":["Včera jsem jela do Prahy.","f"],"XVPjet-pl":["Včera jsme jeli do Prahy.","m"],"XVPchtít-m":["Včera jsem chtěl čaj.","m"],"XVPchtít-f":["Včera jsem chtěla čaj.","f"],"XVPchtít-pl":["Včera jsme chtěli čaj.","m"],"XVPjíst-m":["Včera jsem jedl polévku.","m"],"XVPjíst-f":["Včera jsem jedla polévku.","f"],"XVPjíst-pl":["Včera jsme jedli polévku.","m"],"XVPspát-m":["Včera jsem spal dlouho.","m"],"XVPspát-f":["Včera jsem spala dlouho.","f"],"XVPspát-pl":["Včera jsme spali dlouho.","m"],"XA0-0":["Tomáš právě dělá úkol. Ještě není hotový.","f"],"XA0-1":["Tomáš už udělal úkol. Je hotovo!","f"],"XA1-0":["Tomáš právě píše e-mail. Ještě není hotový.","f"],"XA1-1":["Tomáš už napsal e-mail. Je hotovo!","f"],"XA2-0":["Tomáš právě čte knihu. Ještě není hotový.","f"],"XA2-1":["Tomáš už přečetl knihu. Je hotovo!","f"],"XA3-0":["Tomáš právě vaří oběd. Ještě není hotový.","f"],"XA3-1":["Tomáš už uvařil oběd. Je hotovo!","f"],"XA4-0":["Tomáš právě pije kávu. Ještě není hotový.","f"],"XA4-1":["Tomáš už vypil kávu. Je hotovo!","f"],"XA5-0":["Tomáš právě jí polévku. Ještě není hotový.","f"],"XA5-1":["Tomáš už snědl polévku. Je hotovo!","f"],"XA6-0":["Tomáš právě kupuje dárek. Ještě není hotový.","f"],"XA6-1":["Tomáš už koupil dárek. Je hotovo!","f"],"XM0":["Teď jdu pěšky do práce.","m"],"XM1":["Teď jedu autem do Prahy.","m"],"XM2":["Každý den chodím pěšky do školy.","m"],"XM3":["Každý den jezdím do práce tramvají.","m"],"XM4":["Právě jdu pěšky na poštu.","m"],"XM5":["Často jezdíme autem na chatu.","m"],"XM6":["Dnes jedeme vlakem do Brna.","m"],"XM7":["Každou sobotu chodíme pěšky do kina.","m"],"XPL0-1":["To jsou doktoři.","m"],"XPL0-2":["Tady je pět doktorů.","m"],"XPL0-3":["Píšu doktorům.","m"],"XPL0-4":["Vidím doktory.","m"],"XPL0-6":["Mluvíme o doktorech.","m"],"XPL0-7":["Jdu ven s doktory.","m"],"XPL1-1":["To jsou studenti.","f"],"XPL1-2":["Tady je pět studentů.","f"],"XPL1-3":["Píšu studentům.","f"],"XPL1-4":["Vidím studenty.","f"],"XPL1-6":["Mluvíme o studentech.","f"],"XPL1-7":["Jdu ven se studenty.","f"],"XPL2-1":["To jsou kamarádi.","m"],"XPL2-2":["Tady je pět kamarádů.","m"],"XPL2-3":["Píšu kamarádům.","m"],"XPL2-4":["Vidím kamarády.","m"],"XPL2-6":["Mluvíme o kamarádech.","m"],"XPL2-7":["Jdu ven s kamarády.","m"],"XPL3-1":["To jsou kolegové.","f"],"XPL3-2":["Tady je pět kolegů.","f"],"XPL3-3":["Píšu kolegům.","f"],"XPL3-4":["Vidím kolegy.","f"],"XPL3-6":["Mluvíme o kolezích.","f"],"XPL3-7":["Jdu ven s kolegy.","f"],"XPL4-1":["To jsou ženy.","m"],"XPL4-2":["Tady je pět žen.","m"],"XPL4-3":["Píšu ženám.","m"],"XPL4-4":["Vidím ženy.","m"],"XPL4-6":["Mluvíme o ženách.","m"],"XPL4-7":["Jdu ven se ženami.","m"],"XPL5-1":["To jsou kamarádky.","f"],"XPL5-2":["Tady je pět kamarádek.","f"],"XPL5-3":["Píšu kamarádkám.","f"],"XPL5-4":["Vidím kamarádky.","f"],"XPL5-6":["Mluvíme o kamarádkách.","f"],"XPL5-7":["Jdu ven s kamarádkami.","f"],"XPL6-1":["To jsou děti.","m"],"XPL6-2":["Tady je pět dětí.","m"],"XPL6-3":["Píšu dětem.","m"],"XPL6-4":["Vidím děti.","m"],"XPL6-6":["Mluvíme o dětech.","m"],"XPL6-7":["Jdu ven s dětmi.","m"],"XPL7-1":["To jsou hrady.","f"],"XPL7-2":["Tady je pět hradů.","f"],"XPL7-4":["Vidím hrady.","f"],"XPL7-6":["Mluvíme o hradech.","f"],"XPL8-1":["To jsou obchody.","m"],"XPL8-2":["Tady je pět obchodů.","m"],"XPL8-4":["Vidím obchody.","m"],"XPL8-6":["Mluvíme o obchodech.","m"],"XPL9-1":["To jsou pokoje.","f"],"XPL9-2":["Tady je pět pokojů.","f"],"XPL9-4":["Vidím pokoje.","f"],"XPL9-6":["Mluvíme o pokojích.","f"],"XPL10-1":["To jsou rohlíky.","m"],"XPL10-2":["Tady je pět rohlíků.","m"],"XPL10-4":["Vidím rohlíky.","m"],"XPL10-6":["Mluvíme o rohlících.","m"],"XPL10-7":["Co děláš s rohlíky?","m"],"XPL11-1":["To jsou knihy.","f"],"XPL11-2":["Tady je pět knih.","f"],"XPL11-4":["Vidím knihy.","f"],"XPL11-6":["Mluvíme o knihách.","f"],"XPL11-7":["Co děláš s knihami?","f"],"XPL12-1":["To jsou židle.","m"],"XPL12-2":["Tady je pět židlí.","m"],"XPL12-4":["Vidím židle.","m"],"XPL12-6":["Mluvíme o židlích.","m"],"XPL12-7":["Co děláš se židlemi?","m"],"XPL13-1":["To jsou místnosti.","f"],"XPL13-2":["Tady je pět místností.","f"],"XPL13-4":["Vidím místnosti.","f"],"XPL13-6":["Mluvíme o místnostech.","f"],"XPL14-1":["To jsou auta.","m"],"XPL14-2":["Tady je pět aut.","m"],"XPL14-4":["Vidím auta.","m"],"XPL14-6":["Mluvíme o autech.","m"],"XPL14-7":["Co děláš s auty?","m"],"XPL15-1":["To jsou města.","f"],"XPL15-2":["Tady je pět měst.","f"],"XPL15-4":["Vidím města.","f"],"XPL15-6":["Mluvíme o městech.","f"],"XPL16-1":["To jsou kola.","m"],"XPL16-2":["Tady je pět kol.","m"],"XPL16-4":["Vidím kola.","m"],"XPL16-6":["Mluvíme o kolech.","m"],"XPL16-7":["Co děláš s koly?","m"],"XPL17-1":["To jsou jablka.","f"],"XPL17-2":["Tady je pět jablek.","f"],"XPL17-4":["Vidím jablka.","f"],"XPL17-6":["Mluvíme o jablkách.","f"],"XPL17-7":["Co děláš s jablky?","f"],"XS0":["Jmenuju se Sam. Bydlím v Plzni a pracuju v laboratoři. Česky se učím rok.","f"],"XS1":["Vstávám v sedm. Ráno jedu tramvají do práce. Večer vařím a čtu.","f"],"XS2":["Dobrý den, potřebuju se objednat. Máte volný termín tento týden?","f"],"XS3":["O víkendu chodím do parku a vařím s kamarády.","f"],"XBlq125q":["Jak se to píše?","m"],"XBm3azxi":["Co znamená „pivo“?","f"],"XB1r9pe2g":["Mluvíte anglicky?","m"],"XBejdw2v":["Ještě jednou, prosím.","f"],"XB16vh1o4":["Mám otázku.","m"],"XBkfa9ts":["Jak se řekne česky „thank you“?","f"],"XB1daldop":["Nerozumím. Mluvte pomaleji, prosím.","m"],"XB1eoxm2h":["Rozumíte?","f"],"XBff7run":["Nerozumím.","m"],"XB4c7tr9":["Ano. – Jo. – Ne.","f"],"XBvzsx4m":["Děkuju. – Prosím.","m"],"XBvtng2s":["Prosím? (do telefonu)","f"],"XBwzmc61":["Prosím? (nerozuměl/a jsem)","m"],"XBg2esj7":["Prosím. (pouštím tě první)","f"],"XB71uxlu":["Prosím vás, kde je pošta?","m"],"XBdxctk":["To je tramvaj.","f"],"XBrenc5w":["To je autobus.","m"],"XBlz8q57":["To je taxi.","f"],"XB2cxmoe":["To je restaurace.","m"],"XBmcnaqk":["To je kino.","f"],"XBm88osw":["To je auto.","m"],"XB1b7t113":["To je škola.","f"],"XB17axpj":["To je infocentrum.","m"],"XBwr0zui":["To je supermarket.","f"],"XBry9r0l":["To je hotel.","m"],"XB5gbu4f":["Promiň, Marino!","f"],"XB19ekbmf":["Ahoj, Tome!","m"],"XB6lyynn":["Dobrý den, pane Nováku!","f"],"XB1cgm5cm":["Dobrý den, paní Nováková!","m"],"XB18fpk8l":["Mějte se hezky.","f"],"XB1875nfm":["Můžeme si tykat?","m"],"XB1ppk987":["Mějte se hezky. Na shledanou.","f"],"XB3kcors":["Děkuju, mám se dobře. A ty?","m"],"XBj1qeki":["Dobrý den.","f"],"XB3eixrb":["Ahoj.","m"],"XBt0d0zn":["Odkud jste?","f"],"XBmej26z":["Odkud jsi?","m"],"XBp4aq51":["Co děláte?","f"],"XBuw8f0l":["Co děláš?","m"],"XB13hngc1":["Jak se máte?","f"],"XBg9i4pt":["Jak se máš?","m"],"XB16z2d85":["Děkuju.","f"],"XB3j71ww":["Díky.","m"],"XB1v3c9nf":["Promiňte.","f"],"XB1lgkktm":["Promiň.","m"],"XB17ykppg":["Měj se hezky.","f"],"XBbsseo7":["Na shledanou.","m"],"XB3fnkd0":["A vy?","f"],"XB3fnlxy":["A ty?","m"],"XB10himsa":["Jak se máte? – Dobře, děkuju. A vy?","f"],"XB1x92w0p":["Jak se máš? – Ujde to.","m"],"XB1wv8d70":["Jak se máš? – Špatně.","f"],"XB33r4f2":["pane!","m"],"XB33r7h2":["paní!","f"],"XB1bqgxv6":["slečno!","m"],"XB3rvmbb":["Tome!","f"],"XBlze5oy":["Marino!","m"],"XByjg2go":["Evo!","f"],"XB1jogxbt":["Petře!","m"],"XB3ncei6":["Jano!","f"],"XB11yg7jy":["Těší mě.","m"],"XB1sxg0qw":["Jsem z Anglie.","f"],"XB1qsfxs0":["Jsem z Ameriky.","m"],"XB1x6s7by":["Jsem z Ruska.","f"],"XB10hiw4g":["Jsem z Austrálie.","m"],"XB1bdw5qi":["Jsem z Polska.","f"],"XB1grc5gc":["Jsem z Itálie.","m"],"XBibdje9":["Jsem ze Slovenska.","f"],"XBvoihtn":["To je pan Novák a to je paní Malá.","m"],"XB1svp5lt":["Odkud jste? – Jsem z Německa.","f"],"XBvg36t9":["To je náhoda!","m"],"XB1axbhqo":["Jsem z Česka.","f"],"XB1bfjmvo":["Jsem z Německa.","m"],"XBcd9hiz":["Jsem z Rakouska.","f"],"XBdmiex":["Jsem z Bulharska.","m"],"XB18icou1":["Jsem z Ukrajiny.","f"],"XB1rov3o":["Jsem z Francie.","m"],"XBa2awgk":["Jsem ze Španělska.","f"],"XBunzso6":["Odkud je? – Je z Polska.","m"],"XB1rhuj4v":["Co dělá? – Je doktor.","f"],"XB1ugsijj":["To je zajímavé!","m"],"XBbairot":["To je náhoda! Já jsem taky doktorka.","f"],"XBq8tssn":["Ne, já nejsem doktor. Jsem učitel.","m"],"XBihud24":["Ne, on není doma. Je v práci.","f"],"XB1vpey4r":["Ne, oni nejsou doma.","m"],"XB1am07mp":["Promiňte, nerozumím. Ještě jednou, prosím.","f"],"XBud485g":["Promiň, já dnes nemám čas.","m"],"XB1r8vi52":["Nejsem doma.","f"],"XB3hmj2":["já","m"],"XB3hmko":["ty","f"],"XB3hmjo":["on","m"],"XB375nyd":["ona","f"],"XB3hmla":["to","m"],"XB3hmep":["my","f"],"XB3hmq2":["vy","m"],"XB375nyl":["oni","f"],"XB1w2sbam":["Je úředník.","m"],"XBun1p2u":["Je dělnice.","f"],"XB1g4p5bm":["Je lékař.","m"],"XBk55iub":["Je servírka.","f"],"XB1xeo5f5":["Je sportovec.","m"],"XBl2kg2s":["Je politička.","f"],"XBzu4ywm":["Je prodavač.","m"],"XB1k9lgjn":["Je uklízečka.","f"],"XB2ghicd":["Jsem úředník. Pracuju v kanceláři.","m"],"XBu4j6jb":["Moje sestra je lékařka.","f"],"XB1ytsq27":["úředník","m"],"XB1sbt0rq":["úřednice","f"],"XBfsl93y":["dělník","m"],"XBnzlvqv":["dělnice","f"],"XB2sdf3n":["lékař","m"],"XB1gz7km1":["lékařka","f"],"XB1ddmc0c":["číšník","m"],"XBf2xrky":["servírka","f"],"XB1oqkij4":["sportovec","m"],"XBdytqr5":["sportovkyně","f"],"XB176tnhl":["politik","m"],"XBaym2sl":["politička","f"],"XB1pjczo7":["prodavač","m"],"XBwir9x9":["prodavačka","f"],"XB1jcruko":["uklízeč","m"],"XB1b6xeea":["uklízečka","f"],"XB86nope":["Kolik je dva plus tři?","m"],"XB1ltdakl":["Kolik je čtyři plus čtyři?","f"],"XB1x2tkj4":["Kolik je deset mínus tři?","m"],"XBe8tn4g":["Kolik je devět mínus pět?","f"],"XBt50wwo":["Můj e-mail je eva tečka nova zavináč seznam tečka cz.","m"],"XB1ywxjet":["Jaký máte telefon?","f"],"XB10xqfvf":["Jaký máte e-mail?","m"],"XB3sxw":["á","f"],"XBkj3ktz":["dlouhé á","m"],"XB3hmby":["bé","f"],"XB3hmcv":["cé","m"],"XB3hf0h":["čé","f"],"XB3hm2w":["dé","m"],"XB3heyr":["ďé","f"],"XB3sy4":["é","m"],"XBkj3ku7":["dlouhé é","f"],"XB1ok2t10":["e s háčkem","m"],"XB3hm7a":["ef","f"],"XB3hmgb":["gé","m"],"XB3hmks":["há","f"],"XB375ky7":["chá","m"],"XB1xqam9j":["měkké í","f"],"XBfcxt38":["dlouhé měkké í","m"],"XB3hmiu":["jé","f"],"XB3hmjz":["ká","m"],"XB3hm7g":["el","f"],"XB3hm7h":["em","m"],"XB3hm7i":["en","f"],"XB3hlzc":["eň","m"],"XB3sye":["ó","f"],"XB3hmsc":["pé","m"],"XB375rm9":["kvé","f"],"XB3hm7m":["er","m"],"XB3hlzt":["eř","f"],"XB3hm7n":["es","m"],"XB3hm01":["eš","f"],"XB3hmhk":["té","m"],"XB3hfl5":["ťé","f"],"XB3syn":["ú","m"],"XB16w2ay4":["u s čárkou","f"],"XB1xj4am5":["u s kroužkem","m"],"XB3hmu2":["vé","f"],"XB1h7p055":["dvojité vé","m"],"XB375mk4":["iks","f"],"XB97ny57":["ypsilon","m"],"XBbnj754":["dlouhé ypsilon","f"],"XB37644u":["zet","m"],"XB3701uy":["žet","f"],"XB1wh51xk":["Jaký máte telefon? – 777 214 365.","m"],"XByywsjw":["zavináč, tečka, pomlčka","f"],"XBquqgds":["eva tečka nova zavináč seznam tečka cz","m"],"XB1p9s8nm":["V nouzi volej 112.","f"],"XB11n8g23":["Kolik je jedna plus jedna? – Dva.","m"],"XB19vykz6":["Kolik je deset mínus tři? – Sedm.","f"],"XBb1vzt2":["Prosím vás, je tady nějaký supermarket?","m"],"XBc3o1yx":["Prosím vás, je tady nějaký hotel?","f"],"XBzxitla":["Prosím vás, je tady nějaká restaurace?","m"],"XB1fl6b2v":["Prosím vás, je tady nějaká škola?","f"],"XBvj8r32":["Prosím vás, je tady nějaká zastávka?","m"],"XBsnrtg3":["Jedna nová stanice je odtud pět minut pěšky.","f"],"XB1kfuol":["Jedna nová zastávka je odtud pět minut pěšky.","m"],"XB18rhwh":["Jeden nový obchod je odtud pět minut pěšky.","f"],"XBk8xx2n":["Jedno nové divadlo je odtud pět minut pěšky.","m"],"XB1dqhw9t":["Musíte jet dvojkou.","f"],"XB15fxqm6":["Jeďte céčkem.","m"],"XBfan7uv":["Hotel je odtud asi pět minut pěšky.","f"],"XBkobjex":["Prosím vás, nevíte, kde je tady nějaká restaurace?","m"],"XB160j29d":["Hm, nevím. Moment… Aha, už vím!","f"],"XB1hxy2n":["letiště","m"],"XB5wrzj8":["zastávka","f"],"XBw04mua":["stanice","m"],"XByj5y6t":["klub","f"],"XB2xtbbz":["hotel","m"],"XB1sex5o4":["restaurace","f"],"XByj6086":["kino","m"],"XB1dszd6o":["supermarket","f"],"XB1roo9ta":["nemocnice","m"],"XB1ald3rs":["divadlo","f"],"XBrx1i3s":["obchod","m"],"XB1wtpx4d":["škola","f"],"XB1t6uo32":["nádraží","m"],"XB2z3bku":["Prosím vás, nevíte, kde je tady nějaký hotel?","f"],"XBbeoxxy":["Jeden nový hotel je odtud pět minut pěšky.","m"],"XB18auvsw":["Kde je Brno? – Tady. Kde jsou Karlovy Vary? – Tam.","f"],"XB1eaw4rb":["Musíte jet jedničkou.","m"],"XB1kcm978":["Jeďte áčkem, béčkem, céčkem.","f"],"XBjjud9d":["Jedu tramvají do práce.","m"],"XBdwtfl0":["Jedu autem do Prahy.","f"],"XBox5l35":["Jedeme vlakem do Brna.","m"],"XB1g5n6tv":["Jdu pěšky do školy.","f"],"XB165c1sx":["Jedu na kole do parku.","m"],"XBe5qdku":["Hledám školu.","f"],"XB1gf1ry7":["Hledám restauraci.","m"],"XB1dk8ho7":["Hledám zastávku.","f"],"XB17vmwve":["Musíte jet čtyři stanice tramvají.","m"],"XBki0apf":["Jedu metrem.","f"],"XB17z20ra":["Jedu autobusem.","m"],"XB1xsk8ot":["Jedu autem.","f"],"XB7bqlkd":["Jedu vlakem.","m"],"XB14cqp8v":["Jedu tramvají.","f"],"XBw7vxme":["Jedu taxíkem.","m"],"XB1vx0oqf":["Jedu na kole.","f"],"XBa8jsa0":["Jdu pěšky.","m"],"XBtkqh2v":["Musíte jít doprava. Tam je supermarket. – Supermarket je vpravo.","f"],"XBn4oftj":["Musíte jít doleva. Tam je restaurace. – Restaurace je vlevo.","m"],"XBf10cbj":["Musíte jít nahoru. Tam je banka. – Banka je nahoře.","f"],"XBzdy5m7":["Musíte jít dolů. Tam je škola. – Škola je dole.","m"],"XBsa37bu":["Musíte jít doprostřed. Tam je kašna. – Kašna je uprostřed.","f"],"XB1cmu08t":["Musíte jít rovně, pak druhou ulicí doleva.","m"],"XB18tnw2k":["Jděte první ulicí doprava a pak rovně.","f"],"XB1qd45zk":["Musíte jít doprava.","m"],"XB11hwhw3":["To je vpravo.","f"],"XBef1q0q":["Musíte jít doleva.","m"],"XBdts1eh":["To je vlevo.","f"],"XBpcpe8w":["Musíte jít nahoru.","m"],"XB179kikr":["To je nahoře.","f"],"XBmwnxxj":["Musíte jít dolů.","m"],"XBmaqdnh":["To je dole.","f"],"XBvbvcpi":["Musíte jít doprostřed.","m"],"XBc13qe0":["To je uprostřed.","f"],"XB1hwhea":["Bydlím v Praze.","m"],"XB1oes4op":["Pracuju ve firmě.","f"],"XB19s7o5e":["Jsem ráda, že jsem tady.","m"],"XB1moz0v7":["Jsem rád, že jsem tady.","f"],"XB124a9wx":["Nechutnají mi knedlíky.","m"],"XBenyfai":["Chutná mi pivo.","f"],"XBh807xa":["Bydlím v centru a všechno je blízko.","m"],"XB1d0ldq7":["Líbí se mi tady.","f"],"XBb3pjuc":["Chutná mi pivo, ale nechutnají mi knedlíky.","m"],"XBatx7g4":["Nelíbí se mi tady.","f"],"XB1nd6rk1":["Nechutná mi pivo.","m"],"XB1ymz6my":["Chutnají mi knedlíky.","f"],"XB1yhk56w":["Nejsem rád, že jsem tady.","m"],"XB11x09bj":["v Praze","f"],"XB11wvy7m":["v Plzni","m"],"XBv9gcmg":["v centru","f"],"XB1afz2be":["ve škole","m"],"XB1ffz2wt":["ve firmě","f"],"XB9apxbi":["v restauraci","m"],"XBvidah8":["v kanceláři","f"],"XB1aramg6":["Jak se máš? Já se mám dobře.","m"],"XB94kkb5":["Bydlím v centru. Všechno je blízko.","f"],"XB1nm3hla":["Pracuju v kanceláři jako asistentka.","m"],"XBesd6l5":["To červené víno je dobré.","f"],"XB9igsg3":["Ten guláš je dobrý.","m"],"XB1hmy9o9":["Ta svíčková omáčka je dobrá.","f"],"XB111mb3i":["Ta česneková polévka je dobrá.","m"],"XB1mtfwx":["Ta vanilková zmrzlina je dobrá.","f"],"XB6hatw6":["Ten smažený sýr je dobrý.","m"],"XB2x0hz4":["Ty knedlíky jsou dobré.","f"],"XBxroptb":["Jaký je ten džus? Je dobrý? – Ne, není.","m"],"XB13jn1wv":["Ta česneková polévka je výborná.","f"],"XB1tpdjcm":["Palačinky se šlehačkou, prosím.","m"],"XB16d0kxs":["česneková polévka","f"],"XB3x9cgo":["bramborová polévka","m"],"XB1p6xthq":["smažený sýr","f"],"XB1k6v6yl":["pečené kuře","m"],"XBuifbi2":["smažený kapr","f"],"XB3ty9si":["grilovaný losos","m"],"XB1yigf7j":["vepřové maso","f"],"XB1b9uhzr":["svíčková omáčka","m"],"XB2utx3v":["guláš","f"],"XB1ktcqi3":["dušená rýže","m"],"XB6ehnpx":["zeleninový salát","f"],"XB40wlzz":["vanilková zmrzlina","m"],"XB18wnenu":["pomerančový džus","f"],"XBj7clho":["perlivá voda","m"],"XBdc2svs":["černé pivo","f"],"XBpcjk9d":["červené víno","m"],"XBovx7oq":["palačinky se šlehačkou","f"],"XBkoarzy":["zmrzlina s ovocem","m"],"XBt0m51n":["Dám si bramborovou polévku.","f"],"XB1k7iqxw":["Dám si svíčkovou omáčku.","m"],"XB1ysd1zg":["Dám si vanilkovou zmrzlinu.","f"],"XB198pkxr":["Dám si perlivou vodu.","m"],"XB1ywesm4":["Dám si grilovaného lososa.","f"],"XBl1wvmc":["Dám si smaženého kapra.","m"],"XBxk2wpc":["Dušená rýže je dobrá.","f"],"XBnu2gk2":["Já si dám pivo.","m"],"XB1hf47as":["Dvakrát polévku, prosím.","f"],"XB1an8mif":["Dvakrát kávu a jednou čaj, prosím.","m"],"XBmzmc9l":["Dám si česnekovou polévku a smažený sýr.","f"],"XB1gpfsyy":["Zaplatím, prosím. Dohromady.","m"],"XB17zne2b":["Co si dáte k pití?","f"],"XB1gw4rv7":["Dám si česnekovou polévku.","m"],"XB19lmngy":["Dám si smažený sýr.","f"],"XBpxyvpd":["Dám si pečené kuře.","m"],"XB1vu43k3":["Dám si vepřové maso.","f"],"XB18pzqp3":["Dám si guláš.","m"],"XB1vec2o0":["Dám si dušenou rýži.","f"],"XB2s08q1":["Dám si zeleninový salát.","m"],"XB1j1um5i":["Dám si pomerančový džus.","f"],"XBfy1s10":["Dám si černé pivo.","m"],"XB16k2y25":["Dám si červené víno.","f"],"XBs2t7kk":["Dobrý den. Co si dáte k pití?","m"],"XB6ed6wc":["Já si dám černé pivo. A ty, Evo?","f"],"XBn4bv65":["Já si dám pomerančový džus.","m"],"XB1mq4rhk":["A co si dáte k jídlu?","f"],"XB1kexcs7":["Dám si česnekovou polévku a grilovaného lososa.","m"],"XBmid7w1":["Já nechci polévku. Dám si hovězí maso a dušenou rýži.","f"],"XB1vu9uym":["Prosím, tady to je. Dobrou chuť!","m"],"XBrn9rvv":["Zaplatím, prosím.","f"],"XBnkriu2":["Zvlášť, nebo dohromady?","m"],"XB9zwb7o":["Dohromady.","f"],"XB1k9uao6":["Mám ráda čokoládu.","m"],"XB1o95c38":["Mám rád kávu.","f"],"XB754v3l":["Máme rádi pivo.","m"],"XBholqb5":["Já nejím maso.","f"],"XBwwnxn3":["Já nepiju alkohol.","m"],"XB76aty7":["Mám rád kávu, ale nepiju alkohol.","f"],"XB1fi02vp":["Sedněte si, prosím.","m"],"XB131fzwu":["Jste moc hodná.","f"],"XB1dbqval":["Promiňte, kde je tady toaleta?","m"],"XBq9nytt":["Dáte si kávu, nebo čaj?","f"],"XBfhcgop":["Pojďte dál. Sedněte si, prosím.","m"],"XB1uapu75":["To je mi líto.","f"],"XBgqybft":["Pojďte dál.","m"],"XB94ew6c":["Prosím, odložte si.","f"],"XB1yxy3vl":["A nechcete cukr a mléko? – Ano, děkuju.","m"],"XB1m9znzo":["Dáte si dort? – Ne, děkuju. – To je škoda.","f"],"XB12gcf3z":["Tak možná později.","m"],"XBxosniw":["Už musím jít.","f"],"XB1t24heg":["Pozdravujte sestru!","m"],"XB1udwz7":["Sestra je bohužel nemocná. – To je mi líto.","f"],"XBlntkmm":["Můžu vám nějak pomoct? – Jste moc hodná.","m"],"XBv0fndg":["Máš špatnou náladu?","f"],"XB152nm3y":["Dneska mám dobrou náladu.","m"],"XB1kjmut6":["Nechceš jít na kafe? – Ne, díky. Mám rande.","f"],"XB15kjv2n":["Mám hlad a mám žízeň.","m"],"XBb1y82q":["Máš pravdu.","f"],"XB10u3179":["Mám čas.","m"],"XB177ayz":["Mám hlad.","f"],"XB1joh3i":["Mám žízeň.","m"],"XB1r1u0vp":["Mám strach.","f"],"XB1p4x94e":["Mám štěstí.","m"],"XB174qv0i":["Mám smůlu.","f"],"XB12ono1c":["Mám nápad.","m"],"XB1mcty0e":["Mám pravdu.","f"],"XB18xf6l":["Mám rýmu.","m"],"XB153mqqk":["Mám vztek.","f"],"XBzvm0ed":["Mám dovolenou.","m"],"XB17xo8ye":["Mám rande.","f"],"XB1rfoce0":["Mám dobrou náladu.","m"],"XBl6ex3d":["Mám špatnou náladu.","f"],"XBafwdv2":["Mám moc práce.","m"],"XB1v0dcwz":["Mám peníze.","f"],"XB330hlg":["Mám problémy.","m"],"XBwczv37":["Mám dietu.","f"],"XB11gfi8y":["Mám lekci.","m"],"XB6zxbau":["Mám depresi.","f"],"XByj66r0":["kafe","m"],"XB3hmm8":["jo","f"],"XB375xyq":["seš","m"],"XByiw9s6":["fajn","f"],"XB1pmdoit":["jsem v pohodě","m"],"XByiw9z1":["fakt","f"],"XB1g5sfv5":["Čau, Jano. Jak se máš?","m"],"XB1iafbj9":["Čau, ujde to. A co ty?","f"],"XBljpikz":["Mám se fajn, ale mám moc práce. Nechceš jít na kafe?","m"],"XBxje3rf":["Ne, díky. Mám rande!","f"],"XB1ipc54l":["Já telefonuju mamince.","m"],"XBw62k20":["My plánujeme výlet.","f"],"XB1ui6qr1":["Oni organizují konferenci.","m"],"XB1lilm2u":["My spolu doma komunikujeme česky.","f"],"XB7wjvht":["Ta studentka je moc aktivní.","m"],"XB1pdvsij":["To centrum je moderní.","f"],"XB1qeavfo":["Jsem optimistický a aktivní.","m"],"XBwe1hfw":["student","f"],"XB1pnfa05":["profesor","m"],"XBhlmwj3":["manažer","f"],"XB1lweo3u":["prezident","m"],"XBf6et6c":["kamarád","f"],"XB97dced":["kontakt","m"],"XBlmliil":["mítink","f"],"XB9706fj":["koncert","m"],"XBtuiq3m":["problém","f"],"XByiwgcr":["film","m"],"XBtulbdd":["program","f"],"XB15f1g6e":["studentka","m"],"XBxnotf4":["univerzita","f"],"XBx03ndf":["konference","m"],"XB176u6sw":["policie","f"],"XB2vzp44":["metro","m"],"XByjbulb":["víno","f"],"XB355qac":["rádio","m"],"XBfbj0l7":["espresso","f"],"XB1jb605v":["centrum","m"],"XB1kq04cl":["energický, optimistický, moderní, kvalitní, aktivní, inteligentní","f"],"XB74xehq":["To je ono!","m"],"XB1x6jq2d":["Musíte jet trojkou.","f"],"XB13plb4x":["Prosím vás, je tady nějaké parkoviště?","m"],"XB1u3ktpf":["Je to tady moc hezké.","f"],"XB1uy28gf":["Ahoj Jano,","m"],"XB110zxx8":["jak se máš? Já se mám moc dobře. Teď bydlím v Praze a pracuju v jedné mezinárodní organizaci.","f"],"XB1tfcuc3":["Bydlím blízko centra. Můj byt je malý, ale hezký. Dole je kavárna a vzadu je parkoviště.","m"],"XB18ieo3b":["Do práce jezdím trojkou, je to jen deset minut.","f"],"XBz314x4":["V sobotu jsme byli na Pražském hradě a na Karlově mostě. Je to tady moc hezké.","m"],"XBf85r0t":["Chutná mi české pivo, ale nechutnají mi knedlíky.","f"],"XB1ptg080":["Měj se hezky, Lena","m"],"XBdau4zd":["Lena bydlí v Praze.","f"],"XBsl1qfc":["Lena pracuje ve škole.","m"],"XBawmuuf":["Lena má velký byt.","f"],"XB1wtd7np":["Do práce jezdí tramvají nebo autobusem číslo 3.","m"],"XBwqaewh":["Lena byla na Pražském hradě.","f"],"XB1fht5s2":["Leně chutnají knedlíky.","m"],"XB8l91oz":["Dáš si Colu, nebo Fantu?","f"],"XB1c69y41":["Dáme si čokoládovou zmrzlinu.","m"],"XB1pmkcmg":["Dám si dobrého kvalitního lososa.","f"],"XBae3jv6":["Jsem spokojená.","m"],"XBt3cmin":["Mám se docela fajn.","f"],"XB1fn1g15":["dušené zelí","m"],"XB1ci7bj6":["okurkový salát","f"],"XB1wg62th":["ovocný čaj","m"],"XBxtiu87":["neperlivá voda","f"],"XB194qgwa":["světlé pivo","m"],"XBvzah05":["bílé víno","f"],"XB1mf1o3r":["čokoládová zmrzlina","m"],"XB1i5cuel":["Tady je tři sta korun. Zbytek je spropitné.","f"],"XB1bcuzoc":["Promiňte, odskočím si.","m"],"XB1dd3l47":["Jste nějaký smutný.","f"],"XBt65h6g":["Seš nějaká smutná.","m"],"XBh50t5r":["Jsem spokojená. Mám krásný život.","f"],"XBtmpvlf":["Můžeme si tykat? – Určitě.","m"],"XDq0":["Prosím vás, kde je restaurace?","f"],"XDa0":["Musíte jít doleva.","m"],"XDg0":["Prosím vás, kde je restaurace? – Musíte jít doleva.","m"],"XDq1":["Prosím vás, kde je náměstí?","f"],"XDa1":["Musíte jít rovně.","m"],"XDg1":["Prosím vás, kde je náměstí? – Musíte jít rovně.","m"],"XDq2":["Prosím vás, kde je kino?","f"],"XDa2":["Musíte jít doprava.","m"],"XDg2":["Prosím vás, kde je kino? – Musíte jít doprava.","m"],"XDq3":["Prosím vás, kde je pošta?","f"],"XDa3":["Musíte jít nahoru.","m"],"XDg3":["Prosím vás, kde je pošta? – Musíte jít nahoru.","m"],"XDq4":["Prosím vás, kde je zastávka?","f"],"XDa4":["Musíte jet dolů.","m"],"XDg4":["Prosím vás, kde je zastávka? – Musíte jet dolů.","m"],"XDq5":["Prosím vás, kde je škola?","f"],"XDa5":["Musíte jet zpátky.","m"],"XDg5":["Prosím vás, kde je škola? – Musíte jet zpátky.","m"],"XDw0":["rovně","f"],"XDh0":["Musíte jít rovně.","m"],"XDw1":["doprava","f"],"XDh1":["Musíte jít doprava.","m"],"XDw2":["doleva","f"],"XDh2":["Musíte jít doleva.","m"],"XDw3":["nahoru","f"],"XDh3":["Musíte jít nahoru.","m"],"XDw4":["dolů","f"],"XDh4":["Musíte jít dolů.","m"],"XDw5":["zpátky","f"],"XDh5":["Musíte jít zpátky.","m"],"XK0":["To je blízko, sto metrů odtud.","f"],"XK1":["To je blízko, tři sta metrů odtud.","f"],"XK2":["To je blízko, pět set metrů odtud.","f"],"XK3":["To je daleko, patnáct kilometrů odtud.","f"],"XK4":["To je daleko, třicet osm kilometrů odtud.","f"],"XK5":["To je daleko, sto padesát sedm kilometrů odtud.","f"],"XT0":["tři, třináct, třicet","m"],"XT1":["čtyři, čtrnáct, čtyřicet","m"],"XT2":["sedm, sedmnáct, sedmdesát","m"],"XT3":["osm, osmnáct, osmdesát","m"],"XT4":["dva, dvanáct, dvacet","m"],"XT5":["devět, devatenáct, devadesát","m"],"XWw1":["Ahoj Petře, máš dnes večer čas? Můžeme se sejít v sedm u kina. Pak můžeme jít na pivo. Napiš mi. Sam","f"],"XWw2":["Ahoj Jano, zítra nemůžu přijít na poradu, protože mám horečku. Můžeš mi potom napsat, co bylo na poradě? Díky moc. Sam","f"],"XWw3":["Dobrý den, potřebuju se objednat na prohlídku. Už týden mě bolí záda. Můžu přijít v pondělí nebo ve středu dopoledne. Děkuji. S pozdravem Sam","f"],"XWw4":["Dobrý den, pane Nováku, v bytě od včera nefunguje topení a je tady velká zima. Kdy může přijít opravář? Jsem doma každý den od pěti. Děkuji. Sam","f"],"XWw5":["Milý Tomáši, všechno nejlepší k narozeninám! Přeju ti hodně zdraví, štěstí a hodně úspěchů v práci. Sam","f"],"XWw6":["Dobrý den, paní doktorko, posílám vám výsledky včerejšího pokusu. V příloze je tabulka a dva grafy. Můžeme se sejít v pondělí odpoledne? Předem děkuji. S pozdravem Sam","f"],"XWw7":["Ahoj Petře, jak se máš? Já se mám dobře. Bydlím v Plzni v centru a pracuju v laboratoři. Blízko je park a dobrá kavárna. Líbí se mi tady, protože všechno je blízko. Chutná mi české pivo, ale nechutnají mi knedlíky. Měj se hezky! Sam","f"]}
+{
+"F1-0": [
+"Promiňte.",
+"m",
+"-30%"
+],
+"F1-1": [
+"Nerozumím.",
+"f",
+"-30%"
+],
+"F1-11": [
+"Nevadí.",
+"m",
+"-30%"
+],
+"F1-12": [
+"Pomoc!",
+"f",
+"-30%"
+],
+"L1-1": [
+"Ahoj!",
+"m",
+"-30%"
+],
+"L1-3": [
+"Děkuju.",
+"f",
+"-30%"
+],
+"L1-4": [
+"Prosím.",
+"m",
+"-30%"
+],
+"L1-5": [
+"Ano.",
+"f",
+"-30%"
+],
+"L1-6": [
+"Ne.",
+"m",
+"-30%"
+],
+"L1-7": [
+"nula",
+"f",
+"-30%"
+],
+"L1-8": [
+"jedna",
+"m",
+"-30%"
+],
+"L1-9": [
+"dva",
+"f",
+"-30%"
+],
+"L1-10": [
+"tři",
+"m",
+"-30%"
+],
+"L1-11": [
+"čtyři",
+"f",
+"-30%"
+],
+"L1-12": [
+"pět",
+"m",
+"-30%"
+],
+"L1-13": [
+"šest",
+"f",
+"-30%"
+],
+"L1-14": [
+"sedm",
+"m",
+"-30%"
+],
+"L1-15": [
+"osm",
+"f",
+"-30%"
+],
+"L1-16": [
+"devět",
+"m",
+"-30%"
+],
+"L1-17": [
+"deset",
+"f",
+"-30%"
+],
+"L1-18": [
+"učitel",
+"m",
+"-30%"
+],
+"L1-19": [
+"učitelka",
+"f",
+"-30%"
+],
+"L1-20": [
+"doktor",
+"m",
+"-30%"
+],
+"L1-21": [
+"doktorka",
+"f",
+"-30%"
+],
+"L1-22": [
+"policista",
+"m",
+"-30%"
+],
+"L1-23": [
+"policistka",
+"f",
+"-30%"
+],
+"L1-24": [
+"hasič",
+"m",
+"-30%"
+],
+"L1-25": [
+"hasička",
+"f",
+"-30%"
+],
+"L1-26": [
+"zpěvák",
+"m",
+"-30%"
+],
+"L1-27": [
+"zpěvačka",
+"f",
+"-30%"
+],
+"L1-28": [
+"vědec",
+"m",
+"-30%"
+],
+"L1-29": [
+"vědkyně",
+"f",
+"-30%"
+],
+"L1-30": [
+"manažer",
+"m",
+"-30%"
+],
+"L1-31": [
+"manažerka",
+"f",
+"-30%"
+],
+"L1-32": [
+"uklízeč",
+"m",
+"-30%"
+],
+"L1-33": [
+"uklízečka",
+"f",
+"-30%"
+],
+"L1-34": [
+"herec",
+"m",
+"-30%"
+],
+"L1-35": [
+"herečka",
+"f",
+"-30%"
+],
+"L1-36": [
+"prodavač",
+"m",
+"-30%"
+],
+"L1-37": [
+"prodavačka",
+"f",
+"-30%"
+],
+"L2-0": [
+"doma",
+"m",
+"-30%"
+],
+"L2-1": [
+"hotel",
+"f",
+"-30%"
+],
+"L2-2": [
+"divadlo",
+"m",
+"-30%"
+],
+"L2-3": [
+"kancelář",
+"f",
+"-30%"
+],
+"L2-4": [
+"kino",
+"m",
+"-30%"
+],
+"L2-5": [
+"nemocnice",
+"f",
+"-30%"
+],
+"L2-6": [
+"nádraží",
+"m",
+"-30%"
+],
+"L2-7": [
+"náměstí",
+"f",
+"-30%"
+],
+"L2-8": [
+"obchod",
+"m",
+"-30%"
+],
+"L2-9": [
+"restaurace",
+"f",
+"-30%"
+],
+"L2-10": [
+"práce",
+"m",
+"-30%"
+],
+"L2-11": [
+"supermarket",
+"f",
+"-30%"
+],
+"L2-12": [
+"škola",
+"m",
+"-30%"
+],
+"L2-13": [
+"univerzita",
+"f",
+"-30%"
+],
+"L2-14": [
+"banka",
+"m",
+"-30%"
+],
+"L2-15": [
+"pošta",
+"f",
+"-30%"
+],
+"L2-16": [
+"vlevo",
+"m",
+"-30%"
+],
+"L2-17": [
+"vpravo",
+"f",
+"-30%"
+],
+"L2-18": [
+"nahoře",
+"m",
+"-30%"
+],
+"L2-19": [
+"dole",
+"f",
+"-30%"
+],
+"L2-26": [
+"dvacet",
+"m",
+"-30%"
+],
+"L2-27": [
+"třicet",
+"f",
+"-30%"
+],
+"L2-28": [
+"čtyřicet",
+"m",
+"-30%"
+],
+"L2-29": [
+"padesát",
+"f",
+"-30%"
+],
+"L2-30": [
+"sto",
+"m",
+"-30%"
+],
+"L3-0": [
+"čaj",
+"f",
+"-30%"
+],
+"L3-1": [
+"káva",
+"m",
+"-30%"
+],
+"L3-2": [
+"voda",
+"f",
+"-30%"
+],
+"L3-3": [
+"pivo",
+"m",
+"-30%"
+],
+"L3-4": [
+"víno",
+"f",
+"-30%"
+],
+"L3-5": [
+"mléko",
+"m",
+"-30%"
+],
+"L3-6": [
+"polévka",
+"f",
+"-30%"
+],
+"L3-7": [
+"maso",
+"m",
+"-30%"
+],
+"L3-8": [
+"kuře",
+"f",
+"-30%"
+],
+"L3-9": [
+"rýže",
+"m",
+"-30%"
+],
+"L3-10": [
+"brambory",
+"f",
+"-30%"
+],
+"L3-11": [
+"hranolky",
+"m",
+"-30%"
+],
+"L3-12": [
+"palačinky",
+"f",
+"-30%"
+],
+"L3-13": [
+"zmrzlina",
+"m",
+"-30%"
+],
+"L3-14": [
+"chleba",
+"f",
+"-30%"
+],
+"L3-15": [
+"sýr",
+"m",
+"-30%"
+],
+"L3-16": [
+"jablko",
+"f",
+"-30%"
+],
+"L3-17": [
+"vejce",
+"m",
+"-30%"
+],
+"L3-18": [
+"salát",
+"f",
+"-30%"
+],
+"L3-19": [
+"dort",
+"m",
+"-30%"
+],
+"L4-0": [
+"rodina",
+"f",
+"-30%"
+],
+"L4-1": [
+"maminka",
+"m",
+"-30%"
+],
+"L4-2": [
+"tatínek",
+"f",
+"-30%"
+],
+"L4-3": [
+"babička",
+"m",
+"-30%"
+],
+"L4-4": [
+"dědeček",
+"f",
+"-30%"
+],
+"L4-5": [
+"manžel",
+"m",
+"-30%"
+],
+"L4-6": [
+"manželka",
+"f",
+"-30%"
+],
+"L4-7": [
+"syn",
+"m",
+"-30%"
+],
+"L4-8": [
+"dcera",
+"f",
+"-30%"
+],
+"L4-11": [
+"miminko",
+"m",
+"-30%"
+],
+"L4-12": [
+"pes",
+"f",
+"-30%"
+],
+"L21-0": [
+"pes",
+"f",
+"-30%"
+],
+"L4-13": [
+"kočka",
+"m",
+"-30%"
+],
+"L21-1": [
+"kočka",
+"m",
+"-30%"
+],
+"L4-17": [
+"tisíc",
+"f",
+"-30%"
+],
+"L5-5": [
+"vstávat",
+"m",
+"-30%"
+],
+"L5-6": [
+"snídat",
+"f",
+"-30%"
+],
+"L5-7": [
+"obědvat",
+"m",
+"-30%"
+],
+"L5-8": [
+"večeřet",
+"f",
+"-30%"
+],
+"L5-15": [
+"plavat",
+"m",
+"-30%"
+],
+"L5-18": [
+"vařit",
+"f",
+"-30%"
+],
+"L5-19": [
+"uklízet",
+"m",
+"-30%"
+],
+"L5-20": [
+"tancovat",
+"f",
+"-30%"
+],
+"L5-21": [
+"spát",
+"m",
+"-30%"
+],
+"L6-1": [
+"Slovensko",
+"f",
+"-30%"
+],
+"L6-2": [
+"Německo",
+"m",
+"-30%"
+],
+"L6-3": [
+"Rakousko",
+"f",
+"-30%"
+],
+"L6-4": [
+"Polsko",
+"m",
+"-30%"
+],
+"L6-5": [
+"Anglie",
+"f",
+"-30%"
+],
+"L6-6": [
+"Francie",
+"m",
+"-30%"
+],
+"L6-7": [
+"Itálie",
+"f",
+"-30%"
+],
+"L6-8": [
+"Španělsko",
+"m",
+"-30%"
+],
+"L6-9": [
+"Rusko",
+"f",
+"-30%"
+],
+"L6-10": [
+"USA",
+"m",
+"-30%"
+],
+"L6-11": [
+"Kanada",
+"f",
+"-30%"
+],
+"L6-12": [
+"Japonsko",
+"m",
+"-30%"
+],
+"L6-13": [
+"Čína",
+"f",
+"-30%"
+],
+"L6-14": [
+"Austrálie",
+"m",
+"-30%"
+],
+"L6-15": [
+"Čech",
+"f",
+"-30%"
+],
+"L6-16": [
+"Češka",
+"m",
+"-30%"
+],
+"L7-0": [
+"dům",
+"f",
+"-30%"
+],
+"L7-1": [
+"byt",
+"m",
+"-30%"
+],
+"L7-2": [
+"okno",
+"f",
+"-30%"
+],
+"L7-3": [
+"dveře",
+"m",
+"-30%"
+],
+"L7-4": [
+"klíč",
+"f",
+"-30%"
+],
+"L7-5": [
+"postel",
+"m",
+"-30%"
+],
+"L7-6": [
+"židle",
+"f",
+"-30%"
+],
+"L7-7": [
+"gauč",
+"m",
+"-30%"
+],
+"L7-8": [
+"lampa",
+"f",
+"-30%"
+],
+"L7-9": [
+"vana",
+"m",
+"-30%"
+],
+"L7-10": [
+"sprcha",
+"f",
+"-30%"
+],
+"L7-11": [
+"zrcadlo",
+"m",
+"-30%"
+],
+"L7-12": [
+"televize",
+"f",
+"-30%"
+],
+"L8-0": [
+"číst",
+"m",
+"-30%"
+],
+"L8-1": [
+"fotografovat",
+"f",
+"-30%"
+],
+"L8-11": [
+"lyžovat",
+"m",
+"-30%"
+],
+"L8-12": [
+"odpočívat",
+"f",
+"-30%"
+],
+"L8-13": [
+"plést",
+"m",
+"-30%"
+],
+"L9-0": [
+"oko",
+"f",
+"-30%"
+],
+"L9-1": [
+"oči",
+"m",
+"-30%"
+],
+"L9-2": [
+"ucho",
+"f",
+"-30%"
+],
+"L9-3": [
+"nos",
+"m",
+"-30%"
+],
+"L9-4": [
+"ústa",
+"f",
+"-30%"
+],
+"L9-5": [
+"zub",
+"m",
+"-30%"
+],
+"L9-6": [
+"ruka",
+"f",
+"-30%"
+],
+"L9-7": [
+"ruce",
+"m",
+"-30%"
+],
+"L9-8": [
+"noha",
+"f",
+"-30%"
+],
+"L9-9": [
+"nohy",
+"m",
+"-30%"
+],
+"L9-10": [
+"vlasy",
+"f",
+"-30%"
+],
+"L9-11": [
+"vousy",
+"m",
+"-30%"
+],
+"L9-12": [
+"srdce",
+"f",
+"-30%"
+],
+"L10-0": [
+"pekařství",
+"m",
+"-30%"
+],
+"L10-1": [
+"cukrárna",
+"f",
+"-30%"
+],
+"L10-2": [
+"potraviny",
+"m",
+"-30%"
+],
+"L10-5": [
+"lékárna",
+"f",
+"-30%"
+],
+"L10-6": [
+"drogerie",
+"m",
+"-30%"
+],
+"L10-7": [
+"květinářství",
+"f",
+"-30%"
+],
+"L10-8": [
+"knihkupectví",
+"m",
+"-30%"
+],
+"L10-9": [
+"papírnictví",
+"f",
+"-30%"
+],
+"L10-10": [
+"trafika",
+"m",
+"-30%"
+],
+"L10-11": [
+"obuv",
+"f",
+"-30%"
+],
+"L10-12": [
+"oděvy",
+"m",
+"-30%"
+],
+"L10-14": [
+"elektro",
+"f",
+"-30%"
+],
+"L11-0": [
+"kufr",
+"m",
+"-30%"
+],
+"L11-1": [
+"batoh",
+"f",
+"-30%"
+],
+"L11-2": [
+"pas",
+"m",
+"-30%"
+],
+"L11-3": [
+"peníze",
+"f",
+"-30%"
+],
+"L11-4": [
+"mapa",
+"m",
+"-30%"
+],
+"L11-5": [
+"jízdenka",
+"f",
+"-30%"
+],
+"L11-6": [
+"letenka",
+"m",
+"-30%"
+],
+"L11-7": [
+"fotoaparát",
+"f",
+"-30%"
+],
+"L11-8": [
+"nabíječka",
+"m",
+"-30%"
+],
+"L11-9": [
+"adaptér",
+"f",
+"-30%"
+],
+"L11-11": [
+"průvodce",
+"m",
+"-30%"
+],
+"L12-0": [
+"Vánoce",
+"f",
+"-30%"
+],
+"L12-2": [
+"dárek",
+"m",
+"-30%"
+],
+"L12-3": [
+"kapr",
+"f",
+"-30%"
+],
+"L12-4": [
+"cukroví",
+"m",
+"-30%"
+],
+"L12-5": [
+"Velikonoce",
+"f",
+"-30%"
+],
+"L12-6": [
+"Silvestr",
+"m",
+"-30%"
+],
+"L12-15": [
+"nakupovat",
+"f",
+"-30%"
+],
+"L13-0": [
+"líný",
+"m",
+"-30%"
+],
+"L13-1": [
+"pracovitý",
+"f",
+"-30%"
+],
+"L13-2": [
+"statečný",
+"m",
+"-30%"
+],
+"L13-3": [
+"zvědavý",
+"f",
+"-30%"
+],
+"L13-4": [
+"zlý",
+"m",
+"-30%"
+],
+"L13-5": [
+"protivný",
+"f",
+"-30%"
+],
+"L13-6": [
+"zdvořilý",
+"m",
+"-30%"
+],
+"L13-7": [
+"tvrdohlavý",
+"f",
+"-30%"
+],
+"L13-8": [
+"zapomnětlivý",
+"m",
+"-30%"
+],
+"L14-6": [
+"Prší.",
+"f",
+"-30%"
+],
+"QA17-a1": [
+"Prší.",
+"f",
+"-30%"
+],
+"L14-7": [
+"Sněží.",
+"m",
+"-30%"
+],
+"L14-8": [
+"Mrzne.",
+"f",
+"-30%"
+],
+"L15-0": [
+"počítač",
+"m",
+"-30%"
+],
+"L15-1": [
+"notebook",
+"f",
+"-30%"
+],
+"L15-2": [
+"klávesnice",
+"m",
+"-30%"
+],
+"L15-3": [
+"myš",
+"f",
+"-30%"
+],
+"L15-4": [
+"tiskárna",
+"m",
+"-30%"
+],
+"L15-5": [
+"sluchátka",
+"f",
+"-30%"
+],
+"L15-6": [
+"mobil",
+"m",
+"-30%"
+],
+"L15-7": [
+"zásuvka",
+"f",
+"-30%"
+],
+"L15-8": [
+"e-mail",
+"m",
+"-30%"
+],
+"L15-9": [
+"internet",
+"f",
+"-30%"
+],
+"L16-0": [
+"tričko",
+"m",
+"-30%"
+],
+"L16-1": [
+"košile",
+"f",
+"-30%"
+],
+"L16-2": [
+"kalhoty",
+"m",
+"-30%"
+],
+"L16-3": [
+"šaty",
+"f",
+"-30%"
+],
+"L16-4": [
+"bunda",
+"m",
+"-30%"
+],
+"L16-5": [
+"boty",
+"f",
+"-30%"
+],
+"L16-6": [
+"ponožky",
+"m",
+"-30%"
+],
+"L16-7": [
+"čepice",
+"f",
+"-30%"
+],
+"L16-8": [
+"klobouk",
+"m",
+"-30%"
+],
+"L16-9": [
+"šála",
+"f",
+"-30%"
+],
+"L16-10": [
+"rukavice",
+"m",
+"-30%"
+],
+"L16-11": [
+"kabelka",
+"f",
+"-30%"
+],
+"L16-12": [
+"plavky",
+"m",
+"-30%"
+],
+"L16-13": [
+"červená",
+"f",
+"-30%"
+],
+"L16-14": [
+"modrá",
+"m",
+"-30%"
+],
+"L16-15": [
+"zelená",
+"f",
+"-30%"
+],
+"L16-16": [
+"žlutá",
+"m",
+"-30%"
+],
+"L16-17": [
+"černá",
+"f",
+"-30%"
+],
+"L16-18": [
+"bílá",
+"m",
+"-30%"
+],
+"L16-19": [
+"šedá",
+"f",
+"-30%"
+],
+"L16-20": [
+"hnědá",
+"m",
+"-30%"
+],
+"L17-0": [
+"instalatér",
+"f",
+"-30%"
+],
+"L17-1": [
+"elektrikář",
+"m",
+"-30%"
+],
+"L17-2": [
+"automechanik",
+"f",
+"-30%"
+],
+"L17-3": [
+"truhlář",
+"m",
+"-30%"
+],
+"L17-4": [
+"zedník",
+"f",
+"-30%"
+],
+"L17-5": [
+"zámečník",
+"m",
+"-30%"
+],
+"L17-6": [
+"švec",
+"f",
+"-30%"
+],
+"L17-7": [
+"švadlena",
+"m",
+"-30%"
+],
+"L17-8": [
+"kadeřnice",
+"f",
+"-30%"
+],
+"L17-9": [
+"kosmetička",
+"m",
+"-30%"
+],
+"L17-10": [
+"masér",
+"f",
+"-30%"
+],
+"L17-11": [
+"stěhovák",
+"m",
+"-30%"
+],
+"L19-8": [
+"Neplač!",
+"f",
+"-30%"
+],
+"L20-0": [
+"krájet",
+"m",
+"-30%"
+],
+"L20-1": [
+"míchat",
+"f",
+"-30%"
+],
+"L20-2": [
+"péct",
+"m",
+"-30%"
+],
+"L20-3": [
+"smažit",
+"f",
+"-30%"
+],
+"L20-4": [
+"grilovat",
+"m",
+"-30%"
+],
+"L20-5": [
+"lžíce",
+"f",
+"-30%"
+],
+"L20-6": [
+"příbor",
+"m",
+"-30%"
+],
+"L20-7": [
+"pánev",
+"f",
+"-30%"
+],
+"L21-2": [
+"kůň",
+"m",
+"-30%"
+],
+"L21-3": [
+"kráva",
+"f",
+"-30%"
+],
+"L21-4": [
+"prase",
+"m",
+"-30%"
+],
+"L21-5": [
+"slepice",
+"f",
+"-30%"
+],
+"L21-6": [
+"ovce",
+"m",
+"-30%"
+],
+"L21-7": [
+"had",
+"f",
+"-30%"
+],
+"L21-8": [
+"lev",
+"m",
+"-30%"
+],
+"L21-9": [
+"tygr",
+"f",
+"-30%"
+],
+"L21-10": [
+"slon",
+"m",
+"-30%"
+],
+"L21-11": [
+"žirafa",
+"f",
+"-30%"
+],
+"L21-12": [
+"zebra",
+"m",
+"-30%"
+],
+"L21-13": [
+"opice",
+"f",
+"-30%"
+],
+"L21-14": [
+"medvěd",
+"m",
+"-30%"
+],
+"L21-15": [
+"vlk",
+"f",
+"-30%"
+],
+"L21-16": [
+"liška",
+"m",
+"-30%"
+],
+"L21-17": [
+"zajíc",
+"f",
+"-30%"
+],
+"L21-18": [
+"jelen",
+"m",
+"-30%"
+],
+"L21-19": [
+"sova",
+"f",
+"-30%"
+],
+"L21-20": [
+"hroch",
+"m",
+"-30%"
+],
+"L21-21": [
+"nosorožec",
+"f",
+"-30%"
+],
+"L21-22": [
+"krokodýl",
+"m",
+"-30%"
+],
+"L22-0": [
+"programátor",
+"f",
+"-30%"
+],
+"L22-1": [
+"programátorka",
+"m",
+"-30%"
+],
+"L22-2": [
+"kuchař",
+"f",
+"-30%"
+],
+"L22-3": [
+"kuchařka",
+"m",
+"-30%"
+],
+"L22-4": [
+"pilot",
+"f",
+"-30%"
+],
+"L22-5": [
+"farmář",
+"m",
+"-30%"
+],
+"L22-6": [
+"malíř",
+"f",
+"-30%"
+],
+"L22-7": [
+"malířka",
+"m",
+"-30%"
+],
+"L22-8": [
+"plat",
+"f",
+"-30%"
+],
+"L22-9": [
+"porada",
+"m",
+"-30%"
+],
+"L22-10": [
+"školení",
+"f",
+"-30%"
+],
+"L22-14": [
+"nemocenská",
+"m",
+"-30%"
+],
+"L23-0": [
+"obraz",
+"f",
+"-30%"
+],
+"L23-1": [
+"výstava",
+"m",
+"-30%"
+],
+"L23-2": [
+"socha",
+"f",
+"-30%"
+],
+"L23-5": [
+"orchestr",
+"m",
+"-30%"
+],
+"L23-7": [
+"noty",
+"f",
+"-30%"
+],
+"L23-8": [
+"báseň",
+"m",
+"-30%"
+],
+"L23-9": [
+"román",
+"f",
+"-30%"
+],
+"L23-10": [
+"sedadlo",
+"m",
+"-30%"
+],
+"L23-11": [
+"první",
+"f",
+"-30%"
+],
+"L23-12": [
+"druhý",
+"m",
+"-30%"
+],
+"L23-13": [
+"třetí",
+"f",
+"-30%"
+],
+"L24-0": [
+"hrad",
+"m",
+"-30%"
+],
+"L24-1": [
+"kostel",
+"f",
+"-30%"
+],
+"L24-2": [
+"synagoga",
+"m",
+"-30%"
+],
+"L24-3": [
+"muzeum",
+"f",
+"-30%"
+],
+"L24-4": [
+"galerie",
+"m",
+"-30%"
+],
+"L24-5": [
+"fontána",
+"f",
+"-30%"
+],
+"L24-6": [
+"most",
+"m",
+"-30%"
+],
+"L24-7": [
+"orloj",
+"f",
+"-30%"
+],
+"L24-8": [
+"rozhledna",
+"m",
+"-30%"
+],
+"L24-9": [
+"hory",
+"f",
+"-30%"
+],
+"L24-10": [
+"řeka",
+"m",
+"-30%"
+],
+"L24-11": [
+"les",
+"f",
+"-30%"
+],
+"M0-5-a1": [
+"Nemám.",
+"m",
+"-30%"
+],
+"QA12-a1": [
+"Hlava.",
+"f",
+"-30%"
+],
+"QA19-a1": [
+"Babičce.",
+"m",
+"-30%"
+],
+"K-ok": [
+"Výborně",
+"m",
+"-30%"
+],
+"K-done": [
+"Hotovo",
+"m",
+"-30%"
+],
+"NUW0": [
+"nula",
+"m",
+"-30%"
+],
+"NUW1": [
+"jedna",
+"m",
+"-30%"
+],
+"NUW2": [
+"dva",
+"m",
+"-30%"
+],
+"NUW3": [
+"tři",
+"m",
+"-30%"
+],
+"NUW4": [
+"čtyři",
+"m",
+"-30%"
+],
+"NUW5": [
+"pět",
+"m",
+"-30%"
+],
+"NUW6": [
+"šest",
+"m",
+"-30%"
+],
+"NUW7": [
+"sedm",
+"m",
+"-30%"
+],
+"NUW8": [
+"osm",
+"m",
+"-30%"
+],
+"NUW9": [
+"devět",
+"m",
+"-30%"
+],
+"NUW10": [
+"deset",
+"m",
+"-30%"
+],
+"NUW11": [
+"jedenáct",
+"m",
+"-30%"
+],
+"NUW12": [
+"dvanáct",
+"m",
+"-30%"
+],
+"NUW13": [
+"třináct",
+"m",
+"-30%"
+],
+"NUW14": [
+"čtrnáct",
+"m",
+"-30%"
+],
+"NUW15": [
+"patnáct",
+"m",
+"-30%"
+],
+"NUW16": [
+"šestnáct",
+"m",
+"-30%"
+],
+"NUW17": [
+"sedmnáct",
+"m",
+"-30%"
+],
+"NUW18": [
+"osmnáct",
+"m",
+"-30%"
+],
+"NUW19": [
+"devatenáct",
+"m",
+"-30%"
+],
+"NUW20": [
+"dvacet",
+"m",
+"-30%"
+],
+"NUW30": [
+"třicet",
+"m",
+"-30%"
+],
+"NUW40": [
+"čtyřicet",
+"m",
+"-30%"
+],
+"NUW50": [
+"padesát",
+"m",
+"-30%"
+],
+"NUW60": [
+"šedesát",
+"m",
+"-30%"
+],
+"NUW70": [
+"sedmdesát",
+"m",
+"-30%"
+],
+"NUW80": [
+"osmdesát",
+"m",
+"-30%"
+],
+"NUW90": [
+"devadesát",
+"m",
+"-30%"
+],
+"NUW100": [
+"sto",
+"m",
+"-30%"
+],
+"NUW1000": [
+"tisíc",
+"m",
+"-30%"
+],
+"XB1eoxm2h": [
+"Rozumíte?",
+"f",
+"-30%"
+],
+"XBff7run": [
+"Nerozumím.",
+"m",
+"-30%"
+],
+"XB3eixrb": [
+"Ahoj.",
+"m",
+"-30%"
+],
+"XB16z2d85": [
+"Děkuju.",
+"f",
+"-30%"
+],
+"XB3j71ww": [
+"Díky.",
+"m",
+"-30%"
+],
+"XB1v3c9nf": [
+"Promiňte.",
+"f",
+"-30%"
+],
+"XB1lgkktm": [
+"Promiň.",
+"m",
+"-30%"
+],
+"XB33r4f2": [
+"pane!",
+"m",
+"-30%"
+],
+"XB33r7h2": [
+"paní!",
+"f",
+"-30%"
+],
+"XB1bqgxv6": [
+"slečno!",
+"m",
+"-30%"
+],
+"XB3rvmbb": [
+"Tome!",
+"f",
+"-30%"
+],
+"XBlze5oy": [
+"Marino!",
+"m",
+"-30%"
+],
+"XByjg2go": [
+"Evo!",
+"f",
+"-30%"
+],
+"XB1jogxbt": [
+"Petře!",
+"m",
+"-30%"
+],
+"XB3ncei6": [
+"Jano!",
+"f",
+"-30%"
+],
+"XB3hmj2": [
+"já",
+"m",
+"-30%"
+],
+"XB3hmko": [
+"ty",
+"f",
+"-30%"
+],
+"XB3hmjo": [
+"on",
+"m",
+"-30%"
+],
+"XB375nyd": [
+"ona",
+"f",
+"-30%"
+],
+"XB3hmla": [
+"to",
+"m",
+"-30%"
+],
+"XB3hmep": [
+"my",
+"f",
+"-30%"
+],
+"XB3hmq2": [
+"vy",
+"m",
+"-30%"
+],
+"XB375nyl": [
+"oni",
+"f",
+"-30%"
+],
+"XB1ytsq27": [
+"úředník",
+"m",
+"-30%"
+],
+"XB1sbt0rq": [
+"úřednice",
+"f",
+"-30%"
+],
+"XBfsl93y": [
+"dělník",
+"m",
+"-30%"
+],
+"XBnzlvqv": [
+"dělnice",
+"f",
+"-30%"
+],
+"XB2sdf3n": [
+"lékař",
+"m",
+"-30%"
+],
+"XB1gz7km1": [
+"lékařka",
+"f",
+"-30%"
+],
+"XB1ddmc0c": [
+"číšník",
+"m",
+"-30%"
+],
+"XBf2xrky": [
+"servírka",
+"f",
+"-30%"
+],
+"XB1oqkij4": [
+"sportovec",
+"m",
+"-30%"
+],
+"XBdytqr5": [
+"sportovkyně",
+"f",
+"-30%"
+],
+"XB176tnhl": [
+"politik",
+"m",
+"-30%"
+],
+"XBaym2sl": [
+"politička",
+"f",
+"-30%"
+],
+"XB1pjczo7": [
+"prodavač",
+"m",
+"-30%"
+],
+"XBwir9x9": [
+"prodavačka",
+"f",
+"-30%"
+],
+"XB1jcruko": [
+"uklízeč",
+"m",
+"-30%"
+],
+"XB1b6xeea": [
+"uklízečka",
+"f",
+"-30%"
+],
+"XB3sxw": [
+"á",
+"f",
+"-30%"
+],
+"XB3hmby": [
+"bé",
+"f",
+"-30%"
+],
+"XB3hmcv": [
+"cé",
+"m",
+"-30%"
+],
+"XB3hf0h": [
+"čé",
+"f",
+"-30%"
+],
+"XB3hm2w": [
+"dé",
+"m",
+"-30%"
+],
+"XB3heyr": [
+"ďé",
+"f",
+"-30%"
+],
+"XB3sy4": [
+"é",
+"m",
+"-30%"
+],
+"XB3hm7a": [
+"ef",
+"f",
+"-30%"
+],
+"XB3hmgb": [
+"gé",
+"m",
+"-30%"
+],
+"XB3hmks": [
+"há",
+"f",
+"-30%"
+],
+"XB375ky7": [
+"chá",
+"m",
+"-30%"
+],
+"XB3hmiu": [
+"jé",
+"f",
+"-30%"
+],
+"XB3hmjz": [
+"ká",
+"m",
+"-30%"
+],
+"XB3hm7g": [
+"el",
+"f",
+"-30%"
+],
+"XB3hm7h": [
+"em",
+"m",
+"-30%"
+],
+"XB3hm7i": [
+"en",
+"f",
+"-30%"
+],
+"XB3hlzc": [
+"eň",
+"m",
+"-30%"
+],
+"XB3sye": [
+"ó",
+"f",
+"-30%"
+],
+"XB3hmsc": [
+"pé",
+"m",
+"-30%"
+],
+"XB375rm9": [
+"kvé",
+"f",
+"-30%"
+],
+"XB3hm7m": [
+"er",
+"m",
+"-30%"
+],
+"XB3hlzt": [
+"eř",
+"f",
+"-30%"
+],
+"XB3hm7n": [
+"es",
+"m",
+"-30%"
+],
+"XB3hm01": [
+"eš",
+"f",
+"-30%"
+],
+"XB3hmhk": [
+"té",
+"m",
+"-30%"
+],
+"XB3hfl5": [
+"ťé",
+"f",
+"-30%"
+],
+"XB3syn": [
+"ú",
+"m",
+"-30%"
+],
+"XB3hmu2": [
+"vé",
+"f",
+"-30%"
+],
+"XB375mk4": [
+"iks",
+"f",
+"-30%"
+],
+"XB97ny57": [
+"ypsilon",
+"m",
+"-30%"
+],
+"XB37644u": [
+"zet",
+"m",
+"-30%"
+],
+"XB3701uy": [
+"žet",
+"f",
+"-30%"
+],
+"XB1hxy2n": [
+"letiště",
+"m",
+"-30%"
+],
+"XB5wrzj8": [
+"zastávka",
+"f",
+"-30%"
+],
+"XBw04mua": [
+"stanice",
+"m",
+"-30%"
+],
+"XByj5y6t": [
+"klub",
+"f",
+"-30%"
+],
+"XB2xtbbz": [
+"hotel",
+"m",
+"-30%"
+],
+"XB1sex5o4": [
+"restaurace",
+"f",
+"-30%"
+],
+"XByj6086": [
+"kino",
+"m",
+"-30%"
+],
+"XB1dszd6o": [
+"supermarket",
+"f",
+"-30%"
+],
+"XB1roo9ta": [
+"nemocnice",
+"m",
+"-30%"
+],
+"XB1ald3rs": [
+"divadlo",
+"f",
+"-30%"
+],
+"XBrx1i3s": [
+"obchod",
+"m",
+"-30%"
+],
+"XB1wtpx4d": [
+"škola",
+"f",
+"-30%"
+],
+"XB1t6uo32": [
+"nádraží",
+"m",
+"-30%"
+],
+"XB2utx3v": [
+"guláš",
+"f",
+"-30%"
+],
+"XB9zwb7o": [
+"Dohromady.",
+"f",
+"-30%"
+],
+"XByj66r0": [
+"kafe",
+"m",
+"-30%"
+],
+"XB3hmm8": [
+"jo",
+"f",
+"-30%"
+],
+"XB375xyq": [
+"seš",
+"m",
+"-30%"
+],
+"XByiw9s6": [
+"fajn",
+"f",
+"-30%"
+],
+"XByiw9z1": [
+"fakt",
+"f",
+"-30%"
+],
+"XBwe1hfw": [
+"student",
+"f",
+"-30%"
+],
+"XB1pnfa05": [
+"profesor",
+"m",
+"-30%"
+],
+"XBhlmwj3": [
+"manažer",
+"f",
+"-30%"
+],
+"XB1lweo3u": [
+"prezident",
+"m",
+"-30%"
+],
+"XBf6et6c": [
+"kamarád",
+"f",
+"-30%"
+],
+"XB97dced": [
+"kontakt",
+"m",
+"-30%"
+],
+"XBlmliil": [
+"mítink",
+"f",
+"-30%"
+],
+"XB9706fj": [
+"koncert",
+"m",
+"-30%"
+],
+"XBtuiq3m": [
+"problém",
+"f",
+"-30%"
+],
+"XByiwgcr": [
+"film",
+"m",
+"-30%"
+],
+"XBtulbdd": [
+"program",
+"f",
+"-30%"
+],
+"XB15f1g6e": [
+"studentka",
+"m",
+"-30%"
+],
+"XBxnotf4": [
+"univerzita",
+"f",
+"-30%"
+],
+"XBx03ndf": [
+"konference",
+"m",
+"-30%"
+],
+"XB176u6sw": [
+"policie",
+"f",
+"-30%"
+],
+"XB2vzp44": [
+"metro",
+"m",
+"-30%"
+],
+"XByjbulb": [
+"víno",
+"f",
+"-30%"
+],
+"XB355qac": [
+"rádio",
+"m",
+"-30%"
+],
+"XBfbj0l7": [
+"espresso",
+"f",
+"-30%"
+],
+"XB1jb605v": [
+"centrum",
+"m",
+"-30%"
+],
+"XDw0": [
+"rovně",
+"f",
+"-30%"
+],
+"XDw1": [
+"doprava",
+"f",
+"-30%"
+],
+"XDw2": [
+"doleva",
+"f",
+"-30%"
+],
+"XDw3": [
+"nahoru",
+"f",
+"-30%"
+],
+"XDw4": [
+"dolů",
+"f",
+"-30%"
+],
+"XDw5": [
+"zpátky",
+"f",
+"-30%"
+],
+"XB2rwojx": [
+"Prosím vás, je tady nějaké letiště?",
+"m"
+],
+"XB19d74g8": [
+"Jedno nové letiště je odtud pět minut pěšky.",
+"f"
+],
+"XB72vk3c": [
+"Prosím vás, je tady nějaká stanice?",
+"m"
+],
+"XBwqwr4j": [
+"Prosím vás, je tady nějaký klub?",
+"m"
+],
+"XB804c": [
+"Jeden nový klub je odtud pět minut pěšky.",
+"f"
+],
+"XB9we6yt": [
+"Jedna nová restaurace je odtud pět minut pěšky.",
+"f"
+],
+"XBvrk3x0": [
+"Prosím vás, je tady nějaké kino?",
+"m"
+],
+"XBai01w1": [
+"Jedno nové kino je odtud pět minut pěšky.",
+"f"
+],
+"XB16p2d55": [
+"Jeden nový supermarket je odtud pět minut pěšky.",
+"f"
+],
+"XB1h3gnlg": [
+"Prosím vás, je tady nějaká nemocnice?",
+"m"
+],
+"XBa0c3tr": [
+"Jedna nová nemocnice je odtud pět minut pěšky.",
+"f"
+],
+"XBdwibt6": [
+"Prosím vás, je tady nějaké divadlo?",
+"m"
+],
+"XB1ixzdce": [
+"Prosím vás, je tady nějaký obchod?",
+"m"
+],
+"XBxjbdo": [
+"Jedna nová škola je odtud pět minut pěšky.",
+"f"
+],
+"XB1qnd7b0": [
+"Prosím vás, je tady nějaké nádraží?",
+"m"
+],
+"XB18tnfd": [
+"Jedno nové nádraží je odtud pět minut pěšky.",
+"f"
+],
+"XBc8ahna": [
+"Ta bramborová polévka je dobrá.",
+"m"
+],
+"XB1asimfp": [
+"To pečené kuře je dobré.",
+"m"
+],
+"XB1ixnxdj": [
+"To vepřové maso je dobré.",
+"f"
+],
+"XBf0swzp": [
+"Ta dušená rýže je dobrá.",
+"m"
+],
+"XBqzbpt9": [
+"Ten zeleninový salát je dobrý.",
+"f"
+],
+"XBi0k5ky": [
+"Ten pomerančový džus je dobrý.",
+"f"
+],
+"XB14g1jk2": [
+"Ta perlivá voda je dobrá.",
+"m"
+],
+"XBzeky40": [
+"To černé pivo je dobré.",
+"f"
+]
+}
