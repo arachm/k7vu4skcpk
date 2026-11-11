@@ -2390,75 +2390,79 @@
 "To černé pivo je dobré.",
 "f"
 ],
+"XB17q10l4": [
+"Jsem optimistická a aktivní.",
+"f"
+],
 "XB1pyrpaa": [
 "Marina podtržítko kaz zavináč gmail tečka com.",
-"m"
+"f"
 ],
 "XB14kbd8h": [
 "Ona je prezidentka.",
-"f"
+"m"
 ],
 "XB13mtrp9": [
 "Já pracuju tady ve škole.",
-"m"
+"f"
 ],
 "XBqs8ut1": [
 "To je jedno.",
-"f"
+"m"
 ],
 "XB1h8l9nf": [
 "podtržítko",
-"m",
+"f",
 "-30%"
 ],
 "XB1hrhtkz": [
 "zavináč",
-"f",
+"m",
 "-30%"
 ],
 "XB3148hf": [
 "tečka",
-"m",
+"f",
 "-30%"
 ],
 "XB17bfvgc": [
 "pomlčka",
-"f",
+"m",
 "-30%"
 ],
 "XBhsbti": [
 "Pracuju tady ve škole.",
-"m"
+"f"
 ],
 "XBjyzo4c": [
 "prezident – prezidentka",
-"f",
+"m",
 "-20%"
 ],
 "XB1wram8s": [
 "manažer – manažerka",
-"m",
+"f",
 "-20%"
 ],
 "XB9sl615": [
 "Au! To bolí.",
-"f"
+"m"
 ],
 "XBxkhznq": [
 "Můj dům je starý, ale hezký.",
-"m"
+"f"
 ],
 "XBw93720": [
 "Brno je historické město.",
-"f"
+"m"
 ],
 "XBaiw1bi": [
 "Na náměstí je radnice.",
-"m"
+"f"
 ],
 "XB4b6n7h": [
 "V Praze je moderní metro.",
-"f"
+"m"
 ],
 "XBj1zfuh": [
 "Ahoj Petro,",
@@ -2477,8 +2481,8 @@
 "Dole je docela dobrá restaurace. Problém je, že tam je někdy diskotéka a hluk.",
 "m"
 ],
-"XBpuuwl8": [
-"V práci jsou lidi z Evropy, z Afriky, z Asie a z Ameriky. Jeden kolega je moc sympatický.",
+"XBpb0t8c": [
+"V práci jsou lidé z Evropy, z Afriky, z Asie a z Ameriky. Jeden kolega je moc sympatický.",
 "m"
 ],
 "XB1b4s4ua": [
@@ -2491,35 +2495,35 @@
 ],
 "XB1og7wed": [
 "Banka je vlevo.",
-"f"
+"m"
 ],
 "XB16rfnm5": [
 "Můj dům je uprostřed.",
-"m"
+"f"
 ],
 "XBgizy4t": [
 "Supermarket je vpravo.",
-"f"
+"m"
 ],
 "XB9wzhxz": [
 "Můj byt je nahoře.",
-"m"
+"f"
 ],
 "XB6qu3g7": [
 "Restaurace je dole.",
-"f"
+"m"
 ],
 "XB1awhhow": [
 "Park je vzadu.",
-"m"
+"f"
 ],
 "XBm69z06": [
 "Dám si gulášovou polévku.",
-"f"
+"m"
 ],
 "XB46i11t": [
 "Dáme si smaženého kapra.",
-"m"
+"f"
 ],
 "XB1fod10f": [
 "Jsem vegetariánka. Nejím maso.",
@@ -2527,37 +2531,37 @@
 ],
 "XB1umodfs": [
 "Já nemám vůbec čas.",
-"m"
+"f"
 ],
 "XBn204g9": [
 "Dám si pečené kuře a americké brambory.",
-"f"
+"m"
 ],
 "XBtwuov9": [
 "gulášová polévka",
-"m",
+"f",
 "-20%"
 ],
 "XBsj9pth": [
 "pečené kuře a americké brambory",
-"f"
+"m"
 ],
 "XBlujl07": [
 "smažený kapr a bramborový salát",
-"m"
+"f"
 ],
 "XBttij7q": [
 "zelený čaj",
-"f",
+"m",
 "-20%"
 ],
 "XB4kqu7t": [
 "Dáte si kávu, nebo čaj? – Čaj, prosím.",
-"m"
+"f"
 ],
 "XB12tqe95": [
 "To maso je docela dobré, ale ty knedlíky moc ne.",
-"f"
+"m"
 ],
 "XB1us27p1": [
 "Jsem vegetarián. Nejím maso.",
@@ -2569,43 +2573,43 @@
 ],
 "XB1k3ibrb": [
 "Mám moc práce a nemám vůbec čas.",
-"m"
+"f"
 ],
 "XBz07z97": [
 "Oni pijí čaj.",
-"f"
+"m"
 ],
 "XBlltsgp": [
 "Můj tatínek? Je mu šedesát let.",
-"m"
+"f"
 ],
 "XB1f8hkl2": [
 "Moje maminka? Je jí padesát let.",
-"f"
+"m"
 ],
 "XB1g6yrg7": [
 "Já? Je mi dvacet pět let.",
-"m"
+"f"
 ],
 "XBqfd19p": [
 "Můj syn? Je mu pět let.",
-"f"
+"m"
 ],
 "XB16rl1do": [
 "Moje dcera? Je jí dva roky.",
-"m"
+"f"
 ],
 "XB6g6ud0": [
 "Naše miminko? Je mu jeden rok.",
-"f"
+"m"
 ],
 "XBantu79": [
 "Kolik vám je?",
-"m"
+"f"
 ],
 "XB1jrosp7": [
 "Je mi třicet let.",
-"f"
+"m"
 ],
 "XB1juglyo": [
 "Jmenuju se Jana Malá. Je mi třicet let.",
@@ -2641,441 +2645,455 @@
 ],
 "XB13qksrc": [
 "To je Petrova maminka.",
-"m"
+"f"
 ],
 "XB1iscz2g": [
 "To je Petrův dědeček.",
-"f"
+"m"
 ],
 "XB1b39mcc": [
 "To je Evin bratr.",
-"m"
+"f"
 ],
 "XB1inffqj": [
 "To je Evino auto.",
-"f"
+"m"
 ],
 "XB1vp1krs": [
 "To jsou Petrovi rodiče.",
-"m"
+"f"
 ],
 "XBfv21kk": [
 "To je můj švagr.",
-"f"
+"m"
 ],
 "XB9xal6v": [
 "Moje sestřenice bydlí v Brně.",
-"m"
+"f"
 ],
 "XBo51q9k": [
 "dědeček",
-"f",
+"m",
 "-30%"
 ],
 "XB12rs9je": [
 "babička",
+"f",
+"-30%"
+],
+"XBrbziw9": [
+"tatínek",
 "m",
 "-30%"
 ],
-"XBzaiujc": [
-"otec, tatínek",
+"XBhifch5": [
+"maminka",
 "f",
-"-20%"
-],
-"XB11ketdj": [
-"matka, maminka",
-"m",
-"-20%"
+"-30%"
 ],
 "XB2wssk2": [
 "bratr",
-"f",
+"m",
 "-30%"
 ],
 "XBzoxsef": [
 "sestra",
-"m",
+"f",
 "-30%"
+],
+"XBzaiujc": [
+"otec, tatínek",
+"m",
+"-20%"
+],
+"XB11ketdj": [
+"matka, maminka",
+"f",
+"-20%"
 ],
 "XB375y1t": [
 "syn",
-"f",
+"m",
 "-30%"
 ],
 "XB2plc6s": [
 "dcera",
-"m",
+"f",
 "-30%"
 ],
 "XByj8p9f": [
 "vnuk",
-"f",
+"m",
 "-30%"
 ],
 "XBwpqy5r": [
 "vnučka",
-"m",
+"f",
 "-30%"
 ],
 "XBqgiwwr": [
 "bratranec",
-"f",
+"m",
 "-30%"
 ],
 "XB1rq6a5l": [
 "sestřenice",
-"m",
+"f",
 "-30%"
 ],
 "XB1k4ypp": [
 "strýc, strejda",
-"f",
+"m",
 "-20%"
 ],
 "XByj454x": [
 "teta",
-"m",
+"f",
 "-30%"
 ],
 "XB12tyjcu": [
 "synovec",
-"f",
+"m",
 "-30%"
 ],
 "XB2zirc6": [
 "neteř",
-"m",
+"f",
 "-30%"
 ],
 "XB1wto44m": [
 "švagr",
-"f",
+"m",
 "-30%"
 ],
 "XB11rj2ce": [
 "švagrová",
-"m",
+"f",
 "-30%"
 ],
 "XB30vv2t": [
 "tchán",
-"f",
+"m",
 "-30%"
 ],
 "XBss5vli": [
 "tchyně",
-"m",
+"f",
 "-30%"
 ],
 "XB3763y7": [
 "zeť",
-"f",
+"m",
 "-30%"
 ],
 "XBzrin6b": [
 "snacha",
-"m",
+"f",
 "-30%"
 ],
 "XBo7r828": [
 "manžel",
-"f",
+"m",
 "-30%"
 ],
 "XBi5ql2y": [
 "manželka",
-"m",
+"f",
 "-30%"
 ],
 "XB10rwkho": [
 "přítel",
-"f",
+"m",
 "-30%"
 ],
 "XB1q9uzy3": [
 "přítelkyně",
-"m",
+"f",
 "-30%"
 ],
 "XB4qglly": [
 "To je dobrá studentka.",
-"f"
+"m"
 ],
 "XB1dggupx": [
 "To je hezké auto.",
-"m"
+"f"
 ],
 "XBj5xwnm": [
 "To je zlý pes.",
-"f"
+"m"
 ],
 "XB1odwyl0": [
 "To je bohatý muž.",
-"m"
+"f"
 ],
 "XB72iyt1": [
 "Jaká je ta žena?",
-"f"
+"m"
 ],
 "XB1jsggyw": [
 "Jaké je to auto?",
-"m"
+"f"
 ],
 "XB1nsou5i": [
 "Moje sestra je vysoká a hubená.",
-"f"
+"m"
 ],
 "XB1lszbrq": [
 "Můj bratr je vysoký a hubený.",
-"m"
+"f"
 ],
 "XBggtx4i": [
 "Je moc sympatický a inteligentní.",
+"m"
+],
+"XBselj37": [
+"Ten muž je sympatický.",
 "f"
+],
+"XB7x5f70": [
+"Ta žena je energická a elegantní.",
+"m"
 ],
 "XB2puder": [
 "dobrý",
-"m",
+"f",
 "-30%"
 ],
 "XB1xcr00i": [
 "špatný",
-"f",
+"m",
 "-30%"
 ],
 "XBqgqia4": [
 "hubený",
-"m",
+"f",
 "-30%"
 ],
 "XBt0r0vm": [
 "tlustý",
-"f",
+"m",
 "-30%"
 ],
 "XB2xfc8y": [
 "chudý",
-"m",
+"f",
 "-30%"
 ],
 "XBotal6w": [
 "bohatý",
-"f",
+"m",
 "-30%"
 ],
 "XBl25afk": [
 "hezký, krásný",
-"m",
+"f",
 "-20%"
 ],
 "XBdm1aw7": [
 "ošklivý, škaredý",
-"f",
+"m",
 "-20%"
 ],
 "XB1cyb12k": [
 "šťastný, veselý",
-"m",
+"f",
 "-20%"
 ],
 "XBzumle1": [
 "smutný",
-"f",
+"m",
 "-30%"
 ],
 "XB2vtyl8": [
 "mladý",
-"m",
+"f",
 "-30%"
 ],
 "XB3846q4": [
 "starý",
-"f",
+"m",
 "-30%"
 ],
 "XB355wcs": [
 "velký",
-"m",
+"f",
 "-30%"
 ],
 "XByiykzc": [
 "malý",
-"f",
+"m",
 "-30%"
 ],
 "XB14a1kg3": [
 "zdravý",
-"m",
+"f",
 "-30%"
 ],
 "XB1jmplzw": [
 "nemocný",
-"f",
+"m",
 "-30%"
 ],
 "XByj27f3": [
 "nový",
-"m",
+"f",
 "-30%"
 ],
 "XBwh3vgg": [
 "vysoký",
-"f",
+"m",
 "-30%"
 ],
 "XB2pwp3b": [
 "drahý",
-"m",
+"f",
 "-30%"
 ],
 "XB2vdd49": [
 "levný",
-"f",
+"m",
 "-30%"
 ],
 "XB2xsy2d": [
 "hodný",
-"m",
+"f",
 "-30%"
 ],
 "XB37640e": [
 "zlý",
-"f",
+"m",
 "-30%"
 ],
 "XB7wawzc": [
 "optimistický",
-"m",
+"f",
 "-30%"
 ],
 "XB12vcjzp": [
 "pesimistický",
-"f",
+"m",
 "-30%"
 ],
 "XB1bh5dmq": [
 "fantastický",
-"m",
+"f",
 "-30%"
 ],
 "XB195r7qz": [
 "sympatický",
-"f",
+"m",
 "-30%"
 ],
 "XB85aj42": [
 "energický",
-"m",
+"f",
 "-30%"
 ],
 "XBipfhav": [
 "moderní",
-"f",
+"m",
 "-30%"
 ],
 "XB1anppva": [
 "elegantní",
-"m",
+"f",
 "-30%"
 ],
 "XBgbxjd9": [
 "inteligentní",
-"f",
+"m",
 "-30%"
 ],
 "XB3awjts": [
 "nervózní",
-"m",
+"f",
 "-30%"
 ],
 "XBcdjghz": [
 "aktivní",
-"f",
+"m",
 "-30%"
 ],
 "XB15oe76j": [
 "pasivní",
-"m",
+"f",
 "-30%"
 ],
 "XB1h93k0t": [
 "Mám hodného manžela.",
-"f"
+"m"
 ],
 "XB14iz9x1": [
 "Mám malou dceru.",
-"m"
+"f"
 ],
 "XBw2n92b": [
 "Mám staršího bratra.",
-"f"
+"m"
 ],
 "XBhw7p5g": [
 "Mám mladší sestru.",
-"m"
+"f"
 ],
 "XBd8a3dz": [
 "Hledám nový byt.",
-"f"
+"m"
 ],
 "XBtwfxb0": [
 "Mám sympatického synovce.",
-"m"
+"f"
 ],
 "XBhaf268": [
 "Mám hezkou přítelkyni.",
-"f"
+"m"
 ],
 "XBbrrawn": [
 "Mám dva bratry.",
-"m"
+"f"
 ],
 "XBsbnovn": [
 "Mám pět sester.",
-"f"
+"m"
 ],
 "XB1fv5rr3": [
 "Hledám dobrého doktora.",
-"m"
+"f"
 ],
 "XByvqnz7": [
 "Mám jednoho bratra a dvě sestry.",
-"f"
+"m"
 ],
 "XB1kxxeut": [
 "To je váš syn? – Ano, to je můj syn.",
-"m"
+"f"
 ],
 "XBg6e9i1": [
 "To je vaše dcera? – Ne, to není moje dcera.",
-"f"
+"m"
 ],
 "XB1qffm70": [
 "To je můj kolega.",
-"m"
+"f"
 ],
 "XB1r2tswk": [
 "Moje maminka se jmenuje Věra.",
-"f"
+"m"
 ],
 "XB1o853sr": [
 "Moje starší sestra se jmenuje Alena.",
-"m"
+"f"
 ],
 "XBrxf8tn": [
 "Jak se jmenujete?",
-"f"
+"m"
 ],
 "XB5wflfo": [
 "To je tvůj kamarád? – Ano, to je můj kamarád.",
-"m"
+"f"
 ],
 "XBrgqn7m": [
 "To je můj kolega a to je moje kolegyně.",
-"f"
-],
-"XBwrc2ot": [
-"Mobil stojí čtyři tisíce dvě stě devadesát korun.",
 "m"
 ],
 "XB5302n": [
@@ -3086,69 +3104,73 @@
 "Tablet stojí pět tisíc čtyři sta devadesát korun.",
 "m"
 ],
+"XBwrc2ot": [
+"Mobil stojí čtyři tisíce dvě stě devadesát korun.",
+"f"
+],
 "XB382slt": [
 "Na mobil je sleva deset procent.",
-"f"
+"m"
 ],
 "XB1hmmt2c": [
 "Kolik to stojí?",
-"m"
+"f"
 ],
 "XB1j9sc3x": [
 "Stojí to pět tisíc korun.",
-"f"
+"m"
 ],
 "XB1gw5plf": [
 "Stojí to tři tisíce korun.",
-"m"
+"f"
 ],
 "XB1uv3zrm": [
 "Kolik je dva tisíce plus tři tisíce?",
-"f"
+"m"
 ],
 "XB16f5fq": [
 "Kolik je deset tisíc minus dva tisíce?",
-"m"
+"f"
 ],
 "XB1h0zkeq": [
 "Prosím vás, kolik to stojí?",
-"f"
+"m"
 ],
 "XBdj95k4": [
 "Je tady nějaká sleva?",
-"m"
+"f"
 ],
 "XB1h93joj": [
 "Notebook stojí devět tisíc devět set devadesát korun.",
-"f"
+"m"
 ],
 "XB1pce59z": [
 "Monitor stojí tři tisíce tři sta devadesát korun.",
-"m"
+"f"
 ],
 "XBk1ytlb": [
 "Myš stojí tři sta devadesát korun.",
-"f"
+"m"
 ],
 "XB1wbcps1": [
 "Lekce začíná ve dvě.",
-"m"
+"f"
 ],
 "XBypppie": [
 "Film končí v pět.",
-"f"
+"m"
 ],
 "XBafbqn7": [
 "Mám strach, že jdu pozdě.",
-"m"
+"f"
 ],
 "XB1hsjntn": [
 "Kolik je hodin?",
-"f"
+"m"
 ],
 "XB2tmdw7": [
 "Ještě máme čas na kávu.",
-"m"
+"f"
 ],
 "XB1mm25zg": [
 "Ahoj Lucie! Proč tak spěcháš?",
@@ -3169,6 +3191,20 @@
 "XB1txprte": [
 "Ne, začíná až v půl dvanácté. Ještě máme čas na kávu.",
 "m"
+],
+"XByzkywj": [
+"čtvrt na jednu",
+"f",
+"-20%"
+],
+"XB1x3lesa": [
+"půl jedné",
+"m",
+"-20%"
+],
+"XB1qmgq8c": [
+"tři čtvrtě na jednu",
+"f"
 ],
 "XB15oxid3": [
 "Koncert je ve středu.",
@@ -3406,9 +3442,13 @@
 "O víkendu rád spím dlouho.",
 "m"
 ],
+"XB1750j1q": [
+"O víkendu ráda spím dlouho.",
+"f"
+],
 "XB19fnghr": [
 "Často hraju karty.",
-"f"
+"m"
 ],
 "XB1mza74t": [
 "Ve všední den vstávám v šest.",
@@ -3436,50 +3476,54 @@
 ],
 "XBrm7rwh": [
 "vždycky",
-"m",
+"f",
 "-30%"
 ],
 "XB33lcpy": [
 "pořád",
-"f",
+"m",
 "-30%"
 ],
 "XB1wb035t": [
 "často",
-"m",
+"f",
 "-30%"
 ],
 "XB1z0iicg": [
 "většinou",
-"f",
+"m",
 "-30%"
 ],
 "XB1xblvmt": [
 "obvykle",
-"m",
+"f",
 "-30%"
 ],
 "XB2tcxxi": [
 "někdy",
-"f",
+"m",
 "-30%"
 ],
 "XB2z9fuc": [
 "nikdy",
-"m",
+"f",
 "-30%"
 ],
 "XB934ksv": [
 "Cvičím třikrát za týden.",
-"f"
+"m"
 ],
 "XB92ueaw": [
 "Ráno jsem ospalá.",
-"m"
+"f"
 ],
 "XB1o25yei": [
 "Jsem spíš skřivánek.",
-"f"
+"m"
+],
+"XB9os6w6": [
+"Jsem sova. Ráno jsem unavený.",
+"m"
 ],
 "XB9os77e": [
 "Jsem sova. Ráno jsem unavená.",
@@ -3630,6 +3674,14 @@
 "Měj se hezky, Jana",
 "f"
 ],
+"XBg3nl9p": [
+"Promiňte, ale dneska musím zrušit lekci. Jsem nemocný.",
+"m"
+],
+"XBg3nlyp": [
+"Promiňte, ale dneska musím zrušit lekci. Jsem nemocná.",
+"f"
+],
 "XB2dc724": [
 "Bolí mě zub.",
 "f"
@@ -3645,10 +3697,6 @@
 "XB8513gm": [
 "Omlouvám se, ale nemůžu přijít.",
 "m"
-],
-"XBg3nlyp": [
-"Promiňte, ale dneska musím zrušit lekci. Jsem nemocná.",
-"f"
 ],
 "XB11xleff": [
 "Bohužel dneska nemůžu přijít do práce. Musím dokončit projekt doma.",
@@ -3668,15 +3716,15 @@
 ],
 "XB18buza0": [
 "Včera jsem neměla čas.",
-"m"
+"f"
 ],
 "XBkl0cmh": [
 "Paní Nová, co jste dělala?",
-"f"
+"m"
 ],
 "XB5ziyxf": [
 "Pane Nový, kde jste byl?",
-"m"
+"f"
 ],
 "XB1pl0gqn": [
 "Včera jsem byl celý den doma.",
@@ -3684,11 +3732,15 @@
 ],
 "XB1rp42pb": [
 "Jaký byl víkend?",
-"m"
+"f"
 ],
 "XBz6x7ny": [
 "Nic moc. Nebyl jsem venku.",
 "m"
+],
+"XBmuwbz": [
+"Nic moc. Nebyla jsem venku.",
+"f"
 ],
 "XBh17ovt": [
 "Včera bylo krásné počasí. Co jsi dělal? Byl jsi venku?",
@@ -3751,108 +3803,112 @@
 "Kde jsi byl včera?",
 "m"
 ],
+"XB1r7ok15": [
+"Byl jsem na nádraží.",
+"m"
+],
 "XB3h6xwo": [
 "Byla jsem na nádraží.",
 "f"
 ],
 "XByd4p3w": [
 "v hotelu",
-"m",
+"f",
 "-20%"
 ],
 "XB11opzkm": [
 "v klubu",
-"f",
+"m",
 "-20%"
 ],
 "XB14xn52b": [
 "v supermarketu",
-"m",
+"f",
 "-20%"
 ],
 "XB11q1gjl": [
 "v muzeu",
-"f",
+"m",
 "-20%"
 ],
 "XB61h8h1": [
 "v obchodě",
-"m",
+"f",
 "-20%"
 ],
 "XBv9y85g": [
 "v kině",
-"f",
+"m",
 "-20%"
 ],
 "XB1r2band": [
 "v kavárně",
-"m",
+"f",
 "-20%"
 ],
 "XB11ij8t4": [
 "v bance",
-"f",
+"m",
 "-20%"
 ],
 "XBq202us": [
 "v nemocnici",
-"m",
+"f",
 "-20%"
 ],
 "XB1d386em": [
 "v galerii",
-"f",
+"m",
 "-20%"
 ],
 "XB6gia9u": [
 "na letišti",
-"m",
+"f",
 "-20%"
 ],
 "XB1olvhlt": [
 "na nádraží",
-"f",
+"m",
 "-20%"
 ],
 "XBa68zx7": [
 "na poště",
-"m",
+"f",
 "-20%"
 ],
 "XB3blpbn": [
 "na policii",
-"f",
+"m",
 "-20%"
 ],
 "XBihf39": [
 "na univerzitě",
-"m",
+"f",
 "-20%"
 ],
 "XB86nfff": [
 "na koncertě",
-"f",
+"m",
 "-20%"
 ],
 "XB1vgndf4": [
 "na konferenci",
-"m",
+"f",
 "-20%"
 ],
 "XB9sz64j": [
 "na obědě",
-"f",
+"m",
 "-20%"
 ],
 "XBlswewo": [
 "u doktora",
-"m",
+"f",
 "-20%"
 ],
 "XB1x9gvf7": [
 "u kamarádky",
-"f",
+"m",
 "-20%"
 ],
 "XB1xkie4j": [
@@ -3901,7 +3957,7 @@
 ],
 "XBjuher": [
 "Kdy jste byl poprvé v Česku?",
-"f"
+"m"
 ],
 "XB24mrey": [
 "Ahoj Petro, co se stalo? Proč jsi nebyla na party?",
@@ -3933,19 +3989,19 @@
 ],
 "XB1n7gbse": [
 "Když mi byl jeden rok…",
-"f"
+"m"
 ],
 "XBw3p1m": [
 "Když mi byly tři roky…",
-"m"
+"f"
 ],
 "XBzjh2ut": [
 "Když mi bylo pět let…",
-"f"
+"m"
 ],
 "XB1gmp7sc": [
 "Kdy jste byl poprvé v České republice?",
-"m"
+"f"
 ],
 "XBxprvtd": [
 "Ještě nikdy jsem nebyla v Itálii.",
@@ -3953,91 +4009,91 @@
 ],
 "XB15vmkog": [
 "Kdy jste poprvé letěl letadlem?",
-"m"
+"f"
 ],
 "XB1hax00d": [
 "Kdy jsi poprvé viděla moře?",
-"f"
+"m"
 ],
 "XB13xplic": [
 "Kdy jsi poprvé řídil auto?",
-"m"
+"f"
 ],
 "XB16i7p9i": [
 "Kdy jste naposled tancoval?",
-"f"
+"m"
 ],
 "XB1yzwf76": [
 "Víte, kdo byl Václav Havel?",
-"m"
+"f"
 ],
 "XBc2otds": [
 "Znáte Prahu?",
-"f"
+"m"
 ],
 "XBd6zya5": [
 "Umíte vařit?",
-"m"
+"f"
 ],
 "XB1y99u8t": [
 "Smetana byl český skladatel.",
-"f"
+"m"
 ],
 "XB8yqkhs": [
 "Mluvím česky.",
-"m"
+"f"
 ],
 "XB1b0al51": [
 "Božena Němcová byla Češka.",
-"f"
+"m"
 ],
 "XB1dq3lnc": [
 "Studuju češtinu.",
-"m"
+"f"
 ],
 "XB1bvts31": [
 "Umím trochu česky.",
-"f"
+"m"
 ],
 "XB1ft70a7": [
 "Božena Němcová byla spisovatelka. Napsala román Babička.",
-"m"
+"f"
 ],
 "XBwv6iyf": [
 "Bedřich Smetana byl skladatel. Napsal operu Prodaná nevěsta a cyklus Má vlast.",
-"f"
+"m"
 ],
 "XBrhmxv6": [
 "Emil Zátopek byl sportovec. V roce 1952 vyhrál na olympiádě tři zlaté medaile.",
-"m"
+"f"
 ],
 "XBzr9gqr": [
 "Otto Wichterle byl vědec. Vynalezl kontaktní čočky.",
-"f"
+"m"
 ],
 "XB12ny5rp": [
 "Václav Havel byl dramatik a politik. V letech 1993 až 2003 byl prezident České republiky.",
-"m"
+"f"
 ],
 "XB1237n29": [
 "Karel Čtvrtý byl český král a císař.",
-"f"
+"m"
 ],
 "XB1d8cuq4": [
 "Narodil se v roce 1316 v Praze.",
-"m"
+"f"
 ],
 "XB1kuh8xu": [
 "Studoval ve Francii.",
-"f"
+"m"
 ],
 "XB119jpdy": [
 "Měl čtyři manželky.",
-"m"
+"f"
 ],
 "XB1qxksfr": [
 "Založil univerzitu v Praze a postavil hrad Karlštejn.",
-"f"
+"m"
 ],
 "XB1ea2co6": [
 "Jsem z Bulharska. Jsem Bulhar.",
@@ -4045,7 +4101,7 @@
 ],
 "XB151445r": [
 "Jsem z Číny. Jsem Číňan.",
-"f"
+"m"
 ],
 "XB1hmp89f": [
 "Jsem z Francie. Jsem Francouz.",
@@ -4053,7 +4109,7 @@
 ],
 "XB1bnwxcj": [
 "Jsem z Itálie. Jsem Ital.",
-"f"
+"m"
 ],
 "XBufqrwg": [
 "Jsem z Japonska. Jsem Japonec.",
@@ -4061,7 +4117,7 @@
 ],
 "XB1edgqet": [
 "Jsem z Německa. Jsem Němec.",
-"f"
+"m"
 ],
 "XB9dr0mk": [
 "Jsem z Polska. Jsem Polák.",
@@ -4069,15 +4125,15 @@
 ],
 "XBkhl2t": [
 "Jsem z Ruska. Jsem Rus.",
-"f"
-],
-"XBzhkfif": [
-"Jsem z Slovenska. Jsem Slovák.",
 "m"
 ],
-"XB1l5tsdi": [
-"Jsem z Španělska. Jsem Španěl.",
-"f"
+"XB39sgo2": [
+"Jsem ze Slovenska. Jsem Slovák.",
+"m"
+],
+"XB29zsw3": [
+"Jsem ze Španělska. Jsem Španěl.",
+"m"
 ],
 "XBbh2jc0": [
 "Jsem z Ukrajiny. Jsem Ukrajinec.",
@@ -4085,11 +4141,11 @@
 ],
 "XBn32gz0": [
 "Jsem z Vietnamu. Jsem Vietnamec.",
-"f"
+"m"
 ],
 "XB12j19cl": [
 "Je to Bulharka. Mluví bulharsky.",
-"m"
+"f"
 ],
 "XB1fg7hct": [
 "Je to Číňanka. Mluví čínsky.",
@@ -4097,7 +4153,7 @@
 ],
 "XB18ty1at": [
 "Je to Francouzka. Mluví francouzsky.",
-"m"
+"f"
 ],
 "XB1yu8p1x": [
 "Je to Italka. Mluví italsky.",
@@ -4105,7 +4161,7 @@
 ],
 "XB1mmpb5h": [
 "Je to Japonka. Mluví japonsky.",
-"m"
+"f"
 ],
 "XB1evep1c": [
 "Je to Němka. Mluví německy.",
@@ -4113,7 +4169,7 @@
 ],
 "XB1lvk0et": [
 "Je to Polka. Mluví polsky.",
-"m"
+"f"
 ],
 "XB1x3xm1y": [
 "Je to Ruska. Mluví rusky.",
@@ -4121,7 +4177,7 @@
 ],
 "XBit776d": [
 "Je to Slovenka. Mluví slovensky.",
-"m"
+"f"
 ],
 "XB9e0bmc": [
 "Je to Španělka. Mluví španělsky.",
@@ -4129,7 +4185,7 @@
 ],
 "XB1kqjyph": [
 "Je to Ukrajinka. Mluví ukrajinsky.",
-"m"
+"f"
 ],
 "XB1bphzed": [
 "Je to Vietnamka. Mluví vietnamsky.",
@@ -4137,7 +4193,7 @@
 ],
 "XB1yjfwxj": [
 "Bydlím na Slovensku.",
-"m"
+"f"
 ],
 "XB1oj0ecm": [
 "Byl jsem ve Francii.",
@@ -4145,19 +4201,31 @@
 ],
 "XBen0tq7": [
 "Moje babička je Polka.",
-"m"
+"f"
 ],
 "XB1ivaqk9": [
 "Můj kolega je Němec.",
-"f"
+"m"
 ],
 "XB1i9qhfu": [
 "Mluvím anglicky a trochu česky.",
-"m"
+"f"
 ],
 "XBkile36": [
 "Ještě nikdy jsem nebyl v Asii.",
 "m"
+],
+"XBtly5wz": [
+"Ještě nikdy jsem nebyla v Asii.",
+"f"
+],
+"XB1f5vtvx": [
+"Japonsko je v Asii.",
+"m"
+],
+"XB1aqnnxl": [
+"Česko je v Evropě.",
+"f"
 ],
 "XB1dlhcgn": [
 "v Anglii",

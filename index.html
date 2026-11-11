@@ -1085,6 +1085,74 @@ body::before{content:'';position:fixed;inset:0;z-index:-1;background:var(--bgfx)
 .ex.thumb{display:flex;flex-direction:column;min-height:calc(100dvh - 200px)}
 .ex.thumb>.ans,.ex.thumb>.qaq{margin-top:auto}
 .ex.thumb>.qaq~.ans{margin-top:0}
+/* ===== v26: home, small-step lessons, dialogues with faces ===== */
+#app .h26 .cscene .tscene{height:168px;-webkit-mask-image:none;mask-image:none}
+.h26 .hk{position:absolute;left:12px;right:12px;bottom:10px;display:flex;align-items:flex-end;gap:10px;line-height:1.3}
+.h26 .hk .guide{flex:none}
+.h26 .hk .chav{display:block;box-shadow:0 0 0 3px #fff,0 6px 14px rgba(0,0,0,.28)}
+#app .h26 .hbub{position:relative;flex:1;min-width:0;text-align:left;background:#fff;color:#14161C;border:0;border-radius:16px;padding:9px 28px 9px 12px;font-family:var(--ui);box-shadow:0 4px 14px rgba(0,0,0,.25);margin-bottom:8px}
+.h26 .hbub::before{content:'';position:absolute;left:-5px;bottom:14px;width:12px;height:12px;background:#fff;transform:rotate(45deg)}
+.h26 .hbub b{position:relative;display:block;font-size:15px;font-weight:700;line-height:1.3}
+#app .h26 .hbub .en{position:relative;display:block;color:#566070;font-weight:600;font-size:13px;margin-top:2px}
+.h26 .hbub .spk{position:absolute;right:8px;top:8px;opacity:.55;line-height:0}
+#app .h26 .cbody{margin-top:0;padding:14px 18px 18px}
+#app .h26 .cbody>b{font-size:28px}
+.segs{display:flex;gap:3px;margin:10px 0 14px}.segs i{flex:1;min-width:3px;height:8px;border-radius:4px;background:rgba(255,255,255,.3)}.segs i.d{background:#fff}.segs i.c{background:#FFD43B}
+#app .cta.h26g{background:rgba(255,255,255,.16);color:#fff;border:2px solid rgba(255,255,255,.7);box-shadow:none}
+#app .p26{padding:14px}
+#app .p26 .phead{justify-content:space-between;margin-bottom:0}
+.pcount{display:flex;align-items:center;gap:6px;font-weight:800;color:var(--mute);font-size:14px}.pcount.ok{color:var(--ok)}
+.ptiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:10px}
+#app .ptile{position:relative;display:flex;flex-direction:column;align-items:center;gap:3px;padding:14px 4px 10px;border-radius:18px;background:var(--seg);border:0;color:var(--ink);font-family:var(--ui);text-align:center;box-shadow:none;min-height:104px}
+.ptile b{font-size:15px;font-weight:800}.ptile small{font-size:12px;font-weight:700;color:var(--mute);line-height:1.2}.ptile .en{font-size:11px;line-height:1.2;color:var(--mute)}
+.ptile>i{position:absolute;right:7px;top:7px;width:18px;height:18px;border-radius:50%;border:2px solid var(--line2);display:grid;place-items:center;font-style:normal;font-size:11px;font-weight:900;color:#fff;box-sizing:border-box}
+#app .ptile.done{background:var(--okbg)}.ptile.done>i{background:var(--ok);border-color:var(--ok)}.ptile.done small{color:var(--ok)}
+#app .hrow{display:flex;align-items:center;gap:12px;width:100%;min-height:64px;padding:10px 14px;margin:0 0 12px;border-radius:20px;background:var(--card);border:0;box-shadow:var(--gl-hi),var(--gl-sh);color:var(--ink);text-align:left;font-family:var(--ui)}
+.hrow>span{flex:1;min-width:0;display:flex;flex-direction:column}.hrow b{font-size:16px;font-weight:800}.hrow small{color:var(--mute);font-size:13px;font-weight:600}
+.hrow em{font-style:normal;font-size:12px;font-weight:800;color:#fff;background:var(--blue);padding:4px 10px;border-radius:99px}.hrow>i{font-style:normal;color:var(--mute);font-size:24px;line-height:1}
+.w26{display:flex;align-items:center;gap:12px;padding:12px;margin:0 0 12px;border-radius:20px;background:var(--card);box-shadow:var(--gl-hi),var(--gl-sh)}
+.w26 .wpic{flex:none;width:60px;height:60px;border-radius:16px;background:var(--seg);display:grid;place-items:center;overflow:hidden}
+.w26 .wtx{flex:1;min-width:0;display:flex;flex-direction:column}.w26 .wl{font:800 11px var(--ui);letter-spacing:.08em;color:var(--mute);text-transform:uppercase}.w26 .wtx b{font:800 22px/1.15 var(--hd);overflow-wrap:anywhere}.w26 .wtx small{color:var(--mute);font-size:14px}
+#app .w26 .ssay{flex:none;width:44px;height:44px;border-radius:50%;background:var(--seg);border:0;box-shadow:none;display:grid;place-items:center;padding:0}
+#app .w26 .wq{flex:none;min-height:44px;padding:0 14px;border-radius:99px;background:var(--bluebg);color:var(--acc);font:800 14px var(--ui);border:0;box-shadow:none}
+.xstrip{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x proximity;margin:0 -16px 8px;padding:2px 16px 10px;scrollbar-width:none}.xstrip::-webkit-scrollbar{display:none}
+#app .xstrip .ntile{flex:none;width:142px;min-height:120px;scroll-snap-align:start}
+#app .tstats button.st{background:none;border:0;box-shadow:none;color:var(--ink);font:900 15px var(--ui);min-height:0;cursor:pointer}
+.sdots{display:flex;align-items:center;gap:5px;margin:-6px 0 12px}.sdots i{width:22px;height:6px;border-radius:3px;background:var(--track)}.sdots i.d{background:var(--ok)}.sdots i.c{background:var(--acc)}.sdots span{margin-left:6px;font-size:12px;font-weight:800;color:var(--mute)}
+#app .rdall{width:auto;margin:0 0 12px}
+.chat26{display:flex;flex-direction:column;gap:8px;margin-bottom:10px}
+#app .chat26 .cb{display:flex;align-items:flex-end;gap:8px;max-width:92%;align-self:flex-start;background:none;border:0;box-shadow:none;padding:0;border-radius:0;color:var(--ink);text-align:left;font-family:var(--ui)}
+#app .chat26 .cb.r{flex-direction:row-reverse;align-self:flex-end}
+.chat26 .bb{display:block;padding:9px 12px;border-radius:16px 16px 16px 4px;background:var(--card);box-shadow:var(--gl-hi),var(--gl-sh);min-width:0}
+.chat26 .cb.r .bb{border-radius:16px 16px 4px 16px;background:var(--bluebg)}
+.chat26 .bb small{display:block;font-size:12px;font-weight:800;color:var(--mute)}
+.chat26 .bb b{font-weight:600;font-size:16px;line-height:1.35}
+.chat26 .bb .en{display:block;font-size:13px;color:var(--mute);margin-top:2px}
+#app .qactx{position:relative}
+#app .qactx.chat26.sm,#app .qactx.mail{max-height:40vh;overflow:auto;-webkit-overflow-scrolling:touch}
+#app .qactx.chat26.sm{gap:6px;padding:10px;margin-bottom:12px}
+.chat26.sm .bb{padding:6px 10px;font-size:14.5px;line-height:1.3;box-shadow:none;background:var(--seg)}
+.chat26.sm .cb.r .bb{background:var(--bluebg)}
+.chat26.sm .cb.hi .bb,#app .qactx.mail p.hi{background:#FFE066;color:#3D2E00;box-shadow:0 0 0 2px #F0B400}
+#app .qactx.mail p.hi{border-radius:8px;padding:2px 6px;margin-left:-6px;margin-right:-6px}
+.chat26.sm .cb.hi .bb small{color:#6B5200}
+.mail26{border-radius:20px;background:var(--card);box-shadow:var(--gl-hi),var(--gl-sh);padding:6px 6px 8px;margin-bottom:12px}
+.mail26 .mh{display:flex;align-items:center;gap:10px;padding:8px 8px 10px;border-bottom:1px solid var(--line);margin-bottom:4px}
+.mail26 .mh>span:not(.chav):not(.mic){flex:1;display:flex;flex-direction:column;line-height:1.2}.mail26 .mh b{font-size:16px;font-weight:800}.mail26 .mh small{color:var(--mute);font-weight:700;font-size:13px}
+.mail26 .mic{width:40px;height:40px;border-radius:50%;background:var(--seg);display:grid;place-items:center;flex:none}
+#app .mail26 .ml{display:block;width:100%;text-align:left;background:none;border:0;box-shadow:none;border-radius:10px;padding:6px 8px;color:var(--ink);font-family:var(--ui)}
+.mail26 .ml b{font-weight:600;font-size:16px;line-height:1.4}.mail26 .ml .en{display:block;font-size:13px;color:var(--mute)}
+#app .mail26 .ml:active{background:var(--seg)}
+.qaq.recq{margin:0 0 12px;text-align:center}.recq b{font-size:18px}
+.toast.wskip{flex-wrap:wrap}.toast.wskip>span{display:none}.toast.wskip>em{margin-left:auto}.toast .tskip{display:block;flex:0 0 100%;font-style:normal;font-size:13px;font-weight:700;margin-top:2px}.toast .tskip .en{display:block;font-size:12px;font-weight:600;font-family:var(--ui)}
+.fam26{display:flex;flex-direction:column;align-items:center;margin:0 0 14px;padding:12px 8px;border-radius:20px;background:var(--card);box-shadow:var(--gl-hi),var(--gl-sh)}
+.fam26 .fr{display:flex;justify-content:center;gap:14px}
+#app .fam26 button{display:flex;flex-direction:column;align-items:center;gap:2px;background:none;border:0;box-shadow:none;padding:2px 4px;color:var(--ink);font-family:var(--ui)}
+.fam26 button b{font-size:14px;font-weight:800}
+.fam26 .fl{width:2px;height:14px;background:var(--line2);margin:2px 0}
+.clk26{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:0 0 12px}
+#app .clk26 button{display:flex;flex-direction:column;align-items:center;gap:3px;padding:10px 4px;border-radius:18px;background:var(--card);border:0;box-shadow:var(--gl-hi),var(--gl-sh);color:var(--ink);font-family:var(--ui);text-align:center}
+.clk26 b{font-size:14px;font-weight:800;line-height:1.15}.clk26 small{color:var(--mute);font-weight:700;font-size:12px}.clk26 .en{font-size:11px;color:var(--mute)}
 .ctry{padding:10px 14px;margin-bottom:8px}.ctry .ctop,.ctry .cbot{display:flex;flex-wrap:wrap;gap:4px 14px;align-items:center}.ctry .ctop b{font-size:17px;margin-right:auto}.ctry .cbot{margin-top:4px;font-size:15px}.ctry span{opacity:.8}
 .viz{display:flex;flex-direction:column;gap:3px;padding:14px 16px;border-left:5px solid #1c7ed6;margin-bottom:10px}.viz b{font-size:18px}.viz i{font-style:normal;color:#1864ab;font-weight:600}.viz small{opacity:.75;font-size:13px}
 </style>
@@ -1877,7 +1945,7 @@ const UNITS = UNITS_RAW.map(([id,t,icon,src],ui)=>{
   for(const g of groups){const n=g.length, np=Math.ceil(n/6); let k=0;
     for(let p=0;p<np;p++){const size=Math.floor(n/np)+(p<n%np?1:0); parts.push(g.slice(k,k+size)); k+=size;}}
   const num=id[0]==='L'?+id.slice(1):0;
-  return {id,t,icon,items,parts,num,lab:num?'Lekce '+num:'Bonus'};
+  return {id,t,icon,items,parts,num,lab:num?'Lekce '+num:'Úvod'};
 });
 const GLOSS={"F1":["Excuse me. / Sorry.","I don’t understand.","Could you repeat that, please?","Speak more slowly, please.","Do you speak English?","What does it mean?","How do you say it in Czech?","Where is the toilet?","How much is it?","Can I pay by card?","That’s all right.","Never mind.","Help!"],"L1":["Hello! (formal)","Hi! / Bye! (informal)","Goodbye!","Thank you.","Please. / Here you are.","Yes.","No.","zero","one","two","three","four","five","six","seven","eight","nine","ten","teacher (man)","teacher (woman)","doctor (man)","doctor (woman)","policeman","policewoman","firefighter (man)","firefighter (woman)","singer (man)","singer (woman)","scientist (man)","scientist (woman)","manager (man)","manager (woman)","cleaner (man)","cleaner (woman)","actor","actress","shop assistant (man)","shop assistant (woman)","He is a firefighter.","She is a singer."],"L2":["at home","hotel","theatre","office","cinema","hospital","station","square","shop","restaurant","work","supermarket","school","university","bank","post office","on the left","on the right","upstairs","downstairs","The bank is on the left.","The post office is on the right.","I’m going to school.","I’m going to work (by transport).","I’m going to the cinema.","I’m going to the station (by transport).","twenty","thirty","forty","fifty","a hundred","five hundred"],"L3":["tea","coffee","water","beer","wine","milk","soup","meat","chicken","rice","potatoes","chips / fries","pancakes","ice cream","bread","cheese","apple","egg","salad","cake","I’ll have a coffee.","I’ll have the soup.","I like tea.","I don’t like rice.","I want an ice cream.","The bill, please."],"L4":["family","mum","dad","grandma","grandpa","husband","wife","son","daughter","brother and sister","boyfriend and girlfriend","baby","dog","cat","This is my dog.","This is my cat.","This is my grandma.","a thousand","two thousand","five thousand","ten thousand"],"L5":["It’s one o’clock.","It’s two o’clock.","It’s five o’clock.","It’s eight o’clock.","It’s half past seven.","to get up","to have breakfast","to have lunch","to have dinner","to go to work","to work on the computer","to watch TV","to do yoga","to play tennis","to play football","to swim","to write an email","to study / learn","to cook","to clean","to dance","to sleep","I get up at seven.","I like swimming.","I don’t like cleaning.","I work from nine to five."],"L6":["the Czech Republic","Slovakia","Germany","Austria","Poland","England","France","Italy","Spain","Russia","the USA","Canada","Japan","China","Australia","Czech man","Czech woman","I speak Czech.","I speak English.","I speak German.","Yesterday I played football. (man)","Yesterday I cooked. (woman)","I was in Italy. (man)","I was in France. (woman)"],"L7":["house","flat","window","door","key","bed","chair","sofa","lamp","bath","shower","mirror","television","two chairs","two beds","two windows","five windows","two keys","I’m looking for a flat."],"L8":["to read","to take photos","to play cards","to play chess","to fish","to ride a bike","to play the guitar","to play the piano","to go for a walk","to skate","to sunbathe","to ski","to relax","to knit","to do a jigsaw puzzle","Tomorrow I’ll go to the mountains.","On Saturday I’ll go to the cinema.","We’ll go to the seaside.","I’ll relax."],"L9":["eye","eyes","ear","nose","mouth","tooth","hand / arm","hands","foot / leg","legs","hair","beard","heart","I have a headache.","I have toothache.","I have a temperature.","I have a cold.","I’m going to the doctor.","I need some pills."],"L10":["bakery","pastry shop","grocery shop","greengrocer","butcher’s","pharmacy","chemist’s","florist","bookshop","stationer’s","newsagent / kiosk","shoe shop","clothes shop","optician’s","electronics shop","I’m going to the bakery.","I’m going to the pastry shop.","I’m going to the pharmacy."],"L11":["suitcase","backpack","passport","money","map","ticket (bus, train)","plane ticket","camera","charger","adapter","driving licence","guide / guidebook","I’m going by train.","I’m going by bus.","I’m going by car.","I’m flying by plane.","I’m walking.","I have a reservation."],"L12":["Christmas","Christmas tree","present","carp","Christmas biscuits","Easter","New Year’s Eve","Merry Christmas!","Happy New Year!","to wash the dishes","to do the laundry","to iron","to take out the rubbish","to dust","to water the plants","to go shopping","to repair the car","to paint the flat"],"L13":["lazy","hard-working","brave","curious","evil / angry","annoying","polite","stubborn","forgetful","I’d like a coffee. (man)","I’d like a tea. (woman)","Sorry, I don’t have time.","I can’t, I’m ill. (man)","You should go to the doctor. (to a man)"],"L14":["It’s sunny.","It’s warm.","It’s hot.","It’s chilly.","It’s cold.","It’s cloudy.","It’s raining.","It’s snowing.","It’s freezing.","The wind is blowing.","There’s a storm.","There’s lightning.","It’s wet.","It’s dry.","It’s slippery.","An elephant is bigger than a dog.","A dog is smaller than an elephant.","A car is faster than a bike."],"L15":["computer","laptop","keyboard","mouse","printer","headphones","mobile phone","socket","email","internet","I’m calling Mum.","I’m writing an email to a friend (woman).","I’ll give Dad a present.","I’m inviting you to a party."],"L16":["T-shirt","shirt","trousers","dress","jacket","shoes","socks","hat (woollen)","hat","scarf","gloves","handbag","swimsuit","red","blue","green","yellow","black","white","grey","brown","I like that dress.","I don’t like those shoes.","How much is that shirt?"],"L17":["plumber","electrician","car mechanic","carpenter","bricklayer","locksmith","shoemaker","seamstress","hairdresser","beautician","masseur","mover","I’m going by tram.","Coffee with milk.","Tea with lemon.","Bread and butter."],"L18":["to be born","to start school","to study at university","to fall in love","to go out together","to get engaged","to get married (woman)","to get married (man)","to have children","to argue","to break up","to get divorced","to retire"],"L19":["Be good!","Be quiet!","Go away!","Come in!","Watch out!","Stop it!","Don’t be afraid!","Don’t worry!","Don’t cry!","Don’t disturb me!","Hurry up!","Eat it up!","Get well soon!","Have a nice time!","Tidy your room!","Wash your hands!","Go to bed!"],"L20":["to cut / slice","to stir","to bake","to fry","to grill","spoon","cutlery","frying pan","a bottle of wine","a kilo of apples","a kilo of potatoes","100 grams of cheese","a litre of milk","a piece of cake","a glass of water"],"L21":["dog","cat","horse","cow","pig","hen","sheep","snake","lion","tiger","elephant","giraffe","zebra","monkey","bear","wolf","fox","hare","deer","owl","hippo","rhino","crocodile","two dogs","three cats","two lions","five horses"],"L22":["programmer (man)","programmer (woman)","cook / chef (man)","cook / chef (woman)","pilot","farmer","painter (man)","painter (woman)","salary","meeting","training course","business trip","employment contract","to work overtime","sick leave","maternity leave","to get fired","I work in an office.","I’m looking for a job.","I have a job interview."],"L23":["painting","exhibition","statue","theatre performance","musical instrument","orchestra","band","sheet music","poem","novel","seat","first","second","third"],"L24":["castle","church","synagogue","museum","gallery","fountain","bridge","astronomical clock","lookout tower","mountains","river","forest"]};
 UNITS.forEach(u=>u.items.forEach((x,i)=>{ x.en=(GLOSS[u.id]||[])[i]||''; }));
@@ -2136,7 +2204,8 @@ function exploreSVG(uid, st={}){
 /* ============ STATE / PERSISTENCE ============ */
 const LS='cestina-obrazem-v1', DAY=864e5, INT=[0,1,3,7,14,30,60,120];
 function blank(){return {v:1,items:{},parts:{},pron:{},streak:{n:0,last:''},settings:{rate:0.9,voice:''},updated:0};}
-function fix(p){const b=blank();p=p&&typeof p==='object'?p:{};return {...b,...p,items:p.items||{},parts:p.parts||{},pron:p.pron||{},streak:{...b.streak,...(p.streak||{})},settings:{...b.settings,...(p.settings||{})}};}
+function fix(p){const b=blank();p=p&&typeof p==='object'?p:{}; if(p.items) Object.keys(p.items).forEach(k=>{ if(/^(CR|Q)\d+$/.test(k)) delete p.items[k]; });   /* v26: temporary task ids never belong in the word store */
+  return {...b,...p,items:p.items||{},parts:p.parts||{},pron:p.pron||{},streak:{...b.streak,...(p.streak||{})},settings:{...b.settings,...(p.settings||{})}};}
 let P=blank();
 try{const s=localStorage.getItem(LS); if(s) P=fix(JSON.parse(s));}catch(e){}
 let ref=null, sync='local', writing=false, again=false, saveT=null;
@@ -2242,7 +2311,11 @@ let micBlocked=!SR, rec=null;
 let view='home', curUnit=null, S=null, last=null;
 const cur = () => S&&S.queue[S.i];
 function mk(t,item,pool,o={}){return {t,item,pool,tries:0,wrong:new Set(),...o};}
-function fresh(ex){return mk(ex.t,ex.item,ex.pool,{audio:ex.audio,text:ex.text,re:true});}
+function fresh(ex){
+  if(ex.t==='qa'||ex.cg!==undefined||ex.recall||ex.book){ const c={...ex}; ['tries','wrong','done','graded','prepped','sel','okIdx','placed','order','tok','ansN','val','heard','score','listening','live','marks','g','gq','hint','err','shake','t0','state','used','best','pass','near','badw','badp','norec','ok','showEn','url','pl','rate'].forEach(k=>delete c[k]);
+    c.tries=0; c.wrong=new Set(); c.re=true; c.back=1; if(ex.t==='qa') c.opts=ex.fixed?ex.opts.slice():shuffle(ex.opts.slice()); return c; }
+  return mk(ex.t,ex.item,ex.pool,{audio:ex.audio,text:ex.text,re:true,nograde:ex.nograde,ans:ex.ans,extra:ex.extra,noAudio:ex.noAudio});
+}
 
 function options(target,pool,n=4){
   const out=[target], ki=new Set([imgKey(target)]), kt=new Set([norm(target.cz)]);
@@ -2405,7 +2478,7 @@ function autoplay(){
   const ex=cur(); if(!ex) return; const x=ex.item;
   if(ex.ctx&&['arrange','speak','gapx'].includes(ex.t)){ say(ex.ctx.cz,false,ex.ctx.id); return; }
   if(ex.t==='dlisten'||ex.t==='pintro'||ex.t==='fintro'||ex.t==='gapx'||ex.t==='match'||ex.t==='gtab'||ex.t==='lplay'||ex.t==='ltrans'||(ex.t==='write'&&ex.gtype&&!ex.dict)) return;
-  if(ex.t==='qa'){ if(ex.say) say(ex.say,false,ex.sayId); return; }
+  if(ex.t==='qa'){ if(ex.sayList) chainSay(ex.sayList); else if(ex.say) say(ex.say,false,ex.sayId); return; }
   if(ex.t==='mcq'){ say(ex.item.cz,false,ex.item.id); return; }
   if((ex.t==='arrange'&&ex.noAudio)||(ex.t==='speak'&&ex.hide)) return;
   if(ex.t==='intro'||ex.t==='kwintro'||ex.t==='speak'||ex.t==='write'||ex.t==='arrange'||ex.t==='find'||(ex.t==='choose'&&ex.audio)) say(x.cz,false,x.id);
@@ -2756,7 +2829,10 @@ const PRAISE=['Výborně!','Skvěle!','Správně!','Super!','Paráda!'];
 function fb(ok,ex){
   if(!S) return;
   if(ok){ S.combo=ex.tries===0?(S.combo||0)+1:0; const xp=ex.tries===0?10:5; addXP(xp);
-    S.toast={t:'ok',cz:ex.t==='match'?'':ex.item.cz,xp,combo:S.combo,w:PRAISE[Math.floor(Math.random()*PRAISE.length)],k:Date.now()}; }
+    S.toast={t:'ok',cz:ex.t==='match'?'':ex.item.cz,xp,combo:S.combo,w:PRAISE[Math.floor(Math.random()*PRAISE.length)],k:Date.now()};
+    if(ex.cg!==undefined&&!ex.back&&S.combo>=4&&S.combo%4===0&&(S.skips||0)<3&&(ex.t==='qa'||ex.t==='gapx')){
+      const L=S.queue.map((e,i)=>i).filter(i=>i>S.i&&S.queue[i].cg===ex.cg&&S.queue[i].t===ex.t&&!S.queue[i].back&&!S.queue[i].hear);
+      if(L.length>=2){ S.queue.splice(L[L.length-1],1); S.skips=(S.skips||0)+1; S.toast.skip=1; } } }
   else { S.combo=0; S.toast={t:'bad',k:Date.now()}; }
 }
 function ringSVG(pct,size,stroke,col,bg='var(--track)'){ const r=(size-stroke)/2, c=2*Math.PI*r;
@@ -3010,7 +3086,8 @@ function render(){
   if(view!==LASTV){ LASTV=view; app.classList.remove('viewin'); void app.offsetWidth; app.classList.add('viewin'); }
   if(view==='tutor'){ requestAnimationFrame(()=>window.scrollTo(0,document.body.scrollHeight)); }
   if(view!=='home'||S) navArm();
-  if(view==='session'&&S){ const e=cur(), w=app.querySelector('.why'); if(w&&e&&!e.done&&e.wrong&&e.wrong.size){ const r=w.getBoundingClientRect(); if(r.bottom>innerHeight-16) requestAnimationFrame(()=>w.scrollIntoView({block:'end',behavior:'smooth'})); } }
+  if(view==='session'&&S){ const hi=app.querySelector('.qactx .hi'); if(hi){ const bx=hi.closest('.qactx'); try{ bx.scrollTop=Math.max(0,hi.offsetTop-bx.clientHeight/2+hi.offsetHeight/2); }catch(e){} }
+    const e=cur(), w=app.querySelector('.why'); if(w&&e&&!e.done&&e.wrong&&e.wrong.size){ const r=w.getBoundingClientRect(); if(r.bottom>innerHeight-16) requestAnimationFrame(()=>w.scrollIntoView({block:'end',behavior:'smooth'})); } }
 }
 /* ============ CHARACTERS ============ */
 const SKIN={l:'#FFD9BF',m:'#EDB88E',t:'#C98A5E',d:'#8D5A3B'};
@@ -3427,6 +3504,7 @@ function startMiniReview(uid,k){
   sample(sens,early?2:4).forEach((g,i)=>q.splice(1+Math.floor(Math.random()*q.length),0,sentEx(g,i%2?1:0)));
   if(!early){ const dl=DIALOGS.filter(d=>d.les===uid).flatMap(d=>dItems(d).filter(x=>x.who==='B'&&x.gap)); sample(dl,1).forEach(x=>q.push(mk('gapx',x,[],{ctx:prevA(x),dlg:DLG(x.dlg),nograde:true}))); }
   const due=dueList().filter(x=>x.unit!==uid).slice(0,2); reviewQueue(due).forEach(e=>q.push(e));
+  if(!early) bookPool(uid,k==='r2'?4:3).forEach(e=>q.splice(1+Math.floor(Math.random()*q.length),0,e));
   begin('mrev','🔁 Opakování · '+u.t,spread(q),{uid});
 }
 function startLessonSentences(uid){
@@ -3482,6 +3560,7 @@ function startBigReview(uid){
   shuffle(DIALOGS.filter(d=>d.les===uid).flatMap(d=>dItems(d).filter(x=>x.gap))).slice(0,2).forEach(x=>q.push(mk('gapx',x,[],{ctx:prevA(x),dlg:DLG(x.dlg),re:true})));
   const wr=its.slice(7).filter(x=>words(x)<=2).slice(0,3); wr.forEach(x=>q.push(mk('write',x,pool,{re:true})));
   its.slice(7).filter(x=>!wr.includes(x)).slice(0,2).forEach(x=>q.push(mk('speak',x,pool,{re:true})));
+  bookPool(uid,3).forEach(e=>{ e.re=true; q.push(e); });
   begin('big','🏁 Velké opakování · '+u.t,shuffle(q),{uid,miss:[]});
 }
 /* ---- teaching screens (Czech first; English with ? or the explanation button) ---- */
@@ -3492,7 +3571,7 @@ const sRow=it=>`<button class="srow" data-a="say" data-v="${it.id}"><span class=
 function teachHTML(ex){
   const s=ex.slide, u=s.uid?U(s.uid):null, tip=s.uid?LTIPS[s.uid]||null:null;
   const play=its=>`<button class="cta sm lpplay" data-a="tplay">${bl(ex.pl!=null?'⏸️':'▶️',ex.pl!=null?'Zastavit':'Přehrát všechno',20)}</button>`;
-  if(s.kind==='card') return task(s.title,s.en)+(typeof s.body==='function'?s.body():s.body);
+  if(s.kind==='card') return task(s.title,s.en)+(s.step?`<div class="sdots">${Array.from({length:s.step[1]},(_,i)=>`<i class="${i<s.step[0]-1?'d':i===s.step[0]-1?'c':''}"></i>`).join('')}<span>Krok ${s.step[0]} ze ${s.step[1]}${EN(' · step '+s.step[0]+' of '+s.step[1],'en sen')}</span></div>`:'')+(typeof s.body==='function'?s.body():s.body);
   if(s.kind==='goals'){ const goals=UNIT_GOALS[s.uid]||[], G=LPG.slice(1);
     return `${task('Přehled lekce','Lesson summary: what you will learn')}
     <div class="kspeech"><span class="guide">${chr('klara','talk',72)}</span><div class="sbub"><b>${esc(u.lab)}: ${esc(u.t)}</b>${EN('In this lesson we go step by step: words, grammar, listening and reading, speaking, writing, and a big review at the end.')}</div></div>
@@ -4012,8 +4091,9 @@ Object.assign(ACT,{
 
 /* ============ v23: new step type "qa" (question with answers, optional audio) ============ */
 function qaHTML(ex){ const x=ex.item, cls=k=>ex.done?(ex.opts[k]===ex.ans?'ok':ex.sel===k?'bad':'dim'):(ex.wrong.has(k)?'bad':'');
-  const au=ex.say?`<div class="qaplay"><button class="cta alt" data-a="qplay">${bl('🔊',ex.done?ex.say:'Pustit znovu',20)}</button><button class="cta alt qslow" data-a="qslow" aria-label="Pomalu">${ico('🐢',22)}</button></div>`:'';
-  return `${task(ex.tt||'Vyber správnou odpověď',ex.te||'Choose the right answer.')}${ex.ctx?(/^<div class="card/.test(ex.ctx)?ex.ctx:`<div class="card qactx">${ex.ctx}</div>`):''}${ex.pic?`<div class="bigpic sm">${pic(x,90)}</div>`:''}${au}
+  const cx=(ex.done||ex.wrong.size)&&ex.ctxHi?ex.ctxHi:ex.ctx;
+  const au=(ex.say||ex.sayList)?`<div class="qaplay"><button class="cta alt" data-a="qplay">${bl('🔊',ex.done&&ex.say?ex.say:'Pustit znovu',20)}</button><button class="cta alt qslow" data-a="qslow" aria-label="Pomalu">${ico('🐢',22)}</button></div>`:'';
+  return `${task(ex.tt||'Vyber správnou odpověď',ex.te||'Choose the right answer.')}${cx?(/^<div class="card/.test(cx)?cx:`<div class="card qactx">${cx}</div>`):''}${ex.pic?`<div class="bigpic sm">${pic(x,90)}</div>`:''}${au}
    ${ex.q?`<div class="qaq"><b>${esc(ex.q)}</b>${ex.qen?EN(esc(ex.qen)):''}</div>`:''}
    <div class="tlist ans${ex.grid?' qgrid':''}">${ex.opts.map((o,k)=>`<button class="topt ${cls(k)}" data-a="qpick" data-v="${k}" ${ex.done||ex.wrong.has(k)?'disabled':''}>${esc(o)}</button>`).join('')}</div>
    ${ex.done&&ex.note?`<div class="why">${ico('💡',18)} ${ex.note}</div>`:''}`; }
@@ -4021,7 +4101,7 @@ const qa=(o)=>mk('qa',o.item||{id:'Q'+(++CIX),cz:o.say||o.q||'',img:o.img||'❓'
 Object.assign(ACT,{
   qpick:v=>{ const ex=cur(); if(!ex||ex.done) return; const k=+v; ex.sel=k;
     if(ex.opts[k]===ex.ans){ ex.done=true; ding(); finishEx(ex,ex.tries===0); fb(true,ex); render(); later(1500); } else { ex.tries++; ex.wrong.add(k); buzz(); fb(false,ex); render(); } },
-  qplay:()=>{ const ex=cur(); if(ex&&ex.say) say(ex.say,false,ex.sayId); },
+  qplay:()=>{ const ex=cur(); if(ex&&ex.sayList) chainSay(ex.sayList); else if(ex&&ex.say) say(ex.say,false,ex.sayId); },
   qslow:()=>{ const ex=cur(); if(ex&&ex.say) say(ex.say,true,ex.sayId); },
 });
 
@@ -4424,7 +4504,7 @@ const cultCard=uid=>{ const c=CULT[uid]; return c?`<div class="cult">${ico(c[0],
 /* ============ v23: entry points on the existing screens ============ */
 const crsPct=id=>{ try{ const s=lpState(id); return Math.round(100*s.N.filter(n=>n.done).length/s.N.length); }catch(e){ return 0; } };
 function homeExtras(){ const t=(id,ic,cz,en)=>`<button class="ntile" data-a="course" data-v="${id}">${ico(ic,34)}<b>${cz}</b><small>${crsPct(id)} %</small>${EN(en)}</button>`;
-  return `<div class="sect">Navíc${EN(' · Extra courses','en sen')}</div><div class="ntiles">${t('plzen','🏙️','Život v Plzni','Life in Pilsen')}${t('slovesa','🏃','Slovesa','Verbs')}${t('cisla','🔢','Čísla poslechem','Numbers by ear')}<button class="ntile" data-a="read">${ico('📖',34)}<b>Čtení</b><small>${Object.keys(P.read||{}).length} z ${STORIES.length}</small>${EN('Reading')}</button></div>`; }
+  return `<div class="sect">Navíc${EN(' · Extra courses','en sen')}</div><div class="xstrip"><button class="ntile" data-a="mix">${ico('🎯',34)}<b>Denní mix</b><small>12 úloh</small>${EN('Daily mix: 12 varied tasks')}</button>${t('plzen','🏙️','Život v Plzni','Life in Pilsen')}${t('slovesa','🏃','Slovesa','Verbs')}${t('cisla','🔢','Čísla poslechem','Numbers by ear')}<button class="ntile" data-a="read">${ico('📖',34)}<b>Čtení</b><small>${Object.keys(P.read||{}).length} z ${STORIES.length}</small>${EN('Reading')}</button></div>`; }
 function reviewExtras(){ const W=Object.keys(P.miss||{}).length, M=mineItems().length;
   const c=(a,ic,cz,sm,en,cls)=>`<button class="wcard ${cls}" data-a="${a}"><span class="wic">${ico(ic,50)}</span><span><b>${cz}</b><small>${sm}</small>${EN(en)}</span></button>`;
   return c('weak','🎯','Slabá místa',W?`${W} ${czPl(W,'věc k procvičení','věci k procvičení','věcí k procvičení')}`:'Zatím nic','Your weak spots','wk')+c('mine','⭐','Moje slovíčka',`${M} ${czPl(M,'slovo','slova','slov')}`,'My words','mw')
@@ -4517,7 +4597,7 @@ function l1A(){ const teach=[tCard('Ve třídě','Useful classroom phrases. Tap 
    gx(bt('Mluvíte anglicky?'),'anglicky',['angličtina','anglický'],'🇬🇧','Do you speak English?'),gx(bt('Ještě jednou, prosím.'),'jednou',['jeden','jedna'],'🔁','Once more, please.'),
    gx(bt('Mám otázku.'),'otázku',['otázka','otázky'],'🙋','I have a question.'),gx(bt('Jak se řekne česky „thank you“?'),'řekne',['řeknu','říct'],'🗣️','How do you say “thank you” in Czech?'),
    spk(bt('Ještě jednou, prosím.'),'🔁'),spk(bt('Nerozumím. Mluvte pomaleji, prosím.'),'😕'),spk(bt('Mám otázku.'),'🙋')];
-  return [...teach,...spread(d)]; }
+  return steps(teach,d,[[2,4],[1,4],[0,6]]); }
 /* B: formal × informal, Jak se máš?, addressing people (vocative), pronunciation dě tě mě */
 const L1_FI=[['Dobrý den.','Ahoj. / Čau.'],['Odkud jste?','Odkud jsi?'],['Co děláte?','Co děláš?'],['Jak se máte?','Jak se máš?'],['Děkuju.','Díky.'],['Promiňte.','Promiň.'],['Mějte se hezky.','Měj se hezky.'],['Na shledanou.','Ahoj. / Čau.'],['A vy?','A ty?']];
 const L1_VOC=[['pan','pane!','Mr'],['paní','paní!','Mrs'],['slečna','slečno!','Miss'],['Tom','Tome!',''],['Marina','Marino!',''],['Eva','Evo!',''],['Petr','Petře!',''],['Jana','Jano!','']];
@@ -4536,7 +4616,7 @@ function l1B(){ const teach=[tCard('Formálně × neformálně','Vy (formal, or 
    gx(bt('Dobrý den, paní Nováková!'),'paní',['pane','panu'],'👵','Hello, Mrs Nováková!',['paní se nemění: paní Nováková!','“paní” does not change']),
    gx(bt('Mějte se hezky.'),'hezky',['hezký','hezká'],'👋','Have a nice day.'),
    spk(bt('Můžeme si tykat?'),'🤝'),spk(bt('Mějte se hezky. Na shledanou.'),'👋'),spk(bt('Děkuju, mám se dobře. A ty?'),'😀')];
-  return [...teach,...spread(d)]; }
+  return steps(teach,d,[[0,6],[1,3],[2,4],[3,1],[0,1],[3,2]]); }
 /* C: Odkud jste? z + 2nd case, introducing other people */
 const L1_ZEM=[['Česko','z Česka','🇨🇿'],['Německo','z Německa','🇩🇪'],['Polsko','z Polska','🇵🇱'],['Slovensko','ze Slovenska','🇸🇰'],['Rakousko','z Rakouska','🇦🇹'],['Bulharsko','z Bulharska','🇧🇬'],['Rusko','z Ruska','🇷🇺'],['Ukrajina','z Ukrajiny','🇺🇦'],['Amerika','z Ameriky','🇺🇸'],['Anglie','z Anglie','🏴󠁧󠁢󠁥󠁮󠁧󠁿'],['Austrálie','z Austrálie','🇦🇺'],['Francie','z Francie','🇫🇷'],['Itálie','z Itálie','🇮🇹'],['Španělsko','ze Španělska','🇪🇸']];
 const zWrong=([n,g])=>{ const w=g.replace(/^ze? /,''); return n.endsWith('ie')?[n.replace(/ie$/,'ii'),n.replace(/ie$/,'ií')]:n.endsWith('o')?[n,n.replace(/o$/,'u')]:[n,n.replace(/a$/,'ou')]; };
@@ -4550,7 +4630,7 @@ function l1C(){ const teach=[tCard('Odkud jste? – Jsem z…','Where are you fr
    arr(bt('To je pan Novák a to je paní Malá.'),'This is Mr Novák and this is Mrs Malá.','🤝'),arr(bt('Odkud jste? – Jsem z Německa.'),'Where are you from? – I am from Germany.','🇩🇪'),
    spk(bt('Odkud jste?'),'🌍'),spk(bt('To je náhoda!'),'😮')];
   bt(...L1_ZEM.map(r=>`Jsem ${r[1]}.`));
-  return [...teach,...spread(d)]; }
+  return steps(teach,d,[[0,7],[1,3],[1,1],[0,1],[0,1],[1,1]]); }
 /* D: pronouns, být and verbs with negation, mít */
 const L1_PR=[['já','🙋','I'],['ty','👉','you (friend)'],['on','👨','he'],['ona','👩','she'],['to','📦','it'],['my','👥','we'],['vy','🫵','you (formal / more people)'],['oni','👫','they']];
 function l1D(){ const V=n=>VB.find(v=>v[0]===n);
@@ -4565,7 +4645,7 @@ function l1D(){ const V=n=>VB.find(v=>v[0]===n);
    gx(bt('Promiň, já dnes nemám čas.'),'nemám',['nemá','nemáš'],'⏳','Sorry, I have no time today.',['já → nemám','I don’t have = nemám']),
    ...[['ona','👩','Ta žena'],['on','👨','Ten muž'],['my','👥','Já a ty'],['oni','👫','Petr a Jana'],['vy','🫵','Pan Novák a paní Malá (mluvíš s nimi)'],['ty','👉','Kamarád (mluvíš s ním)']].map(([p,e,c])=>qq(`${c}: které zájmeno?`,[p,...sample(['já','ty','on','ona','my','vy','oni'].filter(x=>x!==p),2)],{img:e,qen:'Which pronoun?'})),
    spk(bt('Nejsem doma.'),'🏠'),spk(bt('Nerozumím.'),'😕')];
-  return [...teach,...spread(d)]; }
+  return steps(teach,d,[[1,2],[2,8],[1,3],[2,2],[0,6],[1,1],[2,1]]); }
 /* E: more professions (book page 16) */
 const L1_JOB=[['úředník','úřednice','💼','clerk'],['dělník','dělnice','🏗️','labourer'],['lékař','lékařka','🩺','doctor'],['číšník','servírka','🍽️','waiter, waitress'],['sportovec','sportovkyně','🏃','athlete'],['politik','politička','🏛️','politician'],['prodavač','prodavačka','🛍️','shop assistant'],['uklízeč','uklízečka','🧹','cleaner']];
 function l1E(){ const im=(e,g)=>`@act:${g}:${e}`;
@@ -4575,7 +4655,7 @@ function l1E(){ const im=(e,g)=>`@act:${g}:${e}`;
    ...sample(L1_JOB,3).map(j=>qq('To je '+j[0]+'?',[`Ne, není. To je ${j[1]}.`,`Ano, to je ${j[0]}.`,`Ne, není. To je ${j[0]}.`],{item:{id:'Q'+(++CIX),cz:j[1],img:im(j[2],'♀')},pic:true,img:im(j[2],'♀'),qen:'Look at the picture: a woman.'})),
    spk(bt('Jsem úředník. Pracuju v kanceláři.'),'💼'),spk(bt('Moje sestra je lékařka.'),'🩺')];
   bt(...L1_JOB.flatMap(j=>[j[0],j[1]]));
-  return [...teach,...spread(d)]; }
+  return steps(teach,d); }
 /* F: alphabet, spelling, e-mail and phone, 0–10 arithmetic, 112 */
 const ABC=[['a','á'],['á','dlouhé á'],['b','bé'],['c','cé'],['č','čé'],['d','dé'],['ď','ďé'],['e','é'],['é','dlouhé é'],['ě','e s háčkem'],['f','ef'],['g','gé'],['h','há'],['ch','chá'],['i','měkké í'],['í','dlouhé měkké í'],['j','jé'],['k','ká'],['l','el'],['m','em'],['n','en'],['ň','eň'],['o','ó'],['p','pé'],['q','kvé'],['r','er'],['ř','eř'],['s','es'],['š','eš'],['t','té'],['ť','ťé'],['u','ú'],['ú','u s čárkou'],['ů','u s kroužkem'],['v','vé'],['w','dvojité vé'],['x','iks'],['y','ypsilon'],['ý','dlouhé ypsilon'],['z','zet'],['ž','žet']];
 function l1F(){ const teach=[tCard('Česká abeceda','Letter names: tap a letter to hear its name.',()=>`<div class="numg abc">${ABC.map(([l,n])=>`<button class="numc" data-a="saytext" data-v="${n}"><b>${l}</b><small>${n}</small></button>`).join('')}</div>`+lines([['háček ˇ: č š ž ř ď ť ň ě · čárka ´: á é í ó ú ý · kroužek ˚: ů','Hook, acute accent and ring.'],['Jak se to píše? – Ma-ri-na. Slabika po slabice.','Spell names syllable by syllable.']])),
@@ -4589,14 +4669,14 @@ function l1F(){ const teach=[tCard('Česká abeceda','Letter names: tap a letter
    qq('Jaké číslo voláš v nouzi (doktor, hasiči, policie)?',['112','121','211'],{img:'🚨',qen:'Which number in an emergency?'}),
    gx(bt('Jaký máte telefon?'),'telefon',['telefonu','telefonem'],'📱','What is your phone number?'),gx(bt('Jak se to píše?'),'to',['ten','ta'],'✍️','How is it written?'),
    ...NU_PHONE.slice(2,4).map(nuPhone),spk(bt('Jaký máte e-mail?'),'📧')];
-  return [...teach,...spread(d)]; }
+  return steps(teach,d,[[0,5],[2,4],[1,2],[1,1],[0,1],[1,2],[1,1]]); }
 UEXTRA.L1=[
- {k:'xa',ic:'🙋',t:'Ve třídě a slovo „prosím“',en:'Classroom phrases, “prosím”, international words',sub:'Jak se to píše? Co je to?',run:()=>begin('course','🙋 Ve třídě',l1A(),{})},
- {k:'xb',ic:'🤝',t:'Formálně × neformálně',en:'Vy and ty, How are you?, addressing people',sub:'Odkud jste / jsi? Tome! pane!',run:()=>begin('course','🤝 Formálně × neformálně',l1B(),{})},
- {k:'xc',ic:'🌍',t:'Odkud jste?',en:'Where are you from? Introducing people',sub:'Jsem z Německa, ze Slovenska',run:()=>begin('course','🌍 Odkud jste?',l1C(),{})},
- {k:'xd',ic:'🙋‍♂️',t:'Já, ty, on… a slovesa',en:'Pronouns, být, verbs and the negative',sub:'jsem / nejsem, dělám / nedělám',run:()=>begin('course','🙋 Já, ty, on…',l1D(),{})},
- {k:'xe',ic:'👷',t:'Další profese',en:'More jobs from the book',sub:'úředník, lékař, číšník, sportovec…',run:()=>begin('course','👷 Profese',l1E(),{})},
- {k:'xf',ic:'🔤',t:'Abeceda a kontakty',en:'The alphabet, spelling, e-mail and phone',sub:'eř, zavináč, tečka, 112',run:()=>begin('course','🔤 Abeceda a kontakty',l1F(),{})}];
+ {k:'xa',ic:'🙋',t:'Ve třídě a slovo „prosím“',en:'Classroom phrases, “prosím”, international words',sub:'Jak se to píše? Co je to?',b:l1A,run:()=>begin('course','🙋 Ve třídě',l1A(),{})},
+ {k:'xb',ic:'🤝',t:'Formálně × neformálně',en:'Vy and ty, How are you?, addressing people',sub:'Odkud jste / jsi? Tome! pane!',b:l1B,run:()=>begin('course','🤝 Formálně × neformálně',l1B(),{})},
+ {k:'xc',ic:'🌍',t:'Odkud jste?',en:'Where are you from? Introducing people',sub:'Jsem z Německa, ze Slovenska',b:l1C,run:()=>begin('course','🌍 Odkud jste?',l1C(),{})},
+ {k:'xd',ic:'🙋‍♂️',t:'Já, ty, on… a slovesa',en:'Pronouns, být, verbs and the negative',sub:'jsem / nejsem, dělám / nedělám',b:l1D,run:()=>begin('course','🙋 Já, ty, on…',l1D(),{})},
+ {k:'xe',ic:'👷',t:'Další profese',en:'More jobs from the book',sub:'úředník, lékař, číšník, sportovec…',b:l1E,run:()=>begin('course','👷 Profese',l1E(),{})},
+ {k:'xf',ic:'🔤',t:'Abeceda a kontakty',en:'The alphabet, spelling, e-mail and phone',sub:'eř, zavináč, tečka, 112',b:l1F,run:()=>begin('course','🔤 Abeceda a kontakty',l1F(),{})}];
 
 /* ============ v23.3: book audit, Lekce 2 (pages 17–24) ============ */
 const LOC2=[['letiště','🛫','N','airport'],['zastávka','🚏','F','stop'],['stanice','🚉','F','station (metro)'],['klub','🎶','Mi','club'],['hotel','🏨','Mi','hotel'],['restaurace','🍽️','F','restaurant'],['kino','🎬','N','cinema'],['supermarket','🛒','Mi','supermarket'],['nemocnice','🏥','F','hospital'],['divadlo','🎭','N','theatre'],['obchod','🏪','Mi','shop'],['škola','🏫','F','school'],['nádraží','🚉','N','station']];
@@ -4612,7 +4692,7 @@ function l2A(){ const teach=[tCard('Je tady nějaký…?','Is there a … here? 
    qa({say:bt('Hotel je odtud asi pět minut pěšky.'),q:'Je hotel blízko?',qen:'Is the hotel near?',opts:['Ano, pět minut pěšky.','Ne, pět kilometrů autem.','Ne, je to daleko.'],img:'🏨'}),
    spk(bt('Prosím vás, nevíte, kde je tady nějaká restaurace?'),'🍽️'),spk(bt('Hm, nevím. Moment… Aha, už vím!'),'🤔')];
   bt(...LOC2.map(l=>l[0]));
-  return [...teach,...spread(d)]; }
+  return steps(teach,d,[[0,9],[2,5]],[1,0,2]); }
 /* B: transport, jít × jet, hledat + 4th case */
 const TR2=[['metro','metrem','🚇','by underground'],['autobus','autobusem','🚌','by bus'],['auto','autem','🚗','by car'],['vlak','vlakem','🚆','by train'],['tramvaj','tramvají','🚋','by tram'],['taxík','taxíkem','🚕','by taxi'],['kolo','na kole','🚲','by bike'],['pěšky','pěšky','🚶','on foot']];
 function l2B(){ const V=n=>VB.find(v=>v[0]===n);
@@ -4632,7 +4712,7 @@ function l2B(){ const V=n=>VB.find(v=>v[0]===n);
    qa({say:bt('Musíte jet čtyři stanice tramvají.'),q:'Kolik stanic musíte jet?',qen:'How many stops?',opts:['4','2','14'],img:'🚋',grid:true}),
    spk(bt('Jedu tramvají do práce.'),'🚋')];
   bt(...TR2.map(t=>t[1]==='pěšky'?'Jdu pěšky.':'Jedu '+t[1]+'.'));
-  return [...teach,...spread(d)]; }
+  return steps(teach,d,[[0,6],[1,6],[2,3],[0,2]]); }
 /* C: location words incl. uprostřed, first / second street */
 function l2C(){ const P2=[['doprava','vpravo','supermarket','🛒','right'],['doleva','vlevo','restaurace','🍽️','left'],['nahoru','nahoře','banka','🏦','up'],['dolů','dole','škola','🏫','down'],['doprostřed','uprostřed','kašna','⛲','in the middle']];
   const teach=[tCard('Kam? → Kde?','Where to → where it is. Also uprostřed (in the middle).',()=>tTable(['Kam jdu?','Kde to je?'],P2.map(p=>[`<button class="tnum" data-a="saytext" data-v="Musíte jít ${p[0]}.">${p[0]}</button>`,`<button class="tnum" data-a="saytext" data-v="To je ${p[1]}.">${p[1]}</button>`]))+lines([['vpravo = napravo, vlevo = nalevo','Both forms are fine.'],['Musíte jít rovně, pak druhou ulicí doleva.','Go straight on, then take the second street on the left.']]))];
@@ -4641,7 +4721,7 @@ function l2C(){ const P2=[['doprava','vpravo','supermarket','🛒','right'],['do
    qa({say:bt('Jděte první ulicí doprava a pak rovně.'),q:'Kam musíte jít nejdřív?',qen:'Where first?',opts:['první ulicí doprava','druhou ulicí doleva','rovně a pak doleva'],img:'🛣️'}),
    qq('Co je uprostřed?',['kašna','banka','škola'],{ctx:'Vlevo je banka, vpravo je škola a uprostřed je kašna.',img:'⛲',qen:'What is in the middle?'}),
    spk(bt('Musíte jít rovně, pak druhou ulicí doleva.'),'🛣️')];
-  return [...teach,...spread(d)]; }
+  return steps(teach,d); }
 /* D: the e-mail page: likes, locative of places, Czech address */
 function l2D(){ const LK=[['Líbí se mi tady.','😀'],['Nelíbí se mi tady.','😞'],['Chutná mi pivo.','😀'],['Nechutná mi pivo.','😞'],['Chutnají mi knedlíky.','😀'],['Nechutnají mi knedlíky.','😞'],['Jsem ráda, že jsem tady.','😀'],['Nejsem rád, že jsem tady.','😞']];
   const teach=[tCard('Píšeme e-mail','Useful phrases for a short e-mail to a friend.',()=>phr([['Jak se máš? Já se mám dobře.','How are you? I am fine.','👋'],['Bydlím v centru. Všechno je blízko.','I live in the centre. Everything is close.','🏙️'],['Pracuju v kanceláři jako asistentka.','I work in an office as an assistant.','💼'],['Líbí se mi tady.','I like it here.','😀'],['Chutná mi pivo, ale nechutnají mi knedlíky.','I like the beer, but not the dumplings.','🍺'],['Jsem ráda, že jsem tady.','I am glad to be here (a man says: Jsem rád).','😊'],['Měj se hezky.','Take care.','👋']])),
@@ -4658,14 +4738,14 @@ function l2D(){ const LK=[['Líbí se mi tady.','😀'],['Nelíbí se mi tady.',
    arr(bt('Bydlím v centru a všechno je blízko.'),'I live in the centre and everything is close.','🏙️'),
    spk(bt('Líbí se mi tady.'),'😀'),spk(bt('Chutná mi pivo, ale nechutnají mi knedlíky.'),'🍺')];
   bt(...LK.map(x=>x[0]),'v Praze','v Plzni','v centru','ve škole','ve firmě','v restauraci','v kanceláři');
-  return [...teach,...spread(d)]; }
+  return steps(teach,d,[[0,4],[1,2],[0,4],[2,1],[0,3]]); }
 WTASK.push({id:'w7',ic:'🏠',t:'E-mail: kde bydlím',en:'An e-mail about where you live (Lesson 2)',sit:'Napiš kamarádovi e-mail (asi 50 slov): jak se máš, kde bydlíš a pracuješ, co je blízko, co se ti líbí a co ti chutná.',sen:'Write a friend an e-mail (about 50 words): how you are, where you live and work, what is nearby, what you like.',hint:['Ahoj …, jak se máš?','Já se mám dobře.','Bydlím v …','Blízko je …','Líbí se mi tady.','Chutná mi … / Nechutná mi …','Měj se hezky.'],model:'Ahoj Petře, jak se máš? Já se mám dobře. Bydlím v Plzni v centru a pracuju v laboratoři. Blízko je park a dobrá kavárna. Líbí se mi tady, protože všechno je blízko. Chutná mi české pivo, ale nechutnají mi knedlíky. Měj se hezky! Sam'});
 UEXTRA.L2=[
- {k:'xg',ic:'🏨',t:'Je tady nějaký hotel?',en:'Places in town: nějaký, jeden nový, near or far',sub:'nějaký / nějaká / nějaké, jedničkou, áčkem',run:()=>begin('course','🏨 Je tady nějaký hotel?',l2A(),{})},
- {k:'xt',ic:'🚋',t:'Jedu tramvají, jdu pěšky',en:'Transport, jít × jet, hledat + 4th case',sub:'metrem, autem, vlakem; hledám školu',run:()=>begin('course','🚋 Čím jedeš?',l2B(),{})},
+ {k:'xg',ic:'🏨',t:'Je tady nějaký hotel?',en:'Places in town: nějaký, jeden nový, near or far',sub:'nějaký / nějaká / nějaké, jedničkou, áčkem',b:l2A,run:()=>begin('course','🏨 Je tady nějaký hotel?',l2A(),{})},
+ {k:'xt',ic:'🚋',t:'Jedu tramvají, jdu pěšky',en:'Transport, jít × jet, hledat + 4th case',sub:'metrem, autem, vlakem; hledám školu',b:l2B,run:()=>begin('course','🚋 Čím jedeš?',l2B(),{})},
  ...UEXTRA.L2,
- {k:'xu',ic:'⛲',t:'Vpravo, uprostřed',en:'Where it is: vpravo, uprostřed, second street',sub:'Kam? → Kde?',run:()=>begin('course','⛲ Kde co je?',l2C(),{})},
- {k:'xm',ic:'✉️',t:'Píšeme e-mail',en:'The e-mail page: likes, v Praze, addresses',sub:'Líbí se mi tady. Chutná mi…',run:()=>begin('course','✉️ Píšeme e-mail',l2D(),{})}];
+ {k:'xu',ic:'⛲',t:'Vpravo, uprostřed',en:'Where it is: vpravo, uprostřed, second street',sub:'Kam? → Kde?',b:l2C,run:()=>begin('course','⛲ Kde co je?',l2C(),{})},
+ {k:'xm',ic:'✉️',t:'Píšeme e-mail',en:'The e-mail page: likes, v Praze, addresses',sub:'Líbí se mi tady. Chutná mi…',b:l2D,run:()=>begin('course','✉️ Píšeme e-mail',l2D(),{})}];
 
 /* ============ v23.3: book audit, Lekce 3 (pages 25–32) ============ */
 /* menu: [1st case, 4th case (Dám si…), gender, picture, English, price] */
@@ -4682,7 +4762,7 @@ function l3A(){ const teach=[tCard('Jídelní lístek','The menu. Tap a dish to 
    qa({say:bt('Jaký je ten džus? Je dobrý? – Ne, není.'),q:'Je ten džus dobrý?',opts:['Ne, není.','Ano, je.','Ano, je výborný.'],img:'🧃'}),
    spk(bt('Ta česneková polévka je výborná.'),'🧄'),spk(bt('Palačinky se šlehačkou, prosím.'),'🥞')];
   bt(...MENU.map(m=>m[0]),'palačinky se šlehačkou','zmrzlina s ovocem');
-  return [...teach,...spread(d)]; }
+  return steps(teach,d,[[1,7],[0,4],[1,2],[0,1]]); }
 /* B: ordering: Dám si + 4th case with adjectives, waiter × guest, jednou / dvakrát */
 function l3B(){ const W=[['Co si dáte k pití?','číšník'],['Co si dáte k jídlu?','číšník'],['Dobrou chuť!','číšník'],['Dáte si ještě něco?','číšník'],['Zvlášť, nebo dohromady?','číšník'],['Já si dám pivo.','host'],['Zaplatím.','host'],['Dohromady, prosím.','host']];
   const teach=[tCard('Dám si česnekovou polévku','Ordering: Dám si + 4th case. Adjectives change too.',()=>tTable(['','1. pád','Dám si… (4. pád)'],[['mužský živ.','grilovaný losos','grilovaného lososa'],['mužský','smažený sýr','smažený sýr'],['ženský','česneková polévka','česnekovou polévku'],['střední','černé pivo','černé pivo']])+lines([['Dám si… = Já si dám… (si je vždy na druhém místě)','si always stands in second place'],['Jednou kávu, dvakrát polévku, třikrát pivo.','Once, twice, three times + 4th case.'],['Dáme si vanilkovou zmrzlinu. Dobrou chuť! (ou = jedna slabika)','The diphthong ou.']])),
@@ -4699,7 +4779,7 @@ function l3B(){ const W=[['Co si dáte k pití?','číšník'],['Co si dáte k j
    qa({say:bt('Dvakrát kávu a jednou čaj, prosím.'),q:'Kolik kávy?',qen:'How many coffees?',opts:['2','1','3'],img:'☕',grid:true}),
    arr(bt('Dám si česnekovou polévku a smažený sýr.'),'I’ll have garlic soup and fried cheese.','🧀'),spk(bt('Zaplatím, prosím. Dohromady.'),'💳'),spk(bt('Co si dáte k pití?'),'🤵')];
   bt(...MENU.map(m=>`Dám si ${m[1]}.`));
-  return [...teach,...spread(d)]; }
+  return steps(teach,d,[[0,9],[1,4],[0,2],[1,2]]); }
 /* C: verbs: číst, pít, chtít, jíst, mít rád */
 function l3C(){ const V=n=>VB.find(v=>v[0]===n);
   const teach=[tCard('Slovesa -e: číst, pít','The 4th verb type: the stem changes. Learn the já-form too.',()=>tTable(['','číst','pít'],[['já','čtu','piju'],['ty','čteš','piješ'],['on, ona','čte','pije'],['my','čteme','pijeme'],['vy','čtete','pijete'],['oni','čtou','pijou']])),
@@ -4713,7 +4793,7 @@ function l3C(){ const V=n=>VB.find(v=>v[0]===n);
    qq('„Máš rád čokoládu?“ – „Ano.“ Ty máš taky rád čokoládu. Co řekneš?',['Já taky.','Já taky ne.','Já ne.'],{img:'🍫',qen:'You like it too.'}),
    qq('„Jíš maso?“ – „Ne.“ Ty taky nejíš maso. Co řekneš?',['Já taky ne.','Já taky.','Já ano.'],{img:'🥦',qen:'You don’t eat it either.'}),
    spk(bt('Mám rád kávu, ale nepiju alkohol.'),'☕')];
-  return [...teach,...spread(d)]; }
+  return steps(teach,d,[[0,4],[1,12]]); }
 /* D: a coffee visit (formal, polite) */
 function l3D(){ const teach=[tCard('Pozvání na kávu','A visit. Polite phrases. Tap to listen.',()=>phr([['Pojďte dál.','Come in.','🚪'],['Prosím, odložte si.','Please take off your coat.','🧥'],['Sedněte si, prosím.','Sit down, please.','🪑'],['Dáte si kávu, nebo čaj?','Will you have coffee or tea?','☕'],['A nechcete cukr a mléko? – Ano, děkuju.','Would you like sugar and milk? – Yes, please. / No, thank you.','🥛'],['Dáte si dort? – Ne, děkuju. – To je škoda.','Cake? – No, thanks. – That’s a shame.','🍰'],['Tak možná později.','Maybe later then.','⏳'],['Promiňte, kde je tady toaleta?','Excuse me, where is the toilet?','🚻'],['Už musím jít.','I have to go now.','👋'],['Pozdravujte sestru!','Give my regards to your sister!','💐'],['Sestra je bohužel nemocná. – To je mi líto.','My sister is ill, unfortunately. – I’m sorry.','🤒'],['Můžu vám nějak pomoct? – Jste moc hodná.','Can I help you somehow? – You are very kind.','🤝']])+lines([['A nechcete cukr? = zdvořilá otázka (Would you like sugar?)','A negative question is polite.']]))];
   const d=[qq('Host stojí u dveří. Co řekneš?',['Pojďte dál.','Na shledanou.','Dobrou chuť.'],{img:'🚪',qen:'The guest is at the door.'}),
@@ -4726,7 +4806,7 @@ function l3D(){ const teach=[tCard('Pozvání na kávu','A visit. Polite phrases
    gx(bt('Jste moc hodná.'),'hodná',['hodný','hodní'],'@act:♀:🤝','You are very kind (to a woman).',['♀ žena → hodná','to a woman: hodná']),
    gx(bt('Promiňte, kde je tady toaleta?'),'toaleta',['toaletu','toalety'],'🚻','Excuse me, where is the toilet?',['kde je… + 1. pád','where is … + 1st case']),
    arr(bt('Dáte si kávu, nebo čaj?'),'Will you have coffee or tea?','☕'),spk(bt('Pojďte dál. Sedněte si, prosím.'),'🚪'),spk(bt('To je mi líto.'),'🤒')];
-  return [...teach,...spread(d)]; }
+  return steps(teach,d); }
 /* E: expressions with mít + everyday spoken Czech */
 const MIT=[['mít čas','to have time','⏰'],['mít hlad','to be hungry','🍽️'],['mít žízeň','to be thirsty','🥤'],['mít strach','to be scared','😨'],['mít štěstí','to be lucky','🍀'],['mít smůlu','to be unlucky','🐈‍⬛'],['mít nápad','to have an idea','💡'],['mít pravdu','to be right','✅'],['mít rýmu','to have a cold','🤧'],['mít vztek','to be angry','😡'],['mít dovolenou','to be on holiday','🏖️'],['mít rande','to have a date','💘'],['mít dobrou náladu','to be in a good mood','😄'],['mít špatnou náladu','to be in a bad mood','😒'],['mít moc práce','to have a lot of work','💼'],['mít peníze','to have money','💰'],['mít problémy','to have problems','😩'],['mít dietu','to be on a diet','🥗'],['mít lekci','to have a lesson','📚'],['mít depresi','to be depressed','🌧️']];
 const HOV=[['kafe','káva'],['jo','ano'],['seš','jsi'],['fajn','dobře'],['jsem v pohodě','mám se dobře'],['fakt','opravdu']];
@@ -4740,13 +4820,13 @@ function l3E(){ const m1=x=>x.replace(/^mít /,'Mám ').replace(/^./,c=>c.toUppe
    qa({say:bt('Nechceš jít na kafe? – Ne, díky. Mám rande.'),q:'Proč nechce jít na kafe?',opts:['Má rande.','Má rýmu.','Nemá čas.'],img:'💘'}),
    spk(bt('Mám hlad a mám žízeň.'),'🍽️'),spk(bt('Máš pravdu.'),'✅')];
   bt(...MIT.map(m=>m1(m[0])));
-  return [...teach,...spread(d)]; }
+  return steps(teach,d,[[0,8],[1,5],[0,2]]); }
 UEXTRA.L3=[
- {k:'xl',ic:'📜',t:'Jídelní lístek',en:'The menu: dishes, prices, ten sýr je dobrý',sub:'česneková polévka, smažený sýr, Kolik stojí…?',run:()=>begin('course','📜 Jídelní lístek',l3A(),{})},
- {k:'xo',ic:'🤵',t:'Dám si česnekovou polévku',en:'Ordering with adjectives, waiter × guest, dvakrát',sub:'grilovaného lososa, Zvlášť, nebo dohromady?',run:()=>begin('course','🤵 V restauraci',l3B(),{})},
- {k:'xv',ic:'📖',t:'Čtu, piju, chci, jím',en:'Verbs: -e verbs, chtít, jíst, mít rád',sub:'Já taky. / Já taky ne.',run:()=>begin('course','📖 Slovesa',l3C(),{})},
- {k:'xk',ic:'☕',t:'Pozvání na kávu',en:'A coffee visit: polite phrases',sub:'Pojďte dál. To je mi líto.',run:()=>begin('course','☕ Pozvání na kávu',l3D(),{})},
- {k:'xh',ic:'🤧',t:'Mám hlad, mám čas',en:'20 expressions with mít, everyday spoken Czech',sub:'mít štěstí, mít smůlu; kafe, fajn, seš',run:()=>begin('course','🤧 Výrazy s mít',l3E(),{})}];
+ {k:'xl',ic:'📜',t:'Jídelní lístek',en:'The menu: dishes, prices, ten sýr je dobrý',sub:'česneková polévka, smažený sýr, Kolik stojí…?',b:l3A,run:()=>begin('course','📜 Jídelní lístek',l3A(),{})},
+ {k:'xo',ic:'🤵',t:'Dám si česnekovou polévku',en:'Ordering with adjectives, waiter × guest, dvakrát',sub:'grilovaného lososa, Zvlášť, nebo dohromady?',b:l3B,run:()=>begin('course','🤵 V restauraci',l3B(),{})},
+ {k:'xv',ic:'📖',t:'Čtu, piju, chci, jím',en:'Verbs: -e verbs, chtít, jíst, mít rád',sub:'Já taky. / Já taky ne.',b:l3C,run:()=>begin('course','📖 Slovesa',l3C(),{})},
+ {k:'xk',ic:'☕',t:'Pozvání na kávu',en:'A coffee visit: polite phrases',sub:'Pojďte dál. To je mi líto.',b:l3D,run:()=>begin('course','☕ Pozvání na kávu',l3D(),{})},
+ {k:'xh',ic:'🤧',t:'Mám hlad, mám čas',en:'20 expressions with mít, everyday spoken Czech',sub:'mít štěstí, mít smůlu; kafe, fajn, seš',b:l3E,run:()=>begin('course','🤧 Výrazy s mít',l3E(),{})}];
 
 /* ============ v24: book gaps L1–L3, new exercise types, more review, interactive reminders ============ */
 /* ---- book gaps ---- */
@@ -4761,19 +4841,19 @@ function l1X(){ const teach=[tCard('Slova, která znáš','International words. 
    gx(bt('Ta studentka je moc aktivní.'),'Ta',['Ten','To'],'👩‍🎓','That student is very active.',['studentka → ta','feminine → ta']),
    gx(bt('To centrum je moderní.'),'To',['Ten','Ta'],'🏙️','The centre is modern.',['centrum → to','-um → neuter']),
    qq('Hledáš slovo a kamarád ho řekne. Co řekneš?',['To je ono!','To nic.','Nerozumím.'],{img:'💡',qen:'Your friend says the word you were looking for.'}),
-   spk(bt('Jsem optimistický a aktivní.'),'😄')];
+   spk(gF('Jsem optimistický a aktivní.','Jsem optimistická a aktivní.'),'😄')];
   bt(...LOANS.map(l=>l[0]),'energický, optimistický, moderní, kvalitní, aktivní, inteligentní','To je ono!');
-  return [...teach,...spread(d)]; }
+  return steps(teach,d); }
 const LENA=[['Ahoj Jano,','Hi Jana,'],['jak se máš? Já se mám moc dobře. Teď bydlím v Praze a pracuju v jedné mezinárodní organizaci.','how are you? I am very well. I live in Prague now and work for an international organisation.'],['Bydlím blízko centra. Můj byt je malý, ale hezký. Dole je kavárna a vzadu je parkoviště.','I live near the centre. My flat is small but nice. Downstairs there is a café and at the back a car park.'],['Do práce jezdím trojkou, je to jen deset minut.','I go to work on the number 3, it takes only ten minutes.'],['V sobotu jsme byli na Pražském hradě a na Karlově mostě. Je to tady moc hezké.','On Saturday we went to Prague Castle and Charles Bridge. It is very nice here ☺.'],['Chutná mi české pivo, ale nechutnají mi knedlíky.','I like Czech beer, but not dumplings ☹.'],['Měj se hezky, Lena','Take care, Lena']];
-const LENA_TF=[['Lena bydlí v Praze.',1],['Lena pracuje ve škole.',0],['Lena má velký byt.',0],['Do práce jezdí tramvají nebo autobusem číslo 3.',1],['Lena byla na Pražském hradě.',1],['Leně chutnají knedlíky.',0]];
-function l2X(){ const mail=`<div class="card qactx mail">${LENA.map(r=>`<p>${esc(r[0])}${(/[☺☹]/.exec(r[1])||[''])[0].replace(/./,' $&')}</p>`).join('')}</div>`;
+const LENA_TF=[['Lena bydlí v Praze.',1,1],['Lena pracuje ve škole.',0,1],['Lena má velký byt.',0,2],['Do práce jezdí tramvají nebo autobusem číslo 3.',1,3],['Lena byla na Pražském hradě.',1,4],['Leně chutnají knedlíky.',0,5]];
+function l2X(){ const mailH=hi=>`<div class="card qactx mail">${LENA.map((r,i)=>`<p${i===hi?' class="hi"':''}>${esc(r[0])}${(/[☺☹]/.exec(r[1])||[''])[0].replace(/./,' $&')}</p>`).join('')}</div>`, mail=mailH();
   const teach=[tCard('E-mail od Leny','Read the e-mail. Tap a sentence to hear it.',()=>`<div class="slist">${LENA.map(r=>`<button class="srow" data-a="saytext" data-v="${esc(r[0])}"><span class="stx"><b>${esc(r[0])}${(/[☺☹]/.exec(r[1])||[''])[0].replace(/./,' $&')}</b>${EN(esc(r[1]))}</span>${ico('🔊',18)}</button>`).join('')}</div>`+lines([['☺ = veselý smajlík · ☹ = smutný smajlík','happy / sad smiley'],['mezinárodní organizace = international organisation','Pražský hrad = Prague Castle · Karlův most = Charles Bridge']]))];
-  const d=[...LENA_TF.map(([s,t])=>tf(s,t,{ctx:mail,te:'Read the e-mail. True or false?'})),
+  const d=[...LENA_TF.map(([s,t,ev])=>tf(s,t,{ctx:mail,ctxHi:mailH(ev),te:'Read the e-mail. True or false?'})),
    qa({say:bt('Musíte jet trojkou.'),q:'Čím musíte jet?',opts:['autobusem nebo tramvají číslo 3','autobusem nebo tramvají číslo 2','metrem C'],img:'3️⃣'}),
    gx(bt('Prosím vás, je tady nějaké parkoviště?'),'nějaké',['nějaký','nějaká'],'🅿️','Excuse me, is there a car park here?',['parkoviště: -iště je vždy střední → nějaké','-iště is always neuter']),
    spk(bt('Je to tady moc hezké.'),'☺️')];
   bt(...LENA.map(r=>r[0]),...LENA_TF.map(r=>r[0]));
-  return [...teach,...spread(d)]; }
+  return steps(teach,d); }
 const MENU2=[['dušené zelí','hlavní jídla','🥬'],['okurkový salát','saláty','🥒'],['ovocný čaj','nealkoholické nápoje','🫖'],['neperlivá voda','nealkoholické nápoje','💧'],['světlé pivo','alkoholické nápoje','🍺'],['bílé víno','alkoholické nápoje','🥂'],['čokoládová zmrzlina','dezerty','🍫']];
 function l3X(){ const teach=[tCard('Další z jídelního lístku','More from the menu. Tap to listen.',()=>tTable(['','kam patří'],MENU2.map(m=>[`<button class="tnum" data-a="saytext" data-v="${m[0]}">${ico(m[2],18)} ${m[0]}</button>`,m[1]])))
    ,tCard('Ještě pár vět','More phrases from the lesson.',()=>phr([['Dám si dobrého kvalitního lososa.','I’ll have a good quality salmon.','🍣'],['Dáme si čokoládovou zmrzlinu.','We’ll have chocolate ice cream.','🍫'],['Dáš si Colu, nebo Fantu?','Will you have Cola or Fanta?','🥤'],['Tady je tři sta korun. Zbytek je spropitné.','Here are 300 crowns. Keep the change (tip).','💰'],['Promiňte, odskočím si.','Excuse me, I’ll just pop to the toilet.','🚻'],['Jste nějaký smutný.','You look a bit sad (formal, to a man).','😔'],['Seš nějaká smutná.','You look a bit sad (informal, to a woman; seš = jsi).','😔'],['Mám se docela fajn.','I am quite fine.','🙂'],['Jsem spokojená. Mám krásný život.','I am happy. I have a beautiful life.','😊']]))];
@@ -4786,18 +4866,26 @@ function l3X(){ const teach=[tCard('Další z jídelního lístku','More from th
    gx(bt('Jsem spokojená.'),'spokojená',['spokojený','spokojení'],'@act:♀:😊','I am satisfied (woman).',['♀ žena → spokojená','a woman: -á']),
    spk(bt('Mám se docela fajn.'),'🙂')];
   bt(...MENU2.map(m=>m[0]),'Dám si dobrého kvalitního lososa.','Tady je tři sta korun. Zbytek je spropitné.','Promiňte, odskočím si.','Jste nějaký smutný.','Seš nějaká smutná.','Jsem spokojená. Mám krásný život.');
-  return [...teach,...spread(d)]; }
-UEXTRA.L1.push({k:'xx',ic:'📗',t:'Doplněk z učebnice',en:'The last bits of the book: loanwords, -ovat verbs',sub:'profesor, konference, telefonuju, To je ono!',run:()=>begin('course','📗 Doplněk z učebnice',l1X(),{})});
-UEXTRA.L2.push({k:'xx',ic:'📗',t:'E-mail od Leny',en:'Read an e-mail: ANO / NE',sub:'mezinárodní organizace, trojkou, parkoviště',run:()=>begin('course','📗 E-mail od Leny',l2X(),{})});
-UEXTRA.L3.push({k:'xx',ic:'📗',t:'Doplněk z učebnice',en:'More menu items and phrases',sub:'bílé víno, spropitné, odskočím si',run:()=>begin('course','📗 Doplněk z učebnice',l3X(),{})});
+  return steps(teach,d,[[0,6],[1,7]]); }
+UEXTRA.L1.push({k:'xx',ic:'📗',t:'Doplněk z učebnice',en:'The last bits of the book: loanwords, -ovat verbs',sub:'profesor, konference, telefonuju, To je ono!',b:l1X,run:()=>begin('course','📗 Doplněk z učebnice',l1X(),{})});
+UEXTRA.L2.push({k:'xx',ic:'📗',t:'E-mail od Leny',en:'Read an e-mail: ANO / NE',sub:'mezinárodní organizace, trojkou, parkoviště',b:l2X,run:()=>begin('course','📗 E-mail od Leny',l2X(),{})});
+UEXTRA.L3.push({k:'xx',ic:'📗',t:'Doplněk z učebnice',en:'More menu items and phrases',sub:'bílé víno, spropitné, odskočím si',b:l3X,run:()=>begin('course','📗 Doplněk z učebnice',l3X(),{})});
 /* ============ v25: book audit 11 Nov — remaining gaps L1–L3 and full extras for L4–L6 (main book only).
    Texts are written for the app (not copied from the book); they practise the same words and structures. ============ */
-const rdBox=rows=>`<div class="card qactx mail">${rows.map(r=>`<p>${r[2]?`<b>${esc(r[2])}:</b> `:''}${esc(r[0])}</p>`).join('')}</div>`;
-const rdCard=(title,en,rows,extra)=>(rows.forEach(r=>{ if(r[2]&&NAMEG[r[2]]) G25[r[0]]=NAMEG[r[2]]; }),tCard(title,en,()=>`<div class="slist">${rows.map(r=>`<button class="srow" data-a="saytext" data-v="${esc(r[0])}"><span class="stx"><b>${r[2]?esc(r[2])+': ':''}${esc(r[0])}</b>${EN(esc(r[1]))}</span>${ico('🔊',18)}</button>`).join('')}</div>`+(extra?extra():'')));
+const NAMEC={Lucie:'lucie',Petra:'petra',Jana:'jana',Honza:'honza','Tomáš':'recep'};
+const RD26={};
+const rdAll=(key,rows,dlg)=>{ RD26[key]=rows.map(r=>r[0]).filter(x=>x&&x!=='—'); return `<button class="cta sm alt rdall" data-a="rdall" data-v="${esc(key)}">${bl('▶️',dlg?'Přehrát celý rozhovor':'Přehrát celý text',18)}</button>`; };
+const mailBlock=(rows,m={})=>`<div class="mail26">${m.from?`<div class="mh">${NAMEC[m.from]?chr(NAMEC[m.from],'happy',40):`<span class="mic">${ico(m.ic||'✉️',28)}</span>`}<span><b>${esc(m.from)}</b>${m.to?`<small>→ ${esc(m.to)}</small>`:''}</span>${m.mail?ico('✉️',22):''}</div>`:''}${rows.map(r=>`<button class="ml" data-a="saytext" data-v="${esc(r[0])}"><b>${esc(r[0])}</b>${EN(esc(r[1]))}</button>`).join('')}</div>`;
+const chatBlock=rows=>{ const sp=[...new Set(rows.map(r=>r[2]).filter(Boolean))]; return `<div class="chat26">${rows.map(r=>`<button class="cb${sp.indexOf(r[2])%2?' r':''}" data-a="saytext" data-v="${esc(r[0])}">${NAMEC[r[2]]?chr(NAMEC[r[2]],'talk',36):''}<span class="bb"><small>${esc(r[2])}</small><b>${esc(r[0])}</b>${EN(esc(r[1]))}</span></button>`).join('')}</div>`; };
+const rdBox=(rows,hi)=>{ const sp=[...new Set(rows.map(r=>r[2]).filter(Boolean))];
+  return sp.length>=2?`<div class="card qactx chat26 sm">${rows.map((r,i)=>`<div class="cb${sp.indexOf(r[2])%2?' r':''}${i===hi?' hi':''}">${NAMEC[r[2]]?chr(NAMEC[r[2]],'happy',24):''}<span class="bb"><small>${esc(r[2])}</small>${esc(r[0])}</span></div>`).join('')}</div>`
+   :`<div class="card qactx mail">${rows.map((r,i)=>r[0]==='—'?'<hr>':`<p${i===hi?' class="hi"':''}>${r[2]?`<b>${esc(r[2])}:</b> `:''}${esc(r[0])}</p>`).join('')}</div>`; };
+const rdCard=(title,en,rows,extra,meta)=>{ rows.forEach(r=>{ if(r[2]&&NAMEG[r[2]]) G25[r[0]]=NAMEG[r[2]]; }); const dlg=new Set(rows.map(r=>r[2]).filter(Boolean)).size>=2;
+  return tCard(title,en,()=>rdAll(title,rows,dlg)+(dlg?chatBlock(rows):mailBlock(rows,meta||{}))+(extra?extra():'')); };
 const ma=(e)=>`@act:♂:${e}`, fe=(e)=>`@act:♀:${e}`;
 const G25={}, NAMEG={Lucie:'f',Petra:'f',Jana:'f',Honza:'m','Tomáš':'m'};          /* which voice reads a line: the speaker’s gender */
 const gset=(rows,g)=>rows.forEach(r=>{ G25[r[0]]=(r[2]&&NAMEG[r[2]])||g; });
-const sexOf=t=>/\bráda\b|\b\w+la jsem\b|\bjsem \w+la\b|\b[Jj]sem (vdaná|nemocná|ospalá|unavená|vegetariánka|sova)\b/u.test(t)?'f':/\brád\b|\b\w+l jsem\b|\bjsem \w+l\b|\b[Jj]sem (nemocný|vegetarián)\b/u.test(t)?'m':'';
+const sexOf=t=>{ const F=/(?<!\p{L})(?:ráda|\p{L}+la jsem|jsem (?:se |si )?\p{L}+la|[Jj]sem (?:vdaná|nemocná|ospalá|unavená|vegetariánka|optimistická))(?!\p{L})/u, M=/(?<!\p{L})(?:rád|\p{L}+l jsem|jsem (?:se |si )?\p{L}+l|[Jj]sem (?:nemocný|vegetarián|unavený|optimistický|ženatý))(?!\p{L})/u; return F.test(t)?'f':M.test(t)?'m':''; };
 
 /* ---------- L1: business cards, To je jedno, female forms ---------- */
 const VIZ=[['Marina Kazakova','asistentka','Ekoservis · Vinohradská 17, 120 00 Praha 2','marina_kaz@gmail.com','777 450 216'],
@@ -4814,21 +4902,21 @@ function l1Y(){ const card=v=>`<div class="card viz"><b>${esc(v[0])}</b><i>${esc
    gx(bt('Ona je prezidentka.'),'prezidentka',['prezident','prezidenta'],fe('🏛️'),'She is a president.',['♀ žena → prezidentka','a woman: -ka']),
    gx(bt('Já pracuju tady ve škole.'),'pracuju',['pracuje','pracujou'],'🏫','I work here at the school.',['já → pracuju','I work = pracuju']),
    spk(bt('To je jedno.'),'🤷')];
-  return [...teach,...spread(d)]; }
+  return steps(teach,d,[[0,4],[1,4]]); }
 
 /* ---------- L2: Tomáš’s e-mail (vocabulary of the book’s e-mail) + where is it in the street ---------- */
 const TOMAIL=[['Ahoj Petro,','Hi Petra,'],['jak se máš? Já se mám dobře. Teď bydlím v Brně a pracuju ve firmě Ekotech. Je to mezinárodní ekologická organizace.','how are you? I’m fine. I live in Brno now and work for Ekotech. It is an international environmental organisation.'],
  ['Bydlím v centru. To je fajn, protože všechno je blízko. Můj dům je starý, ale hezký. Vzadu je velký park.','I live in the centre. That’s great because everything is near. My house is old but nice. At the back there is a big park.'],
  ['Dole je docela dobrá restaurace. Problém je, že tam je někdy diskotéka a hluk.','Downstairs there is quite a good restaurant. The problem is that sometimes there is a disco and noise.'],
- ['V práci jsou lidi z Evropy, z Afriky, z Asie a z Ameriky. Jeden kolega je moc sympatický.','At work there are people from Europe, Africa, Asia and America. One colleague is very nice.'],
+ ['V práci jsou lidé z Evropy, z Afriky, z Asie a z Ameriky. Jeden kolega je moc sympatický.','At work there are people from Europe, Africa, Asia and America. One colleague is very nice.'],
  ['Brno je historické město, ale je tady taky moderní centrum. Líbí se mi tady.','Brno is a historic city, but there is also a modern centre. I like it here.'],['Měj se hezky, Tomáš','Take care, Tomáš']];
 gset(TOMAIL,'m');
-const TOMAIL_TF=[['Tomáš bydlí v Praze.',0],['Tomáš pracuje v ekologické organizaci.',1],['Tomášův dům je nový.',0],['Vzadu je park.',1],['V restauraci je vždycky klid.',0],['Tomášovi se v Brně líbí.',1]];
+const TOMAIL_TF=[['Tomáš bydlí v Praze.',0,1],['Tomáš pracuje v ekologické organizaci.',1,1],['Tomášův dům je nový.',0,2],['Vzadu je park.',1,2],['V restauraci je vždycky klid.',0,3],['Tomášovi se v Brně líbí.',1,5]];
 const ULICE=[['vlevo','🏦','banka'],['uprostřed','🏠','můj dům'],['vpravo','🛒','supermarket'],['nahoře','🪟','můj byt'],['dole','🍽️','restaurace'],['vzadu','🌳','park']];
 function l2Y(){ const mail=rdBox(TOMAIL);
-  const teach=[rdCard('E-mail od Tomáše','Read the e-mail. Tap a sentence to hear it.',TOMAIL,()=>lines([['mezinárodní ekologická organizace','international environmental organisation'],['diskotéka a hluk · sympatický · historické město','a disco and noise · nice · historic town']])),
+  const teach=[rdCard('E-mail od Tomáše','Read the e-mail. Tap a sentence to hear it.',TOMAIL,()=>lines([['mezinárodní ekologická organizace','international environmental organisation'],['diskotéka a hluk · sympatický · historické město','a disco and noise · nice · historic town']]),{from:'Tomáš',to:'Petra',mail:1}),
    tCard('Kde je co?','Describe a street: vlevo, uprostřed, vpravo, nahoře, dole, vzadu.',()=>`<div class="numg">${ULICE.map(u=>`<button class="numc" data-a="saytext" data-v="${esc(cap(u[2])+' je '+u[0]+'.')}">${ico(u[1],34)}<b style="font-size:16px">${u[0]}</b><small>${u[2]}</small></button>`).join('')}</div>`+lines([['radnice = town hall','Na náměstí je radnice.'],['penzion = a small family hotel','Bydlím v penzionu blízko centra.'],['V Praze je moderní metro.','There is a modern underground in Prague.']]))];
-  const d=[...TOMAIL_TF.map(([s,t])=>tf(s,t,{ctx:mail,te:'Read the e-mail. True or false?'})),
+  const d=[...tfs(TOMAIL_TF,TOMAIL,'Read the e-mail. True or false?'),
    ...sample(ULICE,3).map(u=>qq(`Kde je ${u[2]}?`,[cap(u[0])+'.',...sample(ULICE.filter(x=>x!==u),2).map(x=>cap(x[0])+'.')],{img:u[1],ctx:`<div class="card qactx">${ULICE.map(x=>`${ico(x[1],20)} <b>${x[0]}</b>: ${x[2]}`).join('<br>')}</div>`,qen:'Where is it?'})),
    gx(bt('Můj dům je starý, ale hezký.'),'hezký',['hezká','hezké'],'🏠','My house is old but nice.',['dům je mužský → hezký','masculine: -ý']),
    gx(bt('Brno je historické město.'),'historické',['historický','historická'],'🏰','Brno is a historic town.',['město je střední → historické','neuter: -é']),
@@ -4837,7 +4925,7 @@ function l2Y(){ const mail=rdBox(TOMAIL);
    qq('Malý rodinný hotel je…',['penzion','nádraží','radnice'],{img:'🏡',qen:'A small family hotel is…'}),
    qq('V restauraci je moc lidí, hudba a hluk. Co tam je?',['diskotéka','klid','knihovna'],{img:'🪩',qen:'Music, people and noise.'}),
    spk(bt('Bydlím v centru. Všechno je blízko.'),'🏙️')];
-  return [...teach,...spread(d)]; }
+  return steps(teach,d,[[0,6],[1,3],[0,2],[1,3],[0,2]]); }
 
 /* ---------- L3: the last menu items and phrases ---------- */
 function l3Y(){ const teach=[tCard('Ještě z jídelního lístku','More dishes. Tap to listen.',()=>phr([['gulášová polévka','goulash soup','🍲'],['pečené kuře a americké brambory','roast chicken and potato wedges','🍗'],['smažený kapr a bramborový salát','fried carp and potato salad','🐟'],['zelený čaj','green tea','🍵'],['Dáte si kávu, nebo čaj? – Čaj, prosím.','Will you have coffee or tea? – Tea, please.','☕']])),
@@ -4849,7 +4937,7 @@ function l3Y(){ const teach=[tCard('Ještě z jídelního lístku','More dishes.
    qq('Oni čaj pijou. Jak se to řekne formálně, v textu?',['Oni pijí čaj.','Oni piju čaj.','Oni pije čaj.'],{img:'🍵',qen:'Formal form of pijou?'}),
    qq('Maso je dobré, knedlíky ne. Co řekneš?',['To maso je docela dobré, ale ty knedlíky moc ne.','To maso není dobré, ale ty knedlíky jsou výborné.','Všechno je výborné.'],{img:'🤔',qen:'Meat good, dumplings not.'}),
    spk(bt('Dám si pečené kuře a americké brambory.'),'🍗')];
-  return [...teach,...spread(d)]; }
+  return steps(teach,d,[[0,2],[1,4],[0,1]]); }
 
 /* ================= LEKCE 4 — Moje rodina (book pp. 33–40) ================= */
 const JANA4=[['Jmenuju se Jana Malá. Je mi třicet let.','My name is Jana Malá. I am thirty.'],['Pracuju v bance v Plzni.','I work in a bank in Pilsen.'],
@@ -4858,12 +4946,12 @@ const JANA4=[['Jmenuju se Jana Malá. Je mi třicet let.','My name is Jana Malá
  ['Mám staršího bratra a mladší sestru.','I have an older brother and a younger sister.'],['Moje sestra je vdaná, ale ještě nemá děti.','My sister is married but has no children yet.'],
  ['Můj bratr není ženatý. Je svobodný.','My brother isn’t married. He is single.'],['Máme psa Rexe. Je už starý, ale moc hodný.','We have a dog, Rex. He is old now but very good.']];
 gset(JANA4,'f');
-const JANA4_TF=[['Janě je třicet let.',1],['Janin tatínek je doktor.',0],['Maminka nepracuje.',1],['Jana má mladšího bratra.',0],['Sestra je vdaná.',1],['Bratr je ženatý.',0]];
+const JANA4_TF=[['Janě je třicet let.',1,0],['Janin tatínek je doktor.',0,2],['Maminka nepracuje.',1,3],['Jana má mladšího bratra.',0,4],['Sestra je vdaná.',1,5],['Bratr je ženatý.',0,6]];
 function l4A(){ const box=rdBox(JANA4);
-  const teach=[rdCard('Janina rodina','Jana talks about her family. Tap a sentence to hear it.',JANA4),
+  const teach=[rdCard('Janina rodina','Jana talks about her family. Tap a sentence to hear it.',JANA4,null,{from:'Jana'}),
    tCard('Kolik vám je?','Age: who is it for? I = mi, you = ti / vám, he = mu, she = jí.',()=>tTable(['otázka','odpověď'],[['Kolik vám je? (formálně)','Je mi třicet let.'],['Kolik ti je? (neformálně)','Je mi dvacet let.'],['Kolik mu je?','Je mu pět let.'],['Kolik jí je?','Je jí dva roky.']])+lines([['1 rok · 2, 3, 4 roky · 5 a víc let','1 year · 2–4 years · 5+ years'],['Ptát se na věk může být nezdvořilé.','Asking someone’s age can be impolite.']])),
    tCard('Rodinný stav','Married or single?',()=>tTable(['','muž ♂','žena ♀'],[['married','ženatý','vdaná'],['single','svobodný','svobodná'],['divorced','rozvedený','rozvedená'],['widowed','vdovec','vdova']])+lines([['Je v domácnosti.','She is a housewife (doesn’t work outside home).']]))];
-  const d=[...JANA4_TF.map(([s,t])=>tf(s,t,{ctx:box,te:'Read Jana’s text. True or false?'})),
+  const d=[...tfs(JANA4_TF,JANA4,'Read Jana’s text. True or false?'),
    qq('Ptáš se kamaráda na věk. Co řekneš?',['Kolik ti je?','Kolik vám je?','Kolik mu je?'],{img:'🧑',qen:'Asking a friend his age.'}),
    qq('Ptáš se paní Novákové na věk. Co řekneš?',['Kolik vám je?','Kolik ti je?','Kolik jí je?'],{img:'👩‍🦳',qen:'Asking Mrs Nováková her age.'}),
    gx(bt('Můj tatínek? Je mu šedesát let.'),'mu',['jí','mi'],ma('👨'),'My dad? He is sixty.',['on → je mu','he is … = je mu']),
@@ -4878,24 +4966,24 @@ function l4A(){ const box=rdBox(JANA4);
    qq('Manžel paní Bílé už nežije. Paní Bílá je…',['vdova.','vdovec.','rozvedená.'],{img:fe('🖤'),qen:'Mrs Bílá’s husband is no longer alive.'}),
    qq('Maminka nepracuje, je doma s dětmi. Je…',['v domácnosti.','v práci.','ve škole.'],{img:'🏠',qen:'Mum doesn’t work outside the home.'}),
    spk(bt('Kolik vám je?'),'❓'),spk(bt('Je mi třicet let.'),'🙋')];
-  return [...teach,...spread(d)]; }
+  return steps(teach,d,[[0,6],[1,8],[2,5],[1,2]]); }
 
 const RODINA=[['dědeček','babička','👴','👵','grandfather – grandmother'],['otec, tatínek','matka, maminka','👨','👩','father – mother'],['bratr','sestra','👦','👧','brother – sister'],['syn','dcera','👦','👧','son – daughter'],
  ['vnuk','vnučka','👦','👧','grandson – granddaughter'],['bratranec','sestřenice','🧑','👩','cousin (m – f)'],['strýc, strejda','teta','🧔','👩','uncle – aunt'],['synovec','neteř','👦','👧','nephew – niece'],
  ['švagr','švagrová','🧑','👩','brother-in-law – sister-in-law'],['tchán','tchyně','👴','👵','father-in-law – mother-in-law'],['zeť','snacha','🧑','👩','son-in-law – daughter-in-law'],['manžel','manželka','🤵','👰','husband – wife'],['přítel','přítelkyně','🧑','👩','boyfriend – girlfriend']];
-const RIDDLE4=[['Maminka mé maminky je moje…','babička','👵'],['Syn mého bratra je můj…','synovec','👦'],['Dcera mé sestry je moje…','neteř','👧'],['Syn mé tety je můj…','bratranec','🧑'],['Dcera mého strýce je moje…','sestřenice','👩'],
- ['Manžel mé sestry je můj…','švagr','🧑'],['Tatínek mého manžela je můj…','tchán','👴'],['Maminka mé manželky je moje…','tchyně','👵'],['Manžel mé dcery je můj…','zeť','🧑'],['Manželka mého syna je moje…','snacha','👩'],['Syn mého syna je můj…','vnuk','👦']];
-function l4B(){ const teach=[tCard('Velká rodina','The whole family: man and woman. Tap to listen.',()=>tTable(['','♂','♀'],RODINA.map(r=>[`<small>${r[4]}</small>`,`<button class="tnum" data-a="saytext" data-v="${r[0]}">${ico(r[2],18)} ${r[0]}</button>`,`<button class="tnum" data-a="saytext" data-v="${r[1]}">${ico(r[3],18)} ${r[1]}</button>`]))+lines([['přítel, přítelkyně = boyfriend, girlfriend','kamarád, kamarádka = friend']])),
+const RIDDLE4=[['Maminka mé maminky je moje…','babička','👵','My mum’s mum is my…'],['Syn mého bratra je můj…','synovec','👦','My brother’s son is my…'],['Dcera mé sestry je moje…','neteř','👧','My sister’s daughter is my…'],['Syn mé tety je můj…','bratranec','🧑','My aunt’s son is my…'],['Dcera mého strýce je moje…','sestřenice','👩','My uncle’s daughter is my…'],
+ ['Manžel mé sestry je můj…','švagr','🧑','My sister’s husband is my…'],['Tatínek mého manžela je můj…','tchán','👴','My husband’s dad is my…'],['Maminka mé manželky je moje…','tchyně','👵','My wife’s mum is my…'],['Manžel mé dcery je můj…','zeť','🧑','My daughter’s husband is my…'],['Manželka mého syna je moje…','snacha','👩','My son’s wife is my…'],['Syn mého syna je můj…','vnuk','👦','My son’s son is my…']];
+function l4B(){ const teach=[tCard('Velká rodina','The whole family: man and woman. Tap to listen.',()=>famPic()+tTable(['','♂','♀'],RODINA.map(r=>[`<small>${r[4]}</small>`,`<button class="tnum" data-a="saytext" data-v="${r[0]}">${ico(r[2],18)} ${r[0]}</button>`,`<button class="tnum" data-a="saytext" data-v="${r[1]}">${ico(r[3],18)} ${r[1]}</button>`]))+lines([['přítel, přítelkyně = boyfriend, girlfriend','kamarád, kamarádka = friend']])),
    tCard('Čí je to? Petrův, Evin','Whose? Add -ův / -ova / -ovo / -ovi (man) or -in / -ina / -ino / -ini (woman).',()=>tTable(['','tatínek ♂','maminka ♀','auto','rodiče'],[['Petr','Petrův','Petrova','Petrovo','Petrovi'],['Eva','Evin','Evina','Evino','Evini']])+lines([['Monika → Moničin tatínek (k → č)','Monika’s dad'],['To je Petrova sestra. To jsou Evini rodiče.','That is Petr’s sister. Those are Eva’s parents.']]))];
   const all=RODINA.flatMap(r=>[...r[0].split(', '),...r[1].split(', ')]);
-  const d=[...sample(RIDDLE4,7).map(([q,a,e])=>qq(q,[a,...sample(all.filter(x=>x!==a&&!['přítel','přítelkyně','manžel','manželka','otec','matka','strejda'].includes(x)),2)],{img:e,qen:'Who is it?'})),
+  const d=[...sample(RIDDLE4,7).map(([q,a,e,en])=>qq(q,[a,...sample(all.filter(x=>x!==a&&!['přítel','přítelkyně','manžel','manželka','otec','matka','strejda'].includes(x)),2)],{img:e,qen:en})),
    gx(bt('To je Petrova maminka.'),'Petrova',['Petrův','Petrovo'],'👩','That is Petr’s mum.',['maminka (ta) → Petrova','feminine: -ova']),
    gx(bt('To je Petrův dědeček.'),'Petrův',['Petrova','Petrovi'],'👴','That is Petr’s grandad.',['dědeček (ten) → Petrův','masculine: -ův']),
    gx(bt('To je Evin bratr.'),'Evin',['Evina','Evino'],'👦','That is Eva’s brother.',['bratr (ten) → Evin','masculine: -in']),
    gx(bt('To je Evino auto.'),'Evino',['Evin','Evina'],'🚗','That is Eva’s car.',['auto (to) → Evino','neuter: -ino']),
    gx(bt('To jsou Petrovi rodiče.'),'Petrovi',['Petrova','Petrův'],'👫','Those are Petr’s parents.',['rodiče (oni) → Petrovi','plural: -ovi']),
    spk(bt('To je můj švagr.'),'🧑'),spk(bt('Moje sestřenice bydlí v Brně.'),'👩')];
-  return [...teach,...spread(d)]; }
+  return steps(teach,d,[[0,7],[1,5],[0,2]]); }
 
 const OPP4=[['dobrý','špatný','👍','👎'],['hubený','tlustý','🧍','🫃'],['chudý','bohatý','🪙','💰'],['hezký, krásný','ošklivý, škaredý','😍','👹'],['šťastný, veselý','smutný','😄','😢'],['mladý','starý','🧒','👴'],
  ['velký','malý','🐘','🐭'],['zdravý','nemocný','💪','🤒'],['nový','starý','📱','☎️'],['vysoký','malý','🦒','🐕'],['drahý','levný','💎','🏷️'],['hodný','zlý','😇','😠']];
@@ -4913,8 +5001,10 @@ function l4C(){ const teach=[tCard('Jaký je…? Protiklady','Opposites. Tap a w
    gx(bt('Jaké je to auto?'),'Jaké',['Jaký','Jaká'],'🚗','What is that car like?',['auto (to) → jaké','neuter: -é']),
    gx(bt('Moje sestra je vysoká a hubená.'),'hubená',['hubený','hubené'],fe('🧍'),'My sister is tall and slim.',['sestra → hubená','feminine: -á']),
    qq('Které slovo se nemění (ten, ta, to)?',['moderní','hezký','nový'],{img:'🔤',qen:'Which adjective never changes?'}),
-   spk(bt('Můj bratr je vysoký a hubený.'),'🧍'),spk(bt('Je moc sympatický a inteligentní.'),'😊')];
-  return [...teach,...spread(d)]; }
+   spk(bt('Můj bratr je vysoký a hubený.'),'🧍'),spk(bt('Je moc sympatický a inteligentní.'),'😊'),
+   gx(bt('Ten muž je sympatický.'),'sympatický',['sympatická','sympatické'],ma('🙂'),'That man is nice.',['muž (ten) → sympatický','masculine: -ý']),
+   gx(bt('Ta žena je energická a elegantní.'),'energická',['energický','energické'],fe('💃'),'That woman is energetic and elegant.',['žena (ta) → energická · elegantní se nemění','feminine: -á · -í never changes'])];
+  return steps(teach,d,[[0,5],[2,8],[0,1],[1,3]]); }
 
 function l4D(){ const teach=[tCard('Mám hezkého bratra','After mám / hledám the noun is in the 4th case.',()=>tTable(['','kdo, co?','mám, hledám…'],[['♂ živý','hezký bratr','hezkého bratra'],['♂ věc','hezký dům','hezký dům'],['♀','hezká sestra','hezkou sestru'],['střední','hezké auto','hezké auto'],['-í','moderní doktor','moderního doktora']])+lines([['tatínek → tatínka · bratranec → bratrance','the e drops out'],['přítel → přítele · přítelkyně → přítelkyni · kolega → kolegu','other endings']])),
    tCard('Kolik bratrů?','Counting family: 2–4 and 5+.',()=>tTable(['','bratr','sestra'],[['1','jednoho bratra','jednu sestru'],['2, 3, 4','dva bratry','dvě sestry'],['5 a víc','pět bratrů','pět sester']]))];
@@ -4930,16 +5020,16 @@ function l4D(){ const teach=[tCard('Mám hezkého bratra','After mám / hledám 
    gx(bt('Hledám dobrého doktora.'),'doktora',['doktor','doktore'],'🩺','I am looking for a good doctor.',['doktor (živý) → doktora','animate: -a']),
    arr(bt('Mám staršího bratra a mladší sestru.'),'I have an older brother and a younger sister.','👫'),
    spk(bt('Mám jednoho bratra a dvě sestry.'),'👨‍👩‍👧')];
-  return [...teach,...spread(d)]; }
+  return steps(teach,d,[[0,7],[1,2],[0,2],[1,1]]); }
 
-const FORM4=[['Jméno','Jana'],['Příjmení','Malá'],['Datum narození','3. 5. 1994'],['Rodinný stav','vdaná'],['Povolání','úřednice'],['Adresa','Americká 12, 301 00 Plzeň'],['Kontakt','jana.mala@email.cz · 724 315 908']];
+const FORM4=[['Jméno','Jana'],['Příjmení','Malá'],['Datum narození','3. 5. 1996'],['Rodinný stav','vdaná'],['Povolání','úřednice'],['Adresa','Americká 12, 301 00 Plzeň'],['Kontakt','jana.mala@email.cz · 724 315 908']];
 function l4E(){ const form=`<div class="card viz">${FORM4.map(f=>`<small>${esc(f[0])}:</small><b>${esc(f[1])}</b>`).join('')}</div>`;
   const teach=[tCard('Na úřadě: formulář','An official form. Learn the words.',()=>form+lines([['jméno · příjmení','first name · surname'],['datum narození · rodinný stav','date of birth · marital status'],['povolání · adresa · kontakt','occupation · address · contact']])),
    tCard('To je váš…?','Mine or not? můj (ten), moje (ta, to).',()=>phr([['To je váš syn? – Ano, to je můj syn.','Is that your son? – Yes, it is.','👦'],['To je vaše dcera? – Ne, to není moje dcera.','Is that your daughter? – No.','👧'],['To je tvůj kamarád? – Ano, to je můj kamarád.','Is that your friend? – Yes.','🧑'],['To je můj kolega a to je moje kolegyně.','This is my colleague (m) and my colleague (f).','💼']])+lines([['kolega končí na -a, ale je to muž: můj kolega','kolega = a man: můj']])),
    tCard('Jmenuje se…','The little word se goes second. And family surnames.',()=>phr([['Jak se jmenujete?','What is your name?','❓'],['Moje maminka se jmenuje Věra.','My mum’s name is Věra.','👩'],['Moje starší sestra se jmenuje Alena.','My older sister is called Alena.','👧']])+tTable(['pan','paní','rodina'],[['Novák','Nováková','Novákovi'],['Hanuš','Hanušová','Hanušovi'],['Novotný','Novotná','Novotní']]))];
   const d=[qq('Co je „příjmení“ paní Jany Malé?',['Malá','Jana','vdaná'],{ctx:form,img:'📝',qen:'Surname?'}),
    qq('Co napíšeš do „Rodinný stav“?',['vdaná','úřednice','Plzeň'],{ctx:form,img:'📝',qen:'Marital status?'}),
-   qq('Co je „datum narození“?',['3. 5. 1994','724 315 908','Americká 12'],{ctx:form,img:'🎂',qen:'Date of birth?'}),
+   qq('Co je „datum narození“?',['3. 5. 1996','724 315 908','Americká 12'],{ctx:form,img:'🎂',qen:'Date of birth?'}),
    gx(bt('To je váš syn? – Ano, to je můj syn.'),'můj',['moje','mé'],'👦','Is that your son? – Yes, it is my son.',['syn (ten) → můj','masculine: můj']),
    gx(bt('To je vaše dcera? – Ne, to není moje dcera.'),'moje',['můj','mého'],'👧','Is that your daughter? – No, it isn’t.',['dcera (ta) → moje','feminine: moje']),
    gx(bt('To je můj kolega.'),'můj',['moje','mojí'],'💼','That is my colleague.',['kolega je muž → můj','a man → můj']),
@@ -4948,7 +5038,7 @@ function l4E(){ const form=`<div class="card viz">${FORM4.map(f=>`<small>${esc(f
    qq('Pan Novotný a paní Novotná jsou…',['Novotní','Novotnovi','Novotný'],{img:'👫',qen:'The Novotný family?'}),
    arr(bt('Moje starší sestra se jmenuje Alena.'),'My older sister is called Alena.','👧'),
    spk(bt('Jak se jmenujete?'),'❓')];
-  return [...teach,...spread(d)]; }
+  return steps(teach,d,[[0,3],[1,3],[2,5]]); }
 
 const SHOP4=[['mobil','📱',4290,10],['notebook','💻',9990,0],['tablet','📲',5490,10],['monitor','🖥️',3390,8],['tiskárna','🖨️',2190,0],['myš','🖱️',390,20]];
 function l4F(){ const price=n=>n.toLocaleString('cs-CZ').replace(/ /g,' ');
@@ -4962,16 +5052,16 @@ function l4F(){ const price=n=>n.toLocaleString('cs-CZ').replace(/ /g,' ');
    qa({say:bt('Kolik je dva tisíce plus tři tisíce?'),q:'Kolik je dva tisíce plus tři tisíce?',qen:'2 000 + 3 000 = ?',opts:['pět tisíc','šest tisíc','čtyři tisíce'],img:'➕'}),
    qa({say:bt('Kolik je deset tisíc minus dva tisíce?'),q:'Kolik je deset tisíc minus dva tisíce?',qen:'10 000 − 2 000 = ?',opts:['osm tisíc','dvanáct tisíc','sedm tisíc'],img:'➖'}),
    spk(bt('Prosím vás, kolik to stojí?'),'💰'),spk(bt('Je tady nějaká sleva?'),'🏷️')];
-  return [...teach,...spread(d)]; }
+  return steps(teach,d); }
 
 /* ================= LEKCE 5 — Kdy je to? Kdy se sejdeme? (pp. 41–48) ================= */
 const SPECH5=[['Ahoj Lucie! Proč tak spěcháš?','Hi Lucie! Why are you in such a hurry?','Tomáš'],['Prosím tě, kolik je hodin? Zapomněla jsem doma učebnici a mám strach, že jdu pozdě.','Please, what time is it? I forgot my textbook at home and I’m afraid I’m late.','Lucie'],
  ['Neboj, nejdeš pozdě. Teď je teprve deset.','Don’t worry, you’re not late. It’s only ten.','Tomáš'],['A kdy začíná lekce? V jedenáct, že?','And when does the lesson start? At eleven, right?','Lucie'],['Ne, začíná až v půl dvanácté. Ještě máme čas na kávu.','No, it only starts at half past eleven. We still have time for coffee.','Tomáš']];
-const SPECH5_TF=[['Lucie spěchá.',1],['Lucie zapomněla doma mobil.',0],['Teď je deset hodin.',1],['Lekce začíná v jedenáct.',0],['Mají čas na kávu.',1]];
+const SPECH5_TF=[['Lucie spěchá.',1,0],['Lucie zapomněla doma mobil.',0,1],['Teď je deset hodin.',1,2],['Lekce začíná v jedenáct.',0,4],['Mají čas na kávu.',1,4]];
 function l5A(){ const box=rdBox(SPECH5);
-  const teach=[rdCard('Proč tak spěcháš?','A short dialogue. Tap a line to hear it.',SPECH5),
-   tCard('Další způsob, jak říct čas','Quarter past, half past, quarter to: always towards the NEXT hour.',()=>tTable(['','',''],[['12.15','čtvrt na jednu','a quarter past twelve'],['12.30','půl jedné','half past twelve'],['12.45','tři čtvrtě na jednu','a quarter to one'],['9.55','devět padesát pět','nine fifty-five']])+lines([['Kdy to začíná? V jednu, ve dvě, ve tři, ve čtyři, v pět…','ve před dvě, tři, čtyři, dvanáct']]))];
-  const d=[...SPECH5_TF.map(([s,t])=>tf(s,t,{ctx:box,te:'Read the dialogue. True or false?'})),
+  const teach=[[hear(SPECH5,'Kdy začíná lekce?',['V půl dvanácté.','V deset.','V jedenáct.'],'When does the lesson start?'),rdCard('Proč tak spěcháš?','A short dialogue. Tap a line to hear it.',SPECH5)],
+   tCard('Další způsob, jak říct čas','Quarter past, half past, quarter to: always towards the NEXT hour.',()=>clockRow([[12,15,'čtvrt na jednu','a quarter past twelve'],[12,30,'půl jedné','half past twelve'],[12,45,'tři čtvrtě na jednu','a quarter to one']])+lines([['9.55 = devět padesát pět','You can always just read the numbers.']])+lines([['Kdy to začíná? V jednu, ve dvě, ve tři, ve čtyři, v pět…','ve před dvě, tři, čtyři, dvanáct']]))];
+  const d=[...tfs(SPECH5_TF,SPECH5,'Read the dialogue. True or false?'),
    qq('12.45 – kolik je hodin?',['Tři čtvrtě na jednu.','Čtvrt na jednu.','Půl jedné.'],{img:'🕧',qen:'What time is it?'}),
    qq('8.15 – kolik je hodin?',['Čtvrt na devět.','Čtvrt na osm.','Půl deváté.'],{img:'🕗',qen:'What time is it?'}),
    qq('Kamarád moc rychle jde. Co řekneš?',['Proč tak spěcháš?','Kolik ti je?','Jak se to píše?'],{img:'🏃',qen:'Your friend walks very fast.'}),
@@ -4979,7 +5069,7 @@ function l5A(){ const box=rdBox(SPECH5);
    gx(bt('Film končí v pět.'),'v',['ve','na'],'🎬','The film ends at five.',['v pět, v šest, v sedm','v before most numbers']),
    gx(bt('Mám strach, že jdu pozdě.'),'strach',['strachu','strachem'],'⏰','I’m afraid I’m late.',['mít strach = be afraid','mám strach']),
    spk(bt('Kolik je hodin?'),'🕐'),spk(bt('Ještě máme čas na kávu.'),'☕')];
-  return [...teach,...spread(d)]; }
+  return steps(teach,d,[[0,5],[1,2],[0,1],[1,2],[0,1],[1,1],[0,1]]); }
 
 const DNY5=[['pondělí','v pondělí','Monday'],['úterý','v úterý','Tuesday'],['středa','ve středu','Wednesday'],['čtvrtek','ve čtvrtek','Thursday'],['pátek','v pátek','Friday'],['sobota','v sobotu','Saturday'],['neděle','v neděli','Sunday']];
 const DAYP5=[['ráno','ráno','4–9'],['dopoledne','dopoledne','9–12'],['poledne','v poledne','12'],['odpoledne','odpoledne','12–17'],['večer','večer','17–23'],['noc','v noci','23–4']];
@@ -4997,35 +5087,35 @@ function l5B(){ const teach=[tCard('Dny v týdnu','Days of the week and “on Mo
    qq('V 7.00 je…',['ráno.','odpoledne.','v noci.'],{img:'🌅',qen:'At 7 a.m. it is…'}),
    qa({say:bt('Konference začíná ve čtvrtek v devět.'),q:'Kdy je konference?',qen:'When is the conference?',opts:['ve čtvrtek v devět','v úterý v devět','ve čtvrtek ve dvě'],img:'🎤'}),
    spk(bt('Ve středu mám lekci.'),'📚')];
-  return [...teach,...spread(d)]; }
+  return steps(teach,d,[[0,3],[1,1],[0,2],[1,2],[2,2]]); }
 
 const KINO5=[['Ahoj Petro, nechceš jít v sobotu do kina?','Hi Petra, would you like to go to the cinema on Saturday?','Honza'],['V sobotu nemůžu, mám návštěvu. A co v neděli?','I can’t on Saturday, I have visitors. What about Sunday?','Petra'],
  ['V neděli odpoledne nemůžu já. Co v neděli večer?','On Sunday afternoon I can’t. What about Sunday evening?','Honza'],['Tak jo. Kdy se sejdeme?','OK. When shall we meet?','Petra'],['Třeba v sedm. Hodí se ti to?','Maybe at seven. Does that suit you?','Honza'],['Ano, hodí. Těším se.','Yes, it does. I’m looking forward to it.','Petra'],['Já taky. Ahoj!','Me too. Bye!','Honza']];
-const KINO5_TF=[['Honza zve Petru do divadla.',0],['V sobotu má Petra návštěvu.',1],['Sejdou se v neděli večer.',1],['Sejdou se v osm.',0]];
+const KINO5_TF=[['Honza zve Petru do divadla.',0,0],['V sobotu má Petra návštěvu.',1,1],['Sejdou se v neděli večer.',1,2],['Sejdou se v osm.',0,4]];
 function l5C(){ const box=rdBox(KINO5);
-  const teach=[rdCard('Kdy se sejdeme?','An invitation. Tap a line to hear it.',KINO5),
+  const teach=[[hear(KINO5,'Kam chce jít Honza?',['Do kina.','Do divadla.','Na koncert.'],'Where does Honza want to go?'),rdCard('Kdy se sejdeme?','An invitation. Tap a line to hear it.',KINO5)],
    tCard('Pozvání','Inviting someone: what to say.',()=>phr([['Nechceš jít do kina?','Would you like to go to the cinema?','🎬'],['Kdy se sejdeme?','When shall we meet?','🕖'],['Hodí se ti to? (neformálně)','Does it suit you?','👍'],['Hodí se vám to? (formálně)','Does it suit you? (formal)','👍'],['Tak fajn. Těším se.','Great. I’m looking forward to it.','😊']])+tTable(['do + budova','na + akce'],[['do kina','na koncert'],['do divadla','na tenis'],['do restaurace','na oběd']]))];
-  const d=[...KINO5_TF.map(([s,t])=>tf(s,t,{ctx:box,te:'Read the dialogue. True or false?'})),
+  const d=[...tfs(KINO5_TF,KINO5,'Read the dialogue. True or false?'),
    gx(bt('Nechceš jít do divadla?'),'do',['na','v'],'🎭','Would you like to go to the theatre?',['budova → do: do divadla','buildings → do']),
    gx(bt('Nechceš jít na koncert?'),'na',['do','v'],'🎵','Would you like to go to a concert?',['akce → na: na koncert','events → na']),
    gx(bt('Půjdeme na oběd?'),'na',['do','ve'],'🍽️','Shall we go for lunch?',['na oběd','na + oběd']),
-   qq('Kamarád tě zve do kina a ty máš čas. Co řekneš?',['Ano, rád. Kdy se sejdeme?','V sobotu nemůžu.','To je mi líto.'],{img:'🎬',qen:'You have time.'}),
+   qq('Kamarád tě zve do kina a ty máš čas. Co řekneš?',[`Ano, ${meF()?'ráda':'rád'}. Kdy se sejdeme?`,'V sobotu nemůžu.','To je mi líto.'],{img:'🎬',qen:'You have time.'}),
    qq('Ptáš se paní Novákové, jestli se jí to hodí. Co řekneš?',['Hodí se vám to?','Hodí se ti to?','Hodí se mu to?'],{img:'👩‍🦳',qen:'Formal question.'}),
    arr(bt('Třeba v sedm. Hodí se ti to?'),'Maybe at seven. Does it suit you?','🕖'),
    spk(bt('Kdy se sejdeme?'),'🕖'),spk(bt('Ano, hodí. Těším se.'),'😊')];
-  return [...teach,...spread(d)]; }
+  return steps(teach,d,[[0,4],[1,8]]); }
 
 const DEN5=[['Ve všední den vstávám v šest.','On weekdays I get up at six.'],['Nesnídám, protože nemám čas. Piju jenom kávu.','I don’t have breakfast because I have no time. I only drink coffee.'],['Dopoledne pracuju v kanceláři a odpoledne se učím anglicky.','In the morning I work in the office and in the afternoon I learn English.'],
  ['Večer nakupuju v supermarketu, vařím, uklízím nebo píšu projekt do práce. Jdu spát v jedenáct.','In the evening I shop, cook, clean or write a project for work. I go to bed at eleven.'],['O víkendu vstávám až v devět. Dlouho snídám a poslouchám hudbu.','At the weekend I get up at nine. I have a long breakfast and listen to music.'],
  ['Dopoledne plavu nebo hraju volejbal. Večer jdu s kamarády do restaurace a pak tancujeme v klubu.','In the morning I swim or play volleyball. In the evening I go to a restaurant with friends and then we dance in a club.']];
 gset(DEN5,'f');
-const DEN5_TF=[['Ve všední den Petra snídá.',0],['Odpoledne se učí anglicky.',1],['Jde spát v jedenáct.',1],['O víkendu vstává v šest.',0],['O víkendu tancuje v klubu.',1]];
+const DEN5_TF=[['Ve všední den Petra snídá.',0,1],['Odpoledne se učí anglicky.',1,2],['Jde spát v jedenáct.',1,3],['O víkendu vstává v šest.',0,4],['O víkendu tancuje v klubu.',1,5]];
 const FREQ5=[['vždycky','always'],['pořád','all the time'],['často','often'],['většinou','mostly'],['obvykle','usually'],['někdy','sometimes'],['nikdy ne-','never']];
 function l5D(){ const box=rdBox(DEN5);
-  const teach=[rdCard('Petřin den','Petra’s weekday and weekend. Tap to listen.',DEN5),
+  const teach=[rdCard('Petřin den','Petra’s weekday and weekend. Tap to listen.',DEN5,null,{from:'Petra'}),
    tCard('Rád, mít rád, být rád','Three ways to use rád.',()=>tTable(['','příklad','English'],[['rád + sloveso','Petra ráda plave.','Petra likes swimming.'],['mít rád + věc','Petra má ráda hudbu.','Petra likes music.'],['být rád','Jsem rád, že jsi tady.','I’m glad you’re here.']])+tTable(['♂','♀','oni'],[['rád','ráda','rádi'],['nerad','nerada','neradi']])+lines([['Velmi rád čtu. Moc rád vařím. Strašně rád spím.','I really like reading / cooking / sleeping.'],['Rád vařím. A ty? – Já taky. / Já ne.','Me too. / Not me.']])),
    tCard('Jak často?','How often? With nikdy the verb is negative too.',()=>tTable(['',''],FREQ5.map(f=>[`<button class="tnum" data-a="saytext" data-v="${f[0].replace(' ne-','')}">${f[0]}</button>`,f[1]]))+lines([['Nikdy netancuju. Večer už nikdy nic nejím.','I never dance. I never eat anything in the evening.']]))];
-  const d=[...DEN5_TF.map(([s,t])=>tf(s,t,{ctx:box,te:'Read Petra’s day. True or false?'})),
+  const d=[...tfs(DEN5_TF,DEN5,'Read Petra’s day. True or false?'),
    gx(bt('Petra ráda plave.'),'ráda',['rád','rádi'],fe('🏊'),'Petra likes swimming.',['Petra (žena) → ráda','a woman: ráda']),
    gx(bt('Honza a Jana rádi tancují.'),'rádi',['rád','ráda'],'💃','Honza and Jana like dancing.',['oni → rádi','they: rádi']),
    gx(bt('Honza má rád fotbal.'),'rád',['ráda','rádi'],ma('⚽'),'Honza likes football.',['Honza (muž) → rád','a man: rád']),
@@ -5035,24 +5125,24 @@ function l5D(){ const box=rdBox(DEN5);
    gx(bt('Večer píšu domácí úkol.'),'úkol',['úkolu','úkolem'],'📝','In the evening I do my homework.',['psát domácí úkol','to do homework']),
    qq('Rád vařím. A ty? (Ty taky rád vaříš.)',['Já taky.','Já ne.','Ty taky.'],{img:'🍳',qen:'You like cooking too.'}),
    qq('Co znamená „obvykle“?',['usually','never','always'],{img:'🔁',qen:'Meaning?'}),
-   spk(bt('O víkendu rád spím dlouho.'),'😴'),spk(bt('Často hraju karty.'),'🃏')];
-  return [...teach,...spread(d)]; }
+   spk(gF('O víkendu rád spím dlouho.','O víkendu ráda spím dlouho.'),'😴'),spk(bt('Často hraju karty.'),'🃏')];
+  return steps(teach,d,[[0,5],[1,3],[2,1],[1,2],[0,1],[1,1],[2,1],[1,1],[2,1]]); }
 
 const LUC5=[['Strašně nerada vstávám brzy. Obvykle vstávám v devět, o víkendu klidně až v jedenáct.','I really hate getting up early. I usually get up at nine, at weekends even at eleven.'],['Nikdy nesnídám, piju jenom zelený čaj.','I never have breakfast, I only drink green tea.'],
  ['Odpoledne pracuju a třikrát za týden cvičím jógu nebo zumbu.','In the afternoon I work and three times a week I do yoga or zumba.'],['V noci ještě čtu. Mám ráda historické romány.','At night I still read. I like historical novels.']];
 const TOM5=[['Rád vstávám brzy, každý den už v šest.','I like getting up early, every day at six.'],['Snídám, čtu zprávy na internetu a piju kávu.','I have breakfast, read the news online and drink coffee.'],
  ['V osm jedu do školy. Dopoledne mám přednášky a semináře.','At eight I go to school. In the morning I have lectures and seminars.'],['Když mám čas, jdu na tenis. Rád vařím a večer se dívám na akční filmy.','When I have time I go to tennis. I like cooking and in the evening I watch action films.']];
 gset(LUC5,'f'); gset(TOM5,'m');
-const SOVA5=[['Kdo rád vstává brzy?','Tomáš'],['Kdo nikdy nesnídá?','Lucie'],['Kdo cvičí jógu?','Lucie'],['Kdo má přednášky?','Tomáš'],['Kdo má rád akční filmy?','Tomáš'],['Kdo čte historické romány?','Lucie']];
+const SOVA5=[['Kdo rád vstává brzy?','Tomáš',4],['Kdo nikdy nesnídá?','Lucie',1],['Kdo cvičí jógu?','Lucie',2],['Kdo má přednášky?','Tomáš',6],['Kdo má rád akční filmy?','Tomáš',7],['Kdo čte historické romány?','Lucie',3]];
 function l5E(){ const teach=[tCard('Skřivánek, nebo sova?','A lark gets up early and goes to bed early. An owl gets up late and goes to bed late.',()=>phr([['Tomáš je skřivánek.','Tomáš is a lark (early bird).','🐦'],['Lucie je sova.','Lucie is an owl (night owl).','🦉'],['Ráno je ospalá a unavená.','In the morning she is sleepy and tired.','😴'],['Tomáš má ráno dobrou náladu.','Tomáš is in a good mood in the morning.','😄']])),
-   rdCard('Lucie (sova)','Lucie’s day.',LUC5),rdCard('Tomáš (skřivánek)','Tomáš’s day.',TOM5)];
-  const box=rdBox([...LUC5.map(r=>[r[0],r[1],'Lucie']),...TOM5.map(r=>[r[0],r[1],'Tomáš'])]);
-  const d=[...SOVA5.map(([q,a])=>qq(q,[a,a==='Tomáš'?'Lucie':'Tomáš','oba'],{ctx:box,img:a==='Tomáš'?'🐦':'🦉',qen:'Who?'})),
+   rdCard('Lucie (sova)','Lucie’s day.',LUC5,null,{from:'Lucie'}),rdCard('Tomáš (skřivánek)','Tomáš’s day.',TOM5,null,{from:'Tomáš'})];
+  const BOTH5=[...LUC5.map(r=>[r[0],r[1],'Lucie']),...TOM5.map(r=>[r[0],r[1],'Tomáš'])], box=rdBox(BOTH5);
+  const d=[...SOVA5.map(([q,a,ev])=>qq(q,[a,a==='Tomáš'?'Lucie':'Tomáš','oba'],{ctx:box,ctxHi:rdBox(BOTH5,ev),img:a==='Tomáš'?'🐦':'🦉',qen:'Who?'})),
    gx(bt('Cvičím třikrát za týden.'),'třikrát',['tři','třetí'],'🧘','I exercise three times a week.',['třikrát = three times','-krát = times']),
    gx(bt('Ráno jsem ospalá.'),'ospalá',['ospalý','ospalé'],fe('😴'),'In the morning I am sleepy.',['♀ → ospalá','a woman: -á']),
    qq('Kdo vstává pozdě a jde spát pozdě v noci?',['sova','skřivánek','pes'],{img:'🦉',qen:'Who gets up late?'}),
-   spk(bt('Jsem spíš skřivánek.'),'🐦'),spk(bt('Jsem sova. Ráno jsem unavená.'),'🦉')];
-  return [...teach,...spread(d)]; }
+   spk(bt('Jsem spíš skřivánek.'),'🐦'),spk(gF('Jsem sova. Ráno jsem unavený.','Jsem sova. Ráno jsem unavená.'),'🦉')];
+  return steps(teach,d,[[2,6],[1,1],[0,2],[0,2]]); }
 
 const TYDEN5=[['Nechceš jít někdy do kina?','Would you like to go to the cinema sometime?','Tomáš'],['Ano, ráda. Ale kdy?','Yes, I’d love to. But when?','Lucie'],['Třeba v pondělí.','Maybe on Monday.','Tomáš'],
  ['To je škoda, v pondělí nemůžu, musím pracovat. V úterý se musím učit a ve středu musím uklízet.','That’s a pity, I can’t on Monday, I have to work. On Tuesday I must study and on Wednesday I must clean.','Lucie'],['A ve čtvrtek?','And on Thursday?','Tomáš'],
@@ -5062,14 +5152,16 @@ const MAIL5A=[['Ahoj Jano,','Hi Jana,'],['v pátek mám narozeniny a zvu tě na 
 const MAIL5B=[['Ahoj Petro,','Hi Petra,'],['omlouvám se, ale v pátek bohužel nemůžu. Mám moc práce a musím být v práci už od sedmi.','I’m sorry, but unfortunately I can’t on Friday. I have a lot of work and must be at work from seven.'],['Od osmi do dvanácti mám školení a od jedné do pěti zase. Večer jdeme s Honzou na večeři, máme výročí. Chodíme spolu už rok!','From eight to twelve I have training and from one to five again. In the evening Honza and I are going to dinner, it’s our anniversary. We’ve been together for a year!'],
  ['Můžeme se sejít příští týden? Zvu tě na oběd. Hodí se ti to v pondělí?','Can we meet next week? I’ll take you to lunch. Does Monday suit you?'],['Měj se hezky, Jana','Take care, Jana']];
 gset(MAIL5A,'f'); gset(MAIL5B,'f');
-const MAIL5_TF=[['Petra má v pátek narozeniny.',1],['Party je doma.',0],['Jana může přijít na party.',0],['Jana a Honza mají výročí.',1],['Jana zve Petru na oběd.',1]];
+const MAIL5_TF=[['Petra má v pátek narozeniny.',1,1],['Party je doma.',0,1],['Jana může přijít na party.',0,5],['Jana a Honza mají výročí.',1,6],['Jana zve Petru na oběd.',1,7]];
+const MAILS5=[...MAIL5A,['—',''],...MAIL5B];
+const TYDEN5_TF=[['V pondělí musí Lucie pracovat.',1,3],['Ve středu má Lucie čas.',0,3],['V pátek má Lucie návštěvu.',1,5],['Tomáš umí dobře tancovat.',0,8]];
 const OTEV5=[['Po–Pá','8.00–18.00'],['So','9.00–12.00'],['Ne','zavřeno']];
 function l5F(){ const mails=rdBox([...MAIL5A,['—',''],...MAIL5B]).replace('<p>—</p>','<hr>');
-  const teach=[rdCard('Tomáš zve Lucii do kina','A week full of “must”. Tap a line to hear it.',TYDEN5),
+  const teach=[[hear(TYDEN5,'Který den můžou jít do kina?',['V sobotu.','V pondělí.','Ve čtvrtek.'],'On which day can they go to the cinema?'),rdCard('Tomáš zve Lucii do kina','A week full of “must”. Tap a line to hear it.',TYDEN5)],
    tCard('Chtít, muset, moct, umět','Modal verbs: want, must, can, know how to.',()=>tTable(['','chtít','muset','moct','umět'],[['já','chci','musím','můžu (mohu)','umím'],['ty','chceš','musíš','můžeš','umíš'],['on, ona','chce','musí','může','umí'],['my','chceme','musíme','můžeme','umíme'],['vy','chcete','musíte','můžete','umíte'],['oni','chtějí','musí','můžou (mohou)','umí (umějí)']])+lines([['(mohu, mohou, umějí) = formálně','formal forms'],['Umím trochu česky. Neumím tancovat.','I can speak a bit of Czech. I can’t dance.']])),
-   rdCard('Pozvánka a omluva','An invitation and a polite refusal.',[...MAIL5A,...MAIL5B]),
+   tCard('Pozvánka a omluva','An invitation and a polite refusal.',()=>rdAll('Pozvánka a omluva',[...MAIL5A,...MAIL5B])+mailBlock(MAIL5A,{from:'Petra',to:'Jana',mail:1})+mailBlock(MAIL5B,{from:'Jana',to:'Petra',mail:1})),
    tCard('Formálně × neformálně, od – do','Formal and informal, from – until.',()=>tTable(['vy','ty'],[['Zvu vás.','Zvu tě.'],['Hodí se vám to?','Hodí se ti to?'],['Mějte se hezky.','Měj se hezky.']])+tTable(['od / do'],[['od jedné · od dvou · od tří · od čtyř · od pěti'],['od šesti · od sedmi · od osmi · od devíti · od deseti'],['do jedenácti · do dvanácti']])+`<div class="card viz"><b>Pošta</b>${OTEV5.map(o=>`<small>${o[0]}: ${o[1]}</small>`).join('')}</div>`+lines([['otevřeno = open · zavřeno = closed','Po, Út, St, Čt, Pá, So, Ne = days']]))];
-  const d=[...MAIL5_TF.map(([s,t])=>tf(s,t,{ctx:mails,te:'Read the e-mails. True or false?'})),
+  const d=[...tfs(TYDEN5_TF,TYDEN5,'Read the dialogue. True or false?'),...tfs(MAIL5_TF,MAILS5,'Read the e-mails. True or false?'),
    gx(bt('My dva můžeme jít do kina.'),'můžeme',['můžu','můžou'],'🎬','The two of us can go to the cinema.',['my → můžeme','we can = můžeme']),
    gx(bt('Já neumím tancovat.'),'neumím',['neumí','neumíš'],'💃','I can’t dance.',['já → neumím','I can’t = neumím']),
    gx(bt('Ty chceš jít na party?'),'chceš',['chce','chci'],'🥳','Do you want to go to the party?',['ty → chceš','you want = chceš']),
@@ -5079,28 +5171,28 @@ function l5F(){ const mails=rdBox([...MAIL5A,['—',''],...MAIL5B]).replace('<p>
    qq('Pošta: So 9.00–12.00. Můžeš tam jít v sobotu ve dvě?',['Ne, je zavřeno.','Ano, je otevřeno.','Ano, celý den.'],{ctx:`<div class="card viz"><b>Pošta</b>${OTEV5.map(o=>`<small>${o[0]}: ${o[1]}</small>`).join('')}</div>`,img:'📮',qen:'Saturday at 2 pm?'}),
    qq('Píšeš paní Novákové. Jak se rozloučíš?',['Mějte se hezky.','Měj se hezky.','Čau!'],{img:'✉️',qen:'Formal goodbye.'}),
    spk(bt('Omlouvám se, ale v pátek nemůžu.'),'🙏'),spk(bt('Zvu tě na oběd.'),'🍽️')];
-  return [...teach,...spread(d)]; }
+  return steps(teach,d,[[0,4],[2,5],[1,4],[3,4],[2,2]]); }
 
 /* ================= LEKCE 6 — Co jsi dneska dělal? (pp. 49–56) ================= */
 const SMS6=[['Promiňte, ale dneska musím zrušit lekci. Jsem nemocná.','Sorry, but I have to cancel the lesson today. I am ill.','🤒'],['Bohužel dneska nemůžu přijít do práce. Musím dokončit projekt doma.','Unfortunately I can’t come to work today. I have to finish a project at home.','💻'],
  ['Jsem u doktora, bolí mě zub. Přijdu později nebo zítra.','I’m at the doctor’s, I have toothache. I’ll come later or tomorrow.','🦷'],['Omlouvám se, ale nemůžu přijít na schůzku.','I’m sorry, but I can’t come to the meeting.','🙏']];
 gset(SMS6,'f');
 function l6A(){ const teach=[tCard('Zprávy a omluvy','Text messages: saying sorry. Tap to listen.',()=>phr(SMS6))];
-  const d=[qq('Jsi nemocná a nemůžeš učit. Co napíšeš?',['Promiňte, ale dneska musím zrušit lekci. Jsem nemocná.','Omlouvám se, ale nemůžu přijít na schůzku.','Jsem u doktora, bolí mě zub.'],{img:'🤒',qen:'You are ill and can’t teach.'}),
+  const d=[qq(`Jsi ${meF()?'nemocná':'nemocný'} a nemůžeš učit. Co napíšeš?`,[gF('Promiňte, ale dneska musím zrušit lekci. Jsem nemocný.','Promiňte, ale dneska musím zrušit lekci. Jsem nemocná.'),'Omlouvám se, ale nemůžu přijít na schůzku.','Jsem u doktora, bolí mě zub.'],{img:'🤒',qen:'You are ill and can’t teach.'}),
    qq('Bolí tě zub. Co napíšeš?',['Jsem u doktora, bolí mě zub. Přijdu později.','Musím dokončit projekt.','Jsem nemocná, mám angínu.'],{img:'🦷',qen:'You have toothache.'}),
    gx(bt('Bolí mě zub.'),'mě',['mi','můj'],'🦷','I have toothache.',['bolí mě …','it hurts me = bolí mě']),
    gx(bt('Musím zrušit lekci.'),'zrušit',['zrušil','zruším'],'❌','I have to cancel the lesson.',['musím + infinitiv','must + infinitive']),
    gx(bt('Jsem u doktora. Přijdu později.'),'u',['v','na'],'🩺','I’m at the doctor’s. I’ll come later.',['u + osoba: u doktora','at someone’s → u']),
    spk(bt('Omlouvám se, ale nemůžu přijít.'),'🙏')];
-  return [...teach,...spread(d)]; }
+  return steps(teach,d); }
 
 const DOMA6=[['Včera bylo krásné počasí. Co jsi dělal? Byl jsi venku?','Yesterday the weather was lovely. What did you do? Were you outside?','Petra'],['Ne, byl jsem doma. Celý den jsem se učil.','No, I was at home. I studied all day.','Honza'],['Vážně?','Really?','Petra'],
  ['No, vlastně jsem se učil jenom chvíli. Pak jsem pracoval na počítači.','Well, actually I studied only for a while. Then I worked on the computer.','Honza'],['Fakt? A co jsi dělal na počítači?','Really? And what did you do on the computer?','Petra'],['Hrál jsem hry. Celé odpoledne.','I played games. All afternoon.','Honza'],['No jasně!','Of course!','Petra']];
 function l6B(){ const box=rdBox(DOMA6);
-  const teach=[rdCard('Byl jsi venku?','A short dialogue in the past. Tap a line to hear it.',DOMA6),
+  const teach=[[hear(DOMA6,'Co dělal Honza celé odpoledne?',['Hrál hry.','Učil se.','Byl venku.'],'What did Honza do all afternoon?'),rdCard('Byl jsi venku?','A short dialogue in the past. Tap a line to hear it.',DOMA6)],
    tCard('Ne v minulém čase','Negative past: ne- goes on the main verb.',()=>tTable(['','♂','♀'],[['já','nedělal jsem','nedělala jsem'],['já','nebyl jsem doma','nebyla jsem doma'],['on / ona','neměl čas','neměla čas'],['oni','nešli do práce','nešly do práce']])),
    tCard('Formálně a hovorově','Formal past and everyday short forms.',()=>tTable(['',''],[['Pane Nový, co jste dělal?','Mr Nový, what did you do?'],['Paní Nová, co jste dělala?','Mrs Nová, what did you do?'],['Jak ses měl o víkendu? (= jak jsi se)','How was your weekend? (to a man)'],['Dívala ses na televizi?','Did you watch TV? (to a woman)'],['Cos dělal? Viděls ten film? (hovorově)','spoken: co jsi → cos, viděl jsi → viděls'],['Jaký byl víkend? Jaká byla dovolená?','How was the weekend / holiday?']]))];
-  const d=[tf('Honza byl včera venku.',0,{ctx:box}),tf('Honza se učil jenom chvíli.',1,{ctx:box}),tf('Odpoledne hrál hry.',1,{ctx:box}),
+  const d=[...tfs([['Honza byl včera venku.',0,1],['Honza se učil jenom chvíli.',1,3],['Odpoledne hrál hry.',1,5]],DOMA6,'Read the dialogue. True or false?'),
    gx(bt('Ne, včera jsem nebyl v práci.'),'nebyl',['nebyla','nebyli'],ma('🙅'),'No, I wasn’t at work yesterday.',['já (muž) → nebyl jsem','a man: nebyl']),
    gx(bt('Včera jsem neměla čas.'),'neměla',['neměl','nemá'],fe('⏳'),'Yesterday I had no time.',['já (žena) → neměla jsem','a woman: neměla']),
    gx(bt('Paní Nová, co jste dělala?'),'dělala',['dělal','dělali'],fe('👩‍🦳'),'Mrs Nová, what did you do?',['paní → jste dělala','to a woman: -la']),
@@ -5108,8 +5200,8 @@ function l6B(){ const box=rdBox(DOMA6);
    qq('Ptáš se kamaráda: How was your weekend?',['Jak ses měl o víkendu?','Jak se máš o víkendu?','Jak jste se měl o víkendu?'],{img:'🧑',qen:'To a friend (man).'}),
    qq('Co znamená „Cos dělal?“',['Co jsi dělal?','Co se dělá?','Co dělá?'],{img:'💬',qen:'Spoken short form.'}),
    arr(bt('Včera jsem byl celý den doma.'),'Yesterday I was at home all day.','🏠'),
-   spk(bt('Jaký byl víkend?'),'🌞'),spk(bt('Nic moc. Nebyl jsem venku.'),'🏠')];
-  return [...teach,...spread(d)]; }
+   spk(bt('Jaký byl víkend?'),'🌞'),spk(gF('Nic moc. Nebyl jsem venku.','Nic moc. Nebyla jsem venku.'),'🏠')];
+  return steps(teach,d,[[0,3],[1,2],[2,4],[0,1],[2,1],[1,1]]); }
 
 const KDE6=[['v hotelu','🏨'],['v klubu','🎶'],['v supermarketu','🛒'],['v centru','🏙️'],['v muzeu','🏛️'],['v obchodě','🛍️'],['v kině','🎬'],['v kavárně','☕'],['ve škole','🏫'],['v bance','🏦'],['v Praze','🏰'],['v restauraci','🍽️'],['v kanceláři','🏢'],['v nemocnici','🏥'],['v galerii','🖼️'],
  ['na letišti','🛫'],['na nádraží','🚉'],['na poště','📮'],['na policii','🚓'],['na univerzitě','🎓'],['na koncertě','🎵'],['na konferenci','🎤'],['na obědě','🍽️'],['u doktora','🩺'],['u kamarádky','👩']];
@@ -5117,8 +5209,8 @@ const TEL6=[['Čau Honzo, kde jsi? Jsem v kavárně a čekám na tebe!','Hi Honz
  ['Ne, dělám si legraci. Jsem doma. Volala jsem ti, ale nebral jsi telefon.','No, I’m joking. I’m at home. I called you but you didn’t answer.','Petra'],['Byl jsem u doktora.','I was at the doctor’s.','Honza'],['U doktora? A já jsem myslela, že jsi v hospodě!','At the doctor’s? And I thought you were in the pub!','Petra'],['Ne, fakt. Promiň, musím končit. Zavolám ti později.','No, really. Sorry, I have to go. I’ll call you later.','Honza'],['Dobře. Měj se.','OK. Take care.','Petra']];
 function l6C(){ const box=rdBox(TEL6);
   const teach=[tCard('Kde jsi byl?','Where? v/ve + 6th case inside, na + 6th case for open places and events, u + person.',()=>`<div class="slist">${KDE6.map(k=>`<button class="srow" data-a="saytext" data-v="${k[0]}"><span class="spic">${ico(k[1],30)}</span><span class="stx"><b>${k[0]}</b></span>${ico('🔊',18)}</button>`).join('')}</div>`+lines([['Praha → v Praze · banka → v bance','k → c, h → z'],['ve škole, ve firmě · v [f] kanceláři','v becomes ve before some words']])),
-   rdCard('Kde jsi?','A phone call. Tap a line to hear it.',TEL6,()=>lines([['fakt? = really? · no jo = oh yes · prosím tě = come on','dělám si legraci = I’m joking']]))];
-  const d=[tf('Petra je v kavárně.',0,{ctx:box}),tf('Honza nebral telefon.',1,{ctx:box}),tf('Honza byl u doktora.',1,{ctx:box}),
+   [hear(TEL6,'Kde byl Honza?',['U doktora.','V kavárně.','V hospodě.'],'Where was Honza?'),rdCard('Kde jsi?','A phone call. Tap a line to hear it.',TEL6,()=>lines([['fakt? = really? · no jo = oh yes · prosím tě = come on','dělám si legraci = I’m joking']]))]];
+  const d=[...tfs([['Petra je v kavárně.',0,2],['Honza nebral telefon.',1,2],['Honza byl u doktora.',1,3]],TEL6,'Read the dialogue. True or false?'),
    gx(bt('Byla jsem na poště.'),'na',['v','u'],'📮','I was at the post office.',['na poště','post office → na']),
    gx(bt('Byl jsem u doktora.'),'u',['v','na'],'🩺','I was at the doctor’s.',['u + osoba: u doktora','at someone’s → u']),
    gx(bt('Pracuju v kanceláři.'),'v',['na','u'],'🏢','I work in an office.',['v kanceláři','inside → v']),
@@ -5128,18 +5220,18 @@ function l6C(){ const box=rdBox(TEL6);
    gx(bt('Bydlím v Praze.'),'Praze',['Praha','Prahu'],'🏰','I live in Prague.',['Praha → v Praze (h → z)','h → z']),
    gx(bt('Byl jsem ve škole.'),'škole',['škola','školu'],'🏫','I was at school.',['škola → ve škole','-a → -e']),
    qq('Někdo řekne něco, co není pravda, a směje se. Co řekne potom?',['Dělám si legraci.','Musím končit.','Zavolám ti později.'],{img:'😜',qen:'Just kidding.'}),
-   spk(bt('Kde jsi byl včera?'),'❓'),spk(bt('Byla jsem na nádraží.'),'🚉')];
-  return [...teach,...spread(d)]; }
+   spk(bt('Kde jsi byl včera?'),'❓'),spk(gF('Byl jsem na nádraží.','Byla jsem na nádraží.'),'🚉')];
+  return steps(teach,d,[[1,3],[0,8],[1,1],[0,2]]); }
 
 const NEMOC6=[['Ahoj Petro, co se stalo? Proč jsi nebyla na party?','Hi Petra, what happened? Why weren’t you at the party?','Honza'],['Ahoj. Jsem nemocná, mám angínu.','Hi. I’m ill, I have tonsillitis.','Petra'],['To je mi líto. Ale proč jsi nezavolala? Volal jsem ti asi pětkrát.','I’m sorry. But why didn’t you call? I called you about five times.','Honza'],
  ['Ztratila jsem mobil.','I lost my phone.','Petra'],['Tak to je smůla! A kde jsi včera byla?','That’s bad luck! And where were you yesterday?','Honza'],['Dopoledne jsem byla v práci, ale bylo mi špatně, tak jsem šla k doktorovi. Myslím, že jsem mobil zapomněla u doktora.','In the morning I was at work, but I felt ill, so I went to the doctor. I think I left my phone at the doctor’s.','Petra'],
  ['Moment… někdo zvoní. … To byla sousedka. Mám mobil! Hurá!','Wait… someone is ringing. … That was my neighbour. I have my phone! Hooray!','Petra']];
 const SEQ6=[['Nejdřív jsem zval kamarády.','🧑‍🤝‍🧑'],['Pak jsem nakupoval jídlo a pití.','🛒'],['Potom jsem vařil.','🍳'],['Nakonec jsem uklízel.','🧹']];
 function l6D(){ const box=rdBox(NEMOC6);
-  const teach=[rdCard('Proč jsi nebyla na party?','A phone call. Tap a line to hear it.',NEMOC6,()=>lines([['co se stalo? · to je mi líto · to je smůla · hurá!','what happened? · I’m sorry · bad luck · hooray!']])),
+  const teach=[[hear(NEMOC6,'Co Petra ztratila?',['Mobil.','Klíče.','Peníze.'],'What did Petra lose?'),rdCard('Proč jsi nebyla na party?','A phone call. Tap a line to hear it.',NEMOC6,()=>lines([['co se stalo? · to je mi líto · to je smůla · hurá!','what happened? · I’m sorry · bad luck · hooray!']]))],
    tCard('Kdy to bylo?','Time words for the past.',()=>tTable(['',''],[['včera','yesterday'],['předevčírem','the day before yesterday'],['minulý týden, měsíc, rok','last week, month, year'],['nejdřív · pak, potom · nakonec','first · then · in the end'],['poprvé · naposled','for the first time · last time']])+lines([['včera [fčera] · nejdřív [nejdřif] · naposled [naposlet]','voiced sounds become voiceless']])),
    tCard('Když mi bylo…','Talking about age in the past, and “never yet”.',()=>phr([['Když mi byl jeden rok…','When I was one…','👶'],['Když mi byly tři roky…','When I was three…','🧒'],['Když mi bylo pět let…','When I was five…','👦'],['Kdy jste byl poprvé v České republice?','When were you in the Czech Republic for the first time?','🇨🇿'],['Ještě nikdy jsem nebyla v Itálii.','I’ve never been to Italy yet.','🇮🇹'],['Kdy jste poprvé letěl letadlem?','When did you first fly in a plane?','✈️'],['Kdy jsi poprvé viděla moře?','When did you first see the sea?','🌊'],['Kdy jsi poprvé řídil auto?','When did you first drive a car?','🚗'],['Kdy jste naposled tancoval?','When did you last dance?','💃']]))];
-  const d=[tf('Petra má angínu.',1,{ctx:box}),tf('Petra ztratila klíče.',0,{ctx:box}),tf('Honza volal asi pětkrát.',1,{ctx:box}),tf('Mobil měla sousedka.',1,{ctx:box}),
+  const d=[...tfs([['Petra má angínu.',1,1],['Petra ztratila klíče.',0,3],['Honza volal asi pětkrát.',1,2],['Mobil měla sousedka.',1,6]],NEMOC6,'Read the dialogue. True or false?'),
    qq('Co řekneš, když má kamarád smůlu?',['To je smůla!','Hurá!','Dobrou chuť!'],{img:'😕',qen:'Bad luck.'}),
    ...SEQ6.map((s,i)=>qq(`Tom chystal party. Co bylo ${['první','druhé','třetí','poslední'][i]}?`,[s[0],...sample(SEQ6.filter(x=>x!==s),2).map(x=>x[0])],{img:s[1],qen:'Tom got the party ready. What came '+['first','second','third','last'][i]+'?',ctx:SEQ6.map((x,j)=>`${j+1}. ${ico(x[1],24)}`).join(' → ')})),
    gx(bt('Když mi bylo pět let, bydlel jsem v Brně.'),'let',['roky','rok'],'👦','When I was five, I lived in Brno.',['5 → bylo pět let','5+ → let']),
@@ -5148,16 +5240,16 @@ function l6D(){ const box=rdBox(NEMOC6);
    gx(bt('Předevčírem jsem byla na koncertě.'),'Předevčírem',['Zítra','Teď'],'🎵','The day before yesterday I was at a concert.',['minulý čas → předevčírem','past time word']),
    arr(bt('Nejdřív jsem nakupoval, pak jsem vařil.'),'First I shopped, then I cooked.','🛒'),
    spk(bt('Kdy jste byl poprvé v Česku?'),'🇨🇿')];
-  return [...teach,...spread(d)]; }
+  return steps(teach,d,[[0,5],[1,4],[2,3],[1,2],[2,1]]); }
 
 const SLAV6=[['Božena Němcová','spisovatelka','Napsala román Babička.','📖'],['Bedřich Smetana','skladatel','Napsal operu Prodaná nevěsta a cyklus Má vlast.','🎼'],['Emil Zátopek','sportovec','V roce 1952 vyhrál na olympiádě tři zlaté medaile.','🏃'],['Otto Wichterle','vědec','Vynalezl kontaktní čočky.','🔬'],['Václav Havel','dramatik a politik','V letech 1993 až 2003 byl prezident České republiky.','🏛️']];
 const KAREL6=[['Karel IV. byl český král a císař.','Charles IV was a Czech king and emperor.'],['Narodil se v roce 1316 v Praze.','He was born in 1316 in Prague.'],['Studoval ve Francii.','He studied in France.'],['Měl čtyři manželky.','He had four wives.'],['Založil univerzitu v Praze a postavil hrad Karlštejn.','He founded the university in Prague and built Karlštejn castle.']];
 function l6E(){ const teach=[tCard('Slavní Češi','Famous Czechs. Tap to listen.',()=>`<div class="slist">${SLAV6.map(s=>`<button class="srow" data-a="saytext" data-v="${esc(s[0]+' byl'+(s[1]==='spisovatelka'?'a ':' ')+s[1]+'. '+s[2])}"><span class="spic">${ico(s[3],34)}</span><span class="stx"><b>${esc(s[0])}</b><span>${esc(s[1])} · ${esc(s[2])}</span></span>${ico('🔊',18)}</button>`).join('')}</div>`),
-   rdCard('Víte, kdo byl Karel IV.?','Charles IV (read: Karel čtvrtý).',KAREL6),
+   rdCard('Víte, kdo byl Karel IV.?','Charles IV (read: Karel čtvrtý).',KAREL6,null,{from:'Karel IV.',ic:'👑'}),
    tCard('Vědět, znát, umět','Three ways to “know”.',()=>tTable(['','příklad','English'],[['vědět + věta','Víte, kdo byl Václav Havel? – Ano, vím.','Do you know who… ?'],['znát + kdo, co','Znáte Václava Havla? Znáš Prahu?','Do you know (someone/something)?'],['umět + sloveso, jazyk','Umím vařit. Umím česky.','I can (know how to)']])+tTable(['',''],[['Čech, Češka, Češi','a Czech man, woman, people'],['český skladatel, česká spisovatelka','Czech (adjective)'],['Mluvím česky. Studuju češtinu.','I speak Czech. I study Czech.']]))];
-  const d=[...SLAV6.map(s=>qq(`Kdo byl ${s[0]}?`,[s[1],...sample(SLAV6.filter(x=>x!==s).map(x=>x[1]),2)],{img:s[3],qen:'Who was it?',ctx:`<div class="card qactx">${esc(s[2])}</div>`})),
-   qq('Kdy se narodil Karel IV.?',['v roce 1316','v roce 1416','v roce 1516'],{img:'👑',ctx:rdBox(KAREL6),qen:'When was he born?'}),
-   qq('Kolik měl Karel IV. manželek?',['čtyři','dvě','tři'],{img:'👑',ctx:rdBox(KAREL6),qen:'How many wives?'}),
+  const d=[...SLAV6.map(s=>qq(`Kdo ${s[1]==='spisovatelka'?'byla':'byl'} ${s[0]}?`,[s[1],...sample(SLAV6.filter(x=>x!==s).map(x=>x[1]),2)],{img:s[3],qen:'Who was it?',ctx:`<div class="card qactx">${esc(s[2])}</div>`})),
+   qq('Kdy se narodil Karel IV.?',['v roce 1316','v roce 1416','v roce 1516'],{img:'👑',ctx:rdBox(KAREL6),ctxHi:rdBox(KAREL6,1),qen:'When was he born?'}),
+   qq('Kolik měl Karel IV. manželek?',['čtyři','dvě','tři'],{img:'👑',ctx:rdBox(KAREL6),ctxHi:rdBox(KAREL6,3),qen:'How many wives?'}),
    gx(bt('Víte, kdo byl Václav Havel?'),'Víte',['Znáte','Umíte'],'❓','Do you know who Václav Havel was?',['vědět + kdo, co, kde… (věta)','vědět + a question']),
    gx(bt('Znáte Prahu?'),'Znáte',['Víte','Umíte'],'🏰','Do you know Prague?',['znát + Prahu (kdo, co)','znát + a person or place']),
    gx(bt('Umíte vařit?'),'Umíte',['Víte','Znáte'],'🍳','Can you cook?',['umět + sloveso','umět + a skill']),
@@ -5166,7 +5258,7 @@ function l6E(){ const teach=[tCard('Slavní Češi','Famous Czechs. Tap to liste
    gx(bt('Božena Němcová byla Češka.'),'Češka',['Čech','česky'],fe('📖'),'Božena Němcová was Czech.',['žena → Češka','a woman: Češka']),
    gx(bt('Studuju češtinu.'),'češtinu',['čeština','češtině'],'📚','I study Czech.',['studovat + co? → češtinu','study + the language']),
    spk(bt('Umím trochu česky.'),'🗣️')];
-  return [...teach,...spread(d)]; }
+  return steps(teach,d,[[0,5],[1,2],[2,8]]); }
 
 const ZEME6=[['Anglie','v Anglii','Angličan','Angličanka','anglicky','angličtina'],['Bulharsko','v Bulharsku','Bulhar','Bulharka','bulharsky','bulharština'],['Česká republika','v České republice','Čech','Češka','česky','čeština'],['Čína','v Číně','Číňan','Číňanka','čínsky','čínština'],
  ['Dánsko','v Dánsku','Dán','Dánka','dánsky','dánština'],['Finsko','ve Finsku','Fin','Finka','finsky','finština'],['Francie','ve Francii','Francouz','Francouzka','francouzsky','francouzština'],['Itálie','v Itálii','Ital','Italka','italsky','italština'],
@@ -5179,8 +5271,8 @@ const KONT6=[['Evropa','v Evropě','Evropan'],['Afrika','v Africe','Afričan'],[
 function l6F(){ const teach=[tCard('Státy, národnosti, jazyky','Country · where? · man · woman · speaks. Tap to listen.',()=>ZEME6.map(z=>`<div class="card ctry"><div class="ctop"><b>${z[0]}</b><button class="tnum" data-a="saytext" data-v="${z[1]}">${z[1]}</button></div><div class="cbot"><button class="tnum" data-a="saytext" data-v="${z[2]}">♂ ${z[2]}</button><button class="tnum" data-a="saytext" data-v="${z[3]}">♀ ${z[3]}</button><span>🗣️ ${z[4]}</span></div></div>`).join('')),
    tCard('Kontinenty','Continents.',()=>tTable(['','kde?','kdo?'],KONT6.map(k=>[k[0],`<button class="tnum" data-a="saytext" data-v="${k[1]}">${k[1]}</button>`,k[2]]))+lines([['umím, mluvím, rozumím, učím se + česky','I can / speak / understand / learn + Czech'],['studuju + češtinu','I study + the language']]))];
   const ZG={Bulharsko:'Bulharska','Čína':'Číny',Francie:'Francie','Itálie':'Itálie',Japonsko:'Japonska','Německo':'Německa',Polsko:'Polska',Rusko:'Ruska',Slovensko:'Slovenska','Španělsko':'Španělska',Ukrajina:'Ukrajiny',Vietnam:'Vietnamu'};
-  const POOL=ZEME6.filter(z=>ZG[z[0]]), s1=z=>`Jsem z ${ZG[z[0]]}. Jsem ${z[2]}.`, s2=z=>`Je to ${z[3]}. Mluví ${z[4]}.`;
-  bt(...POOL.map(s1),...POOL.map(s2));
+  const POOL=ZEME6.filter(z=>ZG[z[0]]), s1=z=>`Jsem ${/^[SŠZŽ]/.test(ZG[z[0]])?'ze':'z'} ${ZG[z[0]]}. Jsem ${z[2]}.`, s2=z=>`Je to ${z[3]}. Mluví ${z[4]}.`;
+  bt(...POOL.map(s1),...POOL.map(s2)); POOL.forEach(z=>{ G25[s1(z)]='m'; G25[s2(z)]='f'; });
   const d=[...sample(POOL,3).map(z=>gx(s1(z),z[2],[z[3],z[4]],ma('🙋'),'I am from … I am …',[`♂ muž → ${z[2]}`,'a man'])),
    ...sample(POOL,3).map(z=>gx(s2(z),z[4],[z[5],z[2]],fe('🗣️'),'She is … She speaks …',[`mluvit + ${z[4]} (jak?)`,'speak + -sky'])),
    gx(bt('Bydlím na Slovensku.'),'na',['v','ve'],'🇸🇰','I live in Slovakia.',['na Slovensku (výjimka)','na Slovensku']),
@@ -5189,35 +5281,83 @@ function l6F(){ const teach=[tCard('Státy, národnosti, jazyky','Country · whe
    gx(bt('Můj kolega je Němec.'),'Němec',['Němka','německy'],'💼','My colleague is German.',['muž → Němec','a man: Němec']),
    qq('Kde se mluví německy?',['v Německu a v Rakousku','v Polsku a v Rusku','ve Francii a v Itálii'],{img:'🇩🇪',qen:'Where is German spoken?'}),
    qq('Jaký jazyk je slovanský?',['čeština','angličtina','italština'],{img:'🌍',qen:'Which language is Slavic?'}),
-   spk(bt('Mluvím anglicky a trochu česky.'),'🗣️'),spk(bt('Ještě nikdy jsem nebyl v Asii.'),'🌏')];
-  return [...teach,...spread(d)]; }
+   spk(bt('Mluvím anglicky a trochu česky.'),'🗣️'),spk(gF('Ještě nikdy jsem nebyl v Asii.','Ještě nikdy jsem nebyla v Asii.'),'🌏'),
+   gx(bt('Japonsko je v Asii.'),'Asii',['Asie','Asií'],'🌏','Japan is in Asia.',['kde? Asie → v Asii','where? → v Asii']),
+   gx(bt('Česko je v Evropě.'),'Evropě',['Evropa','Evropu'],'🌍','Czechia is in Europe.',['kde? Evropa → v Evropě','where? → v Evropě']),
+   qq('Kde je Egypt?',['V Africe.','V Asii.','V Americe.'],{img:'🌍',qen:'Where is Egypt?'})];
+  return steps(teach,d,[[0,13],[1,4]]); }
 
-UEXTRA.L1.push({k:'xy',ic:'📇',t:'Vizitky a „To je jedno“',en:'Business cards, underscore, female forms',sub:'asistentka, lektorka, podtržítko',run:()=>begin('course','📇 Vizitky',l1Y(),{})});
-UEXTRA.L2.push({k:'xy',ic:'✉️',t:'E-mail od Tomáše',en:'Read: an international organisation, noise, a historic town',sub:'vzadu je park, diskotéka, hluk',run:()=>begin('course','✉️ E-mail od Tomáše',l2Y(),{})});
-UEXTRA.L3.push({k:'xy',ic:'🍲',t:'Gulášová polévka a vegetarián',en:'The last dishes and phrases',sub:'americké brambory, nemám vůbec čas',run:()=>begin('course','🍲 Doplněk',l3Y(),{})});
+UEXTRA.L1.push({k:'xy',ic:'📇',t:'Vizitky a „To je jedno“',en:'Business cards, underscore, female forms',sub:'asistentka, lektorka, podtržítko',b:l1Y,run:()=>begin('course','📇 Vizitky',l1Y(),{})});
+UEXTRA.L2.push({k:'xy',ic:'✉️',t:'E-mail od Tomáše',en:'Read: an international organisation, noise, a historic town',sub:'vzadu je park, diskotéka, hluk',b:l2Y,run:()=>begin('course','✉️ E-mail od Tomáše',l2Y(),{})});
+UEXTRA.L3.push({k:'xy',ic:'🍲',t:'Gulášová polévka a vegetarián',en:'The last dishes and phrases',sub:'americké brambory, nemám vůbec čas',b:l3Y,run:()=>begin('course','🍲 Doplněk',l3Y(),{})});
 UEXTRA.L4=[
- {k:'xa',ic:'👨‍👩‍👧',t:'Janina rodina a věk',en:'Read about a family; How old are you?',sub:'Kolik vám je? Je mi… vdaná, svobodný',run:()=>begin('course','👨‍👩‍👧 Janina rodina',l4A(),{})},
- {k:'xb',ic:'🌳',t:'Velká rodina',en:'The whole family and “whose”',sub:'bratranec, neteř, tchyně · Petrův, Evina',run:()=>begin('course','🌳 Velká rodina',l4B(),{})},
- {k:'xc',ic:'🧍',t:'Jaký je…?',en:'Describing people and things: opposites',sub:'hubený – tlustý, drahý – levný',run:()=>begin('course','🧍 Jaký je…?',l4C(),{})},
- {k:'xd',ic:'🎯',t:'Mám hezkého bratra',en:'The 4th case of people and things',sub:'hodného manžela, malou dceru, pět sester',run:()=>begin('course','🎯 Mám…',l4D(),{})},
- {k:'xe',ic:'📝',t:'Formulář a jména',en:'Official form, my/your, family names',sub:'příjmení, datum narození, Novákovi',run:()=>begin('course','📝 Formulář',l4E(),{})},
- {k:'xf',ic:'💰',t:'Kolik to stojí?',en:'Prices, thousands and discounts',sub:'tisíc, tisíce, korun, sleva',run:()=>begin('course','💰 Kolik to stojí?',l4F(),{})}];
+ {k:'xa',ic:'👨‍👩‍👧',t:'Janina rodina a věk',en:'Read about a family; How old are you?',sub:'Kolik vám je? Je mi… vdaná, svobodný',b:l4A,run:()=>begin('course','👨‍👩‍👧 Janina rodina',l4A(),{})},
+ {k:'xb',ic:'🌳',t:'Velká rodina',en:'The whole family and “whose”',sub:'bratranec, neteř, tchyně · Petrův, Evina',b:l4B,run:()=>begin('course','🌳 Velká rodina',l4B(),{})},
+ {k:'xc',ic:'🧍',t:'Jaký je…?',en:'Describing people and things: opposites',sub:'hubený – tlustý, drahý – levný',b:l4C,run:()=>begin('course','🧍 Jaký je…?',l4C(),{})},
+ {k:'xd',ic:'🎯',t:'Mám hezkého bratra',en:'The 4th case of people and things',sub:'hodného manžela, malou dceru, pět sester',b:l4D,run:()=>begin('course','🎯 Mám…',l4D(),{})},
+ {k:'xe',ic:'📝',t:'Formulář a jména',en:'Official form, my/your, family names',sub:'příjmení, datum narození, Novákovi',b:l4E,run:()=>begin('course','📝 Formulář',l4E(),{})},
+ {k:'xf',ic:'💰',t:'Kolik to stojí?',en:'Prices, thousands and discounts',sub:'tisíc, tisíce, korun, sleva',b:l4F,run:()=>begin('course','💰 Kolik to stojí?',l4F(),{})}];
 UEXTRA.L5=[
- {k:'xa',ic:'⏰',t:'Proč tak spěcháš?',en:'Time: quarter past, half past, quarter to',sub:'čtvrt na, půl, tři čtvrtě na',run:()=>begin('course','⏰ Proč tak spěcháš?',l5A(),{})},
- {k:'xb',ic:'📅',t:'Dny a části dne',en:'Days, parts of the day, events',sub:'ve středu, v sobotu, odpoledne, schůze',run:()=>begin('course','📅 Dny a části dne',l5B(),{})},
- {k:'xc',ic:'📞',t:'Kdy se sejdeme?',en:'Inviting: Does it suit you?',sub:'Hodí se ti to? do kina × na koncert',run:()=>begin('course','📞 Kdy se sejdeme?',l5C(),{})},
- {k:'xd',ic:'🌞',t:'Můj den a „rád“',en:'A weekday and weekend; rád, mít rád; how often',sub:'ráda plave, nikdy netancuju',run:()=>begin('course','🌞 Můj den',l5D(),{})},
- {k:'xe',ic:'🐦',t:'Skřivánek, nebo sova?',en:'Two short texts: who does what?',sub:'ospalá, přednášky, třikrát za týden',run:()=>begin('course','🐦 Skřivánek, nebo sova?',l5E(),{})},
- {k:'xf',ic:'💪',t:'Musím, můžu, chci, umím',en:'Modal verbs, an invitation e-mail, opening hours',sub:'omlouvám se, výročí, otevřeno',run:()=>begin('course','💪 Musím, můžu…',l5F(),{})}];
+ {k:'xa',ic:'⏰',t:'Proč tak spěcháš?',en:'Time: quarter past, half past, quarter to',sub:'čtvrt na, půl, tři čtvrtě na',b:l5A,run:()=>begin('course','⏰ Proč tak spěcháš?',l5A(),{})},
+ {k:'xb',ic:'📅',t:'Dny a části dne',en:'Days, parts of the day, events',sub:'ve středu, v sobotu, odpoledne, schůze',b:l5B,run:()=>begin('course','📅 Dny a části dne',l5B(),{})},
+ {k:'xc',ic:'📞',t:'Kdy se sejdeme?',en:'Inviting: Does it suit you?',sub:'Hodí se ti to? do kina × na koncert',b:l5C,run:()=>begin('course','📞 Kdy se sejdeme?',l5C(),{})},
+ {k:'xd',ic:'🌞',t:'Můj den a „rád“',en:'A weekday and weekend; rád, mít rád; how often',sub:'ráda plave, nikdy netancuju',b:l5D,run:()=>begin('course','🌞 Můj den',l5D(),{})},
+ {k:'xe',ic:'🐦',t:'Skřivánek, nebo sova?',en:'Two short texts: who does what?',sub:'ospalá, přednášky, třikrát za týden',b:l5E,run:()=>begin('course','🐦 Skřivánek, nebo sova?',l5E(),{})},
+ {k:'xf',ic:'💪',t:'Musím, můžu, chci, umím',en:'Modal verbs, an invitation e-mail, opening hours',sub:'omlouvám se, výročí, otevřeno',b:l5F,run:()=>begin('course','💪 Musím, můžu…',l5F(),{})}];
 UEXTRA.L6=[
- {k:'xa',ic:'📱',t:'Zprávy a omluvy',en:'Text messages: sorry, I can’t come',sub:'zrušit lekci, bolí mě zub',run:()=>begin('course','📱 Omluvy',l6A(),{})},
- {k:'xb',ic:'🙅',t:'Nebyl jsem venku',en:'Negative and formal past, Jak ses měl?',sub:'nebyl jsem, co jste dělala, cos dělal',run:()=>begin('course','🙅 Minulý čas',l6B(),{})},
- {k:'xc',ic:'📍',t:'Kde jsi byl?',en:'v, na, u + the 6th case',sub:'v bance, na poště, u doktora',run:()=>begin('course','📍 Kde jsi byl?',l6C(),{})},
- {k:'xd',ic:'😷',t:'Proč jsi nebyla na party?',en:'What happened? Time words for the past',sub:'smůla, předevčírem, když mi bylo pět let',run:()=>begin('course','😷 Co se stalo?',l6D(),{})},
- {k:'xe',ic:'⭐',t:'Slavní Češi',en:'Famous Czechs, Charles IV, vědět × znát',sub:'Smetana, Havel, Karel IV.',run:()=>begin('course','⭐ Slavní Češi',l6E(),{})},
- {k:'xf',ic:'🌍',t:'Státy a národnosti',en:'Countries, nationalities, languages',sub:'Polák, Němka, na Slovensku',run:()=>begin('course','🌍 Státy a národnosti',l6F(),{})}];
+ {k:'xa',ic:'📱',t:'Zprávy a omluvy',en:'Text messages: sorry, I can’t come',sub:'zrušit lekci, bolí mě zub',b:l6A,run:()=>begin('course','📱 Omluvy',l6A(),{})},
+ {k:'xb',ic:'🙅',t:'Nebyl jsem venku',en:'Negative and formal past, Jak ses měl?',sub:'nebyl jsem, co jste dělala, cos dělal',b:l6B,run:()=>begin('course','🙅 Minulý čas',l6B(),{})},
+ {k:'xc',ic:'📍',t:'Kde jsi byl?',en:'v, na, u + the 6th case',sub:'v bance, na poště, u doktora',b:l6C,run:()=>begin('course','📍 Kde jsi byl?',l6C(),{})},
+ {k:'xd',ic:'😷',t:'Proč jsi nebyla na party?',en:'What happened? Time words for the past',sub:'smůla, předevčírem, když mi bylo pět let',b:l6D,run:()=>begin('course','😷 Co se stalo?',l6D(),{})},
+ {k:'xe',ic:'⭐',t:'Slavní Češi',en:'Famous Czechs, Charles IV, vědět × znát',sub:'Smetana, Havel, Karel IV.',b:l6E,run:()=>begin('course','⭐ Slavní Češi',l6E(),{})},
+ {k:'xf',ic:'🌍',t:'Státy a národnosti',en:'Countries, nationalities, languages',sub:'Polák, Němka, na Slovensku',b:l6F,run:()=>begin('course','🌍 Státy a národnosti',l6F(),{})}];
 
 
+/* ============ v26: lessons that teach in small steps ============
+   steps(): explain ONE thing → practise it straight away → the next thing (v25 showed all explanations first).
+   Inside a step the tasks climb: understand (choose) → form (gap) → build / say.
+   At the end "Teď ty": two sentences of the part again, from memory.
+   A wrong answer comes back a few tasks later. Several first-try answers in a row skip one easy task. */
+function ladder(L){ const A=L.filter(e=>e.t==='qa'), B=L.filter(e=>e.t==='gapx'), C=L.filter(e=>e.t!=='qa'&&e.t!=='gapx'), out=[];
+  for(let i=0;i<Math.max(A.length,B.length);i++){ if(A[i]) out.push(A[i]); if(B[i]) out.push(B[i]); }
+  return [...out,...C]; }
+function steps(teach,d,plan,order){
+  const G=teach.map(()=>[]), end=[]; let p=0;
+  (plan||[[0,d.length]]).forEach(([ci,n])=>{ const part=d.slice(p,p+n); p+=n; (G[ci]||end).push(...part); });
+  end.push(...d.slice(p));
+  const seq=order||teach.map((_,i)=>i), out=[];
+  seq.forEach((ci,k)=>{ const cs=[].concat(teach[ci]); cs.forEach(c=>{ if(c.slide&&seq.length>1) c.slide.step=[k+1,seq.length]; c.cg=ci; out.push(c); });
+    ladder(G[ci]).forEach(e=>{ e.cg=ci; out.push(e); }); });
+  const seen=new Set(), all=[...out,...ladder(end),...recall26(d)].filter(e=>{ if(e.t!=='gapx'||e.recall) return true; const k=e.item.cz+'|'+(e.item.w||''); if(seen.has(k)) return false; seen.add(k); return true; });
+  all.forEach(e=>{ if(e.t==='qa') e.re=false; });
+  return all;
+}
+function recall26(d){
+  const c=d.filter(e=>e.t==='gapx'&&!e.ctx&&e.item&&e.item.en&&e.item.w&&(e.item.wrong||[]).length&&!/[–„“:]/.test(e.item.cz)&&(n=>n>=3&&n<=8)(toks(e.item.cz).length));
+  if(c.length<2) return [];
+  const [a,b]=sample(c,2), A=x=>mk('arrange',x.item,[],{ans:x.item.cz,extra:x.item.wrong.slice(0,2),noAudio:true,nograde:true,recall:1});
+  return [A(a), mk('speak',b.item,[],{hide:true,thr:.7,nograde:true,recall:1})];
+}
+/* reading: the sentence that proves the answer lights up after you answer */
+function tfs(TF,rows,te){ return TF.map(([s,t,ev])=>tf(s,t,{ctx:rdBox(rows),ctxHi:ev!=null?rdBox(rows,ev):null,te:te||'Read the text. True or false?'})); }
+/* listening first: hear the whole dialogue, answer one question, read it afterwards */
+function hear(rows,q,opts,qen){ return qa({sayList:rows.map(r=>r[0]),q,qen,opts,img:'🎧',tt:'Nejdřív jen poslouchej',te:'Listen first, without the text. You will read it on the next screen.',hear:1}); }
+let CH26=0;
+function chainSay(list){ const my=++CH26, tok=S?S.token:0; let i=0;
+  const nx=()=>{ if(my!==CH26||(S&&S.token!==tok)) return; if(i>=list.length) return; say(list[i++],false,null,()=>setTimeout(nx,260)); }; nx(); }
+/* the lesson's own reviews (Opakování, Velké opakování) and the daily mix also bring back tasks from the book parts you finished */
+function bookPool(uid,n){ const r=(P.lp||{})[uid]||{}, N=(UEXTRA[uid]||[]).filter(x=>x.b&&r[x.k]); if(!N.length||n<1) return [];
+  let ex=[]; sample(N,Math.min(3,N.length)).forEach(x=>{ try{ ex.push(...x.b().filter(e=>!e.recall&&!e.hear&&(e.t==='gapx'||e.t==='arrange'||(e.t==='qa'&&!e.ctx&&!e.say&&!e.sayList)))); }catch(e){} });
+  return sample(ex,Math.min(n,ex.length)).map(e=>{ delete e.cg; e.re=false; e.book=1; return e; }); }
+/* sentences the learner says about herself / himself follow the gender chosen in the profile; both forms get a recording */
+function gF(m,f){ bt(m,f); return meF()?f:m; }
+/* a small family picture for lesson 4 */
+function famPic(){ const P4=[[['novak','dědeček'],['pani','babička']],[['owner','tatínek'],['waitress','maminka']],[['honza','bratr'],[samId(),'já'],['lucie','sestra']]];
+  return `<div class="fam26">${P4.map(row=>`<div class="fr">${row.map(([id,w])=>`<button data-a="saytext" data-v="${w}">${chr(id,'happy',w==='já'?52:46)}<b>${w}</b></button>`).join('')}</div>`).join('<div class="fl"></div>')}</div>`; }
+/* clock faces for "čtvrt na, půl, tři čtvrtě na" */
+function clockRow(L){ return `<div class="clk26">${L.map(([h,m,cz,en])=>`<button data-a="saytext" data-v="${esc(cz)}"><svg viewBox="0 0 64 64" width="58" height="58" aria-hidden="true">${clockSVG(32,32,28,h,m)}</svg><b>${esc(cz)}</b><small>${String(h).padStart(2,'0')}.${String(m).padStart(2,'0')}</small>${EN(en)}</button>`).join('')}</div>`; }
+Object.assign(ACT,{ rdall:v=>chainSay(RD26[v]||[]) });
+{ const st0=ACT.saytext; ACT.saytext=v=>{ CH26++; st0(v); }; }
 /* ---- new exercise types (all built on the qa step) ---- */
 function tf(s,isTrue,o={}){ return qa({q:s,opts:['ANO ✓','NE ✗'],ans:isTrue?'ANO ✓':'NE ✗',fixed:1,grid:true,img:o.img||'❔',tt:o.tt||'Je to pravda?',te:o.te||'True or false?',...o}); }
 const withImg=x=>x&&x.img&&x.img[0]!=='@'&&x.img[0]!=='=';
@@ -5258,13 +5398,15 @@ const VARIETY=(x,pool)=>{ const r=Math.random(), one=toks(x.cz).length===1, ok=(
 
 /* ---- more review: daily mix, weekly review, "Pamatuješ si?" recall inside lessons ---- */
 function mixQueue(n){ const L=learnedAll(), due=dueList().slice(0,6), W=weakItems().filter(o=>!o.k.startsWith('T:')).map(o=>o.x).slice(0,4); const base=[...new Set([...due,...W,...sample(L,n)])].slice(0,n);
-  VC={}; const pool=L.length>=8?L:ALL; const q=base.map(x=>VARIETY(x,pool)); const r=replyEx(), o=oddEx(); if(r) q.splice(3,0,r); if(o) q.splice(7,0,o); return q; }
+  VC={}; const pool=L.length>=8?L:ALL; const q=base.map(x=>VARIETY(x,pool)); const r=replyEx(), o=oddEx(); if(r) q.splice(3,0,r); if(o) q.splice(7,0,o);
+  try{ const U2=Object.keys(UEXTRA).filter(id=>Object.keys((P.lp||{})[id]||{}).some(k=>k[0]==='x')); if(U2.length) bookPool(sample(U2,1)[0],2).forEach((e,i)=>q.splice(Math.min(q.length,5+i*4),0,e)); }catch(e){}
+  return q; }
 function startMix(){ if(learnedAll().length<6){ VC={}; begin('mix','🔀 Denní mix',sample(ALL.filter(x=>x.unit==='L1'&&withImg(x)),8).map(x=>VARIETY(x,U('L1').items)),{}); return; } begin('mix','🔀 Denní mix',spread(mixQueue(12)),{}); }
 function startWeek(){ begin('week','📅 Týdenní opakování',spread(mixQueue(20)),{}); }
 const weekDue=()=>learnedAll().length>=20&&Date.now()-(P.weekRev||0)>6.5*DAY;
 function recallSteps(kind,q){ if(!['part','lesson','course','unit','speaking','listen'].includes(kind)||q.length<8) return q;
   const cur=curUnit, L=learnedAll().filter(x=>withImg(x)&&x.unit!==cur), W=weakItems().map(o=>o.x).filter(x=>x&&withImg(x)); const src=[...W.slice(0,2),...sample(L,2)].slice(0,2); if(!src.length) return q;
-  const out=q.slice(); src.forEach((x,k)=>{ const pool=L.length>=4?L:ALL.filter(withImg); const e=qa({q:'Pamatuješ si? Co je to?',qen:'Do you remember? What is it?',opts:[x.cz,...sample(pool.filter(y=>y.cz!==x.cz),2).map(y=>y.cz)],item:{id:x.id,cz:x.cz,img:x.img},pic:true,img:x.img,say:null,tt:'🧠 Pamatuješ si?',te:'A word from an earlier lesson.',recall:1}); out.splice(Math.min(out.length,6+k*7),0,e); }); return out; }
+  const out=q.slice(); src.forEach((x,k)=>{ const pool=L.length>=4?L:ALL.filter(withImg); const e=qa({q:'Pamatuješ si? Co je to?',qen:'Do you remember? What is it?',opts:[x.cz,...sample(pool.filter(y=>y.cz!==x.cz),2).map(y=>y.cz)],item:{id:x.id,cz:x.cz,img:x.img},pic:true,img:x.img,say:null,tt:'🧠 Pamatuješ si?',te:'A word from an earlier lesson.',recall:1}); let at=Math.min(out.length,6+k*7); while(at<out.length&&out[at-1]&&(out[at-1].t==='teach'||out[at-1].hear)) at++; out.splice(at,0,e); }); return out; }
 
 /* ---- games: memory pairs and 60-second speed round ---- */
 let MEM=null, SPD=null;
@@ -5296,7 +5438,7 @@ function nudge(){ const n=dayN(), g=dGoal(), due=dueList().length, wk=Object.key
   else { msg='Dnes jsi ještě nezačal/a. Co takhle krátký mix?'; en='Not started yet today. How about a short mix?'; act='mix'; lab='Denní mix'; }
   return `<div class="nudge">${chr('klara',n>=g?'cheer':'talk',52)}<div class="nb"><p>${esc(msg)}</p>${EN(en)}<button class="cta sm" data-a="${act}">${lab}</button></div>
     <button class="ring" data-a="dgoal" aria-label="Denní cíl">${ringSVG(p,56,6,p>=1?'var(--ok)':'var(--acc)')}<b>${n}/${g}</b></button></div>`; }
-function wotdCard(){ const x=wotd(); if(!x) return ''; return `<div class="wotd"><div class="wl">Slovo dne${EN(' · Word of the day','en sen')}</div><div class="wr">${pic(x,64)}<span><b>${esc(x.cz)}</b><small>${esc(x.en||'')}</small></span><button class="ssay" data-a="say" data-v="${x.id}">${ico('🔊',18)}</button></div><button class="cta sm alt" data-a="wotdq">${bl('🎯','Mini kvíz',18)}</button></div>`; }
+function wotdCard(){ const x=wotd(); if(!x) return ''; return `<div class="w26"><span class="wpic">${pic(x,46)}</span><span class="wtx"><span class="wl">Slovo dne${EN(' · Word of the day','en sen')}</span><b>${esc(x.cz)}</b><small>${esc(x.en||'')}</small></span><button class="ssay" data-a="say" data-v="${x.id}" aria-label="Přehrát slovo">${ico('🔊',20)}</button><button class="wq" data-a="wotdq">Kvíz</button></div>`; }
 function weekCard(){ return weekDue()?`<button class="ntile wide" data-a="week">${ico('📅',34)}<b>Týdenní opakování</b><small>20 úloh ze všech lekcí</small>${EN('Weekly review: 20 mixed tasks')}</button>`:''; }
 function homeTop(){ return nudge()+weekCard(); }
 function gamesRow(){ return `<div class="ntiles"><button class="ntile" data-a="mix">${ico('🔀',34)}<b>Denní mix</b><small>12 různých úloh</small>${EN('Daily mix')}</button><button class="ntile" data-a="memo">${ico('🃏',34)}<b>Pexeso</b><small>obrázek + slovo</small>${EN('Memory game')}</button><button class="ntile" data-a="speed">${ico('⏱️',34)}<b>60 sekund</b><small>rekord ${P.speedBest||0}</small>${EN('Speed round')}</button><button class="ntile" data-a="week">${ico('📅',34)}<b>Týdenní opakování</b><small>${weekDue()?'čeká na tebe':'20 úloh'}</small>${EN('Weekly review')}</button></div>`; }
@@ -5547,7 +5689,7 @@ function dlgCard(d,lab=true){ const st=(P.dlg||{})[d.id];
   return `<button class="tcard" data-a="dlg" data-v="${d.id}"><span class="tci">${ico(d.icon,40)}</span><span class="tct">${lab?`<span class="unum">${esc(U(d.les).lab)}</span>`:''}<b>${esc(d.t)}</b><span class="who">${chr(dlgCast(d),'happy',22)} ${esc(d.a.n)} · ${chr(samId(),'happy',22)} Ty</span>${EN(d.sit)}</span><span class="tcs${st?' done':''}">${st?(st.best?`${st.best}<small>%</small>`:'✓'):'▶'}</span></button>`; }
 function patCard(p,lab=true){ const st=(P.pat||{})[p.id];
   return `<button class="tcard" data-a="pat" data-v="${p.id}"><span class="tci">${ico(PICON[p.id]||'🧪',40)}</span><span class="tct">${lab?`<span class="unum">${esc(U(p.les).lab)}</span>`:''}<b class="cz">${esc(p.frame==='{}'?pItems(p)[0].cz:p.frame.replace('{}','___'))}</b>${EN(esc(p.en))}</span><span class="tcs${st?' done':''}">${st?`${st.n}<small>×</small>`:'▶'}</span></button>`; }
-const unitRange=t=>t.units[0]==='F1'?'Bonus':`Lekce ${U(t.units[0]).num}–${U(t.units[t.units.length-1]).num}`;
+const unitRange=t=>t.units[0]==='F1'?'Úvod':`Lekce ${U(t.units[0]).num}–${U(t.units[t.units.length-1]).num}`;
 const audioBtns = () => `<div class="abtns"><button class="abtn" data-a="play" aria-label="Přehrát">${ico('🔊',30)}</button><button class="abtn slow" data-a="slow" aria-label="Pomalu">${ico('🐢',24)}</button></div>`;
 function vSession(){
   const ex=cur(), x=ex.item, pct=Math.round(100*S.i/S.queue.length); let b='', f=''; GM=moodOf(ex);
@@ -5641,7 +5783,7 @@ function vSession(){
     <div class="mcol">${ex.mp.map((o,k)=>`<button class="mtile ${ex.matched.has(o.id)?'okf done':ex.sp===k?'sel':''} ${ex.badp===k?'badf':''}" data-a="mp" data-v="${k}">${pic(o,40)}</button>`).join('')}</div>
     <div class="mcol">${ex.mw.map((o,k)=>`<button class="mword ${ex.matched.has(o.id)?'okf done':ex.sw===k?'sel':''} ${ex.badw===k?'badf':''}" data-a="mw" data-v="${k}">${esc(o.cz)}</button>`).join('')}</div></div>`;
   } else if(ex.t==='arrange'){
-    b=`${ex.ctx?task('Odpověz: slož větu','Build your reply from the tiles'):ex.listen?task('Poslechni a slož větu','Listen, then put the words in the order you heard them'):task('Slož větu','Tap the words in the right order')}${ex.ctx?`<div class="chat ctx">${bubbleHTML(ex.ctx,ex.dlg,{audio:true,en:HELP})}</div>`:`<div class="bigpic sm">${pic(x,90)}</div>`}${ex.noAudio?'':`<div class="prompt">${audioBtns()}</div>`}
+    b=`${ex.ctx?task('Odpověz: slož větu','Build your reply from the tiles'):ex.listen?task('Poslechni a slož větu','Listen, then put the words in the order you heard them'):ex.recall?task('Teď ty: slož větu','Now you: build the sentence from memory. Careful, there are extra tiles.'):task('Slož větu','Tap the words in the right order')}${ex.ctx?`<div class="chat ctx">${bubbleHTML(ex.ctx,ex.dlg,{audio:true,en:HELP})}</div>`:`<div class="bigpic sm">${pic(x,90)}</div>`}${ex.recall&&x.en?`<div class="qaq recq"><b>${esc(x.en)}</b></div>`:''}${ex.noAudio?'':`<div class="prompt">${audioBtns()}</div>`}
     <div class="ansline ${ex.done?'ok':''} ${ex.shake?'shake':''}">${ex.placed.length?ex.placed.map((ti,pos)=>`<button class="wtile" data-a="unplace" data-v="${pos}">${esc(ex.tok[ti])}</button>`).join(''):`<span class="ph">${ex.ctx?chr(samId(),'think',28)+' ':''}Klepni na slova níže</span>`}</div>
     <div class="bank">${ex.order.map(ti=>ex.placed.includes(ti)?`<span class="wtile ghosted">${esc(ex.tok[ti])}</span>`:`<button class="wtile" data-a="place" data-v="${ti}">${esc(ex.tok[ti])}</button>`).join('')}</div>
     ${ex.done?`<div class="fb ok">✓ Výborně!</div>${HELP&&x.en?`<p class="en" style="text-align:center">${esc(x.en)}</p>`:''}`:''}`;
@@ -5674,7 +5816,7 @@ function vSession(){
   }
   return `<div class="sbar"><button class="icon" data-a="quit" aria-label="Zavřít">✕</button><div class="prog"><i style="width:${pct}%"></i></div>${(S.combo||0)>=3?`<span class="combo">${ico('🔥',18)}${S.combo}</span>`:''}<span class="cnt">${S.i+1}/${S.queue.length}</span>${helpBtn()}</div>
   <div class="ex${P.settings.thumb!==false&&['gapx','qa','pic2text','choose'].includes(ex.t)?' thumb':''}" data-k="${S.i}">${b}</div>${f?foot(f):''}
-  ${S.toast&&(!S.toast.k||Date.now()-S.toast.k<2300||(S.toast.t==='ok'&&f&&ex.done))?(S.toast.t==='ok'?`<div class="toast ok">${chr('klara','cheer',40)}<b>${S.toast.combo>=3?'🔥 '+S.toast.combo+'× ':''}${S.toast.w}</b>${S.toast.cz?`<span>${esc(S.toast.cz)}</span>`:''}<em>+${S.toast.xp} XP</em></div>`:''):''}`;
+  ${S.toast&&(!S.toast.k||Date.now()-S.toast.k<2300||(S.toast.t==='ok'&&f&&ex.done))?(S.toast.t==='ok'?`<div class="toast ok${S.toast.skip?' wskip':''}">${chr('klara','cheer',40)}<b>${S.toast.combo>=3?'🔥 '+S.toast.combo+'× ':''}${S.toast.w}</b>${S.toast.cz?`<span>${esc(S.toast.cz)}</span>`:''}<em>+${S.toast.xp} XP</em>${S.toast.skip?`<i class="tskip">🚀 Jde ti to! Jednu snadnou úlohu přeskakuju.${EN(' You are doing well: skipping one easy task.')}</i>`:''}</div>`:''):''}`;
 }
 function vExplore(){
   const u=U(EX.uid), x=EX.lab&&BYID[EX.lab];
@@ -5829,26 +5971,36 @@ function navHTML(){
   return `<nav class="bnav">${T.map(([v,l,i])=>`<button class="${act===v?'on':''}" data-a="nav" data-v="${v}"><span class="bi">${i}</span><span class="bl">${l}</span></button>`).join('')}</nav>`;
 }
 function topStats(){ const xt=xpToday(), g=goal();
-  return `<div class="tstats"><div class="logo">čeština<span>obrazem</span></div><div class="tsr"><span class="st" title="Dny v řadě">${ico('🔥',22)}<b>${streakNow()}</b></span><span class="st" title="XP">${ico('⭐',22)}<b>${P.xp||0}</b></span><span class="st gl" title="Denní cíl">${ringSVG(xt/g,28,4,'#22C55E')}<b>${xt}</b></span>${helpBtn()}</div></div>`; }
+  return `<div class="tstats"><div class="logo">čeština<span>obrazem</span></div><div class="tsr"><span class="st" title="Dny v řadě">${ico('🔥',22)}<b>${streakNow()}</b></span><span class="st" title="XP">${ico('⭐',22)}<b>${P.xp||0}</b></span><button class="st gl" data-a="dgoal" aria-label="Denní cíl">${ringSVG(xt/g,28,4,'#22C55E')}<b>${xt}</b></button>${helpBtn()}</div></div>`; }
+/* v26 home: one clear start. Klára says what is waiting today, inside the card of the place you are in. */
+function homeSay(D,n){ const dn=dayN(), g=dGoal(), st=streakNow(), h=new Date().getHours(), td=P.day&&P.day.d===today()?P.day:{}, all=(td.rev||!D)&&td.part&&td.talk;
+  const gr=h<10?['Dobré ráno!','Good morning!']:h<18?['Dobrý den!','Hello!']:['Dobrý večer!','Good evening!'];
+  if(!learnedAll().length&&!dn) return {cz:'Vítej v Česku! Začneme prvními slovy.',en:'Welcome to Czechia! Let’s start with your first words.',m:'talk'};
+  if(all) return {cz:'Výborně! Dnešní plán je hotový. Uvidíme se zítra.',en:'Well done! Today’s plan is finished. See you tomorrow.',m:'cheer'};
+  if(dn>=g) return {cz:`Dnešní cíl je splněný: ${dn} odpovědí. Skvělá práce!`,en:'Today’s goal is done. Great work!',m:'cheer'};
+  if(st>0&&dn===0&&h>=17) return {cz:`Tvoje série ${st} ${czPl(st,'den','dny','dní')} dnes ještě čeká. Stačí tři minuty.`,en:'Your streak is still waiting today. Three minutes are enough.',m:'talk'};
+  if(!n) return {cz:`${gr[0]} Všechny lekce máš hotové.${D?' Zopakujeme si slova?':''}`,en:`${gr[1]} You have finished all lessons.`,m:'cheer'};
+  const w=D?`${D>=2&&D<=4?'čekají':'čeká'} ${plW(D)} a jeden krok lekce`:'čeká jeden krok lekce';
+  return {cz:`${gr[0]} Dnes tě ${w}.`,en:`${gr[1]} Today: ${D?D+' word'+(D===1?'':'s')+' to review and ':''}one step of your lesson.`,m:'talk'}; }
+function weekRow(){ return weekDue()?`<button class="hrow" data-a="week">${ico('📅',34)}<span><b>Týdenní opakování</b><small>20 úloh ze všech lekcí</small>${EN('Weekly review: 20 mixed tasks')}</span><em>Nové</em><i>›</i></button>`:''; }
 function dayPlan(D,nu){
   const td=P.day&&P.day.d===today()?P.day:{}, r=td.rev||!D, p=!!td.part, t=!!td.talk, n=[r,p,t].filter(Boolean).length;
-  const row=(ok,act,ic,cz,sm,en)=>`<button class="prow${ok?' done':''}" data-a="${act}">${ico(ic,30)}<span class="ptx"><b>${cz}</b><small>${sm}</small>${EN(en)}</span><i>${ok?'✓':''}</i></button>`;
-  return `<div class="plan"><div class="phead"><b>${ico('📋',22)} Dnešní plán</b><span>${n} ze 3</span></div>${EN("Today's plan: three small steps make a good learning day.",'en jen')}
-   ${row(r,D?'review':'reviewhub','🔁','Opakování',D?plW(D)+' k opakování':'Hotovo, nic k opakování','Review the words that are due')}
-   ${row(p,nu?'cont':'home','📘','Další krok lekce',nu?esc(nu.t):'Všechno hotové','The next step of your lesson')}
-   ${row(t,'workout','🏋️','Mluvicí trénink','5 minut nahlas','Five minutes of speaking out loud')}</div>`;
+  const tile=(ok,act,ic,cz,sm,en)=>`<button class="ptile${ok?' done':''}" data-a="${act}"><i>${ok?'✓':''}</i>${ico(ic,38)}<b>${cz}</b><small>${ok?'Hotovo':sm}</small>${EN(en)}</button>`;
+  return `<div class="plan p26"><div class="phead"><b>Dnešní plán</b><span class="pcount${n===3?' ok':''}">${ringSVG(n/3,24,4,'var(--ok)')}${n} ze 3</span></div>${EN("Today's plan: three small steps make a good learning day.",'en jen')}
+   <div class="ptiles">${tile(r,D?'review':'reviewhub','🔁','Opakování',D?`${plW(D)} · ${Math.max(2,Math.round(D/4))} min`:'Nic nečeká','Review the words that are due')}${tile(p,nu?'cont':'home','📘','Lekce',nu?'1 krok':'Všechno hotové','The next step of your lesson')}${tile(t,'workout','🏋️','Mluvení','5 minut nahlas','Five minutes of speaking out loud')}</div></div>`;
 }
 function vHome(){
   const L=learnedAll().length, D=dueList().length, n=lpNext(), nu=n?U(n.uid):null, ct=curTown();
   const hr=new Date().getHours(), gr=ct.id==='letiste'&&!L?['Vítej v Česku!','Welcome to Czechia!']:hr<10?['Dobré ráno!','Good morning!']:hr<18?['Dobrý den!','Hello!']:['Dobrý večer!','Good evening!'];
   const l2=D?[`Máš ${plW(D)} k opakování.`,`You have ${D} word${D===1?'':'s'} to review.`]:n?['Jdeme na to?','Shall we start?']:['Všechno máš hotové!','You have finished everything!'];
   const visited=TOWNS.slice(1).filter(townDone).length;
-  const greet=`<div class="greet"><span class="guide kg${KMODE()==='full'?' kfull':''}">${chr('klara','talk',64,KMODE()==='full')}</span><button class="sbub" data-a="ksay" data-v="${esc(`${gr[0]} Jsi ${ct.loc}. ${D?'':l2[0]}`)}"><b>${gr[0]} Jsi ${ct.loc}. ${l2[0]}</b>${EN(`${gr[1]} You are ${ct.id==='letiste'?'at':'in'} ${ct.en}. ${l2[1]}`)}<i class="spk">${ico('🔊',16)}</i></button></div>`;
-  const cont=n?`<div class="cont" style="${tcs(ct)}"><div class="cscene">${townSVG(ct.id)}<span class="ctown">${ico('📍',15)} ${esc(ct.n)}</span></div><div class="cbody"><span class="clab">${nu.lab} · krok ${n.i+1} z ${n.N.length}</span><b>${esc(nu.t)}</b>
-      <span class="cstep">${ico(n.n.ic,20)} ${esc(n.n.t)}</span>
-      <div class="meter cmeter"><i style="width:${Math.round(100*n.N.filter(x=>x.done).length/n.N.length)}%"></i></div>
-      <button class="cta white" data-a="cont">▶ Pokračovat</button>${D?`<button class="cta ghostw" data-a="review">${ico('🔁',18)} Opakovat ${plW(D)}</button>`:''}</div></div>`
-    :`<div class="cont" style="${tcs(TOWNS[8])}"><div class="cscene">${townSVG('krk')}<span class="ctown">${ico('🏆',15)} Cíl!</span></div><div class="cbody"><b>Všechny lekce máš hotové!</b>${EN('All lessons finished. Keep reviewing!')}<button class="cta white" data-a="review">${ico('🔁',18)} Opakovat</button></div></div>`;
+  const hs=homeSay(D,n), km=KMODE(), td0=P.day&&P.day.d===today()?P.day:{}, allDone=!!((td0.rev||!D)&&td0.part&&td0.talk);
+  const kl=`<div class="hk"><span class="guide kg${km==='full'?' kfull':''}">${chr('klara',hs.m,66,km==='full')}</span><button class="hbub" data-a="ksay" data-v="${esc(hs.cz)}"><b>${esc(hs.cz)}</b>${EN(esc(hs.en))}<i class="spk">${ico('🔊',14)}</i></button></div>`;
+  const cont=n?`<div class="cont h26" style="${tcs(ct)}"><div class="cscene">${townSVG(ct.id)}<span class="ctown">${ico('📍',15)} ${esc(ct.n)}</span>${kl}</div><div class="cbody"><span class="clab">${nu.lab} · krok ${n.i+1} z ${n.N.length}</span><b>${esc(nu.t)}</b>
+      <span class="cstep">${ico(n.n.ic,20)} Teď: ${esc(n.n.t)}</span>
+      <div class="segs" role="img" aria-label="Hotovo ${n.N.filter(x=>x.done).length} z ${n.N.length} kroků">${n.N.map((x,ix)=>`<i class="${x.done?'d':ix===n.i?'c':''}"></i>`).join('')}</div>
+      <button class="cta ${allDone?'h26g':'white'}" data-a="cont">▶ ${allDone?'Ještě jeden krok':'Pokračovat'}</button></div></div>`
+    :`<div class="cont h26" style="${tcs(TOWNS[8])}"><div class="cscene">${townSVG('krk')}<span class="ctown">${ico('🏆',15)} Cíl!</span>${kl}</div><div class="cbody"><b>Všechny lekce máš hotové!</b>${EN('All lessons finished. Keep reviewing!')}<button class="cta white" data-a="review">${ico('🔁',18)} Opakovat</button></div></div>`;
   const map=`<div class="journey"><div class="jhead"><b>${ico('🧭',22)} Moje cesta po Česku</b><span>${visited} z 8 měst</span></div>${EN('My journey across Czechia: every town has three lessons.','en jen')}${czMap()}</div>`;
   const offs=[0,56,-56,0];
   const path=TOWNS.map((t,ti)=>{ const done=townDone(t), cur=t===ct, nxt=TOWNS[ti+1];
@@ -5859,7 +6011,7 @@ function vHome(){
       <div class="nodes">${nodes}</div></section>${nxt?`<button class="leg" data-a="ksay" data-v="Jedeme ${esc(nxt.to)}.">${ico(nxt.tr,24)}<span>Jedeme ${esc(nxt.to)}</span>${EN('We are going to '+nxt.en)}</button>`:`<div class="leg fin">${ico('🏆',24)}<span>Cíl cesty</span>${EN('The end of the journey')}</div>`}`; }).join('');
   return `${topStats()}
     ${installEvt?`<button class="cta okc sm" data-a="install" style="margin-bottom:12px">${bl('📲','Nainstalovat aplikaci')}</button>`:''}
-    ${spkBanner()}${greet}${homeTop()}${cont}${dayPlan(D,nu)}${wotdCard()}${homeExtras()}${map}<div class="path">${path}</div>`;
+    ${spkBanner()}${cont}${dayPlan(D,nu)}${weekRow()}${wotdCard()}${homeExtras()}${map}<div class="path">${path}</div>`;
 }
 function vUnit(){
   const u=U(curUnit), t=townOf(u.id), L=u.items.filter(learned).length, nd=u.parts.filter((_,i)=>P.parts[u.id+':'+i]).length, nx=u.parts.findIndex((_,i)=>!P.parts[u.id+':'+i]);
@@ -5973,7 +6125,7 @@ function vGuide(){
   ${T.map(([e,t,en])=>`<div class="gitem">${ico(e,34)}<div><b>${t}</b><span class="en">${en}</span></div></div>`).join('')}
   <button class="cta alt" data-a="introagain" style="margin-top:12px">${bl('▶️','Spustit úvod znovu')}</button>`;
 }
-const APP_VER='25', APP_DATE='11. 11. 2026';
+const APP_VER='26', APP_DATE='11. 11. 2026';
 function vProfile(){
   const L=learnedAll().length, sk=streakNow(), vis=TOWNS.slice(1).filter(townDone).length;
   return `<div class="phero"><span class="pav">${chr(samId(),'happy',84)}</span><div><b>Sam</b><span>${esc(curTown().n)} · ${plW(L)}</span></div></div>
