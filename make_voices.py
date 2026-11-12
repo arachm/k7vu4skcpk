@@ -8,14 +8,17 @@ Two ways to run it (Actions -> Make voices -> Run workflow, then type one word):
   sample   records the same short Czech text with EVERY voice that can speak Czech,
            so you can listen and choose voices (about 5 minutes).
   all      records everything in texts.json (10 = only the first 10, for a test).
+  1/2      records the first half of texts.json, 2/2 the second half
+           (big lists: run 1/2, wait until it has finished, then 2/2).
 
 texts.json:  { "L1-0": ["Dobrý den!", "m"], ... }
   "m" = Antonín (Czech man), "f" = Vlasta (Czech woman),
   or the full name of another voice, e.g. "en-US-AndrewMultilingualNeural".
   An optional third value sets the speed, e.g. "+0%".
 
-Single words are always recorded precisely: a Czech voice (Vlasta or Antonín),
-slower, with a falling tone and a little silence before and after.
+Single words are always recorded by Vlasta: slower, with a falling tone.
+Every recording gets a little silence before and after, so nothing is cut off.
+Since 12 Nov 2026 the sound is Opus at 24 kHz (clearer than the old 16 kHz mp3).
 """
 import json, os, re, sys, time, urllib.request, urllib.error
 from xml.sax.saxutils import escape
@@ -29,7 +32,8 @@ NATIVE = {'m': 'cs-CZ-AntoninNeural', 'f': 'cs-CZ-VlastaNeural'}
 RATE = os.environ.get('RATE', '-5%')            # sentences: a little slower than normal speech
 RATE_WORD = os.environ.get('RATE_WORD', '-20%') # one word: slow and clear
 RATE_SHORT = os.environ.get('RATE_SHORT', '-10%')  # two or three words
-FORMAT = os.environ.get('FORMAT', 'audio-16khz-32kbitrate-mono-mp3')
+FORMAT = os.environ.get('FORMAT', 'ogg-24khz-16bit-mono-opus')
+EXT = '.ogg' if 'opus' in FORMAT else '.mp3'
 PAUSE = float(os.environ.get('PAUSE', '3.1'))   # seconds per recording: stays under 20 a minute
 BASE = f'https://{REGION}.tts.speech.microsoft.com/cognitiveservices'
 os.makedirs(out, exist_ok=True)
@@ -41,7 +45,9 @@ SAMPLE = ('Dobrý den. Jmenuju se Klára a bydlím v Plzni. '
 def ssml(text, voice, rate, word=False):
     body = f"<prosody rate='{rate}'>{escape(text)}</prosody>"
     if word:                                   # silence around single words, so nothing is cut off
-        body = f"<break time='150ms'/>{body}<break time='300ms'/>"
+        body = f"<break time='200ms'/>{body}<break time='350ms'/>"
+    else:
+        body = f"<break time='120ms'/>{body}<break time='250ms'/>"
     if not voice.startswith('cs-CZ-'):          # a foreign voice must be told to speak Czech
         body = f"<lang xml:lang='cs-CZ'>{body}</lang>"
     return (f"<speak version='1.0' xmlns='http://www.w3.org/2001/10/synthesis' xml:lang='cs-CZ'>"
@@ -62,7 +68,7 @@ def record(name, data, tries=8):
         try:
             audio = post(data)
             if len(audio) < 500: raise ValueError('audio too short')
-            open(os.path.join(out, name + '.mp3'), 'wb').write(audio)
+            open(os.path.join(out, name + EXT), 'wb').write(audio)
             return True
         except urllib.error.HTTPError as e:
             if e.code == 401: sys.exit('Azure says the key or region is wrong (401). Check the two secrets.')
@@ -99,13 +105,17 @@ if mode == 'sample':
 
 texts = json.load(open(src, encoding='utf-8'))
 items = list(texts.items())
-if mode != 'all': items = items[:int(mode)]
+if '/' in mode:
+    k, n = (int(x) for x in mode.split('/')); size = -(-len(items) // n)
+    items = items[(k - 1) * size: k * size]
+    print(f'Part {k} of {n}: {len(items)} recordings, about {round(len(items) * PAUSE / 60)} minutes.', flush=True)
+elif mode != 'all': items = items[:int(mode)]
 done = failed = 0
 for n, (i, entry) in enumerate(items, 1):
     text, v = entry[0], entry[1]
     words = len(text.split())
     word = words == 1
-    if word and v not in NATIVE: v = 'f'                  # single words: always a Czech voice
+    if word: v = 'f'                                      # single words: always Vlasta, the clearest voice for one word
     voice = NATIVE.get(v, v)
     rate = entry[2] if len(entry) > 2 else (RATE_WORD if word else RATE_SHORT if words <= 3 else RATE)
     say = text + '.' if word and not re.search(r'[.!?…]$', text) else text   # falling tone, not a question
