@@ -28,7 +28,7 @@
   --cz:'Fraunces',Georgia,'Times New Roman',serif;
 }
 *{box-sizing:border-box}
-html,body{margin:0;background:var(--bg)}
+html,body{margin:0;background:var(--bg);overscroll-behavior-y:none}
 body{font-family:var(--ui);color:var(--ink);font-size:16px;line-height:1.4;-webkit-tap-highlight-color:transparent;-webkit-font-smoothing:antialiased}
 button{font:inherit;color:inherit;cursor:pointer;border:0;background:none;padding:0}
 button:disabled{opacity:.45;cursor:default}
@@ -1153,6 +1153,35 @@ body::before{content:'';position:fixed;inset:0;z-index:-1;background:var(--bgfx)
 .clk26{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:0 0 12px}
 #app .clk26 button{display:flex;flex-direction:column;align-items:center;gap:3px;padding:10px 4px;border-radius:18px;background:var(--card);border:0;box-shadow:var(--gl-hi),var(--gl-sh);color:var(--ink);font-family:var(--ui);text-align:center}
 .clk26 b{font-size:14px;font-weight:800;line-height:1.15}.clk26 small{color:var(--mute);font-weight:700;font-size:12px}.clk26 .en{font-size:11px;color:var(--mute)}
+/* ===== v27 ===== */
+.rsm{position:sticky;top:0;z-index:5;margin:-4px 0 8px;padding:8px 12px;border-radius:14px;background:var(--bluebg);color:var(--acc);font-weight:800;font-size:14px;display:flex;align-items:center;gap:6px;flex-wrap:wrap}.rsm .en{flex-basis:100%;font-size:12px}
+.xpb{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;margin:10px 0 4px}.xpb span{display:flex;align-items:center;gap:4px;padding:5px 10px;border-radius:99px;background:var(--seg);font-size:13px;font-weight:700}.xpb b{color:var(--gold,#E8A100)}
+.goalbar{display:flex;align-items:center;gap:12px;margin:10px auto 6px;padding:10px 14px;border-radius:18px;background:var(--card);box-shadow:var(--gl-hi),var(--gl-sh);max-width:420px;text-align:left}
+.goalbar>span{display:flex;flex-direction:column}.goalbar b{font-size:16px;font-weight:800}.goalbar small{color:var(--mute);font-weight:700}.goalbar.ok{background:var(--okbg)}
+.acn{display:flex;align-items:center;gap:10px;padding:12px;margin:0 0 12px;border-radius:20px;background:var(--bluebg)}
+.acn>span{flex:1;min-width:0;display:flex;flex-direction:column}.acn b{font-size:15px;font-weight:800}.acn small{font-size:13px;color:var(--mute);line-height:1.3}
+#app .acn .cta.sm{width:auto;flex:none;padding:0 14px}#app .acn .x{flex:none;width:36px;height:36px;border-radius:50%;background:none;border:0;box-shadow:none;color:var(--mute);font-size:16px}
+.g7hero{display:flex;align-items:center;gap:12px;padding:14px;margin:0 0 12px;border-radius:20px;background:var(--card);box-shadow:var(--gl-hi),var(--gl-sh)}.g7hero b{display:block;font-size:17px}.g7hero span{font-size:14px;color:var(--mute);line-height:1.3}
+.g7s{text-align:left}.g7s .stem{font-weight:800}.g7s .slot{display:inline-block;min-width:1.6em;padding:0 4px;margin-left:1px;border-radius:8px;background:var(--bluebg);color:var(--acc);text-align:center}.g7s .slot.ok{background:var(--okbg);color:var(--ok)}
+.g7ends{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.g7err{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:6px 0 16px;font-size:22px;line-height:1.3}
+#app .g7err .ew{padding:8px 12px;border-radius:14px;background:var(--card);border:2px solid var(--line);box-shadow:0 3px 0 var(--line);font:700 21px var(--cz,var(--ui));color:var(--ink);min-height:48px}
+#app .g7err .ew.no{background:var(--badbg);border-color:#FFA8A8;opacity:.7}
+.g7err .fixd{padding:8px 12px;border-radius:14px;background:var(--okbg);font-weight:700}.g7err .fixd s{opacity:.55;color:var(--bad,#E03131)}.g7err .fixd b{color:var(--ok)}
+.g7pool{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;min-height:56px;margin:4px 0 14px}
+#app .chip{padding:9px 14px;border-radius:99px;background:var(--card);border:2px solid var(--line);box-shadow:0 3px 0 var(--line);font:700 16px var(--ui);color:var(--ink);min-height:44px}
+#app .chip.sel{border-color:var(--acc);background:var(--bluebg);transform:translateY(-2px)}
+.chip.in{display:inline-block;padding:4px 10px;min-height:0;margin:3px;font-size:14px;box-shadow:none}
+.g7bk{display:grid;gap:8px}
+#app .g7bk .bk{min-height:130px;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:2px;padding:10px 4px;border-radius:18px;background:var(--seg);border:2px dashed var(--line2);box-shadow:none;color:var(--ink)}
+#app .g7bk .bk.arm{border-color:var(--acc);background:var(--bluebg)}.g7bk .bk>b{font-size:18px;margin-bottom:4px}
+.g7pr{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.g7pr>div{display:flex;flex-direction:column;gap:8px}
+#app .g7pr .pl{min-height:52px;padding:8px 10px;border-radius:16px;background:var(--card);border:2px solid var(--line);box-shadow:0 3px 0 var(--line);font:700 15px var(--ui);color:var(--ink);line-height:1.25}
+#app .g7pr .pl.sel{border-color:var(--acc);background:var(--bluebg)}#app .g7pr .pl.ok{background:var(--okbg);border-color:#8CE99A;color:var(--ok);opacity:.8}
+.g7tab td .hole{display:inline-block;min-width:3em;padding:2px 6px;border-radius:8px;background:var(--seg);color:var(--mute);font-weight:800}.g7tab td .hole.cur{background:var(--bluebg);color:var(--acc);box-shadow:0 0 0 2px var(--acc)}.g7tab td .fl{color:var(--ok)}
+.g7tiles{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:12px}#app .g7tiles .topt{width:auto;min-width:96px;flex:0 1 auto}
+.g7src{display:flex;flex-direction:column;align-items:center;gap:6px;margin:0 0 14px;padding:14px;border-radius:20px;background:var(--card);box-shadow:var(--gl-hi),var(--gl-sh);text-align:center}
+.g7src .s{font:700 22px var(--cz,var(--ui))}.g7src .i{display:flex;align-items:center;gap:6px;padding:4px 12px;border-radius:99px;background:var(--bluebg);color:var(--acc);font-weight:800;font-size:14px}
 .ctry{padding:10px 14px;margin-bottom:8px}.ctry .ctop,.ctry .cbot{display:flex;flex-wrap:wrap;gap:4px 14px;align-items:center}.ctry .ctop b{font-size:17px;margin-right:auto}.ctry .cbot{margin-top:4px;font-size:15px}.ctry span{opacity:.8}
 .viz{display:flex;flex-direction:column;gap:3px;padding:14px 16px;border-left:5px solid #1c7ed6;margin-bottom:10px}.viz b{font-size:18px}.viz i{font-style:normal;color:#1864ab;font-weight:600}.viz small{opacity:.75;font-size:13px}
 </style>
@@ -2263,12 +2292,20 @@ function czVoice(){ if(P.settings.voice){const v=voices.find(v=>v.voiceURI===P.s
 const TEST_PHRASE='Dobrý den! Jak se máte? Mám se dobře, děkuju.';
 const AUD=Object.fromEntries(ALL.map(x=>[x.cz,x.id])); AUD[TEST_PHRASE]='test';
 const player=new Audio(); player.preload='auto';
+/* v27: Android (and Bluetooth headphones) switch the sound output off when it is quiet, and the first part of the next word was lost.
+   While you practise, a silent tone keeps the output awake, so every recording starts and ends in full. */
+let KEEP=null, keepT=0;
+function audioWarm(){ try{ actx=actx||new (window.AudioContext||window.webkitAudioContext)(); if(actx.state==='suspended') actx.resume();
+  if(!KEEP){ const o=actx.createOscillator(), g=actx.createGain(); o.frequency.value=30; g.gain.value=0.0003; o.connect(g); g.connect(actx.destination); o.start(); KEEP={o,g}; }
+  clearTimeout(keepT); keepT=setTimeout(audioSleep,90000); }catch(e){} }
+function audioSleep(){ try{ if(KEEP){ KEEP.o.stop(); KEEP.o.disconnect(); KEEP=null; } }catch(e){ KEEP=null; } }
+document.addEventListener('visibilitychange',()=>{ if(document.visibilityState==='hidden') audioSleep(); });
 /* v18: the Azure recordings (Vlasta, Antonín) are the default; the phone voice only when chosen in Profil, or for text without a recording. */
 function phoneVoice(){ if((P.settings.vmode||'auto')!=='phone') return false; if(!('speechSynthesis' in window)||IN_CLAUDE) return false; return csVoices().length>0; }
 function say(text, slow, idOver, onEnd){
-  player.onended=onEnd||null;
+  audioWarm(); player.onended=onEnd?()=>setTimeout(onEnd,220):null;
   if(phoneVoice()&&csVoices().length){ try{player.pause();}catch(e){} const it=idOver&&BYID[idOver]; const d=it&&it.dlg&&DLG(it.dlg);
-    tts(text,slow,(d&&it.who==='A')?(d.a.f?1.25:0.85):1,onEnd); return; }
+    tts(text,slow,1,onEnd); return; }
   let id=(idOver&&typeof AUDIO_DATA!=='undefined'&&AUDIO_DATA[idOver])?idOver:AUD[text];
   if(!id&&text&&typeof AUDIO_DATA!=='undefined'&&typeof hid==='function'){ const k='XB'+hid(String(text)); if(AUDIO_DATA[k]) id=k; }
   if(id){
@@ -2276,7 +2313,7 @@ function say(text, slow, idOver, onEnd){
       try{speechSynthesis.cancel();}catch(e){}
       player.pause();
       const emb=(typeof AUDIO_DATA!=='undefined')&&AUDIO_DATA[id];
-      const src=emb?'data:audio/mpeg;base64,'+emb:'audio/'+id+'.mp3';
+      const src=emb?(emb.startsWith('T2dn')?'data:audio/ogg;base64,':'data:audio/mpeg;base64,')+emb:'audio/'+id+'.mp3';
       if(player.dataset.id!==id){ player.src=src; player.dataset.id=id; }
       try{player.currentTime=0;}catch(e){}
       const r=(P.settings.rate||0.9)/0.9*(slow?0.7:1);
@@ -2312,7 +2349,7 @@ let view='home', curUnit=null, S=null, last=null;
 const cur = () => S&&S.queue[S.i];
 function mk(t,item,pool,o={}){return {t,item,pool,tries:0,wrong:new Set(),...o};}
 function fresh(ex){
-  if(ex.t==='qa'||ex.cg!==undefined||ex.recall||ex.book){ const c={...ex}; ['tries','wrong','done','graded','prepped','sel','okIdx','placed','order','tok','ansN','val','heard','score','listening','live','marks','g','gq','hint','err','shake','t0','state','used','best','pass','near','badw','badp','norec','ok','showEn','url','pl','rate'].forEach(k=>delete c[k]);
+  if(ex.t==='qa'||ex.cg!==undefined||ex.recall||ex.book||ex.g7){ const c={...ex}; ['got','sl','fill','usedT'].forEach(k=>delete c[k]); if(ex.words) c.words=ex.words.map(w=>({w:w.w,b:w.b})); ['tries','wrong','done','graded','prepped','sel','okIdx','placed','order','tok','ansN','val','heard','score','listening','live','marks','g','gq','hint','err','shake','t0','state','used','best','pass','near','badw','badp','norec','ok','showEn','url','pl','rate'].forEach(k=>delete c[k]);
     c.tries=0; c.wrong=new Set(); c.re=true; c.back=1; if(ex.t==='qa') c.opts=ex.fixed?ex.opts.slice():shuffle(ex.opts.slice()); return c; }
   return mk(ex.t,ex.item,ex.pool,{audio:ex.audio,text:ex.text,re:true,nograde:ex.nograde,ans:ex.ans,extra:ex.extra,noAudio:ex.noAudio});
 }
@@ -2348,8 +2385,9 @@ function introNew(q,kind){
   return out;
 }
 function begin(kind,title,queue,extra={}){
+  audioWarm(); const xd0=xpToday();
   queue=spkSwap(recallSteps(kind,introNew(queue,kind)));
-  S={kind,title,queue,i:0,ok:0,n:0,token:(TKBASE+=100000),xp0:P.xp||0,combo:0,...extra}; S.queue.forEach(e=>e.item&&photoFor(e.item)); prep(S.queue[0]); view='session'; render(); autoplay();
+  S={kind,title,queue,i:0,ok:0,n:0,token:(TKBASE+=100000),xp0:P.xp||0,xd0,combo:0,...extra}; S.queue.forEach(e=>e.item&&photoFor(e.item)); prep(S.queue[0]); view='session'; render(); autoplay();
 }
 /* A lesson part (about 15–25 steps). Every new word: meet it, recognise it a little later, then use it.
    Then the part's real-life sentences: see them once, then each one in a task. No drill is repeated back-to-back. */
@@ -2497,13 +2535,21 @@ function endSession(){
   if(S.kind==='listen'||S.kind==='hov'){ const qs=S.queue.filter(e=>e.t==='mcq'&&e.graded), c=qs.filter(e=>e.ok).length, p2=qs.length?Math.round(100*c/qs.length):0;
     if(S.kind==='listen'){ P.listen=P.listen||{}; P.listen[S.lid]=Math.max(P.listen[S.lid]||0,p2); } else P.hov=Math.max(P.hov||0,p2); addXP(10); }
   if(S.kind==='gram'){ P.gram=P.gram||{}; P.gram[S.gid]=Math.max(P.gram[S.gid]||0,pc); addXP(10); }
+  if(S.kind==='g7'){ P.g7=P.g7||{}; P.g7[S.g7id]=Math.max(P.g7[S.g7id]||0,pc); addXP(10); }
   if(S.kind==='test'){ P.test=P.test||{}; const o=P.test[S.uid]||{}; P.test[S.uid]={best:Math.max(o.best||0,pc),last:pc}; S.pc=pc; }
   if(S.kind==='big'){ S.pc=pc; addXP(20); }
   if(['over','mrev','sent','lread','write','course'].includes(S.kind)) addXP(10);
   if(S.lpu&&S.lpk){ const r=lpRec(S.lpu); if(S.lpk==='big'){ const was=lpDone(S.lpu); r.big=Math.max(r.big||0,pc); r.bigLast=pc; if(!was&&pc>=LP_PASS) addXP(30); } else r[S.lpk]=1; }
-  const dk=['part','gram','over','sent','lread','write','course'].includes(S.kind)?'part':['review','test','mrev','big'].includes(S.kind)?'rev':['talk','mission','dialog','pattern','speaking','listen','hov','dict'].includes(S.kind)?'talk':null;
+  const dk=['part','gram','g7','over','sent','lread','write','course'].includes(S.kind)?'part':['review','test','mrev','big'].includes(S.kind)?'rev':['talk','mission','dialog','pattern','speaking','listen','hov','dict'].includes(S.kind)?'talk':null;
   if(dk){ const d=today(); if(!P.day||P.day.d!==d) P.day={d}; P.day[dk]=1; }
-  recStop(); bumpStreak(); persist(); last=S; S=null; view='summary'; render();
+  /* v27 bonuses: finishing a lesson step always fills today's goal; a first session of the day and a perfect run earn extra */
+  S.bon=[]; const step=!!(S.lpu&&S.lpk)||['part','course','over'].includes(S.kind), gone=S.queue.filter(e=>e.t!=='teach'&&e.t!=='intro').length;
+  if(step){ const b=Math.max(25,goal()-xpToday()); addXP(b); S.bon.push(['Bonus za krok lekce','Lesson step bonus',b]); }
+  else if(gone>=6){ addXP(15); S.bon.push(['Bonus za dokončení','Finished',15]); }
+  if(S.n>=5&&S.ok===S.n){ addXP(20); S.bon.push(['Bez chyby','No mistakes',20]); }
+  if(!S.xd0&&gone>=3){ addXP(10); S.bon.push(['Dobrý začátek dne','First practice today',10]); }
+  S.goalHit=(S.xd0||0)<goal()&&xpToday()>=goal();
+  recStop(); bumpStreak(); persist(); snapClear(); last=S; S=null; view='summary'; render();
 }
 
 /* ============ ACTIONS ============ */
@@ -2597,11 +2643,21 @@ function insertKey(c){
   i.value=i.value.slice(0,a)+c+i.value.slice(b); try{i.setSelectionRange(a+1,a+1);}catch(e){}
   cur().val=i.value; i.focus();
 }
+/* v27.1: Czech word order is free. The same words in another natural order are accepted too
+   (the little words jsem, se, si, mi… must stay in their place, and a question word stays first). */
+const CLIT27=new Set(['jsem','jsi','jsme','jste','se','si','mi','ti','mu','jí','ho','ji','tě','mě','vám','nám','jim','by','bych']);
+function orderOK(ex){ if(ex.listen) return false; const a=toks(ex.ans||ex.tok.slice(0,ex.ansN).join(' ')).map(w=>norm(w)), b=ex.placed.map(i=>norm(ex.tok[i]));
+  if(a.length!==b.length||[...a].sort().join('|')!==[...b].sort().join('|')) return false;
+  for(let i=0;i<a.length;i++) if((CLIT27.has(a[i])||CLIT27.has(b[i]))&&a[i]!==b[i]) return false;
+  if(/^(kdo|co|kde|kdy|kam|jak|proč|kolik|odkud|čí|jaký|jaká|jaké)$/.test(a[0])&&b[0]!==a[0]) return false;
+  if(a[0]==='ne'||b[0]==='ne') return a[0]===b[0];
+  return true; }
 function place(ti){
   const ex=cur(); if(!ex||ex.done||ex.placed.includes(ti)) return;
   ex.placed.push(ti); ex.shake=false;
   if(ex.placed.length===(ex.ansN||ex.tok.length)){
-    const ok=norm(ex.placed.map(i=>ex.tok[i]).join(' '))===norm(ex.ans||ex.tok.slice(0,ex.ansN).join(' '));
+    let ok=norm(ex.placed.map(i=>ex.tok[i]).join(' '))===norm(ex.ans||ex.tok.slice(0,ex.ansN).join(' '));
+    if(!ok&&orderOK(ex)){ ok=true; ex.alt=ex.placed.map(i=>ex.tok[i]).join(' '); }
     if(ok){ ex.done=true; ding(); finishEx(ex,ex.tries===0); fb(true,ex); render(); sayThenNext(ex,180,1500); }
     else { ex.tries++; ex.shake=true; buzz(); fb(false,ex); render(); const tok=S.token; setTimeout(()=>{ if(S&&S.token===tok&&!ex.done){ex.placed=[];ex.shake=false;render();} },700); }
   } else render();
@@ -2611,7 +2667,7 @@ const ACT={
   home:()=>{S=null;view='home';render();},
   settings:()=>{resetArmed=false;view='settings';render();},
   back:()=>{view=curUnit&&view==='summary'?'unit':'home';render();},
-  unit:v=>{curUnit=v;view='unit';render();window.scrollTo(0,0);},
+  unit:v=>{curUnit=v;view='unit';render();requestAnimationFrame(scrollCur);},
   part:v=>{const [u,p]=v.split(':');curUnit=u;startPart(u,+p);},
   cont:()=>{const n=lpNext(); if(n) lpRun(n.uid,n.n.k); else startReview();},
   lp:v=>{const [u,k]=v.split('|'); lpRun(u,k);},
@@ -2684,7 +2740,7 @@ const ACT={
   lsstop:()=>stopLines(),
   mpick:v=>{ const ex=cur(); if(!ex||ex.done) return; ex.sel=+v; const ok=ex.opts[+v]===ex.ans; ex.done=true; ex.ok=ok; if(ok) ding(); else buzz(); finishEx(ex,ok); fb(ok,ex); render(); if(ex.hov) setTimeout(()=>say(ex.ans,false,'HS'+ex.item.id.slice(2)),400); },
   gramhub:()=>{view='gramhub'; render(); window.scrollTo(0,0);},
-  course:v=>{curCourse=v; view='course'; render(); window.scrollTo(0,0);},
+  course:v=>{curCourse=v; view='course'; render(); requestAnimationFrame(scrollCur);},
   ppick:v=>{const ex=cur(); if(!ex||ex.done) return; const c=+v; if(c===ex.item.cs){ ex.done=true; ding(); finishEx(ex,ex.tries===0); fb(true,ex); render(); later(1300); } else { ex.tries++; ex.wrong.add(c); buzz(); fb(false,ex); render(); }},
   ltest:v=>startTest(v),
   missdrill:()=>{ const m=[...new Map((last&&last.miss||[]).map(x=>[x.id,x])).values()]; if(!m.length) return;
@@ -2712,6 +2768,12 @@ const ACT={
   check:()=>check(),
   place:v=>place(+v),
   unplace:v=>{const ex=cur(); if(!ex||ex.done)return; ex.placed.splice(+v,1); render();},
+  arrhint:()=>{ const ex=cur(); if(!ex||ex.done) return; const at=toks(ex.ans||ex.item.cz); let k=0; while(k<ex.placed.length&&norm(ex.tok[ex.placed[k]])===norm(at[k])) k++;
+    ex.placed=ex.placed.slice(0,k); ex.hinted=(ex.hinted||0)+1; ex.tries=Math.max(ex.tries,1);
+    const want=norm(at[k]), ti=ex.tok.findIndex((w,i)=>norm(w)===want&&!ex.placed.includes(i)); if(ti>=0) place(ti); else render(); },
+  arrshow:()=>{ const ex=cur(); if(!ex||ex.done) return; const at=toks(ex.ans||ex.item.cz), used=new Set(); ex.placed=[];
+    at.forEach(w=>{ const ti=ex.tok.findIndex((x,i)=>norm(x)===norm(w)&&!used.has(i)); if(ti>=0){ used.add(ti); ex.placed.push(ti); } });
+    ex.shown=1; ex.tries=Math.max(ex.tries,2); ex.done=true; finishEx(ex,false); render(); sayThenNext(ex,180,2600); },
   test:()=>say(TEST_PHRASE),
   mictest:()=>micTest(),
   reset:()=>{resetArmed=true;render();},
@@ -2824,11 +2886,11 @@ function phBar(x){ const r=photoFor(x); if(!r) return '';
 const today=()=>new Date().toDateString();
 function addXP(n){ P.xp=(P.xp||0)+n; if(!P.day||P.day.d!==today()) P.day={d:today(),xp:0}; P.day.xp+=n; dirty(); }
 const xpToday=()=>P.day&&P.day.d===today()?P.day.xp:0;
-const goal=()=>P.settings.goal||50;
+const goal=()=>P.settings.goal||50;   /* v27: one daily goal for everything, in XP */
 const PRAISE=['Výborně!','Skvěle!','Správně!','Super!','Paráda!'];
 function fb(ok,ex){
   if(!S) return;
-  if(ok){ S.combo=ex.tries===0?(S.combo||0)+1:0; const xp=ex.tries===0?10:5; addXP(xp);
+  if(ok){ S.combo=ex.tries===0?(S.combo||0)+1:0; let xp=ex.tries===0?10:6; if(S.combo>=5&&S.combo%5===0) xp+=5; addXP(xp);
     S.toast={t:'ok',cz:ex.t==='match'?'':ex.item.cz,xp,combo:S.combo,w:PRAISE[Math.floor(Math.random()*PRAISE.length)],k:Date.now()};
     if(ex.cg!==undefined&&!ex.back&&S.combo>=4&&S.combo%4===0&&(S.skips||0)<3&&(ex.t==='qa'||ex.t==='gapx')){
       const L=S.queue.map((e,i)=>i).filter(i=>i>S.i&&S.queue[i].cg===ex.cg&&S.queue[i].t===ex.t&&!S.queue[i].back&&!S.queue[i].hear);
@@ -3059,6 +3121,26 @@ function applyTheme(){ const m=P.settings.theme||'auto', dk=m==='dark'||(m==='au
   document.documentElement.dataset.theme=dk?'dark':'light'; const mt=document.querySelector('meta[name=theme-color]'); if(mt) mt.content=dk?'#000000':'#EDF1F8'; }
 try{ matchMedia('(prefers-color-scheme: dark)').addEventListener('change',()=>{ if((P.settings.theme||'auto')==='auto') applyTheme(); }); }catch(e){}
 let LASTV='';
+/* v27: a pulled-down refresh (or a closed app) never loses a lesson. The running session is saved after every step
+   and opens again where it was. The page you were on (a lesson or a course) opens again too. */
+const SNAPK='cz-snap', LASTVK='cz-lastv'; let snapT=0, hadSnap=false;
+function snapRep(k,v){ if(v instanceof Set) return {__S:[...v]}; if(typeof v==='function'){ if(k==='body'){ try{ return {__H:v()}; }catch(e){ return {__H:''}; } } return undefined; }
+  if(v&&typeof v==='object'&&!Array.isArray(v)&&k!==''){ if(v.id&&typeof v.id==='string'&&!/^(CR|Q)\d+$/.test(v.id)&&BYID[v.id]===v) return {__I:v.id}; if(typeof GRAM!=='undefined'&&v.table&&GRAM.includes(v)) return {__G:v.id}; if(v.lines&&v.id&&typeof DLG==='function'&&DLG(v.id)===v) return {__D:v.id}; }
+  return v; }
+function snapRev(k,v){ if(v&&typeof v==='object'&&!Array.isArray(v)){ if(v.__S) return new Set(v.__S); if('__H' in v) return v.__H; if(v.__I) return BYID[v.__I]||{id:v.__I,cz:'',en:'',img:'❓'}; if(v.__G) return GRAM.find(g=>g.id===v.__G); if(v.__D) return DLG(v.__D); } return v; }
+function snapSave(){ clearTimeout(snapT); snapT=setTimeout(()=>{ if(view!=='session'||!S) return; try{ localStorage.setItem(SNAPK,JSON.stringify({t:Date.now(),v:APP_VER,S},snapRep)); hadSnap=true; }catch(e){} },250); }
+function snapClear(){ clearTimeout(snapT); if(!hadSnap) return; hadSnap=false; try{ localStorage.removeItem(SNAPK); }catch(e){} }
+function snapLoad(){ let raw=null; try{ raw=localStorage.getItem(SNAPK); }catch(e){} if(!raw) return false; hadSnap=true;
+  try{ const s=JSON.parse(raw,snapRev); if(!s||!s.S||!s.S.queue||Date.now()-s.t>12*3600e3) { snapClear(); return false; }
+    S=s.S; S.token=(TKBASE+=100000); S.toast=null; S.resumed=Date.now(); S.queue.forEach(e=>{ e.listening=false; e.shake=false; });
+    const e=cur(); if(!e){ S=null; snapClear(); return false; } view='session'; return true;
+  }catch(err){ S=null; snapClear(); return false; } }
+function lastSave(){ if(['unit','course','gramhub','talk','reviewhub','home','settings'].includes(view)){ try{ localStorage.setItem(LASTVK,JSON.stringify({view,u:curUnit,c:curCourse,t:Date.now()})); }catch(e){} } }
+function lastLoad(){ try{ const l=JSON.parse(localStorage.getItem(LASTVK)||'null'); if(!l||Date.now()-l.t>12*3600e3) return;
+    if(l.view==='unit'&&l.u&&U(l.u)){ curUnit=l.u; view='unit'; requestAnimationFrame(scrollCur); }
+    else if(l.view==='course'&&l.c&&CRS[l.c]){ curCourse=l.c; view='course'; requestAnimationFrame(scrollCur); }
+    else if(['gramhub','talk','reviewhub'].includes(l.view)) view=l.view; }catch(e){} }
+function scrollCur(){ const n=document.querySelector('#app .lpn:not(.done):not(.lock)'); if(n){ const r=n.getBoundingClientRect(); window.scrollTo(0,Math.max(0,scrollY+r.top-innerHeight*0.35)); } else window.scrollTo(0,0); }
 function render(){
   applyTheme(); if(view!==HELPV){ HELP=view==='guide'||view==='intro'; HELPV=view; } let h;
   if(view==='session'&&S) h=vSession();
@@ -3086,6 +3168,8 @@ function render(){
   if(view!==LASTV){ LASTV=view; app.classList.remove('viewin'); void app.offsetWidth; app.classList.add('viewin'); }
   if(view==='tutor'){ requestAnimationFrame(()=>window.scrollTo(0,document.body.scrollHeight)); }
   if(view!=='home'||S) navArm();
+  if(view==='session'&&S) snapSave(); else if(!S) snapClear();
+  lastSave();
   if(view==='session'&&S){ const hi=app.querySelector('.qactx .hi'); if(hi){ const bx=hi.closest('.qactx'); try{ bx.scrollTop=Math.max(0,hi.offsetTop-bx.clientHeight/2+hi.offsetHeight/2); }catch(e){} }
     const e=cur(), w=app.querySelector('.why'); if(w&&e&&!e.done&&e.wrong&&e.wrong.size){ const r=w.getBoundingClientRect(); if(r.bottom>innerHeight-16) requestAnimationFrame(()=>w.scrollIntoView({block:'end',behavior:'smooth'})); } }
 }
@@ -3382,6 +3466,7 @@ function startGram(tid){
     else if(g.typing!==false&&i%3===2) q.push(mk('write',x,[],{gtype:true,nograde:true}));
     else q.push(mk('gapx',x,[],{nograde:true,cue:!!g.cue}));
   });
+  if(G7MAP[tid]) g7Make(G7MAP[tid],4).forEach((e,i)=>q.splice(Math.min(q.length-1,3+i*3),0,e));
   begin('gram','📐 '+g.t,q,{gid:tid});
 }
 const gramStars=id=>{ const s=(P.gram||{})[id]; return s==null?'':s>=90?'★★★':s>=70?'★★☆':'★☆☆'; };
@@ -3390,6 +3475,7 @@ function gramCard(g){ const s=(P.gram||{})[g.id];
 function vGramHub(){
   const done=GRAM.filter(g=>(P.gram||{})[g.id]!=null).length;
   return hdr(['reviewhub'],'Gramatika',null,null,'Grammar')+`<p class="lead">Krátká tabulka, jednoduché vysvětlení a pak cvičení. Každá věta jen jednou.${EN('A short table, a simple explanation, then drills: choose the right form, type it, build the sentence and say it. In the order of the textbook.')}</p>
+  ${g7Section()}
   <div class="sect">Velké kurzy${EN(' · Big courses','en sen')}</div>${courseCards()}
   <div class="sect">Témata z lekcí${EN(' · Topics from the lessons','en sen')}</div>
   <div class="ghero">${ico('📐',40)}<div><b>${done} z ${GRAM.length} témat</b>${EN(done+' of '+GRAM.length+' topics done')}<div class="meter"><i style="width:${Math.round(100*done/GRAM.length)}%"></i></div></div></div>
@@ -3505,6 +3591,7 @@ function startMiniReview(uid,k){
   if(!early){ const dl=DIALOGS.filter(d=>d.les===uid).flatMap(d=>dItems(d).filter(x=>x.who==='B'&&x.gap)); sample(dl,1).forEach(x=>q.push(mk('gapx',x,[],{ctx:prevA(x),dlg:DLG(x.dlg),nograde:true}))); }
   const due=dueList().filter(x=>x.unit!==uid).slice(0,2); reviewQueue(due).forEach(e=>q.push(e));
   if(!early) bookPool(uid,k==='r2'?4:3).forEach(e=>q.splice(1+Math.floor(Math.random()*q.length),0,e));
+  if(!early){ const T=G7L.filter(id=>G7[id].les===uid); if(T.length) g7Make(sample(T,1)[0],2).forEach(e=>q.splice(2+Math.floor(Math.random()*(q.length-2)),0,e)); }
   begin('mrev','🔁 Opakování · '+u.t,spread(q),{uid});
 }
 function startLessonSentences(uid){
@@ -5358,6 +5445,317 @@ function famPic(){ const P4=[[['novak','dědeček'],['pani','babička']],[['owne
 function clockRow(L){ return `<div class="clk26">${L.map(([h,m,cz,en])=>`<button data-a="saytext" data-v="${esc(cz)}"><svg viewBox="0 0 64 64" width="58" height="58" aria-hidden="true">${clockSVG(32,32,28,h,m)}</svg><b>${esc(cz)}</b><small>${String(h).padStart(2,'0')}.${String(m).padStart(2,'0')}</small>${EN(en)}</button>`).join('')}</div>`; }
 Object.assign(ACT,{ rdall:v=>chainSay(RD26[v]||[]) });
 { const st0=ACT.saytext; ACT.saytext=v=>{ CH26++; st0(v); }; }
+/* ================= v27: Posilovna gramatiky (grammar gym) =================
+   16 topics from lessons 1–6. Every run is built fresh from the tables below, so the sentences are never the same twice.
+   Nine kinds of task: choose the form · type the form · choose the ending · find the mistake · sort into groups ·
+   match the pairs · fill the table · change the sentence (build it from tiles) · question and answer. */
+const G7={};
+/* ---- data ---- */
+const Y7PRON=[['já','🙋'],['ty','🫵'],['on','👨'],['ona','👩'],['my','👫'],['vy','🧑‍🤝‍🧑'],['oni','👨‍👩‍👦']];
+const PI=[0,1,2,2,3,4,5];                                   /* pronoun → row of the verb table */
+const Y7VB={
+ být:['jsem','jsi','je','jsme','jste','jsou','doma','🏠','be'],
+ mít:['mám','máš','má','máme','máte','mají','čas','⏰','have'],
+ dělat:['dělám','děláš','dělá','děláme','děláte','dělají','domácí úkol','📝','do'],
+ znát:['znám','znáš','zná','známe','znáte','znají','Plzeň','🏙️','know'],
+ hledat:['hledám','hledáš','hledá','hledáme','hledáte','hledají','klíče','🔑','look for'],
+ poslouchat:['poslouchám','posloucháš','poslouchá','posloucháme','posloucháte','poslouchají','hudbu','🎧','listen to'],
+ mluvit:['mluvím','mluvíš','mluví','mluvíme','mluvíte','mluví','česky','🗣️','speak'],
+ bydlet:['bydlím','bydlíš','bydlí','bydlíme','bydlíte','bydlí','v Plzni','🏠','live'],
+ vařit:['vařím','vaříš','vaří','vaříme','vaříte','vaří','oběd','🍲','cook'],
+ večeřet:['večeřím','večeříš','večeří','večeříme','večeříte','večeří','doma','🍽️','have dinner'],
+ pracovat:['pracuju','pracuješ','pracuje','pracujeme','pracujete','pracujou','v bance','🏦','work'],
+ studovat:['studuju','studuješ','studuje','studujeme','studujete','studujou','češtinu','📚','study'],
+ kupovat:['kupuju','kupuješ','kupuje','kupujeme','kupujete','kupujou','chleba','🍞','buy'],
+ potřebovat:['potřebuju','potřebuješ','potřebuje','potřebujeme','potřebujete','potřebujou','pomoc','🆘','need'],
+ chtít:['chci','chceš','chce','chceme','chcete','chtějí','kávu','☕','want'],
+ umět:['umím','umíš','umí','umíme','umíte','umí','vařit','🍳','can (know how)'],
+ muset:['musím','musíš','musí','musíme','musíte','musí','pracovat','💼','must'],
+ moct:['můžu','můžeš','může','můžeme','můžete','můžou','přijít zítra','📅','can'],
+ jít:['jdu','jdeš','jde','jdeme','jdete','jdou','do práce','🚶','go (on foot)'],
+ jet:['jedu','jedeš','jede','jedeme','jedete','jedou','do Prahy','🚆','go (by transport)'],
+ jíst:['jím','jíš','jí','jíme','jíte','jedí','polévku','🍲','eat'],
+ pít:['piju','piješ','pije','pijeme','pijete','pijou','čaj','🍵','drink'],
+ číst:['čtu','čteš','čte','čteme','čtete','čtou','knihu','📖','read'],
+ psát:['píšu','píšeš','píše','píšeme','píšete','píšou','e-mail','✉️','write'],
+ spát:['spím','spíš','spí','spíme','spíte','spí','dlouho','😴','sleep'],
+ vědět:['vím','víš','ví','víme','víte','vědí','kde je pošta','❓','know (a fact)']};
+const Y7VG={a:['dělat','znát','hledat','poslouchat','mít'],i:['mluvit','bydlet','vařit','večeřet'],u:['pracovat','studovat','kupovat','potřebovat'],x:['chtít','umět','muset','moct','jít','jet','jíst','pít','číst','psát','spát','vědět']};
+const VOBJ=(v,s)=>v==='vědět'?`${s}, ${Y7VB[v][6]}.`:`${s} ${Y7VB[v][6]}.`;
+/* past: m, f, pl + what it goes with */
+const PAST={být:['byl','byla','byli','doma','🏠'],mít:['měl','měla','měli','hodně práce','💼'],dělat:['dělal','dělala','dělali','domácí úkol','📝'],pracovat:['pracoval','pracovala','pracovali','dlouho','💼'],
+ studovat:['studoval','studovala','studovali','celý večer','📚'],vařit:['vařil','vařila','vařili','guláš','🍲'],jít:['šel','šla','šli','do kina','🎬'],jet:['jel','jela','jeli','do Brna','🚆'],
+ jíst:['jedl','jedla','jedli','pizzu','🍕'],pít:['pil','pila','pili','pivo','🍺'],číst:['četl','četla','četli','knihu','📖'],psát:['psal','psala','psali','e-mail','✉️'],chtít:['chtěl','chtěla','chtěli','spát','😴'],
+ moct:['mohl','mohla','mohli','přijít','🚪'],vidět:['viděl','viděla','viděli','film','🎬'],spát:['spal','spala','spali','dlouho','😴'],hrát:['hrál','hrála','hráli','tenis','🎾'],nakupovat:['nakupoval','nakupovala','nakupovali','v supermarketu','🛒'],
+ mluvit:['mluvil','mluvila','mluvili','s maminkou','📞']};
+const PRES1={moct:'můžu',být:'jsem',mít:'mám',dělat:'dělám',pracovat:'pracuju',studovat:'studuju',vařit:'vařím',jít:'jdu',jet:'jedu',jíst:'jím',pít:'piju',číst:'čtu',psát:'píšu',chtít:'chci',vidět:'vidím',spát:'spím',hrát:'hraju',nakupovat:'nakupuju',mluvit:'mluvím',bydlet:'bydlím'};
+/* nouns: word, gender (M animate, I inanimate, F, N), accusative, where? (with its preposition), emoji, English */
+const NN=[['bratr','M','bratra',null,'👦','brother'],['kamarád','M','kamaráda',null,'🧑','friend'],['doktor','M','doktora','u doktora','🩺','doctor'],['syn','M','syna',null,'👦','son'],['pes','M','psa',null,'🐕','dog'],
+ ['tatínek','M','tatínka',null,'👨','dad'],['učitel','M','učitele',null,'👨‍🏫','teacher'],['kolega','M','kolegu',null,'💼','colleague'],
+ ['dům','I','dům','v domě','🏠','house'],['počítač','I','počítač',null,'💻','computer'],['mobil','I','mobil',null,'📱','mobile'],['čaj','I','čaj',null,'🍵','tea'],['sýr','I','sýr',null,'🧀','cheese'],
+ ['byt','I','byt','v bytě','🏢','flat'],['film','I','film',null,'🎬','film'],['obchod','I','obchod','v obchodě','🛍️','shop'],['hotel','I','hotel','v hotelu','🏨','hotel'],['park','I','park','v parku','🌳','park'],['supermarket','I','supermarket','v supermarketu','🛒','supermarket'],
+ ['sestra','F','sestru',null,'👧','sister'],['káva','F','kávu',null,'☕','coffee'],['voda','F','vodu',null,'💧','water'],['polévka','F','polévku',null,'🍲','soup'],['kamarádka','F','kamarádku','u kamarádky','👩','friend (f)'],
+ ['maminka','F','maminku',null,'👩','mum'],['škola','F','školu','ve škole','🏫','school'],['banka','F','banku','v bance','🏦','bank'],['Praha','F','Prahu','v Praze','🏰','Prague'],['kavárna','F','kavárnu','v kavárně','☕','café'],
+ ['pošta','F','poštu','na poště','📮','post office'],['restaurace','F','restauraci','v restauraci','🍽️','restaurant'],['nemocnice','F','nemocnici','v nemocnici','🏥','hospital'],['univerzita','F','univerzitu','na univerzitě','🎓','university'],['práce','F','práci','v práci','💼','work'],['kancelář','F','kancelář','v kanceláři','🏢','office'],
+ ['auto','N','auto',null,'🚗','car'],['pivo','N','pivo',null,'🍺','beer'],['kino','N','kino','v kině','🎬','cinema'],['město','N','město','ve městě','🏙️','town'],['divadlo','N','divadlo','v divadle','🎭','theatre'],
+ ['muzeum','N','muzeum','v muzeu','🏛️','museum'],['náměstí','N','náměstí','na náměstí','⛲','square'],['nádraží','N','nádraží','na nádraží','🚉','station'],['letiště','N','letiště','na letišti','🛫','airport'],['kolo','N','kolo',null,'🚲','bike']];
+const N7=w=>NN.find(n=>n[0]===w);
+const Y7ADJ=[['nový','nová','nové','nového','novou','new'],['velký','velká','velké','velkého','velkou','big'],['malý','malá','malé','malého','malou','small'],['hezký','hezká','hezké','hezkého','hezkou','nice'],
+ ['starý','stará','staré','starého','starou','old'],['dobrý','dobrá','dobré','dobrého','dobrou','good'],['drahý','drahá','drahé','drahého','drahou','expensive'],['levný','levná','levné','levného','levnou','cheap']];
+const PPL=new Set(['bratr','kamarád','doktor','syn','pes','tatínek','učitel','kolega','sestra','kamarádka','maminka']), ADJP=new Set(['velký','malý','hezký','starý','dobrý']);
+const adjFor=x=>PPL.has(x[0])?Y7ADJ.filter(a=>ADJP.has(a[0])):Y7ADJ;
+const SOFTADJ=[['moderní','modern']];
+const DEM={M:'ten',I:'ten',F:'ta',N:'to'};
+const Y7NUMW={1:'jeden',2:'dva',3:'tři',4:'čtyři',5:'pět',6:'šest',8:'osm',10:'deset',12:'dvanáct',18:'osmnáct',20:'dvacet',30:'třicet',40:'čtyřicet',50:'padesát',60:'šedesát',70:'sedmdesát'};
+const NUMF={1:'jedna',2:'dvě',3:'tři',4:'čtyři',5:'pět',10:'deset',20:'dvacet',50:'padesát',100:'sto'};
+const yrs=n=>n===1?'rok':n<5?'roky':'let', kor=n=>n===1?'koruna':n<5?'koruny':'korun';
+const QW=[['Kdo je to?','To je můj bratr.','kdo'],['Co děláš?','Vařím večeři.','co'],['Kde bydlíš?','V Plzni.','kde'],['Kdy začíná film?','V osm.','kdy'],['Kam jdeš?','Do práce.','kam'],
+ ['Jak se máš?','Mám se dobře.','jak'],['Proč nejdeš do školy?','Protože jsem nemocná.','proč'],['Kolik to stojí?','Sto korun.','kolik'],['Odkud jsi?','Z Ukrajiny.','odkud'],['Čí je to auto?','To je auto mého bratra.','čí']];
+const VZU=[['Víš, kde je nádraží?','Víš',['Znáš','Umíš'],'vědět + věta (kde, kdo, co…)'],['Znáš mého bratra?','Znáš',['Víš','Umíš'],'znát + člověk nebo místo'],['Umíš plavat?','Umíš',['Víš','Znáš'],'umět + sloveso'],
+ ['Vím, kdy začíná lekce.','Vím',['Znám','Umím'],'vědět + věta'],['Znám dobrou restauraci.','Znám',['Vím','Umím'],'znát + věc'],['Umím trochu česky.','Umím',['Vím','Znám'],'umět + jazyk'],
+ ['Nevím, kde bydlí.','Nevím',['Neznám','Neumím'],'vědět + věta'],['Neznám Brno.','Neznám',['Nevím','Neumím'],'znát + místo'],['Neumím vařit.','Neumím',['Nevím','Neznám'],'umět + sloveso'],['Víte, kolik je hodin?','Víte',['Znáte','Umíte'],'vědět + věta']];
+const DAYS7=[['pondělí','v pondělí'],['úterý','v úterý'],['středa','ve středu'],['čtvrtek','ve čtvrtek'],['pátek','v pátek'],['sobota','v sobotu'],['neděle','v neděli']];
+const HRS7=[[1,'v jednu'],[2,'ve dvě'],[3,'ve tři'],[4,'ve čtyři'],[5,'v pět'],[6,'v šest'],[7,'v sedm'],[8,'v osm'],[9,'v devět'],[10,'v deset'],[11,'v jedenáct'],[12,'ve dvanáct']];
+const PICK=a=>a[Math.floor(Math.random()*a.length)];
+
+/* ---- task makers ---- */
+const gGap=(cz,w,wrong,img,en,why)=>mk('gapx',cItem(cz,w,wrong,img,en,why),[],{nograde:true,g7:1});
+const gType=(cz,w,base,img,en,why)=>mk('write',cItem(cz,w,[],img,en,why,{base}),[],{gtype:true,nograde:true,g7:1});
+const gEnd=(pre,stem,end,wrong,post,img,en,why)=>mk('gend',cItem(pre+stem+end+post,stem+end,[],img,en,why),[],{nograde:true,g7:1,pre,stem,end,post,opts:shuffle([end,...wrong.filter(x=>x!==end)])});
+const gErr=(good,badWord,goodWord,en,why,img)=>{ const t=good.split(' '), i=t.findIndex(w=>w.replace(/[.,?!]/g,'')===goodWord); if(i<0) return null;
+  const bad=t.slice(); bad[i]=t[i].replace(goodWord,badWord); return mk('gerr',cItem(good,goodWord,[badWord],img||'🔍',en,why),[],{nograde:true,g7:1,toks:bad,bi:i,fix:t[i]}); };
+const gSort=(title,en,buckets,words)=>mk('gsort',{id:'Q'+(++CIX),cz:'',img:'🗂️',en},[],{nograde:true,g7:1,tt:title,te:en,buckets,words:shuffle(words.map(([w,b])=>({w,b})))});
+const gPair=(title,en,pairs)=>mk('gpair',{id:'Q'+(++CIX),cz:'',img:'🔗',en},[],{nograde:true,g7:1,tt:title,te:en,L:pairs.map(p=>p[0]),R:shuffle(pairs.map(p=>p[1])),ans:pairs});
+const gTab=(title,en,head,rows,blank)=>mk('gtab2',{id:'Q'+(++CIX),cz:'',img:'📋',en},[],{nograde:true,g7:1,tt:title,te:en,head,rows,blank,tiles:shuffle(blank.map(([r,c])=>rows[r][c]))});
+const gTrans=(src,instr,target,extra,en,img)=>mk('arrange',cItem(target,'',[],img||'🔁',en),[],{ans:target,extra,noAudio:true,nograde:true,g7:1,src,instr});
+const gQ=(q,opts,qen,img,note)=>qa({q,opts,qen,img:img||'❓',tt:'Vyber správnou odpověď',te:'Choose the right answer.',g7:1,note});
+
+/* ---- topics ---- */
+const vRow=v=>Y7VB[v].slice(0,6);
+function tabVerb(v,nb){ const rows=Y7PRON.filter((p,k)=>k!==3).map((p,k)=>[p[0]==='on'?'on, ona':p[0],vRow(v)[k]]); const bl=sample([0,1,2,3,4,5],nb).map(r=>[r,1]);
+  return gTab(`Doplň tabulku: ${v}`,`Fill in the verb table: ${v} (${Y7VB[v][8]}).`,['',v],rows,bl); }
+function gapVerb(v){ const k=Math.floor(Math.random()*7), s=Y7PRON[k][0], f=vRow(v)[PI[k]], w=[...new Set(vRow(v).filter(x=>x!==f))];
+  const cz=VOBJ(v,`${cap(s)} ${f}`); return gGap(cz,f,sample(w,2),Y7PRON[k][1],`${s} → ${f}`,[`${s} → ${f}`,`${s} → ${f}`]); }
+function typeVerb(v){ const k=Math.floor(Math.random()*7), s=Y7PRON[k][0], f=vRow(v)[PI[k]]; return gType(VOBJ(v,`${cap(s)} ${f}`),f,v,Y7PRON[k][1],`${s} + ${v}`,[`${s} → ${f}`,`${s} → ${f}`]); }
+function pairVerb(v){ const seen=new Set(), ks=shuffle([0,1,2,4,5,6]).filter(k=>{ const f=Y7VB[v][PI[k]]; if(seen.has(f)) return false; seen.add(f); return true; }).slice(0,4); return gPair(`Spoj: kdo a jaký tvar?`,`Match the person with the form of ${v}.`,ks.map(k=>[Y7PRON[k][0],vRow(v)[PI[k]]])); }
+function errVerb(v){ const k=PICK([0,1,2,4,5,6]), s=Y7PRON[k][0], f=vRow(v)[PI[k]], bad=PICK(vRow(v).filter(x=>x!==f)); return gErr(VOBJ(v,`${cap(s)} ${f}`),bad,f,`${s} → ${f}`,[`${s} → ${f}`,`${s} → ${f}`]); }
+function sortVerbs(){ const pick=[...sample(Y7VG.a,2),...sample(Y7VG.i,2),...sample(Y7VG.u,2)];
+  return gSort('Roztřiď slovesa','Sort the verbs: how does the “I” form end?',['-ám','-ím','-uju'],pick.map(v=>[`${v} → ${vRow(v)[0]}`,Y7VG.a.includes(v)?'-ám':Y7VG.i.includes(v)?'-ím':'-uju'])); }
+
+G7.byt={les:'L1',ic:'🙋',t:'Sloveso být',en:'to be: jsem, jsi, je…',make(){ const v='být';
+  const neg=[['Jsem doma.','Nejsem doma.'],['Je to drahé.','Není to drahé.'],['Jsme unavení.','Nejsme unavení.'],['Jsou v práci.','Nejsou v práci.']];
+  const n=PICK(neg);
+  return [tabVerb(v,3),gapVerb(v),pairVerb(v),errVerb(v),typeVerb(v),gapVerb(v),
+   gTrans(n[0],'Řekni to záporně',n[1],['ne','nejsi'],'Say it in the negative.','🚫'),
+   gQ('Jak se řekne záporně „je“?',['není','nejí','neje'],'The negative of „je“.','🚫','je → <b>není</b> (pozor, ne „neje“)'),
+   gGap('Ty jsi student? – Ne, nejsem.','nejsem',['nejsi','není'],'🎓','Are you a student? – No, I’m not.',['otázka „ty“ → odpověď „já“','question with “ty”, answer with “já”'])]; }};
+G7.sloves={les:'L2',ic:'🔤',t:'Slovesa: -ám, -ím, -uju',en:'dělám · mluvím · pracuju',make(){ const v1=PICK(Y7VG.a.filter(v=>v!=='mít')), v2=PICK(Y7VG.i), v3=PICK(Y7VG.u);
+  return [sortVerbs(),tabVerb(v1,2),gapVerb(v2),gapVerb(v3),typeVerb(v1),typeVerb(v2),pairVerb(v3),errVerb(v2),errVerb(v3),tabVerb(v3,3),
+   gQ('Oni (pracovat) → ?',['pracujou','pracuje','pracujeme'],'they work',Y7PRON[6][1],'oni → <b>pracujou</b> (psáno též pracují)')]; }};
+G7.neprav={les:'L5',ic:'🧩',t:'Nepravidelná slovesa',en:'chci, můžu, jdu, jím, čtu, píšu…',make(){ const vs=sample(Y7VG.x,6);
+  return [tabVerb(vs[0],3),gapVerb(vs[1]),gapVerb(vs[2]),typeVerb(vs[3]),pairVerb(vs[4]),errVerb(vs[5]),gapVerb(vs[0]),typeVerb(vs[2]),
+   gPair('Spoj infinitiv a tvar „já“','Match the infinitive with the “I” form.',sample(Y7VG.x,5).map(v=>[v,vRow(v)[0]])),
+   gQ('jíst → oni ?',['jedí','jíjí','jí'],'they eat','🍲','jíst → oni <b>jedí</b>')]; }};
+G7.rod={les:'L1',ic:'🚹',t:'Rod: ten, ta, to',en:'Is it ten, ta or to?',make(){ const ws=sample(NN,8);
+  const t=x=>DEM[x[1]];
+  return [gSort('Ten, ta, nebo to?','Sort the nouns into ten (masculine), ta (feminine) and to (neuter).',['ten','ta','to'],ws.slice(0,6).map(x=>[x[0],t(x)])),
+   ...sample(NN.filter(n=>n[0]!=='Praha'),4).map(x=>gGap(`Kde je ${t(x)} ${x[0]}?`,t(x),['ten','ta','to'].filter(d=>d!==t(x)),x[4],`Where is the ${x[5]}?`,[x[1]==='F'?'-a, -e, souhláska (kancelář) → ta':x[1]==='N'?'-o, -í, -e, -um → to':'souhláska → ten','ten = masc., ta = fem., to = neuter'])),
+   gQ('Které slovo je „to“?',[PICK(NN.filter(x=>x[1]==='N'))[0],PICK(NN.filter(x=>x[1]==='F'))[0],PICK(NN.filter(x=>x[1]==='I'))[0]],'Which noun is neuter?','🔤'),
+   gQ('Které slovo je „ta“?',[PICK(NN.filter(x=>x[1]==='F'))[0],PICK(NN.filter(x=>x[1]==='N'))[0],PICK(NN.filter(x=>x[1]==='M'))[0]],'Which noun is feminine?','🔤'),
+   gSort('Ten, ta, nebo to?','Sort once more.',['ten','ta','to'],sample(NN,6).map(x=>[x[0],t(x)]))]; }};
+function adjNom(){ const x=PICK(NN.filter(n=>!/^(Praha|práce)$/.test(n[0]))), a=PICK(adjFor(x)), g=x[1]==='F'?1:x[1]==='N'?2:0, f=a[g];
+  return gEnd(`${cap(DEM[x[1]])} ${x[0]} je `,f.slice(0,-1),f.slice(-1),['ý','á','é'],'.',x[4],`The ${x[5]} is ${a[5]}.`,[`${DEM[x[1]]} → -${f.slice(-1)}`,`${DEM[x[1]]} ${x[0]} → ${f}`]); }
+G7.prid={les:'L2',ic:'🎨',t:'Přídavná jména: nový, nová, nové',en:'Adjectives follow the noun',make(){
+  const x=PICK(NN.filter(n=>!PPL.has(n[0])&&n[0]!=='Praha'&&n[0]!=='práce')), s=PICK(SOFTADJ);
+  return [adjNom(),adjNom(),adjNom(),
+   gGap(`Jaký je ${PICK(NN.filter(n=>n[1]==='I'))[0]}?`,'Jaký',['Jaká','Jaké'],'❓','What is it like?',['ten → jaký','masculine → jaký']),
+   gGap(`Jaká je ${PICK(NN.filter(n=>n[1]==='F'))[0]}?`,'Jaká',['Jaký','Jaké'],'❓','What is it like?',['ta → jaká','feminine → jaká']),
+   gGap(`Jaké je ${PICK(NN.filter(n=>n[1]==='N'))[0]}?`,'Jaké',['Jaký','Jaká'],'❓','What is it like?',['to → jaké','neuter → jaké']),
+   gGap(`${cap(DEM[x[1]])} ${x[0]} je ${s[0]}.`,s[0],[s[0].replace(/í$/,'ý'),s[0].replace(/í$/,'á')],x[4],`The ${x[5]} is ${s[1]}.`,['-í se nemění: ten, ta, to '+s[0],'-í adjectives never change']),
+   gSort('Ke kterému slovu to patří?','Which noun does the adjective go with?',['dům','káva','auto'],(()=>{ const a=sample(Y7ADJ,6); return a.map((q,i)=>[q[i%3],['dům','káva','auto'][i%3]]); })()),
+   ...(()=>{ const y=PICK(NN.filter(n=>n[1]!=='M'&&!/^(Praha|práce)$/.test(n[0]))), a=PICK(adjFor(y)); const g=y[1]==='F'?1:y[1]==='N'?2:0; const bad=a[(g+1)%3]; return [gErr(`To je ${a[g]} ${y[0]}.`,bad,a[g],`That is a ${a[5]} ${y[5]}.`,[`${DEM[y[1]]} ${y[0]} → ${a[g]}`,`${DEM[y[1]]} → ${a[g]}`],y[4])]; })(),
+   gGap('Moje sestra je vysoká a hezká.','vysoká',['vysoký','vysoké'],'👧','My sister is tall and pretty.',['sestra (ta) → vysoká','feminine → -á'])].filter(Boolean); }};
+const ACCN=NN.filter(n=>!n[3]||/^(dům|byt|kamarádka|doktor)$/.test(n[0]));
+function accOne(){ const x=PICK(ACCN), a=PICK(adjFor(x)), g=x[1], f=g==='M'?a[3]:g==='F'?a[4]:g==='I'?a[0]:a[2];
+  return {a,x,f,cz:`Mám ${f} ${x[2]}.`}; }
+G7.akuz={les:'L3',ic:'🎯',t:'4. pád: Mám bratra, kávu',en:'Accusative after mám, hledám, dám si…',make(){
+  const t=[]; for(let i=0;i<3;i++){ const o=accOne(), e=o.x[1]==='M'?'ého':o.x[1]==='F'?'ou':o.x[1]==='I'?'ý':'é';
+    t.push(gEnd('Mám ',o.f.slice(0,-e.length),e,['ý','ého','ou','é'],` ${o.x[2]}.`,o.x[4],`I have a ${o.a[5]} ${o.x[5]}.`,[o.x[1]==='M'?'muž, živý → -ého':o.x[1]==='F'?'žena → -ou':o.x[1]==='I'?'věc (ten) se nemění':'to se nemění','4th case'])); }
+  const f=N7(PICK(['káva','voda','polévka'])), m=PICK(NN.filter(n=>n[1]==='M'&&n[0]!=='kolega')), i=PICK(ACCN.filter(n=>n[1]==='I'));
+  return [...t,
+   gType(`Dám si ${f[2]}.`,f[2],f[0],f[4],`I’ll have the ${f[5]}.`,['-a → -u','-a → -u']),
+   gType(`Hledám ${m[2]}.`,m[2],m[0],m[4],`I am looking for my ${m[5]}.`,['živý ten → -a','animate: -a']),
+   gGap(`Hledám ${i[2]}.`,i[2],[i[0]+'a',i[0]+'u'],i[4],`I am looking for the ${i[5]}.`,['věc (ten) se nemění','inanimate: no change']),
+   gSort('Změní se, nebo ne?','After „mám“: does the word change?',['změní se','nezmění se'],sample(ACCN,6).map(n=>[`${n[0]} → ${n[2]}`,n[0]===n[2]?'nezmění se':'změní se'])),
+   gErr(`Čekám na ${m[2]}.`,m[0],m[2],`I am waiting for the ${m[5]}.`,['čekat na + 4. pád: živý ten → -a','animate masculine: -a'],m[4]),
+   gPair('Spoj: kdo, co? → mám koho, co?','Match the basic form with the form after „mám“.',sample(ACCN.filter(n=>n[0]!==n[2]),4).map(n=>[n[0],n[2]])),
+   gQ('Mám dva…',['bratry','bratři','bratra'],'I have two brothers.','👬','2, 3, 4 + mám → <b>bratry</b>')]; }};
+G7.lok={les:'L2',ic:'📍',t:'6. pád: v, ve, na, u',en:'Where? v Praze, na poště, u doktora',make(){ const P6=NN.filter(n=>n[3]);
+  const one=()=>{ const x=PICK(P6), [pr,...rest]=x[3].split(' '), w=rest.join(' '); return {x,pr,w}; };
+  const a=one(), b=one(), c=one(); let d=one(); for(let k=0;k<20&&d.w===d.x[0];k++) d=one();
+  return [gSort('V, nebo na?','Sort the places: v (ve) or na?',['v / ve','na'],sample(P6.filter(n=>!/^u /.test(n[3])),6).map(n=>[n[3].split(' ').slice(1).join(' '),n[3].startsWith('na ')?'na':'v / ve'])),
+   gGap(`Jsem ${a.x[3]}.`,a.pr,['v','ve','na','u'].filter(p=>p!==a.pr).slice(0,2),a.x[4],`I am in/at the ${a.x[5]}.`,[a.pr==='na'?'na: pošta, nádraží, letiště, univerzita, náměstí':a.pr==='u'?'u + člověk':'v: uvnitř budovy; ve před v, f, s, š, z…','v / ve / na / u']),
+   gType(`Pracuju ${b.pr} ${b.w}.`,b.w,b.x[0],b.x[4],`I work in/at the ${b.x[5]}.`,b.pr==='u'?['u + 2. pád: '+b.x[3],'u + 2nd case']:['kde? → 6. pád: '+b.x[3],'where? → 6th case']),
+   gType(`Byla jsem ${c.pr} ${c.w}.`,c.w,c.x[0],c.x[4],`I was in/at the ${c.x[5]}.`,c.pr==='u'?['u + 2. pád: '+c.x[3],'u + 2nd case']:['kde? → 6. pád: '+c.x[3],'where? → 6th case']),
+   gErr(`Čekám ${d.x[3]}.`,d.x[0],d.w,`I am waiting in/at the ${d.x[5]}.`,['kde? → 6. pád: '+d.x[3],'where? → 6th case'],d.x[4]),
+   gGap('Bydlím v Praze.','Praze',['Praha','Prahu'],'🏰','I live in Prague.',['Praha → v Praze (h → z)','h → z']),
+   gGap('Peníze mám v bance.','bance',['banka','banku'],'🏦','I have money in the bank.',['banka → v bance (k → c)','k → c']),
+   gGap('Večer jsem byl u kamarádky.','u',['v','na'],'👩','In the evening I was at my friend’s.',['u + člověk','at someone’s → u']),
+   gPair('Spoj: kde to je?','Match the place with “where?”.',sample(P6.filter(n=>!n[3].startsWith('u ')),4).map(n=>[n[0],n[3]])),
+   gQ('Kde je Karlův most?',['V Praze.','Na Praze.','V Praha.'],'Where is Charles Bridge?','🌉')]; }};
+const POS=[['můj','moje','moje','my'],['tvůj','tvoje','tvoje','your'],['náš','naše','naše','our'],['váš','vaše','vaše','your (formal)']];
+const POSW={můj:['moje','mého'],tvůj:['tvoje','tvého'],náš:['naše','našeho'],váš:['vaše','vašeho'],moje:['můj','mou'],tvoje:['tvůj','tvou'],naše:['náš','naší'],vaše:['váš','vaší']};
+G7.pos={les:'L4',ic:'🏷️',t:'Můj, moje, náš, váš',en:'Whose is it?',make(){ const m=()=>{ const p=PICK(POS), x=PICK(NN.filter(n=>!/^(Praha|práce)$/.test(n[0]))), g=x[1]==='F'?1:x[1]==='N'?2:0; return {p,x,f:p[g]}; };
+  const a=m(), b=m(), c=m(), d=m();
+  return [gGap(`To je ${a.f} ${a.x[0]}.`,a.f,POSW[a.f],a.x[4],`That is ${a.p[3]} ${a.x[5]}.`,[`${DEM[a.x[1]]} ${a.x[0]} → ${a.f}`,'ten → můj, tvůj · ta, to → moje, tvoje']),
+   gGap(`Kde je ${b.f} ${b.x[0]}?`,b.f,POSW[b.f],b.x[4],`Where is ${b.p[3]} ${b.x[5]}?`,[`${DEM[b.x[1]]} → ${b.f}`,'ten → můj · ta, to → moje']),
+   gSort('Můj, nebo moje?','Sort the nouns: můj (ten) or moje (ta, to)?',['můj','moje'],sample(NN.filter(n=>!/^(Praha|práce)$/.test(n[0])),6).map(n=>[n[0],n[1]==='M'||n[1]==='I'?'můj':'moje'])),
+   gErr(`To je ${c.f} ${c.x[0]}.`,c.f===c.p[0]?c.p[1]:c.p[0],c.f,`That is ${c.p[3]} ${c.x[5]}.`,[`${DEM[c.x[1]]} ${c.x[0]} → ${c.f}`,'ten → můj · ta, to → moje'],c.x[4]),
+   gQ('To je váš syn? – Ano, to je … syn.',['můj','moje','váš'],'Is that your son? – Yes, it’s my son.','👦','ptá se „váš“, odpovídám „můj“'),
+   gQ('To je tvoje auto? – Ano, to je … auto.',['moje','můj','tvoje'],'Is that your car? – Yes, it’s my car.','🚗','ptá se „tvoje“, odpovídám „moje“'),
+   gGap('To je náš pes.','náš',['naše','našeho'],'🐕','That is our dog.',['ten pes → náš','masculine → náš']),
+   gPair('Spoj','Match my ↔ your.',[['můj','tvůj'],['moje','tvoje'],['náš','váš'],['naše','vaše']]),
+   gType(`To je ${d.f} ${d.x[0]}.`,d.f,d.p[0],d.x[4],`That is ${d.p[3]} ${d.x[5]}.`,[`${DEM[d.x[1]]} → ${d.f}`,'ten → můj · ta, to → moje'])].filter(Boolean); }};
+G7.cisla={les:'L4',ic:'🔢',t:'Čísla: roky, koruny, Je mi…',en:'rok / roky / let · koruna / koruny / korun',make(){
+  const age=()=>{ const n=PICK([1,2,3,4,5,6,8,10,12,18,20,30,40,50,60]), w=Y7NUMW[n]; return {n,w}; };
+  const a=age(), b=age(), c=age(), pr=PICK([2,3,4,5,10,20,50,100]);
+  return [gGap(a.n<18?`Moje dcera? Je jí ${a.w} ${yrs(a.n)}.`:`Je mi ${a.w} ${yrs(a.n)}.`,yrs(a.n),['rok','roky','let'].filter(x=>x!==yrs(a.n)),a.n<18?'👧':'🎂',a.n<18?`My daughter? She is ${a.n}.`:`I am ${a.n}.`,['1 rok · 2–4 roky · 5 a víc let','1 rok · 2–4 roky · 5+ let']),
+   gGap(`Mému synovi je ${b.w} ${yrs(b.n)}.`,yrs(b.n),['rok','roky','let'].filter(x=>x!==yrs(b.n)),'👦',`My son is ${b.n}.`,['1 rok · 2–4 roky · 5 a víc let','1 rok · 2–4 roky · 5+ let']),
+   gGap(`To stojí ${NUMF[pr]} ${kor(pr)}.`,kor(pr),['koruna','koruny','korun'].filter(x=>x!==kor(pr)),'💰',`That costs ${pr} crowns.`,['1 koruna · 2–4 koruny · 5 a víc korun','1 · 2–4 · 5+']),
+   gSort('Rok, roky, nebo let?','Sort the numbers.',['rok','roky','let'],sample([1,2,3,4,5,6,8,10,12,20],6).map(n=>[Y7NUMW[n],yrs(n)])),
+   gGap('Kolik je ti? – Je mi dvacet let.','ti',['mi','mu'],'🧑','How old are you? – I am twenty.',['ty → ti, já → mi','you → ti']),
+   gGap('Kolik je tvému tatínkovi? – Je mu šedesát let.','mu',['jí','mi'],'👨','How old is your dad? – He is sixty.',['on → mu','he → mu']),
+   gGap('Kolik je tvé babičce? – Je jí osmdesát let.','jí',['mu','mi'],'👵','How old is your grandma? – She is eighty.',['ona → jí','she → jí']),
+   gPair('Spoj otázku a odpověď','Match the question and the answer.',[['Kolik je ti?','Je mi dvacet.'],['Kolik je mu?','Je mu deset.'],['Kolik je jí?','Je jí pět.'],['Kolik je vám?','Je mi třicet.']]),
+   gType(c.n<18?`Můj syn? Je mu ${c.w} ${yrs(c.n)}.`:`Je mi ${c.w} ${yrs(c.n)}.`,yrs(c.n),'rok',c.n<18?'👦':'🎂',c.n<18?`My son? He is ${c.n}.`:`I am ${c.n}.`,['1 rok · 2–4 roky · 5 a víc let','1 · 2–4 · 5+']),
+   ...(()=>{ const s=PICK([['Jedna koruna a jedna koruna je…','dvě','2'],['Dvě koruny a dvě koruny jsou…','čtyři','4'],['Pět korun a pět korun je…','deset','10'],['Deset korun a deset korun je…','dvacet','20']]);
+     const f=n=>+n===1?'koruna':+n<5?'koruny':'korun', o=['koruna','koruny','korun'].map(k=>`${s[1]} ${k}`); return [gQ(s[0],[`${s[1]} ${f(s[2])}`,...o.filter(x=>x!==`${s[1]} ${f(s[2])}`)],`${s[2]} crowns`,'💰','1 koruna · 2–4 koruny · 5 a víc korun')]; })()]; }};
+function pastTask(kind){ const v=PICK(Object.keys(PAST)), p=PAST[v], who=PICK([['Petra','f'],['Honza','m'],['Jana','f'],['Tomáš','m']]), f=who[1]==='f'?p[1]:p[0];
+  if(kind==='gap') return gGap(`${who[0]}: Včera jsem ${f} ${p[3]}.`,f,[p[0],p[1],p[2]].filter(x=>x!==f),p[4],`${who[0]}: Yesterday I ${v} …`,[who[1]==='f'?'žena → -la':'muž → -l','woman -la · man -l']);
+  if(kind==='type') return gType(`${who[0]}: Včera jsem ${f} ${p[3]}.`,f,v,p[4],`${who[0]}: Yesterday I … (${v})`,[who[1]==='f'?'žena → -la':'muž → -l','woman -la · man -l']);
+  if(kind==='pl') return gGap(`Včera jsme ${p[2]} ${p[3]}.`,p[2],[p[0],p[1]],p[4],`Yesterday we …`,['my → -li','we → -li']);
+  if(kind==='aux'){ const k=PICK([['Já','jsem'],['Ty','jsi'],['My','jsme'],['Vy','jste']]), fm=k[0]==='My'||k[0]==='Vy'?p[2]:p[0];
+    return gGap(`${k[0]} ${k[1]} včera ${fm} ${p[3]}.`,k[1],['jsem','jsi','jsme','jste'].filter(x=>x!==k[1]).slice(0,2),p[4],'Yesterday …',[`${k[0].toLowerCase()} → ${k[1]}`,'já jsem · ty jsi · my jsme · vy jste']); }
+  if(kind==='err') return gErr(`${who[0]}: Včera jsem ${f} ${p[3]}.`,who[1]==='f'?p[0]:p[1],f,`${who[0]}: Yesterday I …`,[who[1]==='f'?'žena → -la':'muž → -l','woman -la · man -l'],p[4]);
+  if(kind==='trans'){ const g=meF()?1:0, now=`Dnes ${PRES1[v]} ${p[3]}.`, then=`Včera jsem ${p[g]} ${p[3]}.`;
+    return gTrans(now,'Řekni to v minulém čase (včera)',then,[p[1-g],'jsi'],'Say it in the past (yesterday).',p[4]); } }
+G7.minul={les:'L6',ic:'⏪',t:'Minulý čas',en:'byl, byla, dělal jsem…',make(){
+  return [pastTask('gap'),pastTask('type'),pastTask('pl'),pastTask('aux'),pastTask('err'),pastTask('trans'),pastTask('gap'),pastTask('trans'),
+   gPair('Spoj infinitiv a minulý čas (on)','Match the infinitive with the past (he).',sample(['být','mít','jít','jíst','číst','moct','pít','jet'],5).map(v=>[v,PAST[v][0]])),
+   gQ('Jak je minulý čas od „jít“ (ona)?',['šla','jitla','jdla'],'jít → she went','🚶','jít → šel, <b>šla</b>, šli'),
+   gSort('Muž, nebo žena?','Who said it: a man or a woman?',['muž','žena'],sample(Object.keys(PAST),6).map((v,i)=>[`Včera jsem ${PAST[v][i%2]} ${PAST[v][3]}.`,i%2?'žena':'muž']))]; }};
+const NEGS=[['Jsem doma.','Nejsem doma.'],['Mám čas.','Nemám čas.'],['Je to drahé.','Není to drahé.'],['Chci kávu.','Nechci kávu.'],['Můžu přijít.','Nemůžu přijít.'],['Rozumím.','Nerozumím.'],['Mluvím německy.','Nemluvím německy.'],
+ ['Pracuju v sobotu.','Nepracuju v sobotu.'],['Jdeme do kina.','Nejdeme do kina.'],['Piju pivo.','Nepiju pivo.'],['Vím to.','Nevím to.'],['Mám rád kávu.','Nemám rád kávu.']];
+G7.zapor={les:'L1',ic:'🚫',t:'Zápor: ne-, není, nikdy',en:'Saying no',make(){ const s=sample(NEGS,5);
+  return [...s.slice(0,3).map(([a,b])=>{ const t=b.split(' '), w=t[0].replace(/[.,!?]/g,''), wrong=[w.replace(/^Ne/,'Ně'),'Ne '+a.split(' ')[0].replace(/[.,!?]/g,'').toLowerCase()]; return gGap(b,w,wrong,'🚫','Negative: '+a,['ne- se píše dohromady se slovesem','ne- is joined to the verb']); }),
+   ...s.slice(3,5).map(([a,b])=>gTrans(a,'Řekni to záporně',b,['ne','není'],'Say it in the negative.','🚫')),
+   gGap('Nikdy nepiju kávu.','nepiju',['piju','pije'],'☕','I never drink coffee.',['nikdy + ne-','never + ne-']),
+   gGap('Nikdo tady není.','není',['je','nejsou'],'🙅','Nobody is here.',['nikdo + ne-','nobody + ne-']),
+   gErr('Nikdy nemám čas.','mám','nemám','I never have time.',['nikdy + ne-','Czech says “never not”'],'⏰'),
+   gQ('Jak se řekne záporně „je“?',['není','neje','nejí'],'The negative of „je“.','🚫'),
+   gTrans('Mám čas.','Řekni to záporně s „nikdy“','Nikdy nemám čas.',['mám','ne'],'Say it with “never”.','⏰')]; }};
+G7.modal={les:'L5',ic:'💪',t:'Chci, můžu, musím + sloveso',en:'Modal verb + infinitive',make(){ const mv=['chtít','moct','muset','umět'];
+  const INF={chtít:['spát','jít domů','jet do Prahy','tancovat'],moct:['přijít zítra','jít domů','zavolat večer'],muset:['pracovat','jít k doktorovi','vstávat brzy'],umět:['vařit','plavat','tancovat','řídit auto']};
+  const one=()=>{ const v=PICK(mv), k=PICK([0,1,2,4,5,6]), f=vRow(v)[PI[k]], inf=PICK(INF[v]); return {v,k,f,inf,cz:`${cap(Y7PRON[k][0])} ${f} ${inf}.`}; };
+  const a=one(), b=one(), c=one();
+  const inf=PICK([['Musím pracovat.','pracovat',['pracuju','pracoval']],['Chci spát.','spát',['spím','spal']],['Můžeme jít.','jít',['jdeme','šli']],['Umíš vařit?','vařit',['vaříš','vařil']]]);
+  return [gGap(a.cz,a.f,sample(vRow(a.v).filter(x=>x!==a.f),2),Y7PRON[a.k][1],`${Y7PRON[a.k][0]} + ${a.v}`,[`${Y7PRON[a.k][0]} → ${a.f}`,`${Y7PRON[a.k][0]} → ${a.f}`]),
+   gGap(inf[0],inf[1],inf[2],'💡',inf[0],['chci, můžu, musím, umím + infinitiv (-t)','modal + infinitive']),
+   gType(b.cz,b.f,b.v,Y7PRON[b.k][1],`${Y7PRON[b.k][0]} + ${b.v}`,[`${Y7PRON[b.k][0]} → ${b.f}`,`${Y7PRON[b.k][0]} → ${b.f}`]),
+   gErr('Musím pracovat v sobotu.','pracuju','pracovat','I must work on Saturday.',['musím + infinitiv','must + infinitive'],'💼'),
+   gErr(c.cz,PICK(vRow(c.v).filter(x=>x!==c.f)),c.f,`${Y7PRON[c.k][0]} + ${c.v}`,[`${Y7PRON[c.k][0]} → ${c.f}`,`${Y7PRON[c.k][0]} → ${c.f}`],Y7PRON[c.k][1]),
+   tabVerb(PICK(mv),3),
+   gTrans('Pracuju.','Řekni: I must work','Musím pracovat.',['pracuju','můžu'],'I must work.','💼'),
+   gTrans('Jdu do kina.','Řekni: I want to go to the cinema','Chci jít do kina.',['jdu','můžu'],'I want to go to the cinema.','🎬'),
+   gQ('„I can swim“ (umím to):',['Umím plavat.','Můžu plavat.','Chci plavat.'],'I know how to swim.','🏊','umět = umím to, naučil/a jsem se to'),
+   gQ('„I can come tomorrow“ (mám čas):',['Můžu přijít zítra.','Umím přijít zítra.','Musím přijít zítra.'],'I can come tomorrow.','📅','moct = je to možné')]; }};
+G7.rad={les:'L5',ic:'❤️',t:'Rád, ráda, mít rád',en:'What I like',make(){ const me=meF()?'ráda':'rád';
+  const ppl=[['Honza','rád','👨'],['Petra','ráda','👩'],['Honza a Petra','rádi','👫'],['Moje sestra','ráda','👧'],['Můj tatínek','rád','👨'],['Děti','rádi','🧒']];
+  const a=PICK(ppl), b=PICK(ppl.filter(x=>x!==a&&x[0]!=='Děti')), c=PICK(ppl.filter(x=>x!==a&&x!==b));
+  const [act,actp]=PICK([['plave','plavou'],['vaří','vaří'],['čte','čtou'],['tancuje','tancujou'],['hraje tenis','hrajou tenis']]);
+  return [gGap(`${a[0]} ${a[1]} ${a[1]==='rádi'?actp:act}.`,a[1],['rád','ráda','rádi'].filter(x=>x!==a[1]),a[2],`${a[0]} like(s) …`,['muž → rád · žena → ráda · oni → rádi','man rád · woman ráda · they rádi']),
+   gGap(`${b[0]} má ${b[1]} kávu.`.replace(' má rádi',' mají rádi'),b[1],['rád','ráda','rádi'].filter(x=>x!==b[1]),b[2],`${b[0]} like(s) coffee.`,['mít rád + co?','to like something = mít rád']),
+   gGap(`Já ${me} vařím.`,me,[me==='ráda'?'rád':'ráda','rádi'],'🍳','I like cooking.',['já: '+me,'you are '+(meF()?'a woman':'a man')]),
+   gSort('Rád, ráda, nebo rádi?','Sort the people.',['rád','ráda','rádi'],sample(ppl,6).map(p=>[p[0],p[1]])),
+   gErr(`${c[0]} ${c[1]} ${c[1]==='rádi'?'plavou':'plave'}.`,c[1]==='rád'?'ráda':'rád',c[1],`${c[0]} like(s) swimming.`,['muž → rád · žena → ráda · oni → rádi','man rád · woman ráda · they rádi'],c[2]),
+   gTrans('Vařím.','Řekni: I like cooking',`Rád${meF()?'a':''} vařím.`,[meF()?'Rád':'Ráda','mám'],'I like cooking.','🍳'),
+   gQ('„I like coffee“:',[`Mám ${me} kávu.`,`Jsem ${me} kávu.`,`${cap(me)} kávu.`],'mít rád + noun','☕','mít rád + věc'),
+   gQ('Rád vařím. A ty? (Ty taky.)',['Já taky.','Já ne.','Ty taky.'],'Me too.','🍳')]; }};
+G7.otazky={les:'L1',ic:'❓',t:'Otázky: kdo, co, kde, kdy…',en:'Question words',make(){ const s=sample(QW,8);
+  return [gPair('Spoj otázku a odpověď','Match the question and the answer.',s.slice(0,4).map(q=>[q[0],q[1]])),
+   ...s.slice(4,8).map(q=>{ const w=q[0].split(' ')[0]; return gGap(q[0],w,sample(QW.map(x=>x[0].split(' ')[0]).filter(x=>x!==w),2),'❓',`Answer: ${q[1]}`,[`odpověď: ${q[1]}`,'look at the answer']); }),
+   gQ('Odpověď je „V Plzni.“ Jaká je otázka?',['Kde bydlíš?','Kdy bydlíš?','Kam bydlíš?'],'The answer is „In Pilsen“.','🏙️','kde? = místo'),
+   gQ('Odpověď je „Do práce.“ Jaká je otázka?',['Kam jdeš?','Kde jdeš?','Kdy jdeš?'],'The answer is „To work“.','🚶','kam? = směr (do, na)'),
+   gPair('Spoj ještě jednou','Match again.',sample(QW,4).map(q=>[q[0],q[1]])),
+   gSort('Kde, nebo kam?','Where (place) or where to (direction)?',['kde?','kam?'],[['v Plzni','kde?'],['do Plzně','kam?'],['na poště','kde?'],['na poštu','kam?'],['doma','kde?'],['domů','kam?']])]; }};
+G7.vzu={les:'L6',ic:'🧠',t:'Vědět, znát, umět',en:'Three ways to “know”',make(){ const s=sample(VZU,6);
+  return [...s.map(([cz,w,wr,why])=>gGap(cz,w,wr,'🧠',why,[why,'vědět + věta · znát + někdo/něco · umět + sloveso'])),
+   gSort('Vědět, znát, nebo umět?','What goes after it?',['vím','znám','umím'],[['…, kde je pošta.','vím'],['… Prahu.','znám'],['… vařit.','umím'],['… tvého bratra.','znám'],['… česky.','umím'],['…, kolik je hodin.','vím']]),
+   tabVerb('vědět',3),
+   gErr('Vím, kde je nádraží.','Znám','Vím','I know where the station is.',['vědět + věta','know a fact → vědět'],'🚉'),
+   gQ('„Do you know Prague?“',['Znáš Prahu?','Víš Prahu?','Umíš Prahu?'],'Do you know Prague?','🏰','znát + místo')].filter(Boolean); }};
+const DCH=[['středa','ve středu','středu',['středa','středě']],['sobota','v sobotu','sobotu',['sobota','sobotě']],['neděle','v neděli','neděli',['neděle','neděl']]];
+G7.kdy={les:'L5',ic:'📅',t:'Kdy? Dny a hodiny',en:'v pondělí, ve středu, ve dvě',make(){ const d=sample(DCH,2), dp=PICK(DAYS7), h=sample(HRS7,3);
+  return [...d.map(([a,b,w,wr])=>gGap(`Lekce je ${b}.`,w,wr,'📅',`The lesson is on ${a}.`,[`${a} → ${b}`,'when? → v + 4th case'])),
+   gGap(`Lekce je ${dp[1]}.`,dp[1].split(' ')[0],[dp[1].startsWith('ve')?'v':'ve','na'],'📅',`The lesson is on ${dp[0]}.`,['ve středu, ve čtvrtek · jinak v','ve before st-, čt-']),
+   ...h.map(([n,b])=>gGap(`Sejdeme se ${b}.`,b.split(' ')[0],[b.startsWith('ve')?'v':'ve','na'],'🕐',`Let’s meet at ${n}.`,['ve dvě, ve tři, ve čtyři, ve dvanáct · jinak v','ve before 2, 3, 4, 12'])),
+   gSort('V, nebo ve?','v or ve?',['v','ve'],[['pondělí','v'],['středu','ve'],['čtvrtek','ve'],['pátek','v'],['dvě','ve'],['pět','v']]),
+   gType(`Kino je ${d[0][1]}.`,d[0][2],d[0][0],'🎬',`The cinema is on ${d[0][0]}.`,['kdy? → v + 4. pád','when? → v + 4th case']),
+   gPair('Spoj den a „kdy?“','Match the day with “when?”.',sample(DAYS7,4).map(([a,b])=>[a,b]))]; }};
+
+const G7L=['byt','zapor','otazky','rod','sloves','prid','lok','akuz','pos','cisla','kdy','modal','rad','neprav','minul','vzu'];
+const G7MAP={G1:'byt',G2:'sloves',G3:'sloves',G4:'neprav',G5:'prid',G6:'akuz',G8:'lok',G13:'minul',G17:'modal',G22:'pos',G23:'kdy'};
+function g7Make(id,n){ const T=G7[id]; let q=[]; try{ q=T.make().filter(Boolean); }catch(e){ console.warn('g7',id,e); q=[]; } q.forEach(e=>{ e.g7t=id; }); return n?sample(q,Math.min(n,q.length)):q; }
+function g7Unlocked(){ const done=Object.keys(P.lp||{}).concat(Object.keys(P.parts||{}).map(k=>k.split(':')[0])); const max=Math.max(1,...done.map(u=>+(/^L(\d+)$/.exec(u)||[0,0])[1]));
+  return G7L.filter(id=>+G7[id].les.slice(1)<=max+1); }
+function startG7(id){
+  let q;
+  if(id==='mix'){ const L=g7Unlocked(); q=[]; sample(L,Math.min(6,L.length)).forEach(t=>q.push(...g7Make(t,2))); q=shuffle(q).slice(0,14); }
+  else { const all=g7Make(id); const kinds=[...new Set(all.map(e=>e.t))]; q=shuffle(all).slice(0,12);
+    q.sort((a,b)=>(a.t==='gtab2'||a.t==='gsort'?0:1)-(b.t==='gtab2'||b.t==='gsort'?0:1)); }
+  const T=G7[id]; begin('g7',id==='mix'?'💪 Mix gramatiky':'💪 '+T.t,q,{g7id:id});
+}
+function g7Card(id){ const T=G7[id], s=(P.g7||{})[id]; return `<button class="gcard${s!=null?' done':''}" data-a="g7" data-v="${id}"><span class="gic">${ico(T.ic,34)}</span><span class="gtx"><b>${esc(T.t)}</b><small>${esc(U(T.les)?U(T.les).lab:'')}${s!=null?` · ${s} %`:''} · ${esc(T.en)}</small></span><span class="gar">›</span></button>`; }
+function g7Section(){ return `<div class="sect">Posilovna gramatiky${EN(' · Grammar gym','en sen')}</div>
+  <div class="g7hero">${ico('💪',44)}<div><b>Pokaždé jiné věty</b><span>9 druhů úloh: doplň, napiš, najdi chybu, roztřiď, spoj, tabulka, přetvoř větu…</span>${EN('New sentences every time. Nine kinds of task: choose, type, find the mistake, sort, match, fill the table, change the sentence…')}</div></div>
+  <button class="cta" data-a="g7" data-v="mix" style="margin-bottom:12px">${bl('🎲','Mix gramatiky · 14 úloh')}</button>${G7L.map(g7Card).join('')}`; }
+
+/* ---- the new kinds of task ---- */
+function g7Done(ex,say){ ex.done=true; ding(); finishEx(ex,ex.tries===0); fb(true,ex); render(); if(say&&ex.item.cz) sayThenNext(ex,180,1400); else later(1300); }
+function g7Bad(ex){ ex.tries++; buzz(); fb(false,ex); ex.shake=true; render(); const tok=S.token; setTimeout(()=>{ if(S&&S.token===tok){ ex.shake=false; render(); } },500); }
+const G7R={
+ gend(ex){ const x=ex.item;
+  return {b:`${task('Vyber správnou koncovku','Choose the right ending.')}<div class="pscard"><div class="pspic">${pic(x,80)}</div><div class="ptext gapline g7s">${esc(ex.pre)}<b class="stem">${esc(ex.stem)}<span class="slot ${ex.done?'ok':''} ${ex.shake?'shake':''}">${ex.done?esc(ex.end):'?'}</span></b>${esc(ex.post)}</div></div>${(HELP||ex.done)&&x.en?`<p class="en" style="text-align:center;margin:-8px 0 12px">${esc(x.en)}</p>`:''}
+   <div class="g7ends ans">${ex.opts.map((o,k)=>`<button class="topt ${ex.done?(o===ex.end?'ok':'dim'):(ex.wrong.has(k)?'bad':'')}" data-a="g7end" data-v="${k}" ${ex.done||ex.wrong.has(k)?'disabled':''}>-${esc(o)}</button>`).join('')}</div>${ex.wrong.size&&whyHTML(x)?whyHTML(x):''}`,f:ex.done?NEXT:''}; },
+ gerr(ex){ const x=ex.item;
+  return {b:`${task('Najdi chybu','One word is wrong. Tap it.')}<div class="bigpic sm">${pic(x,72)}</div><div class="g7err ${ex.shake?'shake':''}">${ex.toks.map((w,i)=>ex.done&&i===ex.bi?`<span class="ew fixd"><s>${esc(w)}</s> <b>${esc(ex.fix)}</b></span>`:`<button class="ew ${ex.wrong.has(i)?'no':''}" data-a="g7err" data-v="${i}" ${ex.done?'disabled':''}>${esc(w)}</button>`).join(' ')}</div>
+   ${ex.done?`<div class="fb ok">✓ ${esc(x.cz)}</div>${x.why?`<div class="why">${ico('💡',18)} ${esc(x.why[0])}${EN(esc(x.why[1]||''))}</div>`:''}`:(HELP&&x.en?`<p class="en" style="text-align:center">${esc(x.en)}</p>`:'')}
+   ${!ex.done&&ex.tries>=2?`<button class="ghost" data-a="g7errshow">Ukaž mi to</button>`:''}`,f:ex.done?NEXT:''}; },
+ gsort(ex){ const left=ex.words.filter(w=>!w.put), sel=ex.sel!=null?ex.words[ex.sel]:null;
+  return {b:`${task(ex.tt,ex.te+' Tap a word, then its group.')}<div class="g7pool ${ex.shake?'shake':''}">${left.length?left.map(w=>{ const i=ex.words.indexOf(w); return `<button class="chip ${ex.sel===i?'sel':''}" data-a="g7sel" data-v="${i}">${esc(w.w)}</button>`; }).join(''):`<span class="ph">✓ Hotovo</span>`}</div>
+   <div class="g7bk" style="grid-template-columns:repeat(${ex.buckets.length},minmax(0,1fr))">${ex.buckets.map((b,k)=>`<button class="bk ${sel?'arm':''}" data-a="g7put" data-v="${k}"><b>${esc(b)}</b>${ex.words.filter(w=>w.put===b).map(w=>`<span class="chip in">${esc(w.w)}</span>`).join('')}</button>`).join('')}</div>`,f:ex.done?NEXT:''}; },
+ gpair(ex){ const okL=new Set(ex.got||[]), usedR=new Set((ex.got||[]).map(i=>ex.ans[i][1]));
+  return {b:`${task(ex.tt,ex.te)}<div class="g7pr ${ex.shake?'shake':''}"><div>${ex.L.map((l,i)=>`<button class="pl ${okL.has(i)?'ok':''} ${ex.sl===i?'sel':''}" data-a="g7pl" data-v="${i}" ${okL.has(i)?'disabled':''}>${esc(l)}</button>`).join('')}</div><div>${ex.R.map((r,i)=>`<button class="pl ${usedR.has(r)?'ok':''}" data-a="g7pr" data-v="${i}" ${usedR.has(r)?'disabled':''}>${esc(r)}</button>`).join('')}</div></div>`,f:ex.done?NEXT:''}; },
+ gtab2(ex){ const fill=ex.fill||[], key=(r,c)=>ex.blank.findIndex(b=>b[0]===r&&b[1]===c), nx=ex.blank.findIndex((b,i)=>!fill[i]);
+  return {b:`${task(ex.tt,ex.te)}<div class="gtab g7tab ${ex.shake?'shake':''}"><table><thead><tr>${ex.head.map(c=>`<th>${esc(c)}</th>`).join('')}</tr></thead><tbody>${ex.rows.map((r,ri)=>`<tr>${r.map((c,ci)=>{ const k=key(ri,ci); return `<td${ci?'':' class="h"'}>${k<0?esc(c):fill[k]?`<b class="fl">${esc(c)}</b>`:`<span class="hole ${k===nx?'cur':''}">?</span>`}</td>`; }).join('')}</tr>`).join('')}</tbody></table></div>
+   <div class="g7tiles">${ex.tiles.map((t,i)=>`<button class="topt ${(ex.usedT||[]).includes(i)?'dim':''}" data-a="g7tile" data-v="${i}" ${(ex.usedT||[]).includes(i)||ex.done?'disabled':''}>${esc(t)}</button>`).join('')}</div>`,f:ex.done?NEXT:''}; }
+};
+Object.assign(ACT,{
+ g7:v=>startG7(v),
+ g7end:v=>{ const ex=cur(); if(!ex||ex.done) return; const k=+v; if(ex.opts[k]===ex.end) g7Done(ex,1); else { ex.wrong.add(k); g7Bad(ex); } },
+ g7err:v=>{ const ex=cur(); if(!ex||ex.done) return; const i=+v; if(i===ex.bi) g7Done(ex,1); else { ex.wrong.add(i); g7Bad(ex); } },
+ g7errshow:()=>{ const ex=cur(); if(!ex||ex.done) return; ex.tries=Math.max(ex.tries,3); g7Done(ex,1); },
+ g7sel:v=>{ const ex=cur(); if(!ex||ex.done) return; ex.sel=+v; render(); },
+ g7put:v=>{ const ex=cur(); if(!ex||ex.done||ex.sel==null) return; const w=ex.words[ex.sel], b=ex.buckets[+v];
+   if(w.b===b){ w.put=b; ex.sel=null; tick(); if(ex.words.every(x=>x.put)) g7Done(ex,0); else render(); } else { ex.sel=null; g7Bad(ex); } },
+ g7pl:v=>{ const ex=cur(); if(!ex||ex.done) return; ex.sl=+v; render(); },
+ g7pr:v=>{ const ex=cur(); if(!ex||ex.done||ex.sl==null) return; const r=ex.R[+v];
+   if(ex.ans[ex.sl][1]===r){ ex.got=(ex.got||[]).concat(ex.sl); ex.sl=null; tick(); if(ex.got.length===ex.ans.length) g7Done(ex,0); else render(); } else { ex.sl=null; g7Bad(ex); } },
+ g7tile:v=>{ const ex=cur(); if(!ex||ex.done) return; ex.fill=ex.fill||[]; ex.usedT=ex.usedT||[]; const i=+v, k=ex.blank.findIndex((b,j)=>!ex.fill[j]); if(k<0) return;
+   const [r,c]=ex.blank[k]; if(ex.tiles[i]===ex.rows[r][c]){ ex.fill[k]=1; ex.usedT.push(i); tick(); if(ex.blank.every((b,j)=>ex.fill[j])) g7Done(ex,0); else render(); } else g7Bad(ex); }
+});
+function tick(){ try{ tone([880],0.06); }catch(e){} }
+
 /* ---- new exercise types (all built on the qa step) ---- */
 function tf(s,isTrue,o={}){ return qa({q:s,opts:['ANO ✓','NE ✗'],ans:isTrue?'ANO ✓':'NE ✗',fixed:1,grid:true,img:o.img||'❔',tt:o.tt||'Je to pravda?',te:o.te||'True or false?',...o}); }
 const withImg=x=>x&&x.img&&x.img[0]!=='@'&&x.img[0]!=='=';
@@ -5399,6 +5797,7 @@ const VARIETY=(x,pool)=>{ const r=Math.random(), one=toks(x.cz).length===1, ok=(
 /* ---- more review: daily mix, weekly review, "Pamatuješ si?" recall inside lessons ---- */
 function mixQueue(n){ const L=learnedAll(), due=dueList().slice(0,6), W=weakItems().filter(o=>!o.k.startsWith('T:')).map(o=>o.x).slice(0,4); const base=[...new Set([...due,...W,...sample(L,n)])].slice(0,n);
   VC={}; const pool=L.length>=8?L:ALL; const q=base.map(x=>VARIETY(x,pool)); const r=replyEx(), o=oddEx(); if(r) q.splice(3,0,r); if(o) q.splice(7,0,o);
+  try{ const L7=g7Unlocked(); if(L7.length) sample(L7,2).forEach((id,i)=>g7Make(id,1).forEach(e=>q.splice(Math.min(q.length,4+i*5),0,e))); }catch(e){}
   try{ const U2=Object.keys(UEXTRA).filter(id=>Object.keys((P.lp||{})[id]||{}).some(k=>k[0]==='x')); if(U2.length) bookPool(sample(U2,1)[0],2).forEach((e,i)=>q.splice(Math.min(q.length,5+i*4),0,e)); }catch(e){}
   return q; }
 function startMix(){ if(learnedAll().length<6){ VC={}; begin('mix','🔀 Denní mix',sample(ALL.filter(x=>x.unit==='L1'&&withImg(x)),8).map(x=>VARIETY(x,U('L1').items)),{}); return; } begin('mix','🔀 Denní mix',spread(mixQueue(12)),{}); }
@@ -5429,9 +5828,9 @@ const dayN=()=>{ const s=P.dayStat||{}; return s.d===todayKey()?s.n:0; };
 function bumpDay(){ const s=P.dayStat||{}; P.dayStat=s.d===todayKey()?{d:s.d,n:s.n+1}:{d:todayKey(),n:1}; }
 const dGoal=()=>P.settings.dgoal||20;
 function wotd(){ const L=learnedAll().filter(withImg), pool=L.length>=5?L:ALL.filter(x=>withImg(x)&&x.unit==='L1'); const k=Math.floor(Date.now()/DAY); return pool[k%pool.length]; }
-function nudge(){ const n=dayN(), g=dGoal(), due=dueList().length, wk=Object.keys(P.miss||{}).length, st=streakNow(), h=new Date().getHours(), p=Math.min(1,n/g);
+function nudge(){ const n=xpToday(), g=goal(), due=dueList().length, wk=Object.keys(P.miss||{}).length, st=streakNow(), h=new Date().getHours(), p=Math.min(1,n/g);
   let msg,en,act,lab;
-  if(n>=g){ msg=`Dnešní cíl je splněný! ${n} odpovědí. Skvělá práce.`; en='Today’s goal is done. Great work.'; act='mix'; lab='Ještě chvilku'; }
+  if(n>=g){ msg=`Dnešní cíl je splněný! ${n} XP. Skvělá práce.`; en='Today’s goal is done. Great work.'; act='mix'; lab='Ještě chvilku'; }
   else if(st>0&&n===0&&h>=17){ msg=`Tvoje série ${st} ${czPl(st,'den','dny','dní')} dnes ještě čeká. Stačí 3 minuty!`; en='Your streak is waiting for today. 3 minutes is enough.'; act='mix'; lab='Zachránit sérii'; }
   else if(due>0){ msg=`Máš ${due} ${czPl(due,'slovo','slova','slov')} k opakování. Zabere to asi ${Math.max(2,Math.round(due/4))} minuty.`; en=`${due} words are ready for review.`; act='mix'; lab='Opakovat teď'; }
   else if(wk>0){ msg=`Máš ${wk} ${czPl(wk,'slabé místo','slabá místa','slabých míst')}. Zkusíme je?`; en='Some weak spots are waiting. Shall we try them?'; act='weakgo'; lab='Procvičit'; }
@@ -5445,8 +5844,8 @@ function gamesRow(){ return `<div class="ntiles"><button class="ntile" data-a="m
 Object.assign(ACT,{
   mix:()=>startMix(), week:()=>startWeek(),
   wotdq:()=>{ const x=wotd(); if(!x) return; const pool=learnedAll().filter(withImg).length>=5?learnedAll().filter(withImg):ALL.filter(withImg); const q=[mk('intro',x,[]),tfPic(x,pool)]; const dd=diaEx(x); if(dd) q.push(dd); q.push(dictWord(x)); begin('mix','⭐ Slovo dne',q,{}); },
-  dgoal:()=>sheet(`<div class="shd">${ico('🎯',40)}<b>Denní cíl</b>${EN('How many answers a day?')}</div><div class="shopts">${[10,20,40,60].map(g=>`<button class="cta ${g===dGoal()?'':'alt'}" data-a="dgset" data-v="${g}">${g} odpovědí ${g===10?'· v klidu':g===20?'· normálně':g===40?'· vážně':'· intenzivně'}</button>`).join('')}</div>`),
-  dgset:v=>{ P.settings.dgoal=+v; dirty(); hideSheet(); render(); },
+  dgoal:()=>sheet(`<div class="shd">${ico('🎯',40)}<b>Denní cíl</b>${EN('How many XP a day? One lesson step always fills it.')}</div><p class="note" style="text-align:center">Jeden krok lekce ti cíl vždycky splní.</p><div class="shopts">${[30,50,100,150].map(g=>`<button class="cta ${g===goal()?'':'alt'}" data-a="dgset" data-v="${g}">${g} XP ${g===30?'· v klidu':g===50?'· normálně':g===100?'· vážně':'· intenzivně'}</button>`).join('')}</div>`),
+  dgset:v=>{ P.settings.goal=+v; dirty(); hideSheet(); render(); },
   memo:()=>{ memNew(); view='memo'; render(); window.scrollTo(0,0); }, memnew:()=>{ memNew(); render(); },
   memflip:v=>{ const j=+v, c=MEM.cards[j]; if(!c||MEM.open.includes(j)||MEM.done.has(c.i)||MEM.lock) return; if(c.k==='w') tts(c.x.cz); MEM.open.push(j);
     if(MEM.open.length===2){ MEM.moves++; const [a,b]=MEM.open.map(k=>MEM.cards[k]); if(a.i===b.i){ MEM.done.add(a.i); MEM.open=[]; ding(); bumpDay(); dirty(); } else { MEM.lock=1; setTimeout(()=>{ MEM.open=[]; MEM.lock=0; if(view==='memo') render(); },900); } }
@@ -5693,7 +6092,8 @@ const unitRange=t=>t.units[0]==='F1'?'Úvod':`Lekce ${U(t.units[0]).num}–${U(t
 const audioBtns = () => `<div class="abtns"><button class="abtn" data-a="play" aria-label="Přehrát">${ico('🔊',30)}</button><button class="abtn slow" data-a="slow" aria-label="Pomalu">${ico('🐢',24)}</button></div>`;
 function vSession(){
   const ex=cur(), x=ex.item, pct=Math.round(100*S.i/S.queue.length); let b='', f=''; GM=moodOf(ex);
-  if(ex.t==='intro'){
+  if(G7R[ex.t]){ const o=G7R[ex.t](ex); b=o.b; f=o.f; }
+  else if(ex.t==='intro'){
     const sen=toks(x.cz).length>2;
     b=`${task(sen?'Nová věta':'Nové slovo','Look, listen and repeat')}<div class="intro"><div class="bigpic">${pic(x,110)}</div>${phBar(x)}<div class="ptext">${esc(x.cz)}</div>${EN(esc(x.en||''),'en ctr')}${audioBtns()}${starBtn(x)}</div>`;
     f=NEXT;
@@ -5783,10 +6183,11 @@ function vSession(){
     <div class="mcol">${ex.mp.map((o,k)=>`<button class="mtile ${ex.matched.has(o.id)?'okf done':ex.sp===k?'sel':''} ${ex.badp===k?'badf':''}" data-a="mp" data-v="${k}">${pic(o,40)}</button>`).join('')}</div>
     <div class="mcol">${ex.mw.map((o,k)=>`<button class="mword ${ex.matched.has(o.id)?'okf done':ex.sw===k?'sel':''} ${ex.badw===k?'badf':''}" data-a="mw" data-v="${k}">${esc(o.cz)}</button>`).join('')}</div></div>`;
   } else if(ex.t==='arrange'){
-    b=`${ex.ctx?task('Odpověz: slož větu','Build your reply from the tiles'):ex.listen?task('Poslechni a slož větu','Listen, then put the words in the order you heard them'):ex.recall?task('Teď ty: slož větu','Now you: build the sentence from memory. Careful, there are extra tiles.'):task('Slož větu','Tap the words in the right order')}${ex.ctx?`<div class="chat ctx">${bubbleHTML(ex.ctx,ex.dlg,{audio:true,en:HELP})}</div>`:`<div class="bigpic sm">${pic(x,90)}</div>`}${ex.recall&&x.en?`<div class="qaq recq"><b>${esc(x.en)}</b></div>`:''}${ex.noAudio?'':`<div class="prompt">${audioBtns()}</div>`}
+    b=`${ex.src?task('Přetvoř větu','Change the sentence as asked and build it from the tiles. Careful, there are extra tiles.'):ex.ctx?task('Odpověz: slož větu','Build your reply from the tiles'):ex.listen?task('Poslechni a slož větu','Listen, then put the words in the order you heard them'):ex.recall?task('Teď ty: slož větu','Now you: build the sentence from memory. Careful, there are extra tiles.'):task('Slož větu','Tap the words in the right order')}${ex.src?`<div class="g7src"><span class="s">${esc(ex.src)}</span><span class="i">${ico('➡️',18)} ${esc(ex.instr)}</span>${HELP&&x.en?EN(esc(x.en)):''}</div>`:ex.ctx?`<div class="chat ctx">${bubbleHTML(ex.ctx,ex.dlg,{audio:true,en:HELP})}</div>`:`<div class="bigpic sm">${pic(x,90)}</div>`}${ex.recall&&x.en?`<div class="qaq recq"><b>${esc(x.en)}</b></div>`:''}${ex.noAudio?'':`<div class="prompt">${audioBtns()}</div>`}
     <div class="ansline ${ex.done?'ok':''} ${ex.shake?'shake':''}">${ex.placed.length?ex.placed.map((ti,pos)=>`<button class="wtile" data-a="unplace" data-v="${pos}">${esc(ex.tok[ti])}</button>`).join(''):`<span class="ph">${ex.ctx?chr(samId(),'think',28)+' ':''}Klepni na slova níže</span>`}</div>
     <div class="bank">${ex.order.map(ti=>ex.placed.includes(ti)?`<span class="wtile ghosted">${esc(ex.tok[ti])}</span>`:`<button class="wtile" data-a="place" data-v="${ti}">${esc(ex.tok[ti])}</button>`).join('')}</div>
-    ${ex.done?`<div class="fb ok">✓ Výborně!</div>${HELP&&x.en?`<p class="en" style="text-align:center">${esc(x.en)}</p>`:''}`:''}`;
+    ${ex.done?`<div class="fb ok">✓ ${ex.shown?'Takhle je to správně':'Výborně!'}</div>${ex.alt?`<div class="why">${ico('💡',18)} Tvoje pořadí je taky správně. Nejčastěji se říká: <b>${esc(ex.ans||x.cz)}</b>${EN('Your word order is correct too. The most common order is shown.')}</div>`:''}${HELP&&x.en?`<p class="en" style="text-align:center">${esc(x.en)}</p>`:''}`:''}`;
+    if(!ex.done&&ex.tries>=1) f=`<div class="row">${ex.tries>=1?`<button class="cta alt" data-a="arrhint">${bl('💡','Nápověda',18)}</button>`:''}${ex.tries>=2?`<button class="cta alt" data-a="arrshow">${bl('👀','Ukaž mi to',18)}</button>`:''}</div>`;
   } else if(ex.t==='gapx'){
     b=`${task('Doplň správný tvar','Choose the word that fits')}${ex.ctx?`<div class="chat ctx">${bubbleHTML(ex.ctx,ex.dlg,{audio:true,en:HELP})}</div><div class="ptext gapline">${ex.dlg?chr(samId(),'talk',34)+' ':''}${blankHTML(x.cz,ex.g.w,ex.done)}</div>`:`<div class="pscard"><div class="pspic">${pic(x,88)}</div><div class="ptext gapline">${blankHTML(x.cz,ex.g.w,ex.done)}</div></div>`}${(HELP||ex.cue)&&x.en?`<p class="en" style="text-align:center;margin:-8px 0 12px">${esc(x.en)}</p>`:''}
     <div class="tlist ans">${ex.g.opts.map((o,k)=>`<button class="topt ${ex.done?(o===ex.g.w?'ok':'dim'):(ex.wrong.has(k)?'bad':'')}" data-a="gpick" data-v="${k}" ${ex.done||ex.wrong.has(k)?'disabled':''}>${esc(o)}</button>`).join('')}</div>${ex.wrong.size&&whyHTML(x)?whyHTML(x):''}`;
@@ -5814,7 +6215,8 @@ function vSession(){
     <div style="margin-top:14px">${tipBox(p.tip)}</div>`;
     f=NEXT;
   }
-  return `<div class="sbar"><button class="icon" data-a="quit" aria-label="Zavřít">✕</button><div class="prog"><i style="width:${pct}%"></i></div>${(S.combo||0)>=3?`<span class="combo">${ico('🔥',18)}${S.combo}</span>`:''}<span class="cnt">${S.i+1}/${S.queue.length}</span>${helpBtn()}</div>
+  const rsm=S.resumed&&Date.now()-S.resumed<6000?`<div class="rsm">${ico('↩️',18)} Pokračuješ tam, kde jsi skončil${meF()?'a':''}.${EN(' You continue where you stopped.')}</div>`:'';
+  return rsm+`<div class="sbar"><button class="icon" data-a="quit" aria-label="Zavřít">✕</button><div class="prog"><i style="width:${pct}%"></i></div>${(S.combo||0)>=3?`<span class="combo">${ico('🔥',18)}${S.combo}</span>`:''}<span class="cnt">${S.i+1}/${S.queue.length}</span>${helpBtn()}</div>
   <div class="ex${P.settings.thumb!==false&&['gapx','qa','pic2text','choose'].includes(ex.t)?' thumb':''}" data-k="${S.i}">${b}</div>${f?foot(f):''}
   ${S.toast&&(!S.toast.k||Date.now()-S.toast.k<2300||(S.toast.t==='ok'&&f&&ex.done))?(S.toast.t==='ok'?`<div class="toast ok${S.toast.skip?' wskip':''}">${chr('klara','cheer',40)}<b>${S.toast.combo>=3?'🔥 '+S.toast.combo+'× ':''}${S.toast.w}</b>${S.toast.cz?`<span>${esc(S.toast.cz)}</span>`:''}<em>+${S.toast.xp} XP</em>${S.toast.skip?`<i class="tskip">🚀 Jde ti to! Jednu snadnou úlohu přeskakuju.${EN(' You are doing well: skipping one easy task.')}</i>`:''}</div>`:''):''}`;
 }
@@ -5842,6 +6244,8 @@ function vSummary(){
   return conf+`<div class="sumtop">${helpBtn()}</div><div class="summary"><div class="kspeech"><span class="guide kg${KMODE()==='full'?' kfull':''}">${chr('klara',r>=.7?'cheer':'happy',96,KMODE()==='full')}</span><button class="sbub" data-a="ksay" data-v="${say3[0]}"><b>${say3[0]}</b>${EN(say3[1])}<i class="spk">${ico('🔊',16)}</i></button></div><div class="stars">${[0,1,2].map(i=>`<span class="${i<ns?'':'off'}">${ico('⭐',52)}</span>`).join('')}</div><h2>Hotovo!</h2>
   <div class="stats"><div class="g"><b>${last.ok}/${last.n}</b><span>správně</span></div><div class="o"><b>+${(P.xp||0)-(last.xp0||0)}</b><span>XP</span></div>${third}</div>
   ${EN('correct answers · experience points · '+(sc.length?'pronunciation':'days in a row'),'en ctr')}
+  ${(last.bon||[]).length?`<div class="xpb">${last.bon.map(b=>`<span>${ico('⭐',16)} ${b[0]} <b>+${b[2]}</b></span>`).join('')}</div>`:''}
+  <div class="goalbar${xpToday()>=goal()?' ok':''}">${ringSVG(Math.min(1,xpToday()/goal()),38,5,xpToday()>=goal()?'var(--ok)':'var(--acc)')}<span><b>${last.goalHit?'Denní cíl je splněný! 🎉':xpToday()>=goal()?'Denní cíl máš splněný.':'Denní cíl: ještě '+(goal()-xpToday())+' XP'}</b><small>Dnes ${xpToday()} z ${goal()} XP</small>${EN(last.goalHit?'Daily goal reached!':xpToday()>=goal()?'Your daily goal is done.':'Daily goal: '+(goal()-xpToday())+' XP to go')}</span></div>
   <div class="actions">${last.lpu?`
     ${lpAfterHTML(last)}${CRS[last.lpu]?`<button class="cta alt" data-a="course" data-v="${last.lpu}">${bl(CRS[last.lpu].icon,'Kurz: '+esc(CRS[last.lpu].t))}</button>`:`<button class="cta alt" data-a="unit" data-v="${last.lpu}">${bl('🧭','Cesta lekce: '+esc(U(last.lpu).t))}</button>`}`:`
     ${last.kind==='dialog'?`<button class="cta" data-a="tdlg" data-v="${last.did}">${chr('klara','happy',28)}<span>Pokračuj s Klárou (AI)</span></button><button class="cta alt" data-a="dlg" data-v="${last.did}">${bl('🔁','Znovu')}</button><button class="cta alt" data-a="talk">${bl('💬','Další rozhovory')}</button>`:''}
@@ -5849,6 +6253,7 @@ function vSummary(){
     ${last.kind==='talk'?`<button class="cta alt" data-a="talk">${bl('🏋️','Mluvení')}</button>`:''}
     ${last.kind==='listen'?`<button class="cta" data-a="lsn" data-v="${last.lid}">${bl('🔁','Ještě jednou')}</button><button class="cta alt" data-a="listen">${bl('🎧','Další poslech')}</button>`:''}
     ${last.kind==='hov'||last.kind==='dict'?`<button class="cta" data-a="${last.kind}">${bl('🔁','Další kolo')}</button><button class="cta alt" data-a="listen">${bl('🎧','Poslech')}</button>`:''}
+    ${last.kind==='g7'?`<button class="cta" data-a="g7" data-v="${last.g7id}">${bl('🎲','Znovu, jiné věty')}</button><button class="cta alt" data-a="gramhub">${bl('💪','Posilovna gramatiky')}</button>`:''}
     ${last.kind==='gram'?`<button class="cta" data-a="gram" data-v="${last.gid}">${bl('🔁','Ještě jednou')}</button><button class="cta alt" data-a="gramhub">${bl('📐','Další téma')}</button>`:''}
     ${last.kind==='test'?testResultHTML(last):''}
     ${last.kind==='pattern'?`<button class="cta" data-a="pat" data-v="${last.pid}">${bl('🔁','Další věty')}</button><button class="cta alt" data-a="talk">${bl('🧪','Další vzory')}</button>`:''}
@@ -5901,7 +6306,7 @@ function vSettings(){
     <div class="themepick">${[['full','✨','Živá'],['calm','🍃','Klidná'],['off','⏸️','Vypnutá']].map(([v,e,l])=>`<label><input type="radio" name="ka" data-c="kanim" value="${v}" ${(P.settings.kanim||'full')===v?'checked':''}>${ico(e,26)}<span>${l}</span></label>`).join('')}</div>
     <p class="note" style="text-align:left;margin:8px 0 0">Živá: mrká, dýchá a mluví. Klidná: jen mluví a mrká. Vypnutá: malý obrázek bez pohybu.${EN('Full: she blinks, breathes and moves her lips. Calm: only lips and blinking, gently. Off: a small still picture.')}</p>
   </div>
-  <div class="card"><h3>${ico('🎯',22)} Denní cíl${EN('Daily goal','en h3en')}</h3><select data-c="goal">${[20,50,100,150].map(v=>`<option value="${v}" ${goal()===v?'selected':''}>${v} XP</option>`).join('')}</select>
+  <div class="card"><h3>${ico('🎯',22)} Denní cíl${EN('Daily goal','en h3en')}</h3><select data-c="goal">${[30,50,100,150].map(v=>`<option value="${v}" ${goal()===v?'selected':''}>${v} XP</option>`).join('')}</select>
     <hr class="sep"><h3>${ico('📷',22)} Skutečné fotky${EN('Real photos','en h3en')}</h3>${PHOTOS_OK?`<label class="chkrow"><input type="checkbox" data-c="photos" ${P.settings.photos===true?'checked':''}><span>Ukazovat fotky z Wikimedia Commons, když jsi online. Pod fotkou 🔄 načte jinou fotku a 🎨 vrátí kresbu.${EN('Show real photos from Wikimedia Commons when online. Under a photo, 🔄 loads another one and 🎨 goes back to the drawing.')}</span></label><button class="cta sm alt" data-a="phreset" style="margin-top:10px">Obnovit výběr fotek</button>`:`<span class="note">Funguje v nainstalované aplikaci, ne v Claude.${EN('Available in the installed web version, not inside Claude.')}</span>`}
     <hr class="sep"><h3>${chr('klara','happy',26)} Klára (AI tutorka)${EN('AI tutor','en h3en')}</h3><button class="cta sm alt" data-a="tkeyedit">${tutorKey()?'Změnit klíč nebo model':'Připojit AI tutorku'}</button>
   </div>
@@ -5973,15 +6378,19 @@ function navHTML(){
 function topStats(){ const xt=xpToday(), g=goal();
   return `<div class="tstats"><div class="logo">čeština<span>obrazem</span></div><div class="tsr"><span class="st" title="Dny v řadě">${ico('🔥',22)}<b>${streakNow()}</b></span><span class="st" title="XP">${ico('⭐',22)}<b>${P.xp||0}</b></span><button class="st gl" data-a="dgoal" aria-label="Denní cíl">${ringSVG(xt/g,28,4,'#22C55E')}<b>${xt}</b></button>${helpBtn()}</div></div>`; }
 /* v26 home: one clear start. Klára says what is waiting today, inside the card of the place you are in. */
-function homeSay(D,n){ const dn=dayN(), g=dGoal(), st=streakNow(), h=new Date().getHours(), td=P.day&&P.day.d===today()?P.day:{}, all=(td.rev||!D)&&td.part&&td.talk;
+function homeSay(D,n){ const dn=xpToday(), g=goal(), st=streakNow(), h=new Date().getHours(), td=P.day&&P.day.d===today()?P.day:{}, all=(td.rev||!D)&&td.part&&td.talk;
   const gr=h<10?['Dobré ráno!','Good morning!']:h<18?['Dobrý den!','Hello!']:['Dobrý večer!','Good evening!'];
   if(!learnedAll().length&&!dn) return {cz:'Vítej v Česku! Začneme prvními slovy.',en:'Welcome to Czechia! Let’s start with your first words.',m:'talk'};
   if(all) return {cz:'Výborně! Dnešní plán je hotový. Uvidíme se zítra.',en:'Well done! Today’s plan is finished. See you tomorrow.',m:'cheer'};
-  if(dn>=g) return {cz:`Dnešní cíl je splněný: ${dn} odpovědí. Skvělá práce!`,en:'Today’s goal is done. Great work!',m:'cheer'};
+  if(dn>=g) return {cz:`Dnešní cíl je splněný: ${dn} XP. Skvělá práce!`,en:'Today’s goal is done. Great work!',m:'cheer'};
   if(st>0&&dn===0&&h>=17) return {cz:`Tvoje série ${st} ${czPl(st,'den','dny','dní')} dnes ještě čeká. Stačí tři minuty.`,en:'Your streak is still waiting today. Three minutes are enough.',m:'talk'};
   if(!n) return {cz:`${gr[0]} Všechny lekce máš hotové.${D?' Zopakujeme si slova?':''}`,en:`${gr[1]} You have finished all lessons.`,m:'cheer'};
   const w=D?`${D>=2&&D<=4?'čekají':'čeká'} ${plW(D)} a jeden krok lekce`:'čeká jeden krok lekce';
   return {cz:`${gr[0]} Dnes tě ${w}.`,en:`${gr[1]} Today: ${D?D+' word'+(D===1?'':'s')+' to review and ':''}one step of your lesson.`,m:'talk'}; }
+function acctNudge(){ if(IN_CLAUDE||!fbCfg()||fbAuth()||(P.settings.acctHide||0)>Date.now()) return '';
+  return `<div class="acn">${ico('☁️',30)}<span><b>Ukládej pokrok online</b><small>Přihlas se e-mailem. Pokrok pak neztratíš a máš ho i v počítači.</small>${EN('Sign in with your e-mail: your progress is saved online and you can continue on the computer.')}</span><button class="cta sm" data-a="acctgo">Zapnout</button><button class="x" data-a="accthide" aria-label="Teď ne">✕</button></div>`; }
+Object.assign(ACT,{ acctgo:()=>{ view='settings'; render(); requestAnimationFrame(()=>{ const a=document.querySelector('#app .acct'); if(a) a.scrollIntoView({block:'start'}); }); },
+  accthide:()=>{ P.settings.acctHide=Date.now()+14*86400e3; dirty(); render(); } });
 function weekRow(){ return weekDue()?`<button class="hrow" data-a="week">${ico('📅',34)}<span><b>Týdenní opakování</b><small>20 úloh ze všech lekcí</small>${EN('Weekly review: 20 mixed tasks')}</span><em>Nové</em><i>›</i></button>`:''; }
 function dayPlan(D,nu){
   const td=P.day&&P.day.d===today()?P.day:{}, r=td.rev||!D, p=!!td.part, t=!!td.talk, n=[r,p,t].filter(Boolean).length;
@@ -6011,7 +6420,7 @@ function vHome(){
       <div class="nodes">${nodes}</div></section>${nxt?`<button class="leg" data-a="ksay" data-v="Jedeme ${esc(nxt.to)}.">${ico(nxt.tr,24)}<span>Jedeme ${esc(nxt.to)}</span>${EN('We are going to '+nxt.en)}</button>`:`<div class="leg fin">${ico('🏆',24)}<span>Cíl cesty</span>${EN('The end of the journey')}</div>`}`; }).join('');
   return `${topStats()}
     ${installEvt?`<button class="cta okc sm" data-a="install" style="margin-bottom:12px">${bl('📲','Nainstalovat aplikaci')}</button>`:''}
-    ${spkBanner()}${cont}${dayPlan(D,nu)}${weekRow()}${wotdCard()}${homeExtras()}${map}<div class="path">${path}</div>`;
+    ${spkBanner()}${cont}${acctNudge()}${dayPlan(D,nu)}${weekRow()}${wotdCard()}${homeExtras()}${map}<div class="path">${path}</div>`;
 }
 function vUnit(){
   const u=U(curUnit), t=townOf(u.id), L=u.items.filter(learned).length, nd=u.parts.filter((_,i)=>P.parts[u.id+':'+i]).length, nx=u.parts.findIndex((_,i)=>!P.parts[u.id+':'+i]);
@@ -6125,7 +6534,7 @@ function vGuide(){
   ${T.map(([e,t,en])=>`<div class="gitem">${ico(e,34)}<div><b>${t}</b><span class="en">${en}</span></div></div>`).join('')}
   <button class="cta alt" data-a="introagain" style="margin-top:12px">${bl('▶️','Spustit úvod znovu')}</button>`;
 }
-const APP_VER='26', APP_DATE='11. 11. 2026';
+const APP_VER='27.1', APP_DATE='12. 11. 2026';
 function vProfile(){
   const L=learnedAll().length, sk=streakNow(), vis=TOWNS.slice(1).filter(townDone).length;
   return `<div class="phero"><span class="pav">${chr(samId(),'happy',84)}</span><div><b>Sam</b><span>${esc(curTown().n)} · ${plW(L)}</span></div></div>
@@ -6135,6 +6544,7 @@ function vProfile(){
 }
 
 if(!P.introDone&&!learnedAll().length) view='intro';
+else if(!snapLoad()) lastLoad();
 render();
 (async()=>{ if(!(await initRemote())) setTimeout(initRemote,1200); })();
 try{ mineItems(); }catch(e){} if(!IN_CLAUDE) setTimeout(fbInit,400); stateToSW();
