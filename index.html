@@ -820,6 +820,11 @@ html,body{overflow-x:hidden;max-width:100%}
 .kw{font-family:var(--cz);font-size:36px;color:var(--ok);line-height:1.1}.kwb{font-family:var(--cz);font-size:20px;font-weight:700;color:var(--mute)}
 .kwen{font-weight:800;font-size:18px;margin-top:2px}.kwnote{color:var(--mute);font-weight:700;font-size:14px;margin-top:4px;line-height:1.35}
 .kwsen{display:block;text-align:center;margin:2px 0 8px}
+.kwhead{display:flex;align-items:center;gap:14px;background:var(--card);border:2px solid var(--line);border-radius:22px;padding:12px 16px;margin:0 0 14px;box-shadow:0 4px 0 var(--line)}
+.kwhead .kwpic{flex:none;width:68px;height:68px;display:flex;align-items:center;justify-content:center}
+.kwhead .kwbox{text-align:left;margin:0;flex:1;min-width:0}.kwhead .kwline{justify-content:flex-start;gap:8px}
+.kwhead .kw{font-size:30px}.kwhead .kwb{font-size:16px}.kwhead .kwen{font-size:16px}.kwhead .kwnote{font-size:13px}
+.kwintro .gapline{font-size:24px;margin:2px 0 8px;line-height:1.3}.kwintro .kwsen{margin:0 0 6px}
 .why{display:flex;gap:8px;align-items:flex-start;margin:10px 0 0;padding:10px 12px;border-radius:14px;background:#FFF9DB;border:2px dashed #FFE066;font-weight:700;font-size:15px;line-height:1.35}
 .gcard.crs{border-width:3px;border-color:var(--accl);padding:14px}.gcard.crs b{font-size:18px}.lprons .lpron{margin-bottom:8px}
 .why .en{color:var(--mute)}
@@ -1145,7 +1150,17 @@ body::before{content:'';position:fixed;inset:0;z-index:-1;background:var(--bgfx)
 .mail26 .ml b{font-weight:600;font-size:16px;line-height:1.4}.mail26 .ml .en{display:block;font-size:13px;color:var(--mute)}
 #app .mail26 .ml:active{background:var(--seg)}
 .qaq.recq{margin:0 0 12px;text-align:center}.recq b{font-size:18px}
-.toast.wskip{flex-wrap:wrap}.toast.wskip>span{display:none}.toast.wskip>em{margin-left:auto}.toast .tskip{display:block;flex:0 0 100%;font-style:normal;font-size:13px;font-weight:700;margin-top:2px}.toast .tskip .en{display:block;font-size:12px;font-weight:600;font-family:var(--ui)}
+.lvcard{padding:14px 16px;margin:0 0 14px}.lvrow{display:flex;align-items:center;gap:10px;margin:6px 0}.lvrow b{width:44px;font-weight:900}.lvbar{flex:1;height:10px;border-radius:6px;background:var(--line);overflow:hidden}.lvbar i{display:block;height:100%;background:var(--ok);border-radius:6px}.lvrow small{color:var(--mute);font-weight:700;white-space:nowrap}
+.tqrow .t small.tqa{display:block;color:var(--ok);font-weight:800;margin-top:2px}.tqrow .t small.tqa::before{content:'✔ '}
+.g7top{display:flex;gap:10px;margin:0 0 6px}.g7top .cta{flex:1;margin:0}
+.g7les{margin:16px 0 4px}.g7les.lock{opacity:.55}.g7lh{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0 2px 8px}.g7lh b{font-size:15px;font-weight:900}
+.g7lmix{display:flex;align-items:center;gap:6px;border:2px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:6px 12px;font-weight:800;font-size:13px;white-space:nowrap}
+.toast.wskip{flex-wrap:wrap}
+/* v29: result sheet and the Dál button are one panel — the sheet stays, the button sits inside it */
+#app.has-toast.has-next .foot,[data-theme=dark] #app.has-toast.has-next .foot{background:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;padding-top:0}
+#app.has-next .toast{animation:sheetin .28s cubic-bezier(.2,.9,.3,1.2)!important;padding-top:16px;padding-bottom:calc(92px + env(safe-area-inset-bottom));box-shadow:0 -6px 24px rgba(0,0,0,.18);backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+#app.has-next .toast.ok{border-top:3px solid #86EFAC}#app.has-next .toast.bad{border-top:3px solid #FCA5A5}
+#app.has-next .toast b{font-size:22px}.toast.wskip>span{display:none}.toast.wskip>em{margin-left:auto}.toast .tskip{display:block;flex:0 0 100%;font-style:normal;font-size:13px;font-weight:700;margin-top:2px}.toast .tskip .en{display:block;font-size:12px;font-weight:600;font-family:var(--ui)}
 .fam26{display:flex;flex-direction:column;align-items:center;margin:0 0 14px;padding:12px 8px;border-radius:20px;background:var(--card);box-shadow:var(--gl-hi),var(--gl-sh)}
 .fam26 .fr{display:flex;justify-content:center;gap:14px}
 #app .fam26 button{display:flex;flex-direction:column;align-items:center;gap:2px;background:none;border:0;box-shadow:none;padding:2px 4px;color:var(--ink);font-family:var(--ui)}
@@ -1995,6 +2010,8 @@ const U = id => UNITS.find(u=>u.id===id);
 const $ = s => document.querySelector(s);
 const esc = s => String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const shuffle = a => {a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
+/* v29: mix the right column so that no partner sits in the same row as its pair */
+const unalign=(L,R,k=x=>x)=>{ if(R.length<2) return R; let r=shuffle(R); for(let t=0;t<80&&r.some((x,i)=>L[i]!==undefined&&k(x)===k(L[i]));t++) r=shuffle(R); return r; };
 const sample = (a,n) => shuffle(a).slice(0,n);
 const imgKey = x => x.img+'@'+x.sc;
 const NUMW = ['nula','jedna','dva','tři','čtyři','pět','šest','sedm','osm','devět','deset'];
@@ -2369,7 +2386,7 @@ function prep(ex){
   if(ex.t==='arrange'){ const at=toks(ex.ans||ex.item.cz); ex.ansN=at.length; ex.tok=at.concat((ex.extra||[]).filter(w=>!at.includes(w))); let o; let guard=0;
     do{o=shuffle(ex.tok.map((_,i)=>i));}while(o.every((v,i)=>v===i)&&ex.tok.length>1&&guard++<20); ex.order=o; ex.placed=[]; }
   if(ex.t==='write') ex.val='';
-  if(ex.t==='match'){ ex.mp=shuffle(ex.items); ex.mw=shuffle(ex.items); ex.matched=new Set(); ex.sp=null; ex.sw=null; }
+  if(ex.t==='match'){ ex.mp=shuffle(ex.items); ex.mw=unalign(ex.mp,ex.items,x=>x.id); ex.matched=new Set(); ex.sp=null; ex.sw=null; }
   if(ex.t==='find'){ ex.bad=new Set(); }
   if(ex.t==='gapx'){ const g=gapOf(ex.item); ex.g={w:g.w,opts:shuffle(g.opts)}; }
 }
@@ -2417,9 +2434,9 @@ function whyHTML(x){ if(x&&x.why){ const [c,e]=Array.isArray(x.why)?x.why:[x.why
 function kwintroHTML(ex){ const x=ex.item, k=kwInfo(x), same=!k.base||k.base.toLowerCase()===String(k.w).toLowerCase();
   const known=!KW[String(k.w).toLowerCase()]&&!k.gram;
   return `${known?task('Nová věta','A new sentence with a word you have just learned. Listen, then you will use it.'):task('Nové slovo ve větě','A new word in a sentence. Listen, look at the meaning, then you will use it.')}
-  <div class="bigpic sm">${pic(x,90)}</div>
-  <div class="kwbox"><div class="kwline"><b class="kw">${esc(k.w)}</b>${same?'':`<span class="kwb">← ${esc(k.base)}</span>`}</div>${k.en?`<div class="kwen">= ${esc(k.en)}</div>`:''}${k.note?`<div class="kwnote">${esc(k.note)}</div>`:''}</div>
-  <div class="prompt"><div class="ptext gapline">${blankHTML(x.cz,x.w,true)}</div>${x.en?`<span class="en kwsen">${esc(x.en)}</span>`:''}${audioBtns()}</div>`; }
+  <div class="kwhead">${!x.img||/(^|:)(❓|❔|💬|\?)$/u.test(x.img)?'':`<div class="kwpic">${pic(x,58)}</div>`}
+  <div class="kwbox"><div class="kwline"><b class="kw">${esc(k.w)}</b>${same?'':`<span class="kwb">← ${esc(k.base)}</span>`}</div>${k.en?`<div class="kwen">= ${esc(k.en)}</div>`:''}${k.note?`<div class="kwnote">${esc(k.note)}</div>`:''}</div></div>
+  <div class="prompt kwintro"><div class="ptext gapline">${blankHTML(x.cz,x.w,true)}</div>${x.en?`<span class="en kwsen">${esc(x.en)}</span>`:''}${audioBtns()}</div>`; }
 function startPart(uid,pi){
   const u=U(uid), items=u.parts[pi], prev=u.parts.slice(0,pi).flat(), pool=[...prev,...items], q=[];
   // warm-up: one or two words learned before (this lesson, or the previous one)
@@ -2544,6 +2561,7 @@ function endSession(){
   if(S.kind==='g7'){ P.g7=P.g7||{}; P.g7[S.g7id]=Math.max(P.g7[S.g7id]||0,pc); addXP(10); }
   if(S.kind==='test'){ P.test=P.test||{}; const o=P.test[S.uid]||{}; P.test[S.uid]={best:Math.max(o.best||0,pc),last:pc}; S.pc=pc; }
   if(S.kind==='big'){ S.pc=pc; addXP(20); }
+  if(S.kind==='final'){ const o=P.final||{}; P.final={best:Math.max(o.best||0,pc),last:pc}; S.pc=pc; addXP(30); }
   if(['over','mrev','sent','lread','write','course'].includes(S.kind)) addXP(10);
   if(S.lpu&&S.lpk){ const r=lpRec(S.lpu); if(S.lpk==='big'){ const was=lpDone(S.lpu); r.big=Math.max(r.big||0,pc); r.bigLast=pc; if(!was&&pc>=LP_PASS) addXP(30); } else r[S.lpk]=1; }
   const dk=['part','gram','g7','over','sent','lread','write','course'].includes(S.kind)?'part':['review','test','mrev','big'].includes(S.kind)?'rev':['talk','mission','dialog','pattern','speaking','listen','hov','dict'].includes(S.kind)?'talk':null;
@@ -2749,8 +2767,10 @@ const ACT={
   course:v=>{curCourse=v; view='course'; render(); requestAnimationFrame(scrollCur);},
   ppick:v=>{const ex=cur(); if(!ex||ex.done) return; const c=+v; if(c===ex.item.cs){ ex.done=true; ding(); finishEx(ex,ex.tries===0); fb(true,ex); render(); later(1300); } else { ex.tries++; ex.wrong.add(c); buzz(); fb(false,ex); render(); }},
   ltest:v=>startTest(v),
+  final:()=>startFinal(),
+  g7inf:v=>startG7(v,true),
   missdrill:()=>{ const m=[...new Map((last&&last.miss||[]).map(x=>[x.id,x])).values()]; if(!m.length) return;
-    begin('review','🎯 Chyby',shuffle(m).flatMap((x,i)=>x.gen?[mk('gapx',x,[],{nograde:true}),mk('arrange',x,[],{ans:x.cz,extra:x.wrong.slice(0,1),noAudio:true,nograde:true})]:[mk('intro',x,U(x.unit).items),mk(i%2?'pic2text':'choose',x,U(x.unit).items,{audio:1})])); },
+    begin('review','🎯 Chyby',shuffle(m).flatMap((x,i)=>x.tq?[tqTask(x.tq)]:x.gen?[mk('gapx',x,[],{nograde:true}),mk('arrange',x,[],{ans:x.cz,extra:x.wrong.slice(0,1),noAudio:true,nograde:true})]:[mk('intro',x,U(x.unit).items),mk(i%2?'pic2text':'choose',x,U(x.unit).items,{audio:1})])); },
   mission:v=>startMission(v),
   qa:()=>startQA(),
   ladder:()=>startLadders(),
@@ -3174,6 +3194,7 @@ function render(){
   app.classList.toggle('has-nav',nav);
   app.classList.toggle('has-foot',!!app.querySelector('.foot'));
   app.classList.toggle('has-toast',!!app.querySelector('.toast'));
+  app.classList.toggle('has-next',!!app.querySelector('.foot [data-a="next"]'));
   if(view==='session'&&S){ const tt=app.querySelector('.toast.ok'), ee=cur(); /* v28: the result sheet stays until "Dál" — keep the right answer visible above it */
     if(tt&&ee&&ee.done&&app.querySelector('.foot')) requestAnimationFrame(()=>{ try{ const a=[...app.querySelectorAll('.ex .ok')].pop(); if(!a) return; const lim=innerHeight-tt.offsetHeight-14, r=a.getBoundingClientRect(); if(r.bottom>lim) window.scrollBy({top:r.bottom-lim,behavior:'smooth'}); }catch(e){} }); }
   if(view!==LASTV){ LASTV=view; app.classList.remove('viewin'); void app.offsetWidth; app.classList.add('viewin'); }
@@ -3502,6 +3523,8 @@ function gtabHTML(ex){
 function startTest(uid){
   const u=U(uid); let its=u.items.filter(learned); if(its.length<6) its=u.items.slice();
   const pool=u.items, q=[], A=shuffle(its);
+  if(typeof TQ!=='undefined'&&TQ[uid]){ A.slice(0,2).forEach(x=>q.push(mk('choose',x,pool,{audio:1,re:true}))); A.slice(2,4).forEach(x=>q.push(mk('pic2text',x,pool,{re:true})));
+    shuffle(GENL[uid]||[]).slice(0,2).forEach(g=>q.push(mk('gapx',g,[],{re:true}))); sample(TQ[uid],14).forEach(r=>q.push(tqTask(r))); begin('test','📝 Test: '+u.t,shuffle(q),{uid,miss:[]}); return; }
   A.slice(0,4).forEach(x=>q.push(mk('choose',x,pool,{audio:1,re:true})));
   A.slice(4,7).forEach(x=>q.push(mk('pic2text',x,pool,{re:true})));
   shuffle(GENL[uid]||[]).slice(0,3).forEach(g=>q.push(mk('gapx',g,[],{re:true})));
@@ -3731,7 +3754,7 @@ function lpAfterHTML(l){
   if(l.lpk==='big'){ const pc=l.pc||0, ok=pc>=LP_PASS, ni=unitIdx(l.lpu)+1, nu=UNITS[ni], miss=[...new Map((l.miss||[]).map(x=>[x.id,x])).values()];
     return `<div class="card tres ${ok?'pass':'fail'}"><b>${ok?'🎉 Lekce hotová!':'Ještě ne'} · ${pc} %</b><span>${ok?(nu?`Další lekce je otevřená: ${esc(nu.lab)} · ${esc(nu.t)}`:'Máš hotovou celou cestu!'):`Potřebuješ aspoň ${LP_PASS} %. Zopakuj si slova níže a zkus to znovu.`}</span>
       ${EN(ok?'Lesson complete. The next lesson is open.':`You need at least ${LP_PASS} %. Practise the words below, then try again.`)}
-      ${miss.length?`<div class="sect" style="margin:10px 0 6px">Zopakuj si${EN(' · Review these','en sen')}</div>${miss.map(x=>`<button class="drow" data-a="say" data-v="${x.id}"><span class="mini">${pic(x,28)}</span><span class="t">${esc(x.cz)}</span><span class="lv">${ico('🔊',16)}</span></button>`).join('')}`:''}</div>
+      ${miss.length?`<div class="sect" style="margin:10px 0 6px">Zopakuj si${EN(' · Review these','en sen')}</div>${miss.map(x=>x.tq?`<div class="drow tqrow"><span class="mini">${ico('📝',24)}</span><span class="t">${esc(x.cz)}<small class="tqa">${esc(x.tq[1])}</small></span></div>`:`<button class="drow" data-a="say" data-v="${x.id}"><span class="mini">${pic(x,28)}</span><span class="t">${esc(x.cz)}</span><span class="lv">${ico('🔊',16)}</span></button>`).join('')}`:''}</div>
       ${ok&&nu?`<button class="cta" data-a="unit" data-v="${nu.id}">${bl(nu.icon,'Další lekce: '+esc(nu.t))}</button>`:''}
       ${miss.length?`<button class="cta${ok?' alt':''}" data-a="missdrill">${bl('🎯','Procvič chyby')}</button>`:''}
       ${ok?'':`<button class="cta alt" data-a="lp" data-v="${l.lpu}|big">${bl('🔁','Zkusit znovu')}</button>`}`; }
@@ -5536,7 +5559,7 @@ const gEnd=(pre,stem,end,wrong,post,img,en,why)=>mk('gend',cItem(pre+stem+end+po
 const gErr=(good,badWord,goodWord,en,why,img)=>{ const t=good.split(' '), i=t.findIndex(w=>w.replace(/[.,?!]/g,'')===goodWord); if(i<0) return null;
   const bad=t.slice(); bad[i]=t[i].replace(goodWord,badWord); return mk('gerr',cItem(good,goodWord,[badWord],img||'🔍',en,why),[],{nograde:true,g7:1,toks:bad,bi:i,fix:t[i]}); };
 const gSort=(title,en,buckets,words)=>mk('gsort',{id:'Q'+(++CIX),cz:'',img:'🗂️',en},[],{nograde:true,g7:1,tt:title,te:en,buckets,words:shuffle(words.map(([w,b])=>({w,b})))});
-const gPair=(title,en,pairs)=>mk('gpair',{id:'Q'+(++CIX),cz:'',img:'🔗',en},[],{nograde:true,g7:1,tt:title,te:en,L:pairs.map(p=>p[0]),R:shuffle(pairs.map(p=>p[1])),ans:pairs});
+const gPair=(title,en,pairs)=>mk('gpair',{id:'Q'+(++CIX),cz:'',img:'🔗',en},[],{nograde:true,g7:1,tt:title,te:en,L:pairs.map(p=>p[0]),R:unalign(pairs.map(p=>p[1]),pairs.map(p=>p[1])),ans:pairs});
 const gTab=(title,en,head,rows,blank)=>mk('gtab2',{id:'Q'+(++CIX),cz:'',img:'📋',en},[],{nograde:true,g7:1,tt:title,te:en,head,rows,blank,tiles:shuffle(blank.map(([r,c])=>rows[r][c]))});
 const gTrans=(src,instr,target,extra,en,img)=>mk('arrange',cItem(target,'',[],img||'🔁',en),[],{ans:target,extra,noAudio:true,nograde:true,g7:1,src,instr});
 const gQ=(q,opts,qen,img,note)=>qa({q,opts,qen,img:img||'❓',tt:'Vyber správnou odpověď',te:'Choose the right answer.',g7:1,note});
@@ -6621,8 +6644,424 @@ G7.sepas={les:'L12',ic:'🎄',t:'Jí se, pije se · se × si',en:'“People do i
 G7L.push('mnoz','datum','bud','kam','zajm','gen','odkud','pohyb','instr','vid','sepas');
 Object.assign(G7MAP,{G7:'mnoz',G14:'bud',G9:'gen',G10:'instr',G16:'pohyb',G15:'vid'});
 
+/*V29W*/
+/* ============ v29: more words from the textbook glossary (Lessons 1–12) ============
+   Words the book lists for each lesson that the app did not teach yet. Own example sentences.
+   Row: [word, English, picture, sentence, sentence in English, form of the word in the sentence (if different)] */
+const XW={
+L1:[['informace','information','ℹ️','Kde jsou informace?','Where is the information desk?'],['otázka','question','❓','Mám jednu otázku.','I have one question.','otázku'],['jazyk','language','🗣️','Jaký jazyk mluvíte?','What language do you speak?'],['znát','know (a person, a place)','🤝','Znáš Petra?','Do you know Petr?','Znáš'],
+ ['ptát se','ask','🙋','Můžu se ptát?','Can I ask?','ptát'],['poslouchat','listen','🎧','Poslouchejte, prosím.','Listen, please.','Poslouchejte'],['člověk','person, man','🧑','Petr je dobrý člověk.','Petr is a good person.'],['slečna','young woman, Miss','👩','Dobrý den, slečno.','Hello, Miss.','slečno'],
+ ['písmeno','letter (of the alphabet)','🔤','Jaké je to písmeno?','Which letter is that?'],['telefonovat','phone','📞','Večer telefonuju domů.','In the evening I phone home.','telefonuju'],['výslovnost','pronunciation','👄','Česká výslovnost je těžká.','Czech pronunciation is hard.'],['cena','price','🏷️','Jaká je cena?','What is the price?'],
+ ['e-mail','e-mail','📧','Jaký máte e-mail?','What is your e-mail?'],['pamatovat si','remember','🧠','Nepamatuju si to slovo.','I don’t remember that word.','Nepamatuju'],['podobný','similar','👯','Čeština a slovenština jsou podobné.','Czech and Slovak are similar.','podobné'],['například','for example','💡','Mluvím jazyky, například anglicky a česky.','I speak languages, for example English and Czech.']],
+L2:[['hledat','look for','🔎','Hledám nádraží.','I am looking for the station.','Hledám'],['minuta','minute','⏱️','Je to pět minut pěšky.','It is five minutes on foot.','minut'],['místo','place, seat','📍','Je tady volné místo?','Is this seat free?'],['muset','must, have to','❗','Musím jít domů.','I have to go home.','Musím'],
+ ['ukazovat','show, point','👉','Ukazuju na mapu.','I am pointing at the map.','Ukazuju'],['pravda','truth','✅','To je pravda.','That is true.'],['metr','metre','📏','Banka je sto metrů odsud.','The bank is a hundred metres from here.','metrů'],['směr','direction','🧭','Jděte tímhle směrem.','Go in this direction.','směrem'],
+ ['áčko','metro line A','🚇','Jeďte áčkem do centra.','Take line A to the centre.','áčkem'],['docela','quite','👌','Je to docela daleko.','It is quite far.'],['odpověď','answer','💬','To je dobrá odpověď.','That is a good answer.'],['poznat','recognise','👀','Ten dům poznáš, je žlutý.','You’ll recognise the house, it is yellow.','poznáš']],
+L3:[['kapr','carp','🐟','Na Vánoce jíme kapra.','At Christmas we eat carp.','kapra'],['omáčka','sauce','🥣','Svíčková je maso s omáčkou.','Svíčková is meat with sauce.','omáčkou'],['klíč','key','🔑','Kde je klíč?','Where is the key?'],['kuchař','cook (man)','🧑‍🍳','Ten kuchař vaří výborně.','That cook cooks excellently.'],
+ ['výborný','excellent','😋','Ta polévka je výborná.','The soup is excellent.','výborná'],['objednávat','order','🧾','Objednáváme si oběd.','We are ordering lunch.','Objednáváme'],['pozdravovat','send greetings','👋','Pozdravuj maminku!','Say hello to your mum!','Pozdravuj'],['pozvání','invitation','💌','Děkuju za pozvání.','Thank you for the invitation.'],
+ ['světlý','light (colour, beer)','🍺','Dám si světlé pivo.','I’ll have a light beer.','světlé'],['čokoládový','chocolate (adj.)','🍫','Mám rád čokoládový dort.','I like chocolate cake.','čokoládový'],['spolužák','classmate','🧑‍🎓','To je můj spolužák.','That is my classmate.'],['možnost','possibility, option','🔀','Máme dvě možnosti.','We have two options.','možnosti']],
+L4:[['příbuzný','relative','👪','Mám v Praze příbuzné.','I have relatives in Prague.','příbuzné'],['věk','age','🎂','Věk: třicet let.','Age: thirty years.'],['datum narození','date of birth','📅','Jaké je vaše datum narození?','What is your date of birth?','datum'],['povolání','profession','💼','Jaké je vaše povolání?','What is your profession?'],
+ ['rodinný stav','marital status','💍','Jaký je váš rodinný stav?','What is your marital status?','stav'],['vdova','widow','🖤','Babička je vdova.','Grandma is a widow.'],['čí','whose','❓','Čí je ten pes?','Whose is that dog?'],['slovník','dictionary','📖','Potřebuju česko-anglický slovník.','I need a Czech-English dictionary.'],
+ ['cizí','foreign, someone else’s','🌍','To není moje taška, je cizí.','That is not my bag, it is someone else’s.'],['povídat si','chat','💬','Rády si povídáme.','We like chatting.','povídáme'],['sleva','discount','🏷️','Mobil stojí pět tisíc. Sleva je dvacet procent.','The mobile costs five thousand. The discount is twenty per cent.'],['úřad','office (authority)','🏛️','Musím jít na úřad.','I have to go to the office.']],
+L5:[['učebnice','textbook','📘','Kde je moje učebnice?','Where is my textbook?'],['začínat','begin','▶️','Kurz začíná v devět.','The course begins at nine.','začíná'],['zapomenout','forget','🤦','Zapomněla jsem klíč.','I forgot the key.','Zapomněla'],['noviny','newspaper','📰','Ráno čtu noviny.','In the morning I read the newspaper.'],
+ ['detektivka','detective story','🕵️','Večer čtu detektivku.','In the evening I read a detective story.','detektivku'],['jóga','yoga','🧘','Ve čtvrtek chodím na jógu.','On Thursday I go to yoga.','jógu'],['narozeniny','birthday','🎂','Kdy máš narozeniny?','When is your birthday?'],['otevřít','open','🚪','Můžu otevřít okno?','Can I open the window?'],
+ ['odpovídat','answer','💬','Odpovídám na e-mail.','I am answering an e-mail.','Odpovídám'],['oba','both','✌️','Oba jsou z Brna.','Both are from Brno.'],['naopak','on the contrary','🔄','Nejsem unavená, naopak!','I am not tired, on the contrary!'],['zjistit','find out','🔍','Zjistím, kdy jede vlak.','I’ll find out when the train goes.','Zjistím']],
+L6:[['schůzka','meeting, appointment','📅','V pondělí mám schůzku.','On Monday I have a meeting.','schůzku'],['zpráva','message, news','✉️','Napiš mi zprávu.','Write me a message.','zprávu'],['esemeska','text message','📱','Poslala jsem ti esemesku.','I sent you a text.','esemesku'],['volat','call','📞','Kdo volá?','Who is calling?','volá'],
+ ['letět','fly','✈️','Zítra letím do Londýna.','Tomorrow I am flying to London.','letím'],['řídit','drive','🚗','Umíš řídit?','Can you drive?'],['umět','know how, can','🎹','Umím hrát na klavír.','I can play the piano.','Umím'],['hra','game, play','🎮','To je dobrá hra.','That is a good game.'],
+ ['připravovat','prepare','🍳','Připravuju večeři.','I am preparing dinner.','Připravuju'],['národnost','nationality','🌐','Jakou máte národnost?','What is your nationality?'],['krátký','short','✂️','To byl krátký film.','That was a short film.'],['normálně','normally','🙂','Normálně vstávám v sedm.','Normally I get up at seven.']],
+L7:[['potkat','meet (by chance)','🤝','Včera jsem potkala Janu.','Yesterday I met Jana.','potkala'],['potřebovat','need','🛒','Potřebujeme novou postel.','We need a new bed.','Potřebujeme'],['místnost','room','🚪','Kolik má byt místností?','How many rooms does the flat have?','místností'],['aspoň','at least','☝️','Chci aspoň dva pokoje.','I want at least two rooms.'],
+ ['málo','little, few','🤏','Máme málo místa.','We have little space.'],['osoba','person','🧍','Pokoj je pro dvě osoby.','The room is for two people.','osoby'],['rozdíl','difference','⚖️','Jaký je rozdíl?','What is the difference?'],['návštěva','visit, guest','🏠','Dneska máme návštěvu.','Today we have guests.','návštěvu'],
+ ['nechat','leave','📦','Tu skříň necháme tady.','We’ll leave the wardrobe here.','necháme'],['sehnat','get hold of','🔑','Sehnali jsme levný byt.','We found a cheap flat.','Sehnali'],['šedý','grey','🩶','Mám šedý koberec.','I have a grey carpet.'],['tmavomodrý','dark blue','🔵','Ta sedačka je tmavomodrá.','The sofa is dark blue.','tmavomodrá']],
+L8:[['stejný','same','🟰','Máme stejný telefon.','We have the same phone.'],['úplně','completely','💯','Jsem úplně unavená.','I am completely tired.'],['doufat','hope','🤞','Doufám, že přijdeš.','I hope you’ll come.','Doufám'],['slíbit','promise','🤝','Slíbila jsem to mamince.','I promised it to mum.','Slíbila'],
+ ['ryba','fish','🐟','Dědeček chytá ryby.','Grandpa is fishing.','ryby'],['hokej','ice hockey','🏒','V sobotu jdeme na hokej.','On Saturday we’re going to the hockey.'],['navštěvovat','visit (often)','👵','Často navštěvuju babičku.','I often visit grandma.','navštěvuju'],['budoucnost','future','🔮','Co bude v budoucnosti?','What will be in the future?','budoucnosti'],
+ ['radost','joy','😊','Mám velkou radost.','I am very happy.'],['miláček','darling','❤️','Dobrou noc, miláčku.','Good night, darling.','miláčku'],['ambasáda','embassy','🏛️','Musím jít na ambasádu.','I have to go to the embassy.','ambasádu'],['britský','British','🇬🇧','To je britský film.','That is a British film.']],
+L9:[['vlas','a hair','💇','V polévce je vlas!','There is a hair in the soup!'],['pusa','mouth; kiss','💋','Dej mi pusu.','Give me a kiss.','pusu'],['písnička','song','🎵','To je hezká písnička.','That is a nice song.'],['nedávno','recently','🕐','Nedávno jsem byla nemocná.','Recently I was ill.'],
+ ['dospělý','adult','🧑','Lístek pro jednoho dospělého, prosím.','A ticket for one adult, please.','dospělého'],['operace','operation, surgery','🏥','Dědeček měl operaci.','Grandpa had an operation.','operaci'],['krém','cream','🧴','Potřebuju krém na ruce.','I need hand cream.'],['vitamín','vitamin','🍊','Pomeranč má hodně vitamínů.','An orange has a lot of vitamins.','vitamínů'],
+ ['zvýšená teplota','slightly raised temperature','🌡️','Mám zvýšenou teplotu.','I have a slight temperature.','zvýšenou'],['pouze','only','☝️','Pouze na recept.','Only with a prescription.'],['skoro','almost','⏳','Je skoro devět.','It is almost nine.'],['bavit','enjoy, amuse','🎉','Ta práce mě baví.','I enjoy that work.','baví']],
+L10:[['kluk','boy','👦','Ten kluk je můj bratr.','That boy is my brother.'],['příjemný','pleasant','😊','To je příjemná kavárna.','That is a pleasant café.','příjemná'],['silnice','road','🛣️','Pozor, silnice!','Careful, road!'],['elektřina','electricity','⚡','Nejde elektřina.','The electricity is off.'],
+ ['naplánovat','plan','🗓️','Naplánujeme výlet.','We’ll plan a trip.','Naplánujeme'],['cestování','travelling','🧳','Cestování mě baví.','I enjoy travelling.'],['suvenýr','souvenir','🎁','Koupila jsem suvenýr z Itálie.','I bought a souvenir from Italy.'],['vlna','wave; wool','🌊','Moře mělo velké vlny.','The sea had big waves.','vlny'],
+ ['fungovat','work (machine)','⚙️','Výtah nefunguje.','The lift doesn’t work.','nefunguje'],['oblečení','clothes','👕','Kde koupím oblečení?','Where can I buy clothes?'],['zavřený','closed','🔒','Obchod je zavřený.','The shop is closed.'],['mezi','between','↔️','Kavárna je mezi bankou a poštou.','The café is between the bank and the post office.']],
+L11:[['milovat','love','❤️','Miluju moře.','I love the sea.','Miluju'],['nabídka','offer','🏷️','To je dobrá nabídka.','That is a good offer.'],['nádherný','gorgeous','😍','Pláž byla nádherná.','The beach was gorgeous.','nádherná'],['pobřeží','coast','🌊','Byli jsme na pobřeží.','We were on the coast.'],
+ ['vloni','last year','📅','Vloni jsme byli v Řecku.','Last year we were in Greece.'],['bezpečný','safe','🛡️','Je to bezpečné?','Is it safe?','bezpečné'],['legrační','funny','😂','To byla legrační situace.','That was a funny situation.'],['důležitý','important','❗','Pas je důležitý.','The passport is important.'],
+ ['peněženka','wallet','👛','Ztratila jsem peněženku.','I lost my wallet.','peněženku'],['nikdo','nobody','🚫','Nikdo tam nebyl.','Nobody was there.'],['kopec','hill','⛰️','Za domem je kopec.','There is a hill behind the house.'],['vrátit se','come back','↩️','Kdy se vrátíš?','When will you come back?','vrátíš']],
+L12:[['barevný','colourful','🌈','Malujeme barevná vajíčka.','We paint colourful eggs.','barevná'],['kalendář','calendar','📅','Podívám se do kalendáře.','I’ll look in the calendar.','kalendáře'],['věřit','believe','🙏','Věříš na Ježíška?','Do you believe in Baby Jesus?','Věříš'],['pečivo','pastry, bread rolls','🥐','Ráno kupuju pečivo.','In the morning I buy bread rolls.'],
+ ['mockrát','many times','🙏','Mockrát děkuju!','Thank you very much!'],['trávit','spend (time)','⏳','Vánoce trávíme doma.','We spend Christmas at home.','trávíme'],['začátek','beginning','▶️','Začátek je v osm.','The beginning is at eight.'],['zpívat','sing','🎤','Rádi zpíváme koledy.','We like singing carols.','zpíváme'],
+ ['pohádka','fairy tale','📖','Děti se dívají na pohádku.','The children watch a fairy tale.','pohádku'],['tradice','tradition','🎄','To je česká tradice.','That is a Czech tradition.'],['chléb','bread','🍞','Kupuju chléb a mléko.','I am buying bread and milk.'],['upéct','bake (and finish)','🍕','Večer upeču pizzu.','In the evening I’ll bake a pizza.','upeču']]};
+/* L2: “where to?” × “where?” (book: doprava × napravo) */
+function xwL2dir(){ return [tCard('Doprava, nebo napravo?','Where to? (moving) × Where? (place)',()=>tTable(['kam? ➡️','kde? 📍'],[['doprava','napravo / vpravo'],['doleva','nalevo / vlevo'],['nahoru','nahoře'],['dolů','dole'],['rovně','—']].map(r=>[sb(r[0]),r[1]==='—'?'—':r[1].split(' / ').map(sb).join(' ')])) +lines([['Jděte doprava. → Pošta je napravo.','Go right. → The post office is on the right.']])),
+  [gx(bt('Jděte doprava.'),'doprava',['napravo','vpravo'],'➡️','Go right.',['kam? → doprava','moving → doprava']),gx(bt('Pošta je napravo.'),'napravo',['doprava','doleva'],'📮','The post office is on the right.',['kde? → napravo','place → napravo']),
+   gx(bt('Výtah jede nahoru.'),'nahoru',['nahoře','dole'],'🛗','The lift goes up.',['kam? → nahoru','moving → nahoru']),gx(bt('Kancelář je nahoře.'),'nahoře',['nahoru','dolů'],'🏢','The office is upstairs.',['kde? → nahoře','place → nahoře']),
+   gx(bt('Banka je dole.'),'dole',['dolů','nahoru'],'🏦','The bank is downstairs.',['kde? → dole','place → dole'])]]; }
+function xwBuild(uid){ const L=XW[uid].filter(r=>r), G=[]; for(let i=0;i<L.length;i+=6) G.push(L.slice(i,i+6));
+  const P=G.map((g,gi)=>[tCard(`Další slova ${G.length>1?gi+1:''}`.trim(),'More words from the book. Tap a word to hear it.',()=>`<div class="numg">${g.map(r=>`<button class="numc" data-a="saytext" data-v="${esc(r[0])}">${ico(r[2],34)}<b style="font-size:15px">${esc(r[0])}</b><small>${esc(r[1])}</small></button>`).join('')}</div>`+lines(g.map(r=>[r[3],r[4]]))),
+    g.flatMap((r,i)=>{ const others=g.filter(x=>x!==r), w0=r[5]||r[0], m=r[3].match(new RegExp('(^|[^\\p{L}])('+w0.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')(?=[^\\p{L}]|$)','iu')), w=m?m[2]:w0, up=w[0]!==w[0].toLowerCase(), cap1=t=>up?t[0].toUpperCase()+t.slice(1):t.toLowerCase(), wr=sample(others.filter(x=>(x[5]||x[0]).toLowerCase()!==w.toLowerCase()),2).map(x=>cap1(x[5]||x[0]));
+      const t=[qq(r[0],[r[1],...sample(others,2).map(x=>x[1])],{img:r[2],qen:'What does it mean?'}),gx(bt(r[3]),w,wr,r[2],r[4],[`${r[0]} = ${r[1]}`,''])];
+      if(i%2===0) t.push(qa({say:bt(r[0]),q:'Co slyšíš?',qen:'What do you hear?',opts:[r[1],...sample(others,2).map(x=>x[1])],img:'👂'}));
+      return t; })]);
+  if(uid==='L2') P.push(xwL2dir());
+  const tail=sample(L.filter(r=>r[3].split(' ').length>=3&&r[3].split(' ').length<=6),2);
+  return stp(P,[arr(bt(tail[0][3]),tail[0][4],tail[0][2]),spk(bt(tail[1][3]),tail[1][2])]); }
+const XWF={}; Object.keys(XW).forEach(u=>{ XWF[u]=()=>xwBuild(u); });
+Object.keys(XW).forEach(u=>{ const n=X28('xw','📚','Další slova z učebnice','More words from the textbook glossary',XW[u].slice(0,4).map(r=>r[0]).join(' · '),XWF[u]); (UEXTRA[u]=UEXTRA[u]||[]).push(n); });
+const L29W=Object.values(XWF);
+
+/*V29WEND*/
+/*V29T*/
+/* ============ v29: lesson tests in the style of the book's lesson tests (own questions) ============
+   Row: [question, right answer, wrong, wrong]. 14 are picked for each test, plus 6 word tasks from the lesson. */
+const TQ={
+L1:[['Dobrý den. Já jsem Jana Malá. – ___','Dobrý den. Já jsem Tom.','Ahoj! Já jsem Tom.','Čau! Já jsem Tom.'],['Těší mě. – ___','Mě taky.','Promiň.','Prosím.'],['Děkuju. – ___','Prosím.','Těší mě.','Ano.'],['Mějte se hezky. – ___','Vy taky.','Ty taky.','Těší mě.'],
+ ['Promiňte. – ___','To nic.','Vy taky.','Na zdraví.'],['Já ___ studentka.','jsem','jsi','jste'],['Ty ___ z Itálie?','jsi','jsem','jsou'],['Vy ___ doktor?','jste','jsi','jsme'],['Petr ___ učitel, je student.','není','nejsi','nejsem'],
+ ['Co ___? – Jsem manažerka.','děláte','dělám','dělají'],['My ___ česky.','rozumíme','rozumím','rozumějí'],['Eva ___ v bance.','pracuje','pracuju','pracujeme'],['Odkud jste? – ___','Z Ameriky.','Jsem doktorka.','Česky.'],
+ ['Jak se řekne česky „thank you“? – ___','Děkuju.','Prosím.','Ahoj.'],['S kamarádem si ___','tykáme','vykáme','děkujeme'],['Telefonní číslo: 7 = ___','sedm','šest','osm'],['Telefonní číslo: 9 = ___','devět','deset','dva'],
+ ['Co znamená „Nerozumím“?','I don’t understand.','I don’t know.','I am not here.'],['Mluvíte anglicky? – Ne, ___','jenom česky.','děkuju.','těší mě.'],['Čau, Petře! Jak se máš? – ___','Dobře, a ty?','Dobře, a vy?','Těší mě.'],
+ ['Pan Novák je ___ – pracuje v nemocnici.','lékař','učitel','prodavač'],['Jaký máte e-mail? – ___','jana@seznam.cz','Mám se dobře.','V Praze.']],
+L2:[['Promiňte, kde je tady banka? – ___','Tady vpravo.','Děkuju, dobře.','Je to banka.'],['Je to daleko? – Ne, ___','je to blízko.','je to drahé.','nerozumím.'],['Musíte jít ___ a pak doleva.','rovně','tady','blízko'],['Pošta je ___ (on the left).','vlevo','doleva','dolů'],
+ ['Jděte ___ (to the right).','doprava','vpravo','napravo'],['Výtah jede ___ do třetího patra.','nahoru','nahoře','dole'],['Kde je ___ restaurace?','nějaká','nějaký','nějaké'],['Kde je tady ___ hotel?','nějaký','nějaká','nějaké'],['Kde je tady ___ kino?','nějaké','nějaký','nějaká'],
+ ['To je ___ muzeum.','to','ten','ta'],['To je ___ nádraží.','to','ta','ten'],['To je ___ ulice.','ta','ten','to'],['Do centra musíte ___ tramvají.','jet','jít','být'],['Je to pět minut ___.','pěšky','autem','tramvají'],
+ ['Kde je tady záchod? – ___','Tam vzadu.','Je mi dobře.','Za pět minut.'],['Kolik je 20 + 30? – ___','padesát','čtyřicet','šedesát'],['Kolik je 100 + 200? – ___','tři sta','dvě stě','tisíc'],['To je sto ___ odsud.','metrů','metr','metry'],
+ ['Hledáte něco? – ___','Ano, hledám nádraží.','Ne, děkuju, mám se dobře.','Ano, těší mě.'],['Děkuju. – ___','Není zač.','Na shledanou, ano.','To je dobře.'],['Kde je metro? – Musíte jít ___ (back).','zpátky','rovně','nahoru']],
+L3:[['Co si dáte? – ___','Dám si kávu.','Mám kávu ráda.','Káva je tady.'],['Dám si ___ (polévka).','polévku','polévka','polévky'],['Dám si ___ (salát).','salát','saláta','salátu'],['Dám si ___ (pivo).','pivo','piva','pivu'],
+ ['Dám si ___ minerálku.','jednu','jeden','jedno'],['Dám si ___ vodu.','studenou','studená','studený'],['Mám rád ___ čaj.','zelený','zelená','zelenou'],['Nejím maso, jsem ___','vegetarián','číšník','kuchař'],['Platím. – ___','Hned to bude.','Dobrou chuť.','Na zdraví.'],
+ ['Kolik to stojí? – ___','Sto dvacet korun.','Dvě piva.','Ano, prosím.'],['Ten guláš je ___ dobrý.','moc','mnoho','velký'],['Já ___ kávu bez cukru.','piju','pije','pijou'],['My ___ noviny.','čteme','čtu','čtou'],['Co ___? – Jím knedlíky.','jíš','jím','jedí'],
+ ['Chutná vám to? – ___','Ano, moc.','Ano, prosím.','Ne, děkuju za pozvání.'],['Na zdraví! – ___','Na zdraví!','Dobrou chuť!','Prosím!'],['Dobrou chuť! – ___','Děkuju, i vám.','Na zdraví.','Těší mě.'],['Pojďte dál! – ___','Děkuju za pozvání.','Zaplatím, prosím.','Nerozumím.'],
+ ['Nechutnají mi ___','knedlíky','knedlík','knedlíku'],['Máte rád ryby? – Ne, ryby ___ rád.','nemám','nejsem','nechci'],['Co si dáte k pití? – ___','Pomerančový džus.','Smažený sýr.','Hranolky.']],
+L4:[['Kolik je ti let? – ___','Je mi dvacet osm.','Mám dvacet osm.','Jsem dvacet osm.'],['Mámě je padesát ___','let','roky','rok'],['Synovi jsou tři ___','roky','let','rok'],['To je můj ___ (bratr).','bratr','bratra','bratrem'],
+ ['Mám ___ (sestra).','sestru','sestra','sestry'],['Mám ___ (bratr).','bratra','bratr','bratrovi'],['To je ___ kamarádka.','moje','můj','moji'],['To je ___ auto.','naše','náš','naši'],['To je ___ syn?','váš','vaše','vaši'],
+ ['Matka mojí matky je moje ___','babička','teta','sestřenice'],['Bratr mého otce je můj ___','strýc','dědeček','bratranec'],['Petr není ženatý, je ___','svobodný','rozvedený','vdaná'],['Jana není vdaná, je ___','svobodná','ženatý','svobodný'],
+ ['Jak se jmenuje tvoje sestra? – ___','Jmenuje se Lucie.','Je jí dvacet.','Je hezká.'],['Jaký je tvůj bratr? – ___','Je sympatický.','Je mu deset let.','Jmenuje se Tom.'],['Ten pes je ___ (můj).','můj','moje','moji'],
+ ['Hledám ___ telefon.','nový','nová','nové'],['Hledám ___ tašku.','novou','nová','nový'],['Mobil stojí pět tisíc. Je tam ___ dvacet procent.','sleva','cena','datum'],['Čí je ten klíč? – ___','Můj.','Moje.','Moji.'],['Datum narození znamená ___','date of birth','age','birthday party']],
+L5:[['Kolik je hodin? – ___','Je osm hodin.','Mám osm hodin.','V osm hodin.'],['Kdy začíná film? – ___','V osm hodin.','Je osm hodin.','Osm hodin.'],['Je 14:30. – ___','čtrnáct třicet','čtyři třicet','dvě třicet'],['Sejdeme se ___ sobotu?','v','na','do'],
+ ['Půjdeme ___ kina?','do','na','v'],['Půjdeme ___ koncert?','na','do','v'],['Nemůžu, ___ čas.','nemám','nejsem','nechci'],['Mám čas ___ pondělí ___ středy.','od – do','do – od','v – na'],['Musím ___ do práce.','jít','jdu','jdeš'],
+ ['Chceš jít na kávu? – ___','Ano, rád.','Ano, prosím.','Ano, děkuju, nechci.'],['Můžeš v pátek? – ___','Bohužel nemůžu.','Bohužel nechci rád.','Ano, nemůžu.'],['Ráno ___ v šest.','vstávám','vstává','vstávají'],['Večer se ___ na televizi.','dívám','dívá','díváme se'],
+ ['My ___ jít do divadla.','chceme','chce','chtějí'],['Ty ___ plavat?','umíš','umí','umím'],['Petr ___ dneska pracovat.','musí','musím','musíš'],['Den po pondělí je ___','úterý','středa','neděle'],['Den před nedělí je ___','sobota','pátek','pondělí'],
+ ['Den po sobotě je ___','neděle','pátek','pondělí'],['Kdy máš narozeniny? – ___','V květnu.','Mám dvacet let.','Dneska večer.'],['Co děláš o víkendu? – ___','Odpočívám.','V sobotu.','Ve středu.']],
+L6:[['Včera jsem ___ v kině.','byla','jsem byla','budu'],['Kde jsi ___ o víkendu?','byl','bude','je'],['My jsme ___ v Praze.','byli','byl','byla'],['Petr ___ celý den doma.','byl','byla','byli'],
+ ['Co jsi ___ včera večer?','dělal','dělat','dělá'],['Včera jsem nic ___','nedělala','dělala','nedělám'],['Bydlím ___ Plzni.','v','na','u'],['Jsem ___ poště.','na','v','u'],['Byla jsem ___ doktora.','u','v','na'],
+ ['Byli jsme ___ koncertě.','na','v','do'],['Jsem ___ škole.','ve','v','na'],['Bydlím v ___ (Praha).','Praze','Praha','Prahu'],['Jsem v ___ (hotel).','hotelu','hotel','hotelem'],['Byl jsem na ___ (nádraží).','nádraží','nádražím','nádražu'],
+ ['Kde jsi byla? – ___','Na poště.','Na poštu.','Do pošty.'],['Kdy ses narodila? – ___','V roce 1996.','Je mi třicet.','Ve středu.'],['Narodil se v Brně a ___ v Praze.','umřel','umřela','umřít'],['Loni ___ v Itálii.','jsme byli','budeme','jsme'],
+ ['Jak bylo na dovolené? – ___','Bylo to krásné.','Je to krásné.','Bude to krásné.'],['Volala jsi mamince? – Ano, ___','volala.','volám.','budu.'],['Božena Němcová ___ česká spisovatelka.','byla','byl','bylo']],
+L7:[['RD v inzerátu znamená ___','rodinný dům','rodina a dům','rok a den'],['Byt, kde už je nábytek, je ___','zařízený','prázdný','levný'],['Nechceme byt koupit, chceme si ho ___','pronajmout','prodat','zaplatit'],['Postel je obvykle ___','v ložnici','v kuchyni','v předsíni'],
+ ['Boty a kabát necháme ___','v předsíni','v koupelně','na půdě'],['Věci, které nepotřebujeme, dáme ___','do sklepa','do ložnice','do kuchyně'],['Citron je ___','žlutý','modrý','fialový'],['Tráva je ___','zelená','hnědá','růžová'],['V obýváku jsou ___ křesla.','dvě','dva','jedna'],
+ ['V kuchyni máme ___ stoly.','dva','dvě','jedno'],['Kupujeme dvě ___','lampy','lampa','lampu'],['Chci dvě ___','křesla','křeslo','křesly'],['Máte volné ___? (more rooms)','pokoje','pokoj','pokoji'],['Je v ceně ___?','snídaně','sleva','podpis'],
+ ['Na jaře máme ___ – pokoj je levnější.','slevu','cenu','podpis'],['Čekám ___ kamarádku.','na','pro','do'],['Dívám se ___ film.','na','do','o'],['Měsíc srpen je ___','v létě','v zimě','na jaře'],['První měsíc v roce je ___','leden','prosinec','únor'],
+ ['Kolikátého je dneska? – ___','Pátého května.','Pět května.','Pátý květen.'],['Ten koberec se mi ___','líbí','líbím','líbíš'],['Musíte ___ formulář.','vyplnit','podpis','datum']],
+L8:[['Zítra ___ doma.','budu','jsem','byl'],['O víkendu ___ odpočívat.','budeme','jsme','byli'],['Večer ___ do kina.','půjdu','budu jít','jdu jsem'],['V létě ___ k moři.','pojedeme','budeme jet','jeli'],
+ ['V červnu ___ do Londýna.','poletím','budu letět','letěl'],['Zítra ___ lístky.','koupím','budu koupit','koupit'],['Dneska je pondělí, pozítří je ___','středa','úterý','čtvrtek'],['Jdu ___ kina.','do','na','k'],['Jdu ___ koncert.','na','do','k'],
+ ['Jdu ___ doktorovi.','k','do','na'],['Jedu ___ chatu.','na','do','k'],['Jedu ___ Prahy.','do','na','k'],['Po práci jdu ___','domů','doma','dům'],['Večer budu ___','doma','domů','dům'],['V sobotu jedeme ___ výlet.','na','do','k'],
+ ['Mám rád kávu, ale ___ piju čaj.','raději','rád','nejraději'],['Nechce se mi. znamená ___','I don’t feel like it.','I can’t.','I don’t know it.'],['Zítra ___ pracovat? – Ne, mám volno.','budeš','jsi','byl jsi'],['Pojedeš s námi? – ___','Ano, pojedu.','Ano, jedu včera.','Ano, budu jet.'],
+ ['Jdeme ___ procházku.','na','do','k'],['Jdu ___ kamarádce.','ke','do','na']],
+L9:[['Mám modré ___','oči','oka','oko'],['Mám studené ___','ruce','ruky','ruka'],['Bolí ___ hlava.','mě','mi','já'],['Je ___ špatně.','mi','mě','já'],['Petra bolí zub. Bolí ___ zub.','ho','mu','ji'],
+ ['Jana má svetr, protože je ___ zima.','jí','ji','ho'],['Co ___ bolí? (paní Nová)','vás','vám','vy'],['Včera mě ___ hlava.','bolela','bolel','bolelo'],['Po výletě mě ___ nohy.','bolely','bolel','bolela'],['Bolí tě zub, jdeš ___','k zubaři','k očnímu lékaři','na poštu'],
+ ['Doktor: Otevřete ___, prosím.','ústa','oči','dveře'],['Antibiotika jsou ___','na recept','bez receptu','zdarma'],['Potřebuju lék ___ kašel.','na','pro','za'],['Ten sirup je ___ děti.','pro','na','za'],['Přijďte na kontrolu ___ týden.','za','na','pro'],
+ ['Chtěla bych se ___ k doktorovi.','objednat','objednám','objednala'],['Bere se to třikrát ___','denně','dny','den'],['Má dlouhé ___ vlasy.','tmavé','tmavý','tmavá'],['Můj bratr je ___ – má dva metry.','vysoký','velký','dlouhý'],['Budete platit hotově, nebo ___?','kartou','karta','kartu'],
+ ['Kam zavoláte sanitku? – ___','155','158','150']],
+L10:[['Jdu ___ obchodu.','do','na','k'],['Bydlím blízko ___','školy','škola','školu'],['Lékárna je vedle ___','banky','banka','banku'],['Kávu bez ___, prosím.','cukru','cukr','cukrem'],['Jdu od ___','doktora','doktor','doktorovi'],
+ ['Děti jdou do ___','lesa','les','lesu'],['Jdu ___ práce domů.','z','od','do'],['Jdu ___ doktora.','od','z','do'],['Děti jdou ___ školy.','ze','z','od'],['Jsem ___ babičky.','u','k','od'],
+ ['Jedu ___ babičce.','k','u','od'],['Chleba koupím v ___','pekařství','řeznictví','drogerii'],['Maso koupím v ___','řeznictví','papírnictví','cukrárně'],['Noviny koupím v ___','trafice','pekařství','květinářství'],['Můžeš bydlet u ___','mě','já','mi'],
+ ['Lístky ještě ___ (not yet).','nemám','mám','měl jsem'],['Až přijedu, ___ ti.','zavolám','zavolala jsem','volal jsem'],['Jak se dostanu na nádraží? – ___','Jděte rovně a pak doleva.','Je to nádraží.','Dobře, děkuju.'],['Vystupte na třetí ___','zastávce','zastávka','zastávku'],
+ ['Rozbilo se nám auto. – ___','To je smůla.','Gratuluju!','To je náhoda.'],['Budu mít svatbu! – ___','Gratuluju!','To nevadí.','To je smůla.']],
+L11:[['Dneska večer ___ do divadla.','jdu','chodím','jezdím'],['Každé ráno ___ do práce pěšky.','chodím','jdu','jedu'],['V zimě často ___ na hory.','jezdíme','jedeme','jdeme'],['Teď ___ do Londýna.','letím','létám','chodím'],
+ ['Každý měsíc ___ do Bruselu.','létám','letím','jdu'],['Do práce jezdím ___','tramvají','tramvaj','tramvaje'],['Do Brna jedeme ___','vlakem','vlak','vlaku'],['Na ostrov jedeme ___','lodí','loď','lodě'],['Do školy jezdím ___ kole.','na','s','v'],
+ ['Chceš jet tam a zpátky. Koupíš jízdenku ___','zpáteční','jenom tam','místenku'],['Vlak nepřijel včas. Má ___','zpoždění','nástupiště','místenku'],['Chceš jít ven z nádraží. Hledáš ___','VÝCHOD','VCHOD','ODJEZD'],['Ztratila jsi tašku. Jdeš na ___','ZTRÁTY A NÁLEZY','ÚSCHOVNA ZAVAZADEL','PŘESTUP'],
+ ['Hosté ___ v sedm.','přijdou','odejdou','odjedou'],['Vlak už ___. Musím čekat na další.','odjel','přijel','přišel'],['Ujel ___ vlak.','mi','mě','já'],['Zaspala jsem. znamená ___','I overslept.','I fell asleep.','I am sleepy.'],
+ ['Je tady krásně, ___? (to a friend)','viď','viďte','proč'],['Loni jsme ___ na chatu každý víkend.','jezdili','jeli','šli'],['Jednou do Brna, prosím. – ___','Zpáteční, nebo jenom tam?','Dobrou chuť.','Na zdraví.'],['Z kterého ___ jede vlak?','nástupiště','nástupišti','nástupištěm']],
+L12:[['Štědrý den je ___','24. prosince','31. prosince','1. ledna'],['Na Vánoce se jí ___','kapr','beránek','čočka'],['Na Velikonoce se malují ___','vajíčka','stromečky','dárky'],['Na Silvestra se o půlnoci pije ___','šampaňské','polévka','čaj'],
+ ['Na Vánoce se ___ koledy.','zpívají','zpívá','zpívat'],['Na Vánoce se ___ kapr.','jí','jedí','jíst'],['Kamarádka má narozeniny. Řekneš: ___','Všechno nejlepší!','Upřímnou soustrast.','Na zdraví!'],['Kolegovi umřel otec. Řekneš: ___','Upřímnou soustrast.','Gratuluju!','Veselé Vánoce!'],
+ ['V sobotu mi ___ třicet let.','bude','budu','je'],['Zvu tě ___ oslavu.','na','do','k'],['Děkuju ___ pozvání.','za','na','pro'],['Bohužel nemůžu přijít, ___ služební cestu.','jedu na','jdu do','jsem na'],['Maminka ___ dort dvě hodiny.','pekla','upekla','upeče'],
+ ['Dort je hotový, maminka ho už ___','upekla','pekla','peče'],['Zítra ___ okna.','umyju','budu umýt','umýt'],['Celé odpoledne budu ___','uklízet','uklidit','uklidím'],['Před jídlem ___ myju ruce.','si','se','mi'],['Ráno ___ myju studenou vodou.','se','si','mi'],
+ ['Už jsi ___? (to a woman) – Ještě ne.','hotová','hotový','hotové'],['Jednou týdně ___ celý byt.','luxuju','vyluxuju','vyluxovat'],['Co se jí na Nový rok? – ___','Čočka.','Kapr.','Mazanec.']]};
+function testQs(uid,n){ return sample(TQ[uid]||[],n).map(r=>qq(r[0],[r[1],r[2],r[3]],{img:'📝',qen:'Choose the right answer.'})); }
+/* test questions carry their answer, so the result screen can show it and "Procvič chyby" can ask them again */
+const tqTask=r=>qq(r[0],[r[1],r[2],r[3]],{item:{id:'Q'+(++CIX),cz:r[0],img:'📝',en:'✔ '+r[1],tq:r},qen:'Choose the right answer.'});
+function startFinal(){ const q=[]; ['L1','L2','L3','L4','L5','L6','L7','L8','L9','L10','L11','L12'].forEach(u=>sample(TQ[u],3).forEach(r=>q.push(tqTask(r))));
+  sample(Object.values(TQ).flat().filter(r=>!q.some(e=>e.item.tq===r)),4).forEach(r=>q.push(tqTask(r)));
+  begin('final','🎓 Závěrečný test A1',shuffle(q),{miss:[]}); }
+const LEVELS=[['A1.1','L1','L6'],['A1.2','L7','L12']];
+function levelCard(){ const ids=UNITS.filter(u=>/^L\d+$/.test(u.id)).map(u=>u.id), done=u=>lpDone(u);
+  const rows=LEVELS.map(([lv,a,b])=>{ const L=ids.slice(ids.indexOf(a),ids.indexOf(b)+1), d=L.filter(done).length; return `<div class="lvrow"><b>${lv}</b><span class="lvbar"><i style="width:${Math.round(100*d/L.length)}%"></i></span><small>${d}/${L.length} lekcí</small></div>`; }).join('');
+  const f=P.final||{};
+  return `<div class="card lvcard"><div class="sect" style="margin:0 0 8px">Moje úroveň${EN(' · My level (book lessons 1–6 = A1.1, 7–12 = A1.2)','en sen')}</div>${rows}
+   <button class="cta alt" data-a="final" style="margin-top:10px">${bl('🎓','Závěrečný test A1')}<small>${f.best!=null?`Nejlépe ${f.best} %`:'40 otázek z lekcí 1–12'}</small></button></div>`; }
+
+/*V29TEND*/
+/*V29G*/
+/* ============ v29: Posilovna gramatiky — big example banks, every grammar point of lessons 1–12 ============
+   Every topic gets a bank of sentences built from word lists (hundreds per topic). One bank row gives six kinds of task:
+   choose the word, type it, find the mistake, listen, build the sentence from English, plus the topic's own tasks. */
+const gB=(cz,w,wr,en,why,img,base)=>({cz,w,wr:[...new Set(wr.filter(x=>x&&x!==w))].slice(0,2),en,why:why||['',''],img:img||'✏️',base});
+function bankRound(B,n){ return sample(B.filter(r=>r.wr.length===2),n).map((r,i)=>{ const k=i%6, nw=r.cz.split(' ').length;
+  if(k===1&&r.base&&!/\s/.test(r.w)) return gType(r.cz,r.w,r.base,r.img,r.en,r.why);
+  if(k===2&&!/\s/.test(r.w)) return gErr(r.cz,r.wr[0],r.w,r.en,r.why,r.img)||gGap(r.cz,r.w,r.wr,r.img,r.en,r.why);
+  if(k===4) return qa({say:r.cz,q:'Které slovo je ve větě?',qen:'Listen. Which word is in the sentence?',opts:[r.w,...r.wr],img:'👂',g7:1,tt:'Poslouchej',te:'Listen and choose.'});
+  if(k===5&&nw>=3&&nw<=7) return gTrans(r.en,'Řekni to česky',r.cz,[r.wr[0]],r.en,r.img);
+  return gGap(r.cz,r.w,r.wr,r.img,r.en,r.why); }).filter(Boolean); }
+const CAP=t=>t[0].toUpperCase()+t.slice(1);
+const AN=w=>(/^[aeiou]/i.test(w)?'an ':'a ')+w; const BARE=e=>e.replace(/^(a|an|the|my) /,''); const PROPER=n=>/^[A-ZÁ-Ž]/.test(n);
+/* persons: [Czech, index 0–5, gender, English, verb ending for English] */
+const PS=[['já',0,'m','I'],['já',0,'f','I'],['ty',1,'m','you'],['on',2,'m','he'],['ona',2,'f','she'],['my',3,'p','we'],['vy',4,'p','you'],['oni',5,'p','they']];
+const NAMES=[['Petr',2,'m','Petr'],['Jana',2,'f','Jana'],['Tom',2,'m','Tom'],['Eva',2,'f','Eva'],['Honza a Lucie',5,'p','Honza and Lucie']];
+const SUBJ29=[...PS,...NAMES];
+const pick3=(A,i)=>[A[i],...sample(A.filter((x,k)=>k!==i&&x!==A[i]),2)];
+
+/* ---- L1: být ---- */
+const BYT=['jsem','jsi','je','jsme','jste','jsou'], NEBYT=['nejsem','nejsi','není','nejsme','nejste','nejsou'];
+const BYTC=[['doma','at home','🏠'],['v práci','at work','💼'],['ve škole','at school','🏫'],['z Brna','from Brno','🏙️'],['z Ameriky','from America','🇺🇸'],['v Plzni','in Pilsen','🍺'],['tady','here','📍'],['na poště','at the post office','📮']];
+const BYTG=[['student','studentka','studenti','a student','students','🎓'],['unavený','unavená','unavení','tired','tired','😴'],['učitel','učitelka','učitelé','a teacher','teachers','👩‍🏫'],['nemocný','nemocná','nemocní','ill','ill','🤒'],['šťastný','šťastná','šťastní','happy','happy','😊'],['Čech','Češka','Češi','Czech','Czechs','🇨🇿']];
+const enBe=i=>['am','are','is','are','are','are'][i];
+function bankByt(neg){ const F=neg?NEBYT:BYT, B=[];
+  SUBJ29.forEach(([s,i,g,se])=>{ const sv=s==='já'||s==='ty'||s==='on'||s==='ona'||s==='my'||s==='vy'||s==='oni';
+    BYTC.forEach(([c,ce,img])=>{ B.push(gB(`${CAP(s)} ${F[i]} ${c}.`,F[i],pick3(F,i).slice(1).concat(neg?[BYT[i]]:[]),`${CAP(se)} ${neg?enBe(i)+' not':enBe(i)} ${ce}.`,[`${s} → ${F[i]}`,`${se} → ${F[i]}`],img,neg?'nebýt':'být')); });
+    BYTG.forEach(([m,f,p,e1,ep,img])=>{ const c=g==='p'?p:g==='f'?f:m; if(s==='vy'||s==='ty'&&g==='p') return;
+      B.push(gB(`${CAP(s)} ${F[i]} ${c}.`,F[i],pick3(F,i).slice(1),`${CAP(se)} ${neg?enBe(i)+' not':enBe(i)} ${g==='p'?ep:e1}.`,[`${s} → ${F[i]}`,`${se} → ${F[i]}`],img,neg?'nebýt':'být'));
+      if(!neg&&g!=='p') B.push(gB(`${CAP(s)} ${F[i]} ${c}.`,c,[g==='f'?m:f,p],`${CAP(se)} ${enBe(i)} ${e1}.`,[g==='f'?'žena → '+f:'muž → '+m,g==='f'?'a woman':'a man'],img,m)); }); });
+  return B; }
+
+/* ---- L1/L3: verbs in the present ---- */
+const VA=[['dělat','do','úkol','homework','📝'],['poslouchat','listen to','hudbu','music','🎧'],['čekat','wait for','na autobus','the bus','🚌'],['hledat','look for','klíč','the key','🔑'],['snídat','have breakfast','v sedm','at seven','🥐'],['obědvat','have lunch','v práci','at work','🍽️'],['vstávat','get up','brzy','early','⏰'],['odpočívat','rest','doma','at home','😌'],['znát','know','Prahu','Prague','🏰'],['zpívat','sing','písničku','a song','🎤']];
+const VI=[['mluvit','speak','česky','Czech','🗣️','mluv'],['bydlet','live','v Plzni','in Pilsen','🏠','bydl'],['vařit','cook','večeři','dinner','🍳','vař'],['platit','pay','kartou','by card','💳','plat'],['vidět','see','hrad','the castle','🏰','vid'],['rozumět','understand','česky','Czech','💡','rozum'],['myslet','think','na mámu','of mum','💭','mysl'],['večeřet','have dinner','doma','at home','🍲','večeř']];
+const VU=[['pracovat','work','v bance','in a bank','🏦'],['studovat','study','medicínu','medicine','🎓'],['telefonovat','phone','domů','home','📞'],['kupovat','buy','chleba','bread','🍞'],['potřebovat','need','pomoc','help','🆘'],['cestovat','travel','vlakem','by train','🚆'],['nakupovat','shop','v supermarketu','in the supermarket','🛒'],['plánovat','plan','výlet','a trip','🗺️']];
+const VE=[['číst',['čtu','čteš','čte','čteme','čtete','čtou'],'read','noviny','the newspaper','📰'],['pít',['piju','piješ','pije','pijeme','pijete','pijou'],'drink','kávu','coffee','☕'],['psát',['píšu','píšeš','píše','píšeme','píšete','píšou'],'write','e-mail','an e-mail','✉️'],['jíst',['jím','jíš','jí','jíme','jíte','jedí'],'eat','polévku','soup','🥣'],['mít',['mám','máš','má','máme','máte','mají'],'have','čas','time','⏳'],['jít',['jdu','jdeš','jde','jdeme','jdete','jdou'],'go','domů','home','🚶'],['jet',['jedu','jedeš','jede','jedeme','jedete','jedou'],'go (by car)','do Prahy','to Prague','🚗'],['spát',['spím','spíš','spí','spíme','spíte','spí'],'sleep','dlouho','long','😴']];
+const conjA=v=>{ const s=v.slice(0,-2); return [s+'ám',s+'áš',s+'á',s+'áme',s+'áte',s+'ají']; };
+const conjI=(v,st)=>{ const e=/ět$/.test(v)?'ějí':'í'; return [st+'ím',st+'íš',st+'í',st+'íme',st+'íte',v==='rozumět'?'rozumějí':v==='bydlet'?'bydlí':st+'í']; };
+const conjU=v=>{ const s=v.slice(0,-4); return [s+'uju',s+'uješ',s+'uje',s+'ujeme',s+'ujete',s+'ujou']; };
+const EN3={have:'has',go:'goes',do:'does',watch:'watches'}; const en3=(i,v)=>i===2?v.replace(/^(\S+)/,(m)=>EN3[m]||m+'s'):v;
+function verbRows(neg){ const B=[]; const all=[...VA.map(r=>[r,conjA(r[0])]),...VI.map(r=>[r,conjI(r[0],r[5])]),...VU.map(r=>[r,conjU(r[0])]),...VE.map(r=>[[r[0],r[2],r[3],r[4],r[5]],r[1]])];
+  all.forEach(([[inf,ve,obj,oe,img],F])=>{ PS.filter((p,k)=>k!==1).forEach(([s,i,g,se])=>{ const f=(neg?'ne':'')+F[i], W=F.map(x=>(neg?'ne':'')+x);
+    const en=`${CAP(se)} ${neg?(i===2?'does not':'do not')+' ':''}${neg?ve:en3(i,ve)} ${oe}.`.replace('I is','I am');
+    B.push(gB(`${CAP(s)} ${f} ${obj}.`,f,pick3(W,i).slice(1),en,neg?[`ne + ${F[i]} = ${f} (jedno slovo)`,'ne is written together with the verb']:[`${s} → ${F[i]}`,`${inf}: ${F.join(', ')}`],img,inf));
+    if(neg) B.push(gB(`${CAP(s)} ${f} ${obj}.`,f,[F[i],'ne '+F[i]],en,[`ne + ${F[i]} = ${f}`,'one word'],img,inf)); }); });
+  return B; }
+
+/* ---- L1: question words ---- */
+const QW29=[['Kde bydlíš? – V Plzni.','Kde','Where do you live? – In Pilsen.'],['Kdo je to? – To je Petr.','Kdo','Who is that? – That is Petr.'],['Co děláš? – Vařím.','Co','What are you doing? – I am cooking.'],['Kdy přijdeš? – V pět.','Kdy','When will you come? – At five.'],['Odkud jsi? – Z Brna.','Odkud','Where are you from? – From Brno.'],
+ ['Kam jdeš? – Do kina.','Kam','Where are you going? – To the cinema.'],['Jak se máš? – Dobře.','Jak','How are you? – Fine.'],['Proč nejdeš? – Protože nemám čas.','Proč','Why aren’t you going? – Because I have no time.'],['Kolik to stojí? – Sto korun.','Kolik','How much is it? – A hundred crowns.'],['Jaký je ten film? – Nudný.','Jaký','What is the film like? – Boring.'],
+ ['Jaká je ta kavárna? – Moderní.','Jaká','What is the café like? – Modern.'],['Čí je to auto? – Moje.','Čí','Whose car is it? – Mine.'],['Kde je pošta? – Tady vpravo.','Kde','Where is the post office? – Here on the right.'],['Kdo vaří? – Maminka.','Kdo','Who is cooking? – Mum.'],['Co si dáte? – Kávu.','Co','What will you have? – Coffee.'],['Kdy máš narozeniny? – V květnu.','Kdy','When is your birthday? – In May.'],
+ ['Kam pojedeš v létě? – K moři.','Kam','Where will you go in summer? – To the sea.'],['Odkud jede vlak? – Z Prahy.','Odkud','Where is the train coming from? – From Prague.'],['Jak se jmenuješ? – Jana.','Jak','What is your name? – Jana.'],['Kolik je ti let? – Třicet.','Kolik','How old are you? – Thirty.'],['Proč se směješ? – Protože je to legrační.','Proč','Why are you laughing? – Because it is funny.'],['Jaké je počasí? – Hezké.','Jaké','What is the weather like? – Nice.']];
+const QWL=['Kde','Kdo','Co','Kdy','Odkud','Kam','Jak','Proč','Kolik','Jaký','Jaká','Jaké','Čí'];
+const bankQ=()=>QW29.map(([cz,w,en])=>gB(cz,w,sample(QWL.filter(x=>x!==w),2),en,[`${w} → ${cz.split('–')[1].trim()}`,'the answer tells you the question word'],'❓'));
+
+/* ---- nouns with their forms: [nom, gender m/mi/f/n, acc, loc (with v/na/u), gen, en, pic] ---- */
+const NN29=[['obchod','mi','obchod','v obchodě','obchodu','shop','🏪'],['hotel','mi','hotel','v hotelu','hotelu','hotel','🏨'],['park','mi','park','v parku','parku','park','🌳'],['supermarket','mi','supermarket','v supermarketu','supermarketu','supermarket','🛒'],['les','mi','les','v lese','lesa','forest','🌲'],
+ ['kostel','mi','kostel','v kostele','kostela','church','⛪'],['koncert','mi','koncert','na koncertě','koncertu','concert','🎵'],['byt','mi','byt','v bytě','bytu','flat','🏢'],['dům','mi','dům','v domě','domu','house','🏠'],['stůl','mi','stůl','na stole','stolu','table','🪵'],
+ ['škola','f','školu','ve škole','školy','school','🏫'],['banka','f','banku','v bance','banky','bank','🏦'],['pošta','f','poštu','na poště','pošty','post office','📮'],['restaurace','f','restauraci','v restauraci','restaurace','restaurant','🍽️'],['kavárna','f','kavárnu','v kavárně','kavárny','café','☕'],
+ ['nemocnice','f','nemocnici','v nemocnici','nemocnice','hospital','🏥'],['knihovna','f','knihovnu','v knihovně','knihovny','library','📚'],['práce','f','práci','v práci','práce','work','💼'],['univerzita','f','univerzitu','na univerzitě','univerzity','university','🎓'],['zastávka','f','zastávku','na zastávce','zastávky','stop','🚏'],
+ ['Praha','f','Prahu','v Praze','Prahy','Prague','🏰'],['Plzeň','f','Plzeň','v Plzni','Plzně','Pilsen','🍺'],['kino','n','kino','v kině','kina','cinema','🎬'],['divadlo','n','divadlo','v divadle','divadla','theatre','🎭'],['muzeum','n','muzeum','v muzeu','muzea','museum','🏛️'],
+ ['nádraží','n','nádraží','na nádraží','nádraží','station','🚉'],['letiště','n','letiště','na letišti','letiště','airport','🛫'],['náměstí','n','náměstí','na náměstí','náměstí','square','⛲'],['Brno','n','Brno','v Brně','Brna','Brno','🏙️'],['centrum','n','centrum','v centru','centra','centre','📍']];
+const PEO29=[['doktor','m','doktora','u doktora','doktora','the doctor','👨‍⚕️','doktorovi'],['kamarád','m','kamaráda','u kamaráda','kamaráda','a friend','🧑','kamarádovi'],['bratr','m','bratra','u bratra','bratra','my brother','👦','bratrovi'],['zubař','m','zubaře','u zubaře','zubaře','the dentist','🦷','zubaři'],['dědeček','m','dědečka','u dědečka','dědečka','grandpa','👴','dědečkovi'],
+ ['babička','f','babičku','u babičky','babičky','grandma','👵','babičce'],['kamarádka','f','kamarádku','u kamarádky','kamarádky','a friend','👩','kamarádce'],['sestra','f','sestru','u sestry','sestry','my sister','👧','sestře'],['maminka','f','maminku','u maminky','maminky','mum','👩','mamince'],['teta','f','tetu','u tety','tety','my aunt','👩‍🦰','tetě']];
+const DEM29={m:'ten',mi:'ten',f:'ta',n:'to'}, NEJ={m:'nějaký',mi:'nějaký',f:'nějaká',n:'nějaké'};
+function bankRod(){ const B=[]; [...NN29,...PEO29].forEach(([n,g,,,,en,img])=>{ const d=DEM29[g], j=NEJ[g], e=BARE(en), pr=PROPER(n), ppl=PEO29.some(x=>x[0]===n);
+  if(!pr) B.push(gB(`To je ${d} ${n}.`,d,['ten','ta','to'],`That is the ${e}.`,[`${n} → ${d}`,g==='f'?'feminine':g==='n'?'neuter':'masculine'],img));
+  if(!pr&&!ppl) B.push(gB(`Kde je tady ${j} ${n}?`,j,['nějaký','nějaká','nějaké'],`Is there ${AN(e)} here?`,[`${d} ${n} → ${j}`,'nějaký / nějaká / nějaké'],img)); }); return B; }
+
+/* ---- adjectives (nominative and 4th case) ---- */
+const AD29=[['nový','new'],['starý','old'],['velký','big'],['malý','small'],['hezký','nice'],['drahý','expensive'],['levný','cheap'],['moderní','modern'],['zajímavý','interesting'],['krásný','beautiful']];
+const adjF=(a,g)=>/í$/.test(a)?a:a.slice(0,-1)+({m:'ý',mi:'ý',f:'á',n:'é'}[g]);
+const adjA=(a,g)=>/í$/.test(a)?a:a.slice(0,-1)+({m:'ého',mi:'ý',f:'ou',n:'é'}[g]);
+function bankPrid(){ const B=[]; NN29.filter(x=>!/^[A-ZÁ-Ž]/.test(x[0])).forEach(([n,g,,,,en,img])=>{ sample(AD29,4).forEach(([a,ae])=>{ const f=adjF(a,g); if(/í$/.test(a)) return;
+  B.push(gB(`To je ${f} ${n}.`,f,[adjF(a,'mi'),adjF(a,'f'),adjF(a,'n')],`That is ${AN(ae)} ${en}.`,[`${DEM29[g]} ${n} → ${f}`,g==='f'?'feminine → -á':g==='n'?'neuter → -é':'masculine → -ý'],img,a)); }); }); return B; }
+const FOOD=[['čaj','mi','čaj','tea','🍵',['velký','malý','zelený','černý','teplý']],['salát','mi','salát','salad','🥗',['velký','malý','zeleninový','čerstvý']],['guláš','mi','guláš','goulash','🍲',['dobrý','velký','malý']],['dort','mi','dort','cake','🍰',['čokoládový','malý','velký']],['sýr','mi','sýr','cheese','🧀',['smažený','čerstvý']],
+ ['káva','f','kávu','coffee','☕',['velký','malý','černý','dobrý']],['polévka','f','polévku','soup','🥣',['teplý','dobrý','zeleninový']],['voda','f','vodu','water','💧',['studený','perlivý']],['limonáda','f','limonádu','lemonade','🍋',['studený','malý','velký']],['zmrzlina','f','zmrzlinu','ice cream','🍨',['čokoládový','vanilkový','jahodový']],
+ ['pivo','n','pivo','beer','🍺',['velký','malý','studený','světlý','tmavý']],['víno','n','víno','wine','🍷',['červený','bílý']],['mléko','n','mléko','milk','🥛',['teplý','studený']]];
+const ADJEN={velký:'big',malý:'small',zelený:'green',černý:'black',teplý:'warm',zeleninový:'vegetable',čerstvý:'fresh',dobrý:'good',čokoládový:'chocolate',smažený:'fried',studený:'cold',perlivý:'sparkling',vanilkový:'vanilla',jahodový:'strawberry',světlý:'light',tmavý:'dark',červený:'red',bílý:'white'};
+function bankAkuz(){ const B=[]; FOOD.forEach(([n,g,acc,en,img,AA])=>{ AA.forEach(a=>{ const fa=adjA(a,g), st=a.slice(0,-1), forms=[st+'ý',st+'á',st+'ou',st+'é'].filter(x=>x!==fa);
+   B.push(gB(`Dám si ${fa} ${acc}.`,acc,[n,g==='f'?n.slice(0,-1)+'y':g==='n'?n.slice(0,-1)+'a':n+'u'],`I’ll have ${/water|milk/.test(en)?ADJEN[a]:AN(ADJEN[a])} ${en}.`,[`co? ${n} → ${acc}`,g==='f'?'-a → -u':'no change'],img,n));
+   B.push(gB(`Dám si ${fa} ${acc}.`,fa,sample(forms,2),`I’ll have ${/water|milk/.test(en)?ADJEN[a]:AN(ADJEN[a])} ${en}.`,[`${acc} → ${fa}`,g==='f'?'feminine: -ou':g==='n'?'neuter: -é':'masculine (thing): -ý'],img,a)); }); });
+  PEO29.forEach(([n,g,acc,,,en,img])=>{ ['Mám','Hledám','Vidím','Čekám na'].forEach((v,k)=>{ if(v==='Mám'&&/doktor|zubař/.test(n)) return; const ve=['I have','I am looking for','I see','I am waiting for'][k];
+   B.push(gB(`${v} ${acc}.`,acc,[n,g==='f'?n.slice(0,-1)+'y':n+'ovi'],`${ve} ${en}.`,[`koho? ${n} → ${acc}`,g==='f'?'-a → -u':'man: + a'],img,n)); }); });
+  return B; }
+
+/* ---- L4: possessives ---- */
+const POS29=[['můj','moje','moje','my'],['tvůj','tvoje','tvoje','your'],['náš','naše','naše','our'],['váš','vaše','vaše','your']];
+function bankPos(){ const B=[]; [...NN29.filter(x=>!/^[A-ZÁ-Ž]/.test(x[0])),...PEO29].forEach(([n,g,,,,en,img])=>{ POS29.forEach(([m,f,nn,pe])=>{ const w=g==='f'?f:g==='n'?nn:m;
+   B.push(gB(`To je ${w} ${n}.`,w,g==='m'||g==='mi'?[f,(m==='můj'?'moji':m==='tvůj'?'tvoji':m==='náš'?'naši':'vaši')]:[m,(m==='můj'?'mou':m==='tvůj'?'tvou':m==='náš'?'naši':'vaši')],`That is ${pe} ${en.replace(/^(a|the|my) /,'')}.`,[`${DEM29[g]} ${n} → ${w}`,g==='f'||g==='n'?'feminine and neuter: moje, tvoje, naše, vaše':'masculine: můj, tvůj, náš, váš'],img,m)); }); }); return B; }
+
+/* ---- L5: modal verbs ---- */
+const MOD29=[['chtít',['chci','chceš','chce','chceme','chcete','chtějí'],'want to'],['moct',['můžu','můžeš','může','můžeme','můžete','můžou'],'can'],['muset',['musím','musíš','musí','musíme','musíte','musí'],'must'],['umět',['umím','umíš','umí','umíme','umíte','umějí'],'can (know how to)']];
+const MODP=[['jít do kina','go to the cinema','🎬','cmh'],['vařit večeři','cook dinner','🍳','cmhu'],['plavat','swim','🏊','cmu'],['mluvit česky','speak Czech','🗣️','cmhu'],['hrát tenis','play tennis','🎾','cmu'],['pracovat v sobotu','work on Saturday','💼','cmh'],['řídit auto','drive a car','🚗','cmu'],['zítra vstávat brzy','get up early tomorrow','⏰','h'],['zavolat domů','call home','📞','cmh'],['jít spát','go to bed','😴','cmh']];
+function bankModal(){ const B=[]; MOD29.forEach(([inf,F,me],mi)=>{ const code='hcmu'[mi]; PS.filter((p,k)=>k!==1).forEach(([s,i,g,se])=>{ sample(MODP.filter(x=>x[3].includes(code)),4).forEach(([ph,pe,img])=>{
+   B.push(gB(`${CAP(s)} ${F[i]} ${ph}.`,F[i],pick3(F,i).slice(1),`${CAP(se)} ${me} ${pe}.`,[`${s} → ${F[i]}`,`${inf}: ${F.join(', ')}`],img,inf)); }); }); }); return B; }
+const DAYS29=[['v pondělí','v','on Monday'],['v úterý','v','on Tuesday'],['ve středu','ve','on Wednesday'],['ve čtvrtek','ve','on Thursday'],['v pátek','v','on Friday'],['v sobotu','v','on Saturday'],['v neděli','v','on Sunday']];
+const HRS29=[['v jednu','v','at one'],['ve dvě','ve','at two'],['ve tři','ve','at three'],['ve čtyři','ve','at four'],['v pět','v','at five'],['v šest','v','at six'],['v sedm','v','at seven'],['v osm','v','at eight'],['v devět','v','at nine'],['v deset','v','at ten']];
+const KDYS=[['Sejdeme se','We’ll meet','🤝'],['Film začíná','The film starts','🎬'],['Přijdu','I’ll come','🚶'],['Mám lekci','I have a lesson','📚'],['Vlak jede','The train leaves','🚆']];
+function bankKdy(){ const B=[]; KDYS.forEach(([a,ae,img])=>{ [...DAYS29,...HRS29].forEach(([t,p,te])=>{ const rest=t.slice(p.length+1);
+   B.push(gB(`${a} ${t}.`,p,[p==='v'?'ve':'v','na'],`${ae} ${te}.`,[p==='ve'?`ve + ${rest} (two consonants at the start)`:`v + ${rest}`,'v / ve + time'],img)); }); });
+  [['Mám čas od pondělí do středy.','od','I have time from Monday to Wednesday.'],['Pracuju od devíti do pěti.','od','I work from nine to five.'],['Obchod je otevřený od osmi do šesti.','do','The shop is open from eight to six.'],['Jsem tady od pátku do neděle.','do','I am here from Friday to Sunday.']].forEach(([cz,w,en])=>B.push(gB(cz,w,[w==='od'?'do':'od','v'],en,['od … do …','from … to …'],'🕘')));
+  return B; }
+
+/* ---- L6: past tense ---- */
+const PAST29=[['dělat','dělal','did','úkol','homework','📝'],['vařit','vařil','cooked','guláš','goulash','🍲'],['pracovat','pracoval','worked','v bance','in a bank','🏦'],['číst','četl','read','knihu','a book','📖'],['pít','pil','drank','kávu','coffee','☕'],['jíst','jedl','ate','polévku','soup','🥣'],['psát','psal','wrote','e-mail','an e-mail','✉️'],['jít','šel','went','do kina','to the cinema','🎬'],['jet','jel','went','do Prahy','to Prague','🚗'],['být','byl','was','doma','at home','🏠'],['mít','měl','had','volno','time off','🏖️'],['vidět','viděl','saw','film','a film','🎞️'],['spát','spal','slept','dlouho','long','😴'],['hrát','hrál','played','tenis','tennis','🎾'],['nakupovat','nakupoval','shopped','v Plzni','in Pilsen','🛒']];
+const AUX=['jsem','jsi','','jsme','jste',''];
+const pastF=(l,g,i)=>{ const f=l==='šel'?{m:'šel',f:'šla',p:'šli'}:{m:l,f:l+'a',p:l+'i'}; if(l==='šel') return f[g]; return g==='p'?(i===5||i===4||i===3?f.p:f.p):f[g]; };
+function bankMinul(){ const B=[]; PAST29.forEach(([inf,l,pe,obj,oe,img])=>{ PS.forEach(([s,i,g,se])=>{ const G=g==='p'?'p':g, f=pastF(l,G,i), all=[pastF(l,'m',0),pastF(l,'f',0),pastF(l,'p',3)];
+   const cz=i===2||i===5?`${CAP(s)} ${f} ${obj}.`:`Včera ${AUX[i]} ${f} ${obj}.`, en=`${i===2||i===5?CAP(se):'Yesterday '+se} ${pe} ${oe}.`;
+   B.push(gB(cz,f,all,en,[`${s}${g==='f'?' (žena)':g==='m'&&i===0?' (muž)':''} → ${f}`,g==='f'?'woman: -la':g==='p'?'plural: -li':'man: -l'],img,inf));
+   if(AUX[i]) B.push(gB(cz,AUX[i],AUX.filter(x=>x&&x!==AUX[i]),en,[`${s} → ${AUX[i]} ${f}`,'já jsem, ty jsi, my jsme, vy jste (on/ona/oni: no jsem)'],img)); }); }); return B; }
+function bankLok(){ const B=[]; const T=[['Jsem','I am'],['Byla jsem','I was'],['Čekám','I am waiting']];
+  [...NN29,...PEO29].forEach(([n,g,acc,loc,gen,en,img])=>{ const [p,...rest]=loc.split(' '), f=rest.join(' '); T.forEach(([a,ae])=>{ if(a==='Pracuju'&&PEO29.some(x=>x[0]===n)) return;
+   const le=p==='u'?'at '+en+'’s':PROPER(n)?'in '+en:(p==='na'?'at the ':'in the ')+en;
+   B.push(gB(`${a} ${loc}.`,p,['v','ve','na','u'].filter(x=>x!==p),`${ae} ${le}.`,[`${n} → ${loc}`,p==='na'?'na-place: na poště, na nádraží…':p==='u'?'a person → u':'v / ve + building, town'],img));
+   B.push(gB(`${a} ${loc}.`,f.split(' ').pop(),[...new Set([n,acc,gen,...(PEO29.find(x=>x[0]===n)||[]).slice(7)])].filter(x=>x!==f),`${ae} ${le}.`,[`kde? ${n} → ${f}`,'where? → 6th case (or u + 2nd case)'],img,n)); }); });
+  return B; }
+
+/* ---- L7: plural; čekat na… ---- */
+const PL29=[['byt','byty','m','byta','flats'],['stůl','stoly','m','stůly','tables'],['obraz','obrazy','m','obraza','pictures'],['pokoj','pokoje','m','pokojy','rooms'],['koberec','koberce','m','koberecy','carpets'],['dům','domy','m','důmy','houses'],['počítač','počítače','m','počítačy','computers'],
+ ['lampa','lampy','f','lampe','lamps'],['koupelna','koupelny','f','koupelne','bathrooms'],['židle','židle','f','židly','chairs'],['skříň','skříně','f','skříny','wardrobes'],['garáž','garáže','f','garážy','garages'],['postel','postele','f','postely','beds'],['křeslo','křesla','n','křesly','armchairs'],['okno','okna','n','okny','windows'],['auto','auta','n','auty','cars'],['kolo','kola','n','koly','bikes']];
+function bankMnoz(){ const B=[]; PL29.forEach(([s,p,g,x,pe])=>{ [2,3,4].forEach(k=>{ const num=k===2?(g==='m'?'dva':'dvě'):k===3?'tři':'čtyři';
+   B.push(gB(`Máme ${num} ${p}.`,p,[s,x],`We have ${['','','two','three','four'][k]} ${pe}.`,[`${s} → ${p}`,'the plural'],'✌️',s));
+   if(k===2) B.push(gB(`Máme ${num} ${p}.`,num,[num==='dva'?'dvě':'dva','dvou'],`We have two ${pe}.`,[g==='m'?'ten → dva':'ta, to → dvě','dva / dvě'],'✌️')); });
+   [['nové','new'],['staré','old'],['velké','big']].forEach(([a,ae])=>{ const f=g==='n'?a.slice(0,-1)+'á':a; B.push(gB(`Kupujeme ${f} ${p}.`,f,[a.slice(0,-1)+'ý',g==='n'?a:a.slice(0,-1)+'á'],`We are buying ${ae} ${pe}.`,[g==='n'?'to → -á':'ten, ta → -é','adjectives in the plural'],'🛒')); }); }); return B; }
+const NA29=[['čekat na',['čekám','čekáš','čeká'],'','wait for','waits for',[['autobus','autobus','the bus','🚌'],['vlak','vlak','the train','🚆'],['babička','babičku','grandma','👵'],['kamarádka','kamarádku','a friend','👩'],['bratr','bratra','my brother','👦'],['doktor','doktora','the doctor','👨‍⚕️']]],
+ ['dívat se na',['dívám','díváš','dívá'],'se','look at / watch','looks at / watches',[['film','film','a film','🎬'],['televize','televizi','TV','📺'],['fotka','fotku','a photo','🖼️'],['mapa','mapu','the map','🗺️'],['fotbal','fotbal','football','⚽']]],
+ ['myslet na',['myslím','myslíš','myslí'],'','think of','thinks of',[['maminka','maminku','mum','👩'],['kamarád','kamaráda','a friend','🧑'],['dovolená','dovolenou','the holiday','🏖️'],['práce','práci','work','💼'],['sestra','sestru','my sister','👧']]],
+ ['těšit se na',['těším','těšíš','těší'],'se','look forward to','looks forward to',[['víkend','víkend','the weekend','🎉'],['dovolená','dovolenou','the holiday','🏖️'],['Vánoce','Vánoce','Christmas','🎄'],['babička','babičku','grandma','👵'],['léto','léto','the summer','☀️']]]];
+function bankNa(){ const B=[]; NA29.forEach(([inf,F,se,ve,ve3,O])=>{ O.forEach(([n,acc,en,img])=>{ [0,1,2].forEach(i=>{ const s=['Já','Ty','Petr'][i], v=se?`${s} ${se} ${F[i]}`:`${s} ${F[i]}`, e=`${['I','You','Petr'][i]} ${i===2?ve3:ve} ${en}.`;
+   B.push(gB(`${v} na ${acc}.`,'na',['do','o'],e,[`${inf} + 4. pád`,`${ve} = ${inf}`],img));
+   if(acc!==n) B.push(gB(`${v} na ${acc}.`,acc,[n,/a$/.test(n)?n.slice(0,-1)+'y':n+'ovi'],e,[`na + 4. pád: ${n} → ${acc}`,'na + accusative'],img,n)); }); }); }); return B; }
+
+/* ---- L8: future ---- */
+const BUD=['budu','budeš','bude','budeme','budete','budou'], PUJ=['půjdu','půjdeš','půjde','půjdeme','půjdete','půjdou'], POJ=['pojedu','pojedeš','pojede','pojedeme','pojedete','pojedou'];
+const FUTI=[['vařit','cook','🍳'],['pracovat','work','💼'],['uklízet','clean','🧹'],['číst','read','📖'],['odpočívat','rest','😌'],['studovat','study','🎓'],['spát','sleep','😴'],['nakupovat','shop','🛒']];
+function bankBud(){ const B=[]; PS.filter((p,k)=>k!==1).forEach(([s,i,g,se])=>{ FUTI.forEach(([v,ve,img])=>{
+   B.push(gB(`${CAP(s)} zítra ${BUD[i]} ${v}.`,BUD[i],pick3(BUD,i).slice(1),`${CAP(se)} will ${ve} tomorrow.`,[`${s} → ${BUD[i]} + ${v}`,'budu + infinitive'],img,'být')); });
+   [['do kina','to the cinema','🎬'],['na koncert','to a concert','🎵'],['k doktorovi','to the doctor','👨‍⚕️']].forEach(([d,de,img])=>B.push(gB(`${CAP(s)} večer ${PUJ[i]} ${d}.`,PUJ[i],[BUD[i],pick3(PUJ,i)[1]],`${CAP(se)} will go ${de} tonight.`,['jít → půjdu (ne „budu jít“)','jít has its own future'],img,'jít')));
+   [['do Prahy','to Prague','🏰'],['na výlet','on a trip','🥾'],['k moři','to the sea','🌊']].forEach(([d,de,img])=>B.push(gB(`${CAP(s)} v sobotu ${POJ[i]} ${d}.`,POJ[i],[BUD[i],pick3(POJ,i)[1]],`${CAP(se)} will go ${de} on Saturday.`,['jet → pojedu (ne „budu jet“)','jet has its own future'],img,'jet'))); }); return B; }
+function bankKam(){ const B=[]; NN29.filter(x=>!/^(stůl|byt|dům)$/.test(x[0])).forEach(([n,g,acc,loc,gen,en,img])=>{ const na=loc.startsWith('na '), w=na?'na':'do', f=na?acc:gen;
+   ['Jdu','Pojedeme','Půjdeš'].forEach((v,k)=>B.push(gB(`${v} ${w} ${f}?`.replace(/\?$/,k===2?'?':'.'),w,[na?'do':'na','k'],`${['I am going','We will go','Will you go'][k]} to the ${en}${k===2?'?':'.'}`,[na?`${n}: na-slovo → na`:`${n} → do`,na?'na + 4th case':'do + 2nd case'],img))); });
+  PEO29.forEach(([n,g,acc,loc,gen,en,img,dat])=>{ const k=/^[kgh]/.test(dat)?'ke':'k'; ['Jdu','Jedeme'].forEach(v=>B.push(gB(`${v} ${k} ${dat}.`,k,['do','na'],`${v==='Jdu'?'I am going':'We are going'} to ${en}.`,['člověk → k / ke','to a person → k'],img)));
+   B.push(gB(`Jdu ${k} ${dat}.`,dat,[n,acc],`I am going to ${en}.`,[`k + 3. pád: ${n} → ${dat}`,'k + dative'],img,n)); });
+  [['Po práci jdu domů.','domů','After work I go home.'],['Večer budu doma.','doma','In the evening I’ll be at home.'],['Náš dům je starý.','dům','Our house is old.'],['Jdeš už domů?','domů','Are you going home already?'],['Celý den jsem byla doma.','doma','I was at home all day.']].forEach(([cz,w,en])=>B.push(gB(cz,w,['dům','domů','doma'],en,['kam? domů · kde? doma · co? dům','where to / where / what'],'🏠')));
+  return B; }
+const RAD29=[['Rád čtu, ale raději se dívám na filmy.','raději','I like reading, but I prefer watching films.'],['Ráda plavu, ale nejraději běhám.','nejraději','I like swimming, but best of all I like running.'],['Mám rád pivo, ale víno mám raději.','raději','I like beer, but I prefer wine.'],['Ze všech jídel mám nejraději svíčkovou.','nejraději','Of all foods I like svíčková best.'],['Rádi cestujeme, nejraději vlakem.','nejraději','We like travelling, best of all by train.'],['Čaj nepiju rád, raději piju kávu.','raději','I don’t like tea, I prefer coffee.'],
+ ['Petr rád vaří.','rád','Petr likes cooking.'],['Jana ráda vaří.','ráda','Jana likes cooking.'],['My rádi tancujeme.','rádi','We like dancing.'],['Kamarádky rády nakupují.','rády','The friends (women) like shopping.'],['Tomáš má rád hory.','rád','Tomáš likes the mountains.'],['Eva má ráda moře.','ráda','Eva likes the sea.'],['Děti mají rády zmrzlinu.','rády','Children like ice cream.'],['Rodiče mají rádi klid.','rádi','My parents like peace and quiet.']];
+const bankRad=()=>RAD29.map(([cz,w,en])=>gB(cz,w,sample(['rád','ráda','rádi','rády','raději','nejraději'].filter(x=>x!==w),2),en,[/raději/.test(w)?'rád → raději (víc) → nejraději (nejvíc)':'muž rád · žena ráda · oni rádi · ony rády','like → prefer → like best'],'❤️'));
+
+/* ---- L9: body plurals, pro/za/na ---- */
+const BOD29=[['Mám modré oči.','oči','I have blue eyes.','oko','oka'],['Mám malé uši.','uši','I have small ears.','ucho','ucha'],['V zimě mám studené ruce.','ruce','In winter I have cold hands.','ruka','ruky'],['Bolí mě nohy.','nohy','My legs hurt.','noha','nohe'],['Otevřete ústa.','ústa','Open your mouth.','ústo','ústy'],['Bolí mě záda.','záda','My back hurts.','zádo','zády'],['Mám dvě děti.','děti','I have two children.','dítě','dítěte'],['Na ulici je hodně lidí.','lidí','There are a lot of people in the street.','člověk','lidé'],['Dítě má modré oči.','oči','The child has blue eyes.','oko','oka'],['Umyj si ruce!','ruce','Wash your hands!','ruka','ruky'],['Bolí mě obě kolena.','kolena','Both my knees hurt.','koleno','kolený'],['Mám dlouhé prsty.','prsty','I have long fingers.','prst','prstě']];
+const bankBod=()=>BOD29.map(([cz,w,en,s,x])=>gB(cz,w,[s,x],en,[`${s} → ${w}`,'special plural'],'🧍',s));
+const PZN29=[['Potřebuju lék na kašel.','na','I need medicine for a cough.'],['Ten sirup je pro děti.','pro','This syrup is for children.'],['Přijďte na kontrolu za týden.','za','Come for a check-up in a week.'],['Jedu do nemocnice na tři dny.','na','I am going to hospital for three days.'],['Mám dárek pro maminku.','pro','I have a present for mum.'],['Vlak jede za deset minut.','za','The train leaves in ten minutes.'],['Jedeme na hory na týden.','na','We are going to the mountains for a week.'],['Kupuju kapky na rýmu.','na','I am buying drops for a cold.'],['To je pokoj pro dva.','pro','That is a room for two.'],['Zavolám ti za hodinu.','za','I’ll call you in an hour.'],['Máte něco na bolest hlavy?','na','Do you have something for a headache?'],['Přijdu za chvíli.','za','I’ll come in a moment.'],['Ta kniha je pro tebe.','pro','That book is for you.'],['Půjčíš mi auto na víkend?','na','Will you lend me the car for the weekend?']];
+const bankPzn=()=>PZN29.map(([cz,w,en])=>gB(cz,w,['pro','za','na'].filter(x=>x!==w),en,[w==='pro'?'pro + člověk (for whom)':w==='za'?'za + čas = after (in a week)':'na + nemoc / na jak dlouho','pro · za · na'],'💊'));
+function bankZajm(){ const B=[]; const T=[['já','mě','mi','I'],['ty','tě','ti','you'],['on','ho','mu','he'],['ona','ji','jí','she'],['my','nás','nám','we'],['vy','vás','vám','you'],['oni','je','jim','they']];
+  const BOL=[['hlava','head','🤕'],['zub','tooth','🦷'],['břicho','stomach','🤢'],['v krku','throat','🧣'],['noha','leg','🦵'],['záda','back','🧍']], JE=[['zima','cold','🥶'],['teplo','warm','🥵'],['špatně','ill','🤒'],['dobře','fine','🙂']];
+  T.forEach(([s,a,d,se])=>{ BOL.forEach(([b,be,img])=>B.push(gB(`Bolí ${a} ${b}.`,a,[d,s],`${CAP(se)} ${s==='já'||s==='ty'||s==='my'||s==='vy'||s==='oni'?'have':'has'} a pain in the ${be}.`,[`${s} → bolí ${a}`,'who hurts? 4th case: mě, tě, ho, ji, nás, vás, je'],img)));
+   JE.forEach(([j,je,img])=>B.push(gB(`Je ${d} ${j}.`,d,[a,s],`${CAP(se)} ${s==='já'?'am':s==='on'||s==='ona'?'is':'are'} ${je}.`,[`${s} → je ${d}`,'how do I feel? 3rd case: mi, ti, mu, jí, nám, vám, jim'],img))); });
+  [['Včera mě bolel zub.','bolel',['bolela','bolelo']],['V noci mě bolela hlava.','bolela',['bolel','bolely']],['Po obědě mě bolelo břicho.','bolelo',['bolel','bolela']],['Po výletě mě bolely nohy.','bolely',['bolel','bolela']]].forEach(([cz,w,wr])=>B.push(gB(cz,w,wr,'Yesterday / in the night something hurt.',['ten zub bolel · ta hlava bolela · to břicho bolelo · ty nohy bolely','the verb follows the body part'],'🤕')));
+  return B; }
+
+/* ---- L10: genitive, odkud, už/ještě/až ---- */
+function bankGen(){ const B=[]; const P=[['do','I am going to','Jdu do'],['z','I am coming from','Jdu z'],['blízko','I live near','Bydlím blízko'],['vedle','I am standing next to','Stojím vedle'],['kousek od','I live a little way from','Bydlím kousek od']];
+  NN29.filter(x=>!/^(stůl)$/.test(x[0])&&!x[3].startsWith('na ')).forEach(([n,g,acc,loc,gen,en,img])=>{ sample(P,3).forEach(([p,pe,a])=>{ const pp=p==='z'&&/^[szšž]/i.test(gen)?'ze':p;
+   B.push(gB(`${a.replace(/ (do|z|blízko|vedle|kousek od)$/,'')} ${pp} ${gen}.`,gen,[...new Set([n,acc,loc.split(' ').pop()])].filter(x=>x!==gen),`${pe} ${PROPER(n)?en:'the '+en}.`,[`${pp} + 2. pád: ${n} → ${gen}`,g==='f'?'-a → -y, -e stays':g==='n'?'-o → -a':'-u (things) / -a (people, les, kostel)'],img,n)); }); });
+  PEO29.forEach(([n,g,acc,loc,gen,en,img])=>{ B.push(gB(`Jdu od ${gen}.`,gen,[n,acc===gen?n+'ovi':acc],`I am coming from ${en}.`,[`od + 2. pád: ${n} → ${gen}`,'from a person: od'],img,n)); });
+  [['cukr','cukru','sugar'],['mléko','mléka','milk'],['citron','citronu','lemon'],['led','ledu','ice']].forEach(([n,g,ge])=>B.push(gB(`Čaj bez ${g}, prosím.`,g,[n,n==='mléko'?'mlékem':n+'em'],`Tea without ${ge}, please.`,[`bez + 2. pád: ${n} → ${g}`,'without = bez + 2nd case'],'🍵',n)));
+  return B; }
+function bankOdkud(){ const B=[]; NN29.filter(x=>!/^(stůl)$/.test(x[0])).forEach(([n,g,acc,loc,gen,en,img])=>{ const na=loc.startsWith('na '), z=/^[szšž]/i.test(gen)?'ze':'z';
+   B.push(gB(`Jdu ${z} ${gen}.`,z,[z==='ze'?'z':'ze','od'],`I am coming from the ${en}.`,[na?`na ${acc} → ${z} ${gen}`:`do ${gen} → ${z} ${gen}`,'do / na → z'],img)); });
+  PEO29.forEach(([n,g,acc,loc,gen,en,img,dat])=>{ B.push(gB(`Jdu od ${gen}.`,'od',['z','k'],`I am coming from ${en}.`,[`k ${dat} → od ${gen}`,'k → od'],img)); B.push(gB(`Jsem ${loc}.`,'u',['k','od'],`I am at ${en}’s.`,['kde? u + člověk','at someone’s → u'],img)); });
+  [['Už mám lístky.','Už','I already have the tickets.'],['Ještě nemám hlad.','Ještě','I am not hungry yet.'],['Až přijedu, zavolám ti.','Až','When I arrive, I’ll call you.'],['Ještě jeden čaj, prosím.','Ještě','One more tea, please.'],['Babička už nepracuje.','už','Grandma doesn’t work any more.'],['Přijdu až v sobotu.','až','I won’t come until Saturday.'],['Už je osm hodin.','Už','It is already eight o’clock.'],['Ještě jsem nevečeřela.','Ještě','I haven’t had dinner yet.']].forEach(([cz,w,en])=>B.push(gB(cz,w,['už','ještě','až'].map(x=>w[0]===w[0].toUpperCase()?CAP(x):x).filter(x=>x!==w),en,['už = already · ještě (ne) = (not) yet, more · až = when / not until','už · ještě · až'],'⏰')));
+  return B; }
+
+/* ---- L11: motion verbs, transport, prefixes ---- */
+const MV=[['jdu','jdeš','jde','jdeme','jdete','jdou'],['chodím','chodíš','chodí','chodíme','chodíte','chodí'],['jedu','jedeš','jede','jedeme','jedete','jedou'],['jezdím','jezdíš','jezdí','jezdíme','jezdíte','jezdí'],['letím','letíš','letí','letíme','letíte','letí'],['létám','létáš','létá','létáme','létáte','létají']];
+function bankPohyb(){ const B=[]; const ONE=[['dneska','today'],['teď','now'],['zítra','tomorrow'],['v sobotu','on Saturday']], REP=[['často','often'],['každý den','every day'],['obvykle','usually'],['někdy','sometimes']];
+  const D=[[0,'do školy','to school','🏫'],[0,'na nákup','shopping','🛒'],[2,'do Prahy','to Prague','🚆'],[2,'k babičce','to grandma’s','👵'],[4,'do Londýna','to London','✈️']];
+  const EV=(i,k,fut)=>{ const v=k===4?'fly':'go'; return fut?'will '+v:(i===2?(k===4?'flies':'goes'):v); };
+  PS.filter((p,k)=>k!==1).forEach(([s,i,g,se])=>{ D.forEach(([k,d,de,img])=>{ const [t,te]=sample(ONE,1)[0], [r,re]=sample(REP,1)[0], third=i===2||i===5;
+   const s1=third?`${CAP(s)} ${t} ${MV[k][i]} ${d}.`:`${CAP(t)} ${MV[k][i]} ${d}.`, s2=third?`${CAP(s)} ${r} ${MV[k+1][i]} ${d}.`:`${CAP(r)} ${MV[k+1][i]} ${d}.`;
+   B.push(gB(s1,MV[k][i],[MV[k+1][i],pick3(MV[k],i)[1]],`${CAP(se)} ${te==='tomorrow'||te==='on Saturday'?EV(i,k,1):EV(i,k)} ${de} ${te}.`,['jednou (teď, dneska, zítra) → jít, jet, letět','one trip'],img));
+   B.push(gB(s2,MV[k+1][i],[MV[k][i],pick3(MV[k+1],i)[1]],`${CAP(se)} ${re} ${EV(i,k)} ${de}.`,['opakovaně (často, každý den) → chodit, jezdit, létat','repeated'],img)); }); });
+  return B; }
+const VEH29=[['auto','autem','car','🚗',0],['vlak','vlakem','train','🚆',0],['autobus','autobusem','bus','🚌',0],['metro','metrem','metro','🚇',1],['taxík','taxíkem','taxi','🚕',1],['tramvaj','tramvají','tram','🚋',1],['loď','lodí','boat','⛴️',2]];
+function bankInstr(){ const B=[]; PS.filter((p,k)=>k!==1).forEach(([s,i,g,se])=>{ VEH29.forEach(([n,f,en,img,kind])=>{ const d=sample(kind===0?[['do práce','to work'],['do Brna','to Brno'],['na výlet','on a trip'],['domů','home']]:kind===1?[['do práce','to work'],['domů','home'],['do centra','to the centre']]:[['na ostrov','to the island']],1)[0];
+   B.push(gB(`${CAP(s)} ${MV[2][i]} ${d[0]} ${f}.`,f,[n,/í$/.test(f)?n+'em':f.replace(/em$/,'u')],`${CAP(se)} ${i===2?'is going':i===0?'am going':'are going'} ${d[1]} by ${en}.`,[`čím? ${n} → ${f}`,/í$/.test(f)?'ta → -í':'ten, to → -em'],img,n)); }); }); return B; }
+const PRF29=[['Ráno jsem vyjel z garáže.','vyjel','In the morning I drove out of the garage.','vy- = ven'],['Přejeli jsme most přes řeku.','Přejeli','We crossed the bridge over the river.','pře- = přes'],['Vlak projel tunelem.','projel','The train went through the tunnel.','pro- = skrz'],['Sjeli jsme z kopce.','Sjeli','We went down the hill.','s- = dolů'],['Večer jsme dojeli domů.','dojeli','In the evening we got home.','do- = až do cíle'],['Babička k nám přijela.','přijela','Grandma came to us.','při- = sem'],['Vlak už odjel.','odjel','The train has left.','od- = pryč'],['Ujel mi autobus.','Ujel','I missed the bus.','u- = pryč (I didn’t catch it)'],['Zajel do garáže.','Zajel','He drove into the garage.','za- = dovnitř'],
+ ['Vyšla jsem z domu.','Vyšla','I went out of the house.','vy- = ven'],['Přešli jsme ulici.','Přešli','We crossed the street.','pře- = přes'],['Hosté přišli v sedm.','přišli','The guests came at seven.','při- = sem'],['Kolega už odešel.','odešel','My colleague has left.','od- = pryč'],['Letadlo přiletělo včas.','přiletělo','The plane arrived on time.','při- = sem'],['Letadlo odletí v osm.','odletí','The plane will leave at eight.','od- = pryč']];
+const bankPrf=()=>PRF29.map(([cz,w,en,why])=>{ const stem=w.replace(/^(vy|pře|pro|s|do|při|od|u|za)/i,''), pre=w.slice(0,w.length-stem.length), up=w[0]!==w[0].toLowerCase();
+  const alt=['vy','pře','při','od','do','za','pro'].filter(p=>p!==pre.toLowerCase()).slice(0,6); const mk2=p=>(up?CAP(p):p)+stem;
+  return gB(cz,w,sample(alt,2).map(mk2),en,[why,'the beginning shows the direction'],'🧭'); });
+
+/* ---- L12: aspect, se/si, reflexive passive ---- */
+const VID29=[['psát','napsat','psal','napsal','napíšu','e-mail','an e-mail','✉️','write','writing','written'],['vařit','uvařit','vařil','uvařil','uvařím','oběd','lunch','🍲','cook','cooking','cooked'],['péct','upéct','pekl','upekl','upeču','dort','a cake','🍰','bake','baking','baked'],['mýt','umýt','myl','umyl','umyju','okna','the windows','🪟','wash','washing','washed'],
+ ['uklízet','uklidit','uklízel','uklidil','uklidím','byt','the flat','🧹','clean','cleaning','cleaned'],['číst','přečíst','četl','přečetl','přečtu','knihu','the book','📖','read','reading','read'],['dělat','udělat','dělal','udělal','udělám','úkol','the homework','📝','do','doing','done'],['prát','vyprat','pral','vypral','vyperu','prádlo','the laundry','🧺','wash','washing','washed']];
+function bankVid(){ const B=[]; VID29.forEach(([ip,pf,il,pl,fut,obj,oe,img,v,ving,vpp])=>{ ['','a'].forEach(e=>{
+   B.push(gB(`Celé odpoledne jsem ${il}${e} ${obj}.`,il+e,[pl+e,fut],`All afternoon I was ${ving} ${oe}.`,['jak dlouho? → proces: '+il+e,'how long → process (imperfective)'],'⏳',ip));
+   B.push(gB(`Už jsem ${pl}${e} ${obj}. Je hotovo.`,pl+e,[il+e,fut],`I have ${vpp} ${oe}. It is done.`,['hotovo → výsledek: '+pl+e,'done → result (perfective)'],'✅',pf)); });
+   B.push(gB(`Zítra ${fut} ${obj}.`,fut,['budu '+pf,pf],`Tomorrow I will ${v} ${oe}.`,['výsledek v budoucnosti: '+fut+' (bez „budu“)','perfective present = future'],img,pf));
+   B.push(gB(`Zítra budu celý den ${ip} ${obj}.`,ip,[pf,fut],`Tomorrow I will be ${ving} ${oe} all day.`,['celý den → budu + proces','budu + imperfective'],img,ip)); }); return B; }
+function bankSe(){ const B=[]; [['myju','myju'],['čistím','čistím'],['češu','češu'],['oblékám','oblékám']].forEach(([v])=>{});
+  const SE=[['Ráno se myju.','se','In the morning I wash.'],['Před jídlem si myju ruce.','si','Before eating I wash my hands.'],['Večer si čistím zuby.','si','In the evening I brush my teeth.'],['Rychle se oblékám.','se','I get dressed quickly.'],['Oblékám si svetr.','si','I put on a sweater.'],['Češu se.','se','I comb my hair.'],['Myju si vlasy.','si','I wash my hair.'],['Dávám si kávu.','si','I am having a coffee.'],['Dívám se na film.','se','I am watching a film.'],['Těším se na víkend.','se','I look forward to the weekend.'],['Kupuju si nové boty.','si','I am buying myself new shoes.'],['Učím se česky.','se','I am learning Czech.'],['Jmenuju se Jana.','se','My name is Jana.'],['Pamatuju si to.','si','I remember it.']];
+  SE.forEach(([cz,w,en])=>B.push(gB(cz,w,[w==='se'?'si':'se','mě'],en,[w==='se'?'se = myself / part of the verb':'si = for myself / something of mine','se × si'],'🪞')));
+  const PAS=[['Na Vánoce se jí kapr.','jí',['jedí','jíst'],'At Christmas carp is eaten.'],['Na Vánoce se jedí knedlíky.','jedí',['jí','jíst'],'At Christmas dumplings are eaten.'],['Na Silvestra se pije šampaňské.','pije',['pijí','pít'],'Champagne is drunk on New Year’s Eve.'],['Na Vánoce se zpívají koledy.','zpívají',['zpívá','zpívat'],'Carols are sung at Christmas.'],['Na Velikonoce se malují vajíčka.','malují',['maluje','malovat'],'Eggs are painted at Easter.'],['V Česku se mluví česky.','mluví',['mluvím','mluvit'],'Czech is spoken in Czechia.'],['Vánoce se slaví v prosinci.','slaví',['slavím','slavit'],'Christmas is celebrated in December.'],['Tady se nekouří.','nekouří',['kouří','nekouřím'],'No smoking here.'],['Jak se to řekne česky?','řekne',['řeknu','říct'],'How do you say it in Czech?'],['Na Nový rok se jí čočka.','jí',['jedí','jím'],'Lentils are eaten on New Year’s Day.'],['Ve škole se píše test.','píše',['píšou','psát'],'A test is written at school.'],['Kde se prodávají lístky?','prodávají',['prodává','prodávat'],'Where are tickets sold?']];
+  PAS.forEach(([cz,w,wr,en])=>B.push(gB(cz,w,wr,en,['se + 3rd person: jedna věc → jí se, víc věcí → jedí se','people do it (no subject)'],'🎄')));
+  return B; }
+
+/* ---- L2: direction × place ---- */
+function bankSmer(){ const B=[]; const K=[['doprava','napravo','right','on the right'],['doleva','nalevo','left','on the left'],['nahoru','nahoře','up','upstairs'],['dolů','dole','down','downstairs']];
+  const PL=[['Pošta','the post office','📮'],['Banka','the bank','🏦'],['Kavárna','the café','☕'],['Záchod','the toilet','🚻'],['Pokladna','the ticket office','🎫'],['Kancelář','the office','🏢']];
+  K.forEach(([kam,kde,en,ken])=>{ PL.forEach(([p,pe,img])=>{ B.push(gB(`${p} je ${kde}.`,kde,[kam,K.find(x=>x[0]!==kam)[1]],`${CAP(pe)} is ${ken}.`,['kde? → '+kde,'place → napravo, nalevo, nahoře, dole'],img)); });
+   ['Jděte','Zahněte','Jeďte'].forEach(v=>{ if(/nahoru|dolů/.test(kam)&&v==='Zahněte') return; B.push(gB(`${v} ${kam}.`,kam,[kde,K.find(x=>x[0]!==kam)[0]],`${v==='Zahněte'?'Turn':'Go'} ${en}.`,['kam? → '+kam,'moving → doprava, doleva, nahoru, dolů'],'🧭')); }); });
+  return B; }
+
+
+/* ---- L6: vědět × znát × umět; L4: numbers with roky / let, koruny / korun ---- */
+const VZU29=[['vědět',['vím','víš','ví','víme','víte','vědí'],[['kde je pošta','where the post office is','📮'],['kolik je hodin','what time it is','🕐'],['jak se to řekne','how to say it','💬']],'know'],
+ ['znát',['znám','znáš','zná','známe','znáte','znají'],[['Prahu','Prague','🏰'],['Petra','Petr','🧑'],['tu písničku','that song','🎵']],'know'],
+ ['umět',['umím','umíš','umí','umíme','umíte','umějí'],[['plavat','swim','🏊'],['vařit','cook','🍳'],['mluvit česky','speak Czech','🗣️']],'can']];
+function bankVzu(){ const B=[]; VZU29.forEach(([inf,F,O,ve],vi)=>{ PS.filter((p,k)=>k!==1).forEach(([s,i,g,se])=>{ O.forEach(([o,oe,img])=>{ const other=VZU29.filter((x,k)=>k!==vi).map(x=>x[1][i]);
+   B.push(gB(`${CAP(s)} ${F[i]} ${o}.`,F[i],other,`${CAP(se)} ${ve==='can'?'can':(i===2?'knows':'know')} ${oe}.`,[inf==='vědět'?'vědět + kde / kolik / jak… (a fact)':inf==='znát'?'znát + a person, a place, a thing':'umět + infinitive (a skill)',`${inf}: ${F.join(', ')}`],img,inf)); }); }); }); return B; }
+function bankCisla(){ const B=[]; const N=[1,2,3,4,5,6,7,8,9,10,11,12,15,18,20,30,40,50,60,70,80,90,100];
+  N.forEach(n=>{ const y=n===1?'rok':n<5?'roky':'let', k=n===1?'korunu':n<5?'koruny':'korun';
+   if(n<=90) B.push(gB(`Je mi ${n} ${y}.`,y,['rok','roky','let'].filter(x=>x!==y),`I am ${n} year${n>1?'s':''} old.`,['1 rok · 2–4 roky · 5 a víc let','year / years'],'🎂'));
+   B.push(gB(`Stojí to ${n} ${k}.`,k,['korunu','koruny','korun'].filter(x=>x!==k),`It costs ${n} crown${n>1?'s':''}.`,['1 korunu · 2–4 koruny · 5 a víc korun','crown / crowns'],'💰')); });
+  [['Mám dva bratry.','dva','I have two brothers.'],['Mám dvě sestry.','dvě','I have two sisters.'],['Mám dvě děti.','dvě','I have two children.'],['Máme dva psy.','dva','We have two dogs.'],['Chci dvě kávy.','dvě','I want two coffees.'],['Dám si dvě piva.','dvě','I’ll have two beers.']].forEach(([cz,w,en])=>B.push(gB(cz,w,[w==='dva'?'dvě':'dva','dvou'],en,['ten → dva · ta, to → dvě','dva / dvě'],'✌️')));
+  return B; }
+
+
+/* ---- more rows for the small topics ---- */
+QW29.push(['Kde pracuješ? – V bance.','Kde','Where do you work? – In a bank.'],['Kdo to vaří? – Táta.','Kdo','Who is cooking it? – Dad.'],['Co piješ? – Čaj.','Co','What are you drinking? – Tea.'],['Kdy začíná film? – V osm.','Kdy','When does the film start? – At eight.'],['Odkud je Marina? – Z Itálie.','Odkud','Where is Marina from? – From Italy.'],['Kam jedete o víkendu? – Na chatu.','Kam','Where are you going at the weekend? – To the cottage.'],
+ ['Jak dlouho tady bydlíš? – Dva roky.','Jak','How long have you lived here? – Two years.'],['Proč jsi unavená? – Protože jsem málo spala.','Proč','Why are you tired? – Because I slept little.'],['Kolik máš sourozenců? – Dva.','Kolik','How many siblings do you have? – Two.'],['Jaký máš telefon? – Nový.','Jaký','What phone do you have? – A new one.'],['Čí je ta taška? – Janina.','Čí','Whose bag is it? – Jana’s.'],['Kdo přijde? – Všichni.','Kdo','Who is coming? – Everybody.'],
+ ['Co je to? – To je slovník.','Co','What is it? – It is a dictionary.'],['Kdy jsi byla v Praze? – Loni.','Kdy','When were you in Prague? – Last year.'],['Kde je klíč? – Na stole.','Kde','Where is the key? – On the table.'],['Kam jdeš? – K doktorovi.','Kam','Where are you going? – To the doctor.']);
+const RADS=[['Petr','m','rád','Petr likes'],['Jana','f','ráda','Jana likes'],['My','p','rádi','We like'],['Kamarádky','pf','rády','The friends like'],['Tomáš','m','rád','Tomáš likes'],['Eva','f','ráda','Eva likes'],['Rodiče','p','rádi','My parents like'],['Děti','pf','rády','The children like']];
+const RADV=[['vaří','vaříme','vaří','cooking'],['plave','plaveme','plavou','swimming'],['čte','čteme','čtou','reading'],['tancuje','tancujeme','tancují','dancing'],['cestuje','cestujeme','cestují','travelling'],['zpívá','zpíváme','zpívají','singing']];
+RADS.forEach(([s,g,r,se])=>RADV.forEach(([v3,v1,vp,ve])=>{ const v=s==='My'?v1:g==='m'||g==='f'?v3:vp; RAD29.push([`${s} ${r} ${v}.`,r,`${se} ${ve}.`]); }));
+const PZN2=[['kašel','a cough'],['rýmu','a cold'],['bolest hlavy','a headache'],['bolest zubů','toothache'],['chřipku','flu'],['spaní','sleeping']], PRO2=[['maminku','mum'],['tatínka','dad'],['babičku','grandma'],['děti','the children'],['tebe','you'],['kamaráda','a friend']], ZA2=[['hodinu','an hour'],['týden','a week'],['deset minut','ten minutes'],['chvíli','a moment'],['měsíc','a month']], NA2=[['víkend','the weekend'],['týden','a week'],['tři dny','three days'],['měsíc','a month']];
+PZN2.forEach(([x,e])=>PZN29.push([`Máte něco na ${x}?`,'na',`Do you have something for ${e}?`])); PRO2.forEach(([x,e])=>PZN29.push([`Mám dárek pro ${x}.`,'pro',`I have a present for ${e}.`])); ZA2.forEach(([x,e])=>PZN29.push([`Přijdu za ${x}.`,'za',`I’ll come in ${e}.`])); NA2.forEach(([x,e])=>PZN29.push([`Jedeme na hory na ${x}.`,'na',`We are going to the mountains for ${e}.`]));
+PRF29.push(['Vyjeli jsme brzy ráno.','Vyjeli','We set off early in the morning.','vy- = ven, začít jet'],['Přejdi silnici opatrně.','Přejdi','Cross the road carefully.','pře- = přes'],['Prošli jsme celé město.','Prošli','We walked through the whole town.','pro- = skrz'],['Zašla jsem do obchodu.','Zašla','I popped into the shop.','za- = dovnitř, na chvíli'],['Došli jsme až k jezeru.','Došli','We walked all the way to the lake.','do- = až do cíle'],['Kdy přijedeš?','přijedeš','When will you come?','při- = sem'],['Kdy odjíždí vlak?','odjíždí','When does the train leave?','od- = pryč']);
+
+/* ---- the topics: existing ones get a bank, new ones are added; lessons as in the book ---- */
+const G29BANK={byt:()=>bankByt(false),zapor:()=>[...bankByt(true),...verbRows(true)],otazky:bankQ,rod:bankRod,sloves:()=>verbRows(false),prid:bankPrid,lok:bankLok,akuz:bankAkuz,pos:bankPos,kdy:bankKdy,modal:bankModal,rad:bankRad,minul:bankMinul,mnoz:bankMnoz,bud:bankBud,kam:bankKam,zajm:bankZajm,gen:bankGen,odkud:bankOdkud,pohyb:bankPohyb,instr:bankInstr,vid:bankVid,sepas:bankSe};
+Object.assign(G7,{
+ smer:{les:'L2',ic:'🧭',t:'Doprava × napravo',en:'Where to? × Where? (directions)',make(){ return []; }},
+ cekna:{les:'L7',ic:'⏳',t:'Čekám na…, dívám se na…',en:'Verbs with na + 4th case',make(){ return []; }},
+ telo:{les:'L9',ic:'🧍',t:'Oči, uši, ruce, děti',en:'Special plurals',make(){ return []; }},
+ pzn:{les:'L9',ic:'💊',t:'Pro, za, na',en:'For whom, in how long, for what',make(){ return []; }},
+ pred:{les:'L11',ic:'↩️',t:'Při-, od-, vy-, pře-…',en:'Prefixes of motion verbs',make(){ return []; }}});
+Object.assign(G29BANK,{vzu:bankVzu,cisla:bankCisla,smer:bankSmer,cekna:bankNa,telo:bankBod,pzn:bankPzn,pred:bankPrf});
+Object.assign(G7.byt,{les:'L1'}); Object.assign(G7.sloves,{les:'L1'}); Object.assign(G7.rod,{les:'L2'}); Object.assign(G7.prid,{les:'L4'}); Object.assign(G7.lok,{les:'L6'}); Object.assign(G7.rad,{les:'L3'}); Object.assign(G7.vzu,{les:'L6'});
+G7L.splice(0,G7L.length,'byt','zapor','otazky','sloves','rod','smer','akuz','rad','prid','pos','cisla','kdy','modal','neprav','minul','lok','vzu','mnoz','datum','cekna','bud','kam','zajm','telo','pzn','gen','odkud','pohyb','instr','pred','vid','sepas');
+const G29C={}; const g29bank=id=>{ if(!G29BANK[id]) return []; if(!G29C[id]){ try{ G29C[id]=G29BANK[id](); }catch(e){ console.warn('bank',id,e); G29C[id]=[]; } } return G29C[id]; };
+/* every round: the topic's own tasks mixed with fresh sentences from its bank */
+const g7MakeOld=g7Make;
+g7Make=function(id,n){ const own=g7MakeOld(id), bank=bankRound(g29bank(id),own.length?8:12); bank.forEach(e=>{ e.g7t=id; }); const all=shuffle([...own,...bank]); return n?all.slice(0,n):all; };
+
+/* ---- rounds: one topic, one lesson, or everything; "Bez konce" keeps adding fresh rounds ---- */
+const LESN=u=>+String(u).replace(/\D/g,'');
+function g7Round(id){ if(id==='mix'){ const L=g7Unlocked(); const q=[]; sample(L,Math.min(7,L.length)).forEach(t=>q.push(...g7Make(t,2))); return shuffle(q).slice(0,14); }
+  if(/^L\d+$/.test(id)){ const T=G7L.filter(t=>G7[t].les===id); const q=[]; T.forEach(t=>q.push(...g7Make(t,Math.max(3,Math.ceil(14/T.length))))); return shuffle(q).slice(0,14); }
+  const q=shuffle(g7Make(id)).slice(0,12); q.sort((a,b)=>(a.t==='gtab2'||a.t==='gsort'?0:1)-(b.t==='gtab2'||b.t==='gsort'?0:1)); return q; }
+startG7=function(id,endless){ const nm=id==='mix'?'Mix gramatiky':/^L\d+$/.test(id)?'Gramatika · Lekce '+LESN(id):G7[id].t;
+  begin('g7',(endless?'♾️ ':'💪 ')+nm,g7Round(id),{g7id:id,endless:!!endless,round:1}); };
+const next0=next;
+next=function(){ if(S&&S.kind==='g7'&&S.endless&&S.i+1>=S.queue.length){ S.queue.push(...g7Round(S.g7id)); S.round=(S.round||1)+1; }
+  return next0(); };
+g7Section=function(){ const un=new Set(g7Unlocked()), les=[...new Set(G7L.map(t=>G7[t].les))].sort((a,b)=>LESN(a)-LESN(b));
+  return `<div class="sect">Posilovna gramatiky${EN(' · Grammar gym','en sen')}</div>
+  <div class="g7hero">${ico('💪',44)}<div><b>Pokaždé jiné věty</b><span>${G7L.length} témat, stovky vět. Doplň, napiš, najdi chybu, poslouchej, slož větu, roztřiď, spoj…</span>${EN('New sentences every time: hundreds per topic, many kinds of task.')}</div></div>
+  <div class="g7top"><button class="cta" data-a="g7" data-v="mix">${bl('🎲','Mix · 14 úloh')}</button><button class="cta alt" data-a="g7inf" data-v="mix">${bl('♾️','Bez konce')}</button></div>
+  ${les.map(l=>{ const T=G7L.filter(t=>G7[t].les===l), open=T.some(t=>un.has(t)); return `<div class="g7les${open?'':' lock'}"><div class="g7lh"><b>${esc(U(l)?U(l).lab+' · '+U(l).t:l)}</b><button class="g7lmix" data-a="g7" data-v="${l}">${ico('🎲',18)} Mix lekce</button></div>${T.map(g7Card).join('')}</div>`; }).join('')}`; };
+/*V29GEND*/
 /*V28END*/
-function bookTexts(){ BOOKTXT.length=0; [l1A,l1B,l1C,l1D,l1E,l1F,l2A,l2B,l2C,l2D,l3A,l3B,l3C,l3D,l3E,l1X,l2X,l3X,l1Y,l2Y,l3Y,l4A,l4B,l4C,l4D,l4E,l4F,l5A,l5B,l5C,l5D,l5E,l5F,l6A,l6B,l6C,l6D,l6E,l6F,...L28].forEach(fn=>{ try{ (fn()||[]).forEach(e=>{ try{ const b=e&&e.slide&&e.slide.body; const h=typeof b==='function'?b():b; if(typeof h==='string') h.replace(/data-a="saytext" data-v="([^"]*)"/g,(_,v)=>{ BOOKTXT.push(v.replace(/&#39;/g,"'").replace(/&quot;/g,'"').replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&amp;/g,'&')); return ''; }); }catch(_){} }); }catch(e){} });
+function bookTexts(){ BOOKTXT.length=0; [l1A,l1B,l1C,l1D,l1E,l1F,l2A,l2B,l2C,l2D,l3A,l3B,l3C,l3D,l3E,l1X,l2X,l3X,l1Y,l2Y,l3Y,l4A,l4B,l4C,l4D,l4E,l4F,l5A,l5B,l5C,l5D,l5E,l5F,l6A,l6B,l6C,l6D,l6E,l6F,...L28,...L29W].forEach(fn=>{ try{ (fn()||[]).forEach(e=>{ try{ const b=e&&e.slide&&e.slide.body; const h=typeof b==='function'?b():b; if(typeof h==='string') h.replace(/data-a="saytext" data-v="([^"]*)"/g,(_,v)=>{ BOOKTXT.push(v.replace(/&#39;/g,"'").replace(/&quot;/g,'"').replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&amp;/g,'&')); return ''; }); }catch(_){} }); }catch(e){} });
   const st=[...L1_CLASS,...L1_PROSIM].map(x=>x[0]).concat(L1_FI.flat().map(x=>x.split(' / ')[0]),L1_VOC.map(x=>x[1]),L1_INTL.map(x=>`To je ${x[0]}.`),['Co děláš?','Co děláte?','Děkuju.','Těší mě.','Měj se hezky.','To je pan Novák a to je paní Malá.','Odkud je? – Je z Polska.','Co dělá? – Je doktor.','To je zajímavé!','To je náhoda! Já jsem taky doktorka.','Jak se máte? – Dobře, děkuju. A vy?','Jak se máš? – Ujde to.','Jak se máš? – Špatně.','Jaký máte e-mail?','V nouzi volej 112.','Můžeme si tykat? – Určitě.'],ABC.map(x=>x[1]),L1_PR.map(x=>x[0]));
   return [...new Set([...BOOKTXT,...st])].filter(t=>/\p{L}/u.test(t)); }
 
@@ -6998,8 +7437,8 @@ function vExplore(){
 function testResultHTML(l){
   const miss=[...new Map(l.miss.map(x=>[x.id,x])).values()];
   return `<div class="card tres"><b>Výsledek testu: ${l.pc} %</b>${EN(l.pc>=90?'Excellent — you know this lesson.':l.pc>=70?'Good. Review the words below.':'Go through the lesson again, then retake the test.')}
-   ${miss.length?`<div class="sect" style="margin:10px 0 6px">Zopakuj si${EN(' · Review these','en sen')}</div>${miss.map(x=>`<button class="drow" data-a="say" data-v="${x.id}"><span class="mini">${pic(x,28)}</span><span class="t">${esc(x.cz)}</span><span class="lv">${ico('🔊',16)}</span></button>`).join('')}`:''}</div>
-   ${miss.length?`<button class="cta" data-a="missdrill">${bl('🎯','Procvič chyby')}</button>`:''}<button class="cta alt" data-a="ltest" data-v="${l.uid}">${bl('📝','Test znovu')}</button>`;
+   ${miss.length?`<div class="sect" style="margin:10px 0 6px">Zopakuj si${EN(' · Review these','en sen')}</div>${miss.map(x=>x.tq?`<div class="drow tqrow"><span class="mini">${ico('📝',24)}</span><span class="t">${esc(x.cz)}<small class="tqa">${esc(x.tq[1])}</small></span></div>`:`<button class="drow" data-a="say" data-v="${x.id}"><span class="mini">${pic(x,28)}</span><span class="t">${esc(x.cz)}</span><span class="lv">${ico('🔊',16)}</span></button>`).join('')}`:''}</div>
+   ${miss.length?`<button class="cta" data-a="missdrill">${bl('🎯','Procvič chyby')}</button>`:''}${l.kind==='final'?`<button class="cta alt" data-a="final">${bl('🎓','Test znovu')}</button>`:`<button class="cta alt" data-a="ltest" data-v="${l.uid}">${bl('📝','Test znovu')}</button>`}`;
 }
 function vSummary(){
   const r=last.n?last.ok/last.n:1, ns=r>=.9?3:r>=.7?2:1;
@@ -7020,9 +7459,9 @@ function vSummary(){
     ${last.kind==='talk'?`<button class="cta alt" data-a="talk">${bl('🏋️','Mluvení')}</button>`:''}
     ${last.kind==='listen'?`<button class="cta" data-a="lsn" data-v="${last.lid}">${bl('🔁','Ještě jednou')}</button><button class="cta alt" data-a="listen">${bl('🎧','Další poslech')}</button>`:''}
     ${last.kind==='hov'||last.kind==='dict'?`<button class="cta" data-a="${last.kind}">${bl('🔁','Další kolo')}</button><button class="cta alt" data-a="listen">${bl('🎧','Poslech')}</button>`:''}
-    ${last.kind==='g7'?`<button class="cta" data-a="g7" data-v="${last.g7id}">${bl('🎲','Znovu, jiné věty')}</button><button class="cta alt" data-a="gramhub">${bl('💪','Posilovna gramatiky')}</button>`:''}
+    ${last.kind==='g7'?`<button class="cta" data-a="g7" data-v="${last.g7id}">${bl('🎲','Znovu, jiné věty')}</button><button class="cta alt" data-a="g7inf" data-v="${last.g7id}">${bl('♾️','Pokračuj bez konce')}</button><button class="cta alt" data-a="gramhub">${bl('💪','Posilovna gramatiky')}</button>`:''}
     ${last.kind==='gram'?`<button class="cta" data-a="gram" data-v="${last.gid}">${bl('🔁','Ještě jednou')}</button><button class="cta alt" data-a="gramhub">${bl('📐','Další téma')}</button>`:''}
-    ${last.kind==='test'?testResultHTML(last):''}
+    ${last.kind==='test'||last.kind==='final'?testResultHTML(last):''}
     ${last.kind==='pattern'?`<button class="cta" data-a="pat" data-v="${last.pid}">${bl('🔁','Další věty')}</button><button class="cta alt" data-a="talk">${bl('🧪','Další vzory')}</button>`:''}
     ${n?`<button class="cta" data-a="after">Dál → <small>${esc(U(n.uid).t)} · část ${n.pi+1}</small></button>`:''}
     ${last.uid?`<button class="cta alt" data-a="unit" data-v="${last.uid}">${bl(U(last.uid).icon,esc(U(last.uid).t))}</button>`:''}`}
@@ -7202,7 +7641,7 @@ function vUnit(){
   acts.push(at('game',u.id,'🧩','Hra','Spoj obrázky a slova','Matching game'));
   acts.push(at('speaking',u.id,'🗣️','Výslovnost','Poslouchej a mluv','Pronunciation'));
   acts.push(at('practice',u.id,'🎯','Procvičit',L?'Naučená slova':'Nejdřív dokonči část',L?'Practise learned words':'Finish a part first',!L));
-  { const tr=(P.test||{})[u.id]; acts.push(at('ltest',u.id,'📝','Test lekce',tr?`Nejlépe ${tr.best} %`:'12 otázek bez nápovědy',tr?`Best score ${tr.best} %`:'12 questions, no hints')); }
+  { const tr=(P.test||{})[u.id]; acts.push(at('ltest',u.id,'📝','Test lekce',tr?`Nejlépe ${tr.best} %`:(typeof TQ!=='undefined'&&TQ[u.id]?'20 otázek jako v učebnici':'12 otázek bez nápovědy'),tr?`Best score ${tr.best} %`:(typeof TQ!=='undefined'&&TQ[u.id]?'20 questions like the book’s lesson test':'12 questions, no hints'))); }
   if(acts.length%2) acts[acts.length-1]=acts[acts.length-1].replace('class="atile"','class="atile wide"');
   return `<div class="uhero" style="${tcs(t)}"><div class="usc">${townSVG(t.id)}</div><div class="utop"><button class="icon" data-a="home" aria-label="Zpět">←</button>${helpBtn()}</div>
     <div class="ubody"><span class="clab">${esc(u.lab)} · ${esc(t.n)}</span><b>${esc(u.t)}</b>
@@ -7304,13 +7743,13 @@ function vGuide(){
   ${T.map(([e,t,en])=>`<div class="gitem">${ico(e,34)}<div><b>${t}</b><span class="en">${en}</span></div></div>`).join('')}
   <button class="cta alt" data-a="introagain" style="margin-top:12px">${bl('▶️','Spustit úvod znovu')}</button>`;
 }
-const APP_VER='28.1', APP_DATE='12. 11. 2026';
+const APP_VER='29', APP_DATE='12. 11. 2026';
 function vProfile(){
   const L=learnedAll().length, sk=streakNow(), vis=TOWNS.slice(1).filter(townDone).length;
   return `<div class="phero"><span class="pav">${chr(samId(),'happy',84)}</span><div><b>Sam</b><span>${esc(curTown().n)} · ${plW(L)}</span></div></div>
   <div class="pstats"><div>${ico('📚',28)}<b>${L}</b><span>${czPl(L,'slovo','slova','slov')}</span></div><div>${ico('🔥',28)}<b>${sk}</b><span>${czPl(sk,'den','dny','dní')} v řadě</span></div><div>${ico('⭐',28)}<b>${P.xp||0}</b><span>XP</span></div><div>${ico('🏙️',28)}<b>${vis}/8</b><span>měst</span></div></div>
   ${EN('words learned · days in a row · experience points · towns visited','en jen')}
-  <button class="cta" data-a="nav" data-v="guide" style="margin-bottom:14px">${bl('📖','Průvodce aplikací')}</button>`;
+  ${levelCard()}<button class="cta" data-a="nav" data-v="guide" style="margin-bottom:14px">${bl('📖','Průvodce aplikací')}</button>`;
 }
 
 if(!P.introDone&&!learnedAll().length) view='intro';
